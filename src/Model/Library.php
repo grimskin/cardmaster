@@ -35,6 +35,17 @@ class Library
         return $result;
     }
 
+    public function drawHand(int $handSize): array
+    {
+        $result = [];
+
+        for ($i=0;$i<$handSize;$i++) {
+            $result[] = $this->draw();
+        }
+
+        return $result;
+    }
+
     public function reset()
     {
         $this->cards = $this->definition->getCards();

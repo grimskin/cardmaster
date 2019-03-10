@@ -32,9 +32,19 @@ services:
         calls:
             - method: addDefinition
               arguments:
-                  - 'forest'
                   - 'Forest'
             - method: addDefinition
               arguments:
-                  - 'mountain'
                   - 'Mountain'
+
+    App\Service\DataLoader:
+        class: App\Service\DataLoader
+        autowire: true
+        calls:
+            - method: loadDataFromFile
+              arguments:
+                  - 'data/RNA.json'
+
+    App\Service\StatsCollector:
+        class: App\Service\StatsCollector
+        autowire: true
