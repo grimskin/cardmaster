@@ -4,6 +4,7 @@ namespace App\Command;
 
 use App\Conditions\HasThreeLands;
 use App\Factory\CardsFactory;
+use App\Factory\ConditionFactory;
 use App\Factory\ScenarioFactory;
 use App\Model\DeckDefinition;
 use App\Model\Library;
@@ -18,15 +19,18 @@ class TestCommand extends Command
 
     private $cardsFactory;
     private $scenarioFactory;
+    private $conditionFactory;
     private $collector;
 
     public function __construct(
         CardsFactory $cardsFactory,
         ScenarioFactory $scenarioFactory,
+        ConditionFactory $conditionFactory,
         StatsCollector $collector
     ) {
         $this->cardsFactory = $cardsFactory;
         $this->scenarioFactory = $scenarioFactory;
+        $this->conditionFactory = $conditionFactory;
         $this->collector = $collector;
 
         parent::__construct(self::$defaultName);
@@ -46,7 +50,7 @@ class TestCommand extends Command
 
         $passCount = 10000;
 
-        $this->collector->addCondition(new HasThreeLands());
+        $this->collector->addCondition($this->conditionFactory->getCondition('has-three-lands'));
         $this->collector->setLibrary($library);
         $this->collector->setPassCount($passCount);
         $this->collector->setScenario($this->scenarioFactory->getScenario('starting-hand'));

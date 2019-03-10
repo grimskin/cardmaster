@@ -45,6 +45,14 @@ services:
               arguments:
                   - App\Scenarios\StartingHand
 
+    App\Factory\ConditionFactory:
+        class: App\Factory\ConditionFactory
+        autowire: true
+        calls:
+            - method: registerCondition
+              arguments:
+                  - App\Conditions\HasThreeLands
+
 
     App\Service\DataLoader:
         class: App\Service\DataLoader
