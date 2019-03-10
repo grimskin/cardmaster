@@ -72,6 +72,10 @@ class CardDefinition
 
     public function getData(CardData $cardData)
     {
+        if ($this->isStub()) {
+            return ;
+        }
+
         $this->type = $cardData->getType();
 
         switch ($cardData->getName()) {

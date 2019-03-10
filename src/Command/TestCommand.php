@@ -34,7 +34,7 @@ class TestCommand extends Command
         $deck = new DeckDefinition();
         $deck->addCards($this->cardsFactory->getCard('Forest'), 12);
         $deck->addCards($this->cardsFactory->getCard('Mountain'), 12);
-        $deck->addCards($this->cardsFactory->getStub(), 36);
+        $deck->addCards($this->cardsFactory->getCard('stub'), 36);
 
         $library = Library::make($deck);
 

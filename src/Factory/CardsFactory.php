@@ -9,6 +9,8 @@ use App\Service\DataLoader;
 
 class CardsFactory
 {
+    const STUB_NAME = 'stub';
+
     private $dataLoader;
     private $stub;
     private $definitions = [];
@@ -34,7 +36,11 @@ class CardsFactory
 
     public function getCard(string $cardName): ?CardDefinition
     {
-        return $this->definitions[$cardName] ?? null;
+        if ($cardName == self::STUB_NAME) {
+            return $this->getStub();
+        } else {
+            return $this->definitions[$cardName] ?? null;
+        }
     }
 
     public function getStub(): CardDefinition
