@@ -5,7 +5,6 @@ namespace App\Factory;
 
 
 use App\Model\CardDefinition;
-use App\Service\DataLoader;
 
 class CardsFactory
 {
@@ -14,12 +13,6 @@ class CardsFactory
     private $dataLoader;
     private $stub;
     private $definitions = [];
-
-    public function __construct(
-        DataLoader $dataLoader
-    ) {
-        $this->dataLoader = $dataLoader;
-    }
 
     public function addDefinition(
         string $cardName
