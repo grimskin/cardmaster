@@ -6,11 +6,11 @@ namespace App\Conditions;
 
 use App\Model\CardDefinition;
 
-class HasThreeLands
+class HasThreeLands implements ConditionInterface
 {
-    public function getRequiredHandSize(): int
+    public function getName(): string
     {
-        return 7;
+        return 'has-three-lands';
     }
 
     public function testHand(CardDefinition ... $cardDefinitions): bool

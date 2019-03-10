@@ -6,6 +6,7 @@ namespace App\Service;
 
 use App\Conditions\HasThreeLands;
 use App\Model\Library;
+use App\Scenarios\ScenarioInterface;
 
 class StatsCollector
 {
@@ -15,6 +16,10 @@ class StatsCollector
      */
     private $library;
     private $passCount = 0;
+    /**
+     * @var ScenarioInterface
+     */
+    private $scenario;
 
     private $successCount = 0;
 
@@ -33,6 +38,10 @@ class StatsCollector
         $this->library = $library;
     }
 
+    public function setScenario(ScenarioInterface $scenario) {
+        $this->scenario = $scenario;
+    }
+
     public function addCondition($condition)
     {
         $this->conditions[] = $condition;
@@ -40,20 +49,12 @@ class StatsCollector
 
     public function runSimulation()
     {
-        $passes = $this->passCount;
-        /** @var HasThreeLands $condition */
-        $condition = $this->conditions[0];
-
-        while ($passes) {
-            $this->library->reset();
-            $this->library->shuffle(7);
-            $hand = $this->library->drawHand(7);
-
-            if ($condition->testHand(...$hand)) {
-                $this->successCount++;
-            }
-
-            $passes--;
+        $this->scenario->setPassCount($this->passCount);
+        foreach ($this->conditions as $condition) {
+            $this->scenario->addCondition($condition);
         }
+        $this->scenario->setLibrary($this->library);
+        $this->scenario->runSimulation();
+        $this->successCount = $this->scenario->getSuccessCount();
     }
 }

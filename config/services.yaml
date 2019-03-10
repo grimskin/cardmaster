@@ -37,6 +37,15 @@ services:
               arguments:
                   - 'Mountain'
 
+    App\Factory\ScenarioFactory:
+        class: App\Factory\ScenarioFactory
+        autowire: true
+        calls:
+            - method: registerScenario
+              arguments:
+                  - App\Scenarios\StartingHand
+
+
     App\Service\DataLoader:
         class: App\Service\DataLoader
         autowire: true
@@ -44,7 +53,3 @@ services:
             - method: loadDataFromFile
               arguments:
                   - 'data/RNA.json'
-
-    App\Service\StatsCollector:
-        class: App\Service\StatsCollector
-        autowire: true

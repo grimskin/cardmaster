@@ -4,6 +4,7 @@ namespace App\Command;
 
 use App\Conditions\HasThreeLands;
 use App\Factory\CardsFactory;
+use App\Factory\ScenarioFactory;
 use App\Model\DeckDefinition;
 use App\Model\Library;
 use App\Service\StatsCollector;
@@ -16,11 +17,16 @@ class TestCommand extends Command
     protected static $defaultName = 'cm:test';
 
     private $cardsFactory;
+    private $scenarioFactory;
     private $collector;
 
-    public function __construct(CardsFactory $cardsFactory, StatsCollector $collector)
-    {
+    public function __construct(
+        CardsFactory $cardsFactory,
+        ScenarioFactory $scenarioFactory,
+        StatsCollector $collector
+    ) {
         $this->cardsFactory = $cardsFactory;
+        $this->scenarioFactory = $scenarioFactory;
         $this->collector = $collector;
 
         parent::__construct(self::$defaultName);
@@ -43,6 +49,7 @@ class TestCommand extends Command
         $this->collector->addCondition(new HasThreeLands());
         $this->collector->setLibrary($library);
         $this->collector->setPassCount($passCount);
+        $this->collector->setScenario($this->scenarioFactory->getScenario('starting-hand'));
         $this->collector->runSimulation();
 
         $output->writeln($this->collector->getSuccessCount() . ' / ' . $passCount);
