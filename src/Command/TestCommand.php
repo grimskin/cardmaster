@@ -33,7 +33,7 @@ class TestCommand extends Command
 
         $library = Library::make($deck);
 
-        $library->shuffle();
+        $library->shuffle(7);
 
         while ($card = $library->draw()) {
             $output->write($card->getName());

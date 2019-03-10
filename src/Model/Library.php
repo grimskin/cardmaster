@@ -6,6 +6,9 @@ namespace App\Model;
 
 class Library
 {
+    /**
+     * @var DeckDefinition
+     */
     private $definition;
     private $cards = [];
 
@@ -13,7 +16,7 @@ class Library
     {
         $result = new self();
 
-//        $result->definition = $deck;
+        $result->definition = $deck;
         $result->cards = $deck->getCards();
 
         return $result;
@@ -32,14 +35,19 @@ class Library
         return $result;
     }
 
-    public function shuffle()
+    public function reset()
+    {
+        $this->cards = $this->definition->getCards();
+    }
+
+    public function shuffle(int $resultAmount = 9999)
     {
         $cards = $this->cards;
         $library = [];
 
         $cardsCount = count($cards);
 
-        while ($cardsCount > 1) {
+        while ($cardsCount > 1 && --$resultAmount) {
             $position = mt_rand(0, $cardsCount-1);
 
             $library[] = $cards[$position];
