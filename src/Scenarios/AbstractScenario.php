@@ -50,6 +50,7 @@ abstract class AbstractScenario implements ScenarioInterface
             foreach ($this->conditions as $condition) {
                 $this->library->reset();
                 $this->library->shuffle($this->getRequiredHandSize());
+
                 $hand = $this->library->drawHand($this->getRequiredHandSize());
 
                 if ($condition->testHand(...$hand)) {

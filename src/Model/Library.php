@@ -33,6 +33,23 @@ class Library
         return $this->drawFromPosition(self::POSITION_TOP);
     }
 
+    public function drawByName(string $cardName): ?CardDefinition
+    {
+        /** @var CardDefinition $card */
+        foreach ($this->cards as $index=>$card) {
+            if ($card->getName() == $cardName) {
+                $position = $index;
+                break;
+            }
+        }
+
+        if (!isset($position)) {
+            return null;
+        }
+
+        return $this->drawFromPosition($position);
+    }
+
     public function drawFromPosition(int $position): ?CardDefinition
     {
         if (!isset($this->cards[$position])) {
