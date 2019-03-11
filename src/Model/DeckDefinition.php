@@ -27,4 +27,9 @@ class DeckDefinition
     {
         return count($this->cards);
     }
+
+    public function getLibrary(): Library
+    {
+        return Library::make($this);
+    }
 }

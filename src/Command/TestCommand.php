@@ -2,12 +2,10 @@
 
 namespace App\Command;
 
-use App\Conditions\HasThreeLands;
 use App\Factory\CardsFactory;
 use App\Factory\ConditionFactory;
 use App\Factory\ScenarioFactory;
 use App\Model\DeckDefinition;
-use App\Model\Library;
 use App\Service\StatsCollector;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -46,12 +44,10 @@ class TestCommand extends Command
         $deck->addCards($this->cardsFactory->getCard('Mountain'), 12);
         $deck->addCards($this->cardsFactory->getCard('stub'), 36);
 
-        $library = Library::make($deck);
-
         $passCount = 10000;
 
         $this->collector->addCondition($this->conditionFactory->getCondition('has-three-lands'));
-        $this->collector->setLibrary($library);
+        $this->collector->setLibrary($deck->getLibrary());
         $this->collector->setPassCount($passCount);
         $this->collector->setScenario($this->scenarioFactory->getScenario('starting-hand'));
         $this->collector->runSimulation();
