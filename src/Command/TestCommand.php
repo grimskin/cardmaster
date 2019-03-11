@@ -47,7 +47,7 @@ class TestCommand extends Command
         $passCount = 10000;
 
         $this->collector->addCondition($this->conditionFactory->getCondition('has-three-lands'));
-        $this->collector->setLibrary($deck->getLibrary());
+        $this->collector->setDeck($deck);
         $this->collector->setPassCount($passCount);
         $this->collector->setScenario($this->scenarioFactory->getScenario('starting-hand'));
         $this->collector->runSimulation();

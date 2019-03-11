@@ -6,6 +6,8 @@ namespace App\Model;
 
 class Library
 {
+    private const POSITION_TOP = 0;
+
     /**
      * @var DeckDefinition
      */
@@ -28,9 +30,20 @@ class Library
             return null;
         }
 
-        $result = $this->cards[count($this->cards) - 1];
+        return $this->drawFromPosition(self::POSITION_TOP);
+    }
 
-        unset($this->cards[count($this->cards) - 1]);
+    public function drawFromPosition(int $position): ?CardDefinition
+    {
+        if (!isset($this->cards[$position])) {
+            return null;
+        }
+
+        $result = $this->cards[$position];
+
+        unset($this->cards[$position]);
+
+        $this->cards = array_values($this->cards);
 
         return $result;
     }

@@ -4,17 +4,16 @@
 namespace App\Service;
 
 
-use App\Conditions\HasThreeLands;
-use App\Model\Library;
+use App\Model\DeckDefinition;
 use App\Scenarios\ScenarioInterface;
 
 class StatsCollector
 {
     private $conditions = [];
     /**
-     * @var Library
+     * @var DeckDefinition
      */
-    private $library;
+    private $deck;
     private $passCount = 0;
     /**
      * @var ScenarioInterface
@@ -33,9 +32,9 @@ class StatsCollector
         $this->passCount = $passCount;
     }
 
-    public function setLibrary(Library $library)
+    public function setDeck(DeckDefinition $deck)
     {
-        $this->library = $library;
+        $this->deck = $deck;
     }
 
     public function setScenario(ScenarioInterface $scenario) {
@@ -53,7 +52,7 @@ class StatsCollector
         foreach ($this->conditions as $condition) {
             $this->scenario->addCondition($condition);
         }
-        $this->scenario->setLibrary($this->library);
+        $this->scenario->setLibrary($this->deck->getLibrary());
         $this->scenario->runSimulation();
         $this->successCount = $this->scenario->getSuccessCount();
     }
