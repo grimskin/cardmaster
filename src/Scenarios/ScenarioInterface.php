@@ -5,6 +5,7 @@ namespace App\Scenarios;
 
 
 use App\Conditions\ConditionInterface;
+use App\Model\ExperimentResult;
 use App\Model\Library;
 
 interface ScenarioInterface
@@ -19,7 +20,7 @@ interface ScenarioInterface
 
     public function getSuccessCount(): int;
 
-    public function runSimulation();
+    public function runSimulation(ExperimentResult $result);
 
     public function setLibrary(Library $library);
 }

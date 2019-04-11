@@ -5,6 +5,7 @@ namespace App\Scenarios;
 
 
 use App\Conditions\ConditionInterface;
+use App\Model\ExperimentResult;
 use App\Model\Library;
 
 abstract class AbstractScenario implements ScenarioInterface
@@ -40,7 +41,7 @@ abstract class AbstractScenario implements ScenarioInterface
         return $this->successCount;
     }
 
-    public function runSimulation()
+    public function runSimulation(ExperimentResult $result)
     {
         $passes = $this->passCount;
 
@@ -63,7 +64,10 @@ abstract class AbstractScenario implements ScenarioInterface
 
             if ($success) {
                 $this->successCount++;
+                $result->tickSuccessCount();
             }
+
+            $result->tickPassCount();
 
             $passes--;
         }

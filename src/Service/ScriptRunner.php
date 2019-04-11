@@ -8,6 +8,7 @@ use App\Factory\CardsFactory;
 use App\Factory\ConditionFactory;
 use App\Factory\ScenarioFactory;
 use App\Model\DeckDefinition;
+use App\Model\ExperimentResult;
 
 class ScriptRunner
 {
@@ -66,8 +67,9 @@ class ScriptRunner
         }
 
         $this->collector->setDeck($deck);
-        $this->collector->runSimulation();
 
-        return $this->collector->getSuccessCount();
+        $experimentResult = $this->collector->runSimulation();
+
+        return $experimentResult;
     }
 }

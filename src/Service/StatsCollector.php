@@ -5,6 +5,7 @@ namespace App\Service;
 
 
 use App\Model\DeckDefinition;
+use App\Model\ExperimentResult;
 use App\Scenarios\ScenarioInterface;
 
 class StatsCollector
@@ -53,7 +54,10 @@ class StatsCollector
             $this->scenario->addCondition($condition);
         }
         $this->scenario->setLibrary($this->deck->getLibrary());
-        $this->scenario->runSimulation();
+        $experimentResult = new ExperimentResult();
+        $this->scenario->runSimulation($experimentResult);
         $this->successCount = $this->scenario->getSuccessCount();
+
+        return $experimentResult;
     }
 }
