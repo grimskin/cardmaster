@@ -39,7 +39,7 @@ class CardsFactory
         if ($cardName == self::STUB_NAME) {
             return $this->getStub();
         } else {
-            return $this->definitions[$cardName] ?? null;
+            return $this->definitions[$cardName] ?? $this->getDataFromLoader($cardName);
         }
     }
 
@@ -50,5 +50,20 @@ class CardsFactory
         }
 
         return $this->stub;
+    }
+
+    private function getDataFromLoader($cardName)
+    {
+        $cardData = $this->dataLoader->getDataByName($cardName);
+
+        if (!$cardData) {
+            return null;
+        }
+
+        $definition = new CardDefinition();
+        $definition->getData($cardData);
+        $this->definitions[$cardName] = $definition;
+
+        return $definition;
     }
 }
