@@ -6,17 +6,19 @@ use App\Factory\CardsFactory;
 use App\Factory\ConditionFactory;
 use App\Factory\ScenarioFactory;
 use App\Model\DeckDefinition;
-use App\Service\ExperimentFileReader;
+use App\Service\ScriptFileReader;
+use App\Service\ScriptRunner;
 use App\Service\StatsCollector;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class ExperimentCommand extends Command
+class ScriptCommand extends Command
 {
-    protected static $defaultName = 'cm:experiment';
+    protected static $defaultName = 'cm:script';
 
+    private $runner;
     private $cardsFactory;
     private $scenarioFactory;
     private $conditionFactory;
@@ -24,12 +26,14 @@ class ExperimentCommand extends Command
     private $fileReader;
 
     public function __construct(
+        ScriptRunner $runner,
         CardsFactory $cardsFactory,
         ScenarioFactory $scenarioFactory,
         ConditionFactory $conditionFactory,
         StatsCollector $collector,
-        ExperimentFileReader $fileReader
+        ScriptFileReader $fileReader
     ) {
+        $this->runner = $runner;
         $this->cardsFactory = $cardsFactory;
         $this->scenarioFactory = $scenarioFactory;
         $this->conditionFactory = $conditionFactory;
@@ -57,7 +61,8 @@ class ExperimentCommand extends Command
         $output->writeln($filename . ' ' . ($gotFile ? 'exists' : 'absent'));
 
         $script = $this->fileReader->readFile($filename);
-        $output->writeln(print_r($script, 1));
+
+        $this->runner->runScript($script);
         return;
 
 
