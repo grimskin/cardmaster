@@ -37,4 +37,25 @@ class ScriptParser
 
         return (int) $data[count($data) - 1];
     }
+
+    public function getScenarioName(string $row)
+    {
+        $data = explode(':', $row, 2);
+
+        return strtolower(trim($data[1]));
+    }
+
+    public function getConditionName(string $row)
+    {
+        $data = explode(':', $row, 2);
+
+        return strtolower(trim($data[1]));
+    }
+
+    public function getPassCount(string $row)
+    {
+        $data = explode(':', $row, 2);
+
+        return (int) $data[1];
+    }
 }

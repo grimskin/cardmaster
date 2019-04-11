@@ -62,23 +62,8 @@ class ScriptCommand extends Command
 
         $script = $this->fileReader->readFile($filename);
 
-        $this->runner->runScript($script);
-        return;
+        $result = $this->runner->runScript($script);
 
-
-        $deck = new DeckDefinition();
-        $deck->addCards($this->cardsFactory->getCard('Forest'), 12);
-        $deck->addCards($this->cardsFactory->getCard('Mountain'), 12);
-        $deck->addCards($this->cardsFactory->getCard('stub'), 36);
-
-        $passCount = 10000;
-
-        $this->collector->addCondition($this->conditionFactory->getCondition('has-three-lands'));
-        $this->collector->setDeck($deck);
-        $this->collector->setPassCount($passCount);
-        $this->collector->setScenario($this->scenarioFactory->getScenario('starting-hand'));
-        $this->collector->runSimulation();
-
-        $output->writeln($this->collector->getSuccessCount() . ' / ' . $passCount);
+        $output->writeln($result);
     }
 }

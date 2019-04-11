@@ -1,3 +1,6 @@
 Card: [Forest], 12
 Card: [Mountain], 12
 Card: [stub], 36
+Condition: has-three-lands
+Scenario: starting-hand
+Passes: 10000
