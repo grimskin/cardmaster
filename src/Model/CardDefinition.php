@@ -76,6 +76,7 @@ class CardDefinition
             return ;
         }
 
+        $this->name = $cardData->getName();
         $this->type = $cardData->getType();
 
         switch ($cardData->getName()) {
