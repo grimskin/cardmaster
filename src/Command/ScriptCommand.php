@@ -6,37 +6,59 @@ use App\Factory\CardsFactory;
 use App\Factory\ConditionFactory;
 use App\Factory\ScenarioFactory;
 use App\Model\DeckDefinition;
+use App\Service\ExperimentFileReader;
 use App\Service\StatsCollector;
 use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class TestCommand extends Command
+class ExperimentCommand extends Command
 {
-    protected static $defaultName = 'cm:test';
+    protected static $defaultName = 'cm:experiment';
 
     private $cardsFactory;
     private $scenarioFactory;
     private $conditionFactory;
     private $collector;
+    private $fileReader;
 
     public function __construct(
         CardsFactory $cardsFactory,
         ScenarioFactory $scenarioFactory,
         ConditionFactory $conditionFactory,
-        StatsCollector $collector
+        StatsCollector $collector,
+        ExperimentFileReader $fileReader
     ) {
         $this->cardsFactory = $cardsFactory;
         $this->scenarioFactory = $scenarioFactory;
         $this->conditionFactory = $conditionFactory;
         $this->collector = $collector;
+        $this->fileReader = $fileReader;
 
         parent::__construct(self::$defaultName);
+    }
+
+    protected function configure()
+    {
+        parent::configure();
+
+        $this->addArgument('filename', InputArgument::REQUIRED, 'file name with experiment description');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $output->writeln('welcome');
+
+        $filename = $input->getArgument('filename');
+
+
+        $gotFile = $this->fileReader->hasFile($filename);
+        $output->writeln($filename . ' ' . ($gotFile ? 'exists' : 'absent'));
+
+        $script = $this->fileReader->readFile($filename);
+        $output->writeln(print_r($script, 1));
+        return;
 
 
         $deck = new DeckDefinition();
