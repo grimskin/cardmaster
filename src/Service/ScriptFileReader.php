@@ -4,13 +4,13 @@
 namespace App\Service;
 
 
-class ExperimentFileReader
+class ScriptFileReader
 {
     private $experimentsDir;
 
     public function __construct(string $projectDir)
     {
-        $this->experimentsDir = $projectDir . '/experiments/';
+        $this->experimentsDir = $projectDir . '/scripts/';
     }
 
     public function hasFile(string $fileName): bool
