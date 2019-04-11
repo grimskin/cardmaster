@@ -64,7 +64,6 @@ class ScriptCommand extends Command
 
         $result = $this->runner->runScript($script);
 
-        var_dump($result);
-//        $output->writeln($result);
+        $output->writeln($result);
     }
 }

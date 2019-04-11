@@ -18,4 +18,9 @@ class ExperimentResult
     {
         ++$this->successCount;
     }
+
+    public function __toString()
+    {
+        return $this->successCount . '/' . $this->passCount;
+    }
 }
