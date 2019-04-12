@@ -13,12 +13,6 @@ class CardDefinition
 
     private $type = '';
 
-//    private $produceWhite = false;
-//    private $produceBlue = false;
-//    private $produceBlack = false;
-//    private $produceRed = false;
-//    private $produceGreen = false;
-
     public function isStub(): bool
     {
         return $this->isStub;
@@ -27,6 +21,11 @@ class CardDefinition
     public function getName(): string
     {
         return $this->name;
+    }
+
+    public function getCanonizedName(): string
+    {
+        return strtolower($this->name);
     }
 
     public static function define(
@@ -89,23 +88,5 @@ class CardDefinition
         $this->name = $cardData->getName();
         $this->type = $cardData->getType();
         $this->colorIdentity = $cardData->getColorIdentity();
-
-//        switch ($cardData->getName()) {
-//            case 'Plains':
-//                $this->produceWhite = true;
-//                break;
-//            case 'Island':
-//                $this->produceBlue = true;
-//                break;
-//            case 'Swamp':
-//                $this->produceBlack = true;
-//                break;
-//            case 'Mountain':
-//                $this->produceRed = true;
-//                break;
-//            case 'Forest':
-//                $this->produceGreen = true;
-//                break;
-//        }
     }
 }

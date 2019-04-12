@@ -6,7 +6,7 @@ namespace App\Conditions;
 
 use App\Model\CardDefinition;
 
-class HasThreeLands implements ConditionInterface
+class HasThreeLands extends AbstractCondition
 {
     public function getName(): string
     {

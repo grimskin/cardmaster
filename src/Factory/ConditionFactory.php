@@ -5,9 +5,13 @@ namespace App\Factory;
 
 
 use App\Conditions\ConditionInterface;
+use Exception;
 
 class ConditionFactory
 {
+    /**
+     * @var ConditionInterface[]
+     */
     private $conditions = [];
 
     public function registerCondition(string $conditionClassName)
@@ -19,8 +23,16 @@ class ConditionFactory
         }
     }
 
-    public function getCondition(string $conditionName): ?ConditionInterface
+    public function getCondition(string $conditionName, array $params): ?ConditionInterface
     {
-        return $this->conditions[$conditionName] ?? null;
+        $result = $this->conditions[$conditionName] ?? null;
+
+        if (!$result) {
+            throw new Exception('No condition named ' . $conditionName . ' found');
+        }
+
+        $result->addParams($params);
+
+        return $result;
     }
 }

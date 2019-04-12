@@ -1,6 +1,8 @@
 Card: [Forest], 12
 Card: [Mountain], 12
-Card: [stub], 36
+Card: [Trostani Discordant], 4
+Card: [stub], 32
 Condition: has-three-lands
+Condition: has-card, [Trostani Discordant]
 Scenario: starting-hand
 Passes: 10000

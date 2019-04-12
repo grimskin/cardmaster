@@ -43,6 +43,9 @@ services:
             - method: registerCondition
               arguments:
                   - App\Conditions\HasThreeLands
+            - method: registerCondition
+              arguments:
+                  - App\Conditions\HasCard
 
 
     App\Service\DataLoader:
@@ -52,3 +55,6 @@ services:
             - method: loadDataFromFile
               arguments:
                   - 'data/RNA.json'
+            - method: loadDataFromFile
+              arguments:
+                  - 'data/GRN.json'

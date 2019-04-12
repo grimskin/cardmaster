@@ -61,7 +61,10 @@ class ScriptRunner
                     break;
                 case self::CMD_ADD_CONDITION:
                     $this->collector->addCondition(
-                        $this->conditionFactory->getCondition($this->parser->getConditionName($row))
+                        $this->conditionFactory->getCondition(
+                            $this->parser->getConditionName($row),
+                            $this->parser->getConditionParams($row)
+                        )
                     );
                     break;
                 case self::CMD_SET_PASS_COUNT:

@@ -5,24 +5,31 @@ namespace App\Conditions;
 
 
 use App\Model\CardDefinition;
+use Exception;
 
-class HasThreeLands implements ConditionInterface
+class HasCard extends AbstractCondition
 {
     public function getName(): string
     {
-        return 'has-three-lands';
+        return 'has-card';
     }
 
     public function testHand(CardDefinition ... $cardDefinitions): bool
     {
-        $landsCount = 0;
+        $cardName = $this->params[0] ?? '';
+
+        if (!$cardName) {
+            throw new Exception('Not enough params provided to has-card condition');
+        }
+
+        $cardName = trim(strtolower($cardName));
 
         foreach ($cardDefinitions as $card) {
-            if ($card->isLand()) {
-                $landsCount++;
+            if ($card->getCanonizedName() == $cardName) {
+                return true;
             }
         }
 
-        return $landsCount >= 3;
+        return false;
     }
 }

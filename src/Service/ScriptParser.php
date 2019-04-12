@@ -4,6 +4,8 @@
 namespace App\Service;
 
 
+use App\Helper\ScriptParamsParser;
+
 class ScriptParser
 {
     public function isComment(string $row)
@@ -54,7 +56,18 @@ class ScriptParser
     {
         $data = explode(':', $row, 2);
 
-        return strtolower(trim($data[1]));
+        $params = ScriptParamsParser::unpackParams($data[1]);
+
+        return $params[0];
+    }
+
+    public function getConditionParams(string $row)
+    {
+        $data = explode(':', $row, 2);
+
+        $params = ScriptParamsParser::unpackParams($data[1]);
+
+        return array_slice($params, 1);
     }
 
     public function getPassCount(string $row)
