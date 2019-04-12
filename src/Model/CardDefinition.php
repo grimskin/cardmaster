@@ -9,14 +9,15 @@ class CardDefinition
 
     private $name = '';
     private $isStub = false;
+    private $colorIdentity = [];
 
     private $type = '';
 
-    private $produceWhite = false;
-    private $produceBlue = false;
-    private $produceBlack = false;
-    private $produceRed = false;
-    private $produceGreen = false;
+//    private $produceWhite = false;
+//    private $produceBlue = false;
+//    private $produceBlack = false;
+//    private $produceRed = false;
+//    private $produceGreen = false;
 
     public function isStub(): bool
     {
@@ -42,32 +43,41 @@ class CardDefinition
 
     public function canProduceWhite(): bool
     {
-        return $this->produceWhite;
+        return $this->canProduce('W');
     }
 
     public function canProduceBlue(): bool
     {
-        return $this->produceBlue;
+        return $this->canProduce('U');
     }
 
     public function canProduceBlack(): bool
     {
-        return $this->produceBlack;
+        return $this->canProduce('B');
     }
 
     public function canProduceRed(): bool
     {
-        return $this->produceRed;
+        return $this->canProduce('R');
     }
 
     public function canProduceGreen(): bool
     {
-        return $this->produceGreen;
+        return $this->canProduce('G');
     }
 
     public function isLand(): bool
     {
         return $this->type == self::T_BASIC_LAND || $this->type == self::T_LAND;
+    }
+
+    private function canProduce(string $color)
+    {
+        if ($this->isLand() && in_array($color, $this->colorIdentity)) {
+            return true;
+        }
+
+        return false;
     }
 
     public function getData(CardData $cardData)
@@ -78,23 +88,24 @@ class CardDefinition
 
         $this->name = $cardData->getName();
         $this->type = $cardData->getType();
+        $this->colorIdentity = $cardData->getColorIdentity();
 
-        switch ($cardData->getName()) {
-            case 'Plains':
-                $this->produceWhite = true;
-                break;
-            case 'Island':
-                $this->produceBlue = true;
-                break;
-            case 'Swamp':
-                $this->produceBlack = true;
-                break;
-            case 'Mountain':
-                $this->produceRed = true;
-                break;
-            case 'Forest':
-                $this->produceGreen = true;
-                break;
-        }
+//        switch ($cardData->getName()) {
+//            case 'Plains':
+//                $this->produceWhite = true;
+//                break;
+//            case 'Island':
+//                $this->produceBlue = true;
+//                break;
+//            case 'Swamp':
+//                $this->produceBlack = true;
+//                break;
+//            case 'Mountain':
+//                $this->produceRed = true;
+//                break;
+//            case 'Forest':
+//                $this->produceGreen = true;
+//                break;
+//        }
     }
 }

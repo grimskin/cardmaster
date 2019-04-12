@@ -12,6 +12,7 @@ class CardData
     private $supertypes;
     private $subtypes;
     private $types;
+    private $colorIdentity;
 
     public static function createFromDatum($cardDatum): ?self
     {
@@ -21,6 +22,7 @@ class CardData
         $result->subtypes = $cardDatum['subtypes'] ?? [];
         $result->supertypes = $cardDatum['supertypes'] ?? [];
         $result->types = $cardDatum['types'] ?? [];
+        $result->colorIdentity = $cardDatum['colorIdentity'];
         $result->parseTypes();
 
         return $result;
@@ -41,5 +43,10 @@ class CardData
     public function getType(): string
     {
         return $this->type;
+    }
+
+    public function getColorIdentity()
+    {
+        return $this->colorIdentity;
     }
 }
