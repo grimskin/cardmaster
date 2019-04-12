@@ -41,6 +41,10 @@ class ScriptRunner
         $deck = new DeckDefinition();
 
         foreach ($script as $row) {
+            if ($this->parser->isComment($row)) {
+                continue;
+            }
+
             $command = $this->parser->getCommand($row);
 
             switch ($command) {
@@ -63,6 +67,8 @@ class ScriptRunner
                 case self::CMD_SET_PASS_COUNT:
                     $this->collector->setPassCount($this->parser->getPassCount($row));
                     break;
+                default:
+                    throw new \Exception('Unknown command: ' . $command);
             }
         }
 

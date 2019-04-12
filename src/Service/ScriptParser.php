@@ -6,6 +6,11 @@ namespace App\Service;
 
 class ScriptParser
 {
+    public function isComment(string $row)
+    {
+        return 0 === strpos($row, '#');
+    }
+
     public function getCommand(string $row)
     {
         $data = explode(':', $row, 2);
