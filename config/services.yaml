@@ -42,7 +42,7 @@ services:
         calls:
             - method: registerCondition
               arguments:
-                  - App\Conditions\HasThreeLands
+                  - App\Conditions\HasXLands
             - method: registerCondition
               arguments:
                   - App\Conditions\HasCard
