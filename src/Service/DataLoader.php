@@ -30,6 +30,11 @@ class DataLoader
     {
         return $this->cardData[$cardName] ?? null;
     }
+
+    public function getAllData(): array
+    {
+        return $this->cardData;
+    }
 }
 
 /**

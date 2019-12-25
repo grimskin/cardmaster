@@ -58,3 +58,12 @@ services:
             - method: loadDataFromFile
               arguments:
                   - 'data/GRN.json'
+            - method: loadDataFromFile
+              arguments:
+                  - 'data/WAR.json'
+            - method: loadDataFromFile
+              arguments:
+                  - 'data/M20.json'
+            - method: loadDataFromFile
+              arguments:
+                  - 'data/ELD.json'
