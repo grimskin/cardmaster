@@ -1,11 +1,28 @@
-version: '2'
+###############################################################################
+#                          Generated on phpdocker.io                          #
+###############################################################################
+version: "3.1"
 services:
-  webserver:
-    image: phpstorm/php-73-apache-xdebug-27
-    ports:
-      - "80:80"
-    volumes:
-      - ./:/var/www
-      - ./docker/sites-available/:/etc/apache2/sites-available
-    environment:
-      XDEBUG_CONFIG: remote_host=host.docker.internal
+
+    redis:
+      image: redis:alpine
+      container_name: cardmaster-redis
+
+    webserver:
+      image: nginx:alpine
+      container_name: cardmaster-webserver
+      working_dir: /application
+      volumes:
+          - .:/application
+          - ./phpdocker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+      ports:
+       - "80:80"
+
+    php-fpm:
+      build: phpdocker/php-fpm
+      container_name: cardmaster-php-fpm
+      working_dir: /application
+      volumes:
+        - .:/application
+        - ./phpdocker/php-fpm/php-ini-overrides.ini:/etc/php/7.4/fpm/conf.d/99-overrides.ini
+
