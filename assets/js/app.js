@@ -1,12 +1,14 @@
 // any CSS you require will output into a single css file (app.css in this case)
 
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React, { Component } from 'react';
 import '../css/app.css';
 
-console.log('Hello?');
+class App extends Component {
+    render() {
+        console.log('Hello?');
 
-const domContainer = document.querySelector('#root');
-ReactDOM.render(<h1>Ehlo</h1>, domContainer);
+        return (<h1>Ehlo</h1>);
+    }
+}
 
-console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
+export default App;

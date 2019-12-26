@@ -21,6 +21,7 @@ class DefaultController extends AbstractController
 </head>
 <body>
     <div id="root"></div>
+    
     <script src="build/runtime.js"></script>
     <script src="build/vendors~app.js"></script>
     <script src="build/app.js"></script>
