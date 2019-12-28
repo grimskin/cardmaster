@@ -1,13 +1,21 @@
-// any CSS you require will output into a single css file (app.css in this case)
-
 import React, { Component } from 'react';
-import '../css/app.css';
+import DeckComposer from "./deck/deckComposer";
+import ConditionPicker from "./condition/conditionPicker";
+import ScenarioSelector from "./scenario/scenarioSelector";
+import Header from "./header";
 
 class App extends Component {
     render() {
-        console.log('Hello?');
-
-        return (<h1>Ehlo</h1>);
+        return (
+            <div id="App">
+                <Header/>
+                <div id="AppContainer">
+                    <ScenarioSelector/>
+                    <ConditionPicker/>
+                    <DeckComposer/>
+                </div>
+            </div>
+        );
     }
 }
 

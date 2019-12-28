@@ -1,3 +1,25 @@
+* {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
 body {
     background-color: lightgray;
+    margin: 0;
+}
+
+#Header {
+    background-color: #2e3436;
+    color: white;
+    font-size: 24px;
+    padding: 1em;
+    border-bottom-right-radius: 2em;
+    margin-bottom: 1em;
+}
+
+#AppContainer {
+    display: flex;
+}
+
+#AppContainer div {
+    flex: 1;
 }

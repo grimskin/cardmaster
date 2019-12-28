@@ -5,7 +5,5 @@ import ReactDOM from 'react-dom';
 import App from "./app";
 import '../css/app.css';
 
-console.log('index');
-
 const domContainer = document.querySelector('#root');
 ReactDOM.render(<App/>, domContainer);
