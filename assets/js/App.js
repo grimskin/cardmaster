@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import DeckComposer from "./deck/deckComposer";
-import ConditionPicker from "./condition/conditionPicker";
-import ScenarioSelector from "./scenario/scenarioSelector";
-import Header from "./header";
+import DeckComposer from "./deck/DeckComposer";
+import ConditionPicker from "./condition/ConditionPicker";
+import ScenarioSelector from "./scenario/ScenarioSelector";
+import Header from "./Header";
 
 class App extends Component {
     render() {
