@@ -1,10 +1,30 @@
 import React, { Component } from 'react';
+import AcList from "./AcList";
 
 class DeckComposer extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {};
+        this.state = {
+            cardName: "",
+            acItems: this.props.acItems
+        };
+        this.handleInputChange = this.handleInputChange.bind(this);
+        this.setCardName = this.setCardName.bind(this);
+    }
+
+    setCardName(newCardName) {
+        this.setState({
+            cardName: newCardName,
+            acItems: []
+        });
+    }
+
+    handleInputChange(event) {
+        const target = event.target;
+        this.setState({
+            [target.name]: target.value
+        });
     }
 
     render() {
@@ -13,18 +33,26 @@ class DeckComposer extends Component {
                 Deck Composer
                 <div>
                     <div className="autocomplete">
-                        <input type="text" id="card_name_input"/>
+                        <input type="text" id="card_name_input"
+                               name="cardName"
+                               value={this.state.cardName}
+                               onChange={this.handleInputChange}
+                        />
                         <button>add</button>
-                        <div className="ac_items">
-                            <div className="ac_option">Angel of Grace</div>
-                            <div className="ac_option">Angelic Exaltation</div>
-                            <div className="ac_option">Archway Angel</div>
-                        </div>
+                        <AcList items={this.state.acItems} callback={this.setCardName} />
                     </div>
                 </div>
             </div>
         );
     }
 }
+
+DeckComposer.defaultProps = {
+    acItems: [
+        "Angel of Grace",
+        "Angelic Exaltation",
+        "Archway Angel"
+    ]
+};
 
 export default DeckComposer;
