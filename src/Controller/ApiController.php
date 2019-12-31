@@ -20,8 +20,11 @@ class ApiController extends AbstractController
 
     public function cardsList()
     {
-        return new JsonResponse(array_map(function(CardData $item) {
+        $sortedData = array_map(function(CardData $item) {
             return $item->getName();
-        }, $this->dataLoader->getAllData()));
+        }, $this->dataLoader->getAllData());
+        asort($sortedData);
+
+        return new JsonResponse($sortedData);
     }
 }
