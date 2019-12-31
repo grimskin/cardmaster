@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from "axios";
 import AcList from "./AcList";
 
 class DeckComposer extends Component {
@@ -7,10 +8,20 @@ class DeckComposer extends Component {
 
         this.state = {
             cardName: "",
+            cards: [],
             acItems: this.props.acItems
         };
         this.handleInputChange = this.handleInputChange.bind(this);
         this.setCardName = this.setCardName.bind(this);
+    }
+
+    componentDidMount() {
+        axios.get('/api/cards')
+            .then(response => {
+                this.setState({ cards: response.data });
+            })
+            .catch(function (error) {
+            });
     }
 
     setCardName(newCardName) {
