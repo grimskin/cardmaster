@@ -25,6 +25,6 @@ class ApiController extends AbstractController
         }, $this->dataLoader->getAllData());
         asort($sortedData);
 
-        return new JsonResponse($sortedData);
+        return new JsonResponse(array_values($sortedData));
     }
 }
