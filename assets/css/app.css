@@ -62,7 +62,7 @@ div.ac_option {
     min-width: 250px;
 }
 
-div.ac_option:hover {
+div.ac_option:hover, div.ac_option.ac_active {
     background-color: white;
     border-left-color: #337ab7;
 }

@@ -25,7 +25,7 @@ class AcList extends Component {
         });
 
         return (
-            <div className="ac_items">
+            <div id="ac_container" className="ac_items">
                 {items}
             </div>
         );

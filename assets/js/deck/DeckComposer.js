@@ -12,10 +12,13 @@ class DeckComposer extends Component {
             cards: [],
             acItems: this.props.acItems
         };
+        this.acFocus = -1;
+
         this.handleInputChange = this.handleInputChange.bind(this);
         this.setCardName = this.setCardName.bind(this);
         this.hideAutocomplete = this.hideAutocomplete.bind(this);
         this.textInputBlur = this.textInputBlur.bind(this);
+        this.textInputKeyDown = this.textInputKeyDown.bind(this);
     }
 
     showAutocomplete(partialName) {
@@ -25,7 +28,10 @@ class DeckComposer extends Component {
                 return item.toUpperCase().includes(canonizedPartial) ? item : null;
             });
             this.setState({ acItems: suggestions.slice(0, 5) });
+        } else {
+            this.setState({ acItems: [] });
         }
+        this.acFocus = -1;
     }
 
     componentDidMount() {
@@ -44,10 +50,58 @@ class DeckComposer extends Component {
 
     hideAutocomplete() {
         this.setState({ acItems: [] });
+        this.acFocus = -1;
     }
 
     textInputBlur() {
         setTimeout(this.hideAutocomplete, 500);
+    }
+
+    removeActive(elems) {
+        for (let i = 0; i < elems.length; i++) {
+            elems[i].classList.remove("ac_active");
+        }
+    }
+
+    addActive(elems) {
+        if (!elems) return false;
+        if (!elems.length) return false;
+
+        this.removeActive(elems);
+
+        if (this.acFocus >= elems.length) {
+            this.acFocus = elems.length-1;
+        }
+        if (this.acFocus < 0) {
+            this.acFocus = 0;
+        }
+
+        elems[this.acFocus].classList.add("ac_active");
+    }
+
+    // modified version of this - https://www.w3schools.com/howto/howto_js_autocomplete.asp
+    textInputKeyDown(e) {
+        let acContainer = document.getElementById("ac_container");
+        if (!acContainer) return;
+
+        let elems = acContainer.getElementsByTagName("div");
+
+        const keyCode = e.keyCode;
+        if (keyCode === 40) {
+            this.acFocus++;
+            this.addActive(elems);
+        } else if (e.keyCode === 38) { //up
+            this.acFocus--;
+            this.addActive(elems);
+        } else if (keyCode === 13) {
+            e.preventDefault();
+            if (this.acFocus > -1) {
+                if (elems) elems[this.acFocus].click();
+            } else if (elems.length === 1) {
+                elems[0].click();
+            }
+            this.acFocus = -1;
+        }
     }
 
     handleInputChange(event) {
@@ -71,6 +125,7 @@ class DeckComposer extends Component {
                                value={this.state.cardName}
                                onChange={this.handleInputChange}
                                onBlur={this.textInputBlur}
+                               onKeyDown={this.textInputKeyDown}
                         />
                         <input type="number"
                                id="card_amount_input"
