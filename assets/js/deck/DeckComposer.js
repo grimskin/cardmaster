@@ -40,7 +40,7 @@ class DeckComposer extends Component {
 
     render() {
         return (
-            <div>
+            <div id="deck_composer_container">
                 Deck Composer
                 <div>
                     <div className="autocomplete">
@@ -48,6 +48,11 @@ class DeckComposer extends Component {
                                name="cardName"
                                value={this.state.cardName}
                                onChange={this.handleInputChange}
+                        />
+                        <input type="number"
+                               id="card_amount_input"
+                               name="cardAmount"
+                               value="1"
                         />
                         <button>add</button>
                         <AcList items={this.state.acItems} callback={this.setCardName} />
