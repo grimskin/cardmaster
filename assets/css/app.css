@@ -19,6 +19,24 @@ input:focus {
     border-color: #337ab7;
 }
 
+a {
+    text-decoration: underline;
+    color: #2e6da4;
+    cursor: pointer;
+}
+a::after {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #2e6da4;
+}
+
+a:hover::after {
+    text-decoration: none;
+}
+
 button {
     height: 2em;
     background-color: white;
@@ -65,6 +83,20 @@ div.ac_option {
 div.ac_option:hover, div.ac_option.ac_active {
     background-color: white;
     border-left-color: #337ab7;
+}
+
+div.card_in_deck {
+    background-color: white;
+    padding: 0.25em;
+    margin: 0 2em 1px 0;
+    font-size: 0.857142em;
+}
+
+div.card_in_deck a::after {
+    content: "[remove]";
+    margin-left: 0.5em;
+    float: right;
+    font-size: 0.857142em;
 }
 
 #Header {

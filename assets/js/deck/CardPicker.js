@@ -8,7 +8,7 @@ class CardPicker extends Component {
 
         this.state = {
             cardName: "",
-            cardAmount: 1,
+            cardAmount: 4,
             cards: [],
             acItems: this.props.acItems
         };
@@ -19,6 +19,24 @@ class CardPicker extends Component {
         this.hideAutocomplete = this.hideAutocomplete.bind(this);
         this.textInputBlur = this.textInputBlur.bind(this);
         this.textInputKeyDown = this.textInputKeyDown.bind(this);
+        this.numberInputKeyDown = this.numberInputKeyDown.bind(this);
+        this.addCard = this.addCard.bind(this);
+    }
+
+    addCard() {
+        if (!this.state.cardName || !this.state.cardAmount) return;
+
+        this.props.callBackAddCard(this.state.cardName, this.state.cardAmount);
+        this.setState({ cardName: "", cardAmount: 4 });
+    }
+
+    numberInputKeyDown(e)
+    {
+        const keyCode = e.keyCode;
+        if (keyCode === 13) {
+            e.preventDefault();
+            this.addCard();
+        }
     }
 
     showAutocomplete(partialName) {
@@ -95,12 +113,16 @@ class CardPicker extends Component {
             this.addActive(elems);
         } else if (keyCode === 13) {
             e.preventDefault();
-            if (this.acFocus > -1) {
-                if (elems) elems[this.acFocus].click();
-            } else if (elems.length === 1) {
-                elems[0].click();
+            if (elems.length === 0) {
+                this.addCard();
+            } else {
+                if (this.acFocus > -1) {
+                    if (elems) elems[this.acFocus].click();
+                } else if (elems.length === 1) {
+                    elems[0].click();
+                }
+                this.acFocus = -1;
             }
-            this.acFocus = -1;
         }
     }
 
@@ -130,8 +152,9 @@ class CardPicker extends Component {
                            name="cardAmount"
                            value={this.state.cardAmount}
                            onChange={this.handleInputChange}
+                           onKeyDown={this.numberInputKeyDown}
                     />
-                    <button>add</button>
+                    <button onClick={this.addCard}>add</button>
                     <AcList items={this.state.acItems} callback={this.setCardName} />
                 </div>
             </div>
@@ -140,7 +163,8 @@ class CardPicker extends Component {
 }
 
 CardPicker.defaultProps = {
-    acItems: []
+    acItems: [],
+    callBackAddCard: (name, amount) => {}
 };
 
 export default CardPicker;
