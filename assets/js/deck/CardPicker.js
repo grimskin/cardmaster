@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import axios from "axios";
 import AcList from "./AcList";
 
 class CardPicker extends Component {
@@ -9,8 +8,7 @@ class CardPicker extends Component {
         this.state = {
             cardName: "",
             cardAmount: 4,
-            cards: [],
-            acItems: this.props.acItems
+            acItems: []
         };
         this.acFocus = -1;
 
@@ -42,7 +40,7 @@ class CardPicker extends Component {
     showAutocomplete(partialName) {
         if (partialName.length > 2) {
             const canonizedPartial = partialName.toUpperCase();
-            let suggestions = this.state.cards.filter((item) => {
+            let suggestions = this.props.cards.filter((item) => {
                 return item.toUpperCase().includes(canonizedPartial) ? item : null;
             });
             this.setState({ acItems: suggestions.slice(0, 5) });
@@ -50,15 +48,6 @@ class CardPicker extends Component {
             this.setState({ acItems: [] });
         }
         this.acFocus = -1;
-    }
-
-    componentDidMount() {
-        axios.get('/api/cards')
-            .then(response => {
-                this.setState({ cards: response.data });
-            })
-            .catch(function (error) {
-            });
     }
 
     setCardName(newCardName) {
@@ -163,7 +152,6 @@ class CardPicker extends Component {
 }
 
 CardPicker.defaultProps = {
-    acItems: [],
     callBackAddCard: (name, amount) => {}
 };
 

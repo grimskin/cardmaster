@@ -56,7 +56,7 @@ class DeckComposer extends Component {
         return (
             <div id="deck_composer_container">
                 Deck Composer
-                <CardPicker callBackAddCard={this.addCard} />
+                <CardPicker callBackAddCard={this.addCard} cards={this.props.cards} />
                 <div id="cards-list-container">
                     {this.renderDeck()}
                 </div>
@@ -64,9 +64,5 @@ class DeckComposer extends Component {
         );
     }
 }
-
-DeckComposer.defaultProps = {
-    acItems: []
-};
 
 export default DeckComposer;

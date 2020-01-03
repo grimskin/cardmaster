@@ -4,9 +4,6 @@ class AcList extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            items: props.items
-        };
         this.itemClicked = this.itemClicked.bind(this);
     }
 
