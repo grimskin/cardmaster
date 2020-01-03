@@ -42,9 +42,9 @@ class App extends Component {
             <div id="App">
                 <Header/>
                 <div id="AppContainer">
-                    <ScenarioSelector/>
-                    <ConditionPicker/>
-                    <DeckComposer cards={this.state.cards}/>
+                    <ScenarioSelector scenarios={this.state.scenarios} />
+                    <ConditionPicker cards={this.state.cards} conditions={this.state.conditions} />
+                    <DeckComposer cards={this.state.cards} />
                 </div>
             </div>
         );
