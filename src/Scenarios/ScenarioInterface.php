@@ -12,6 +12,8 @@ interface ScenarioInterface
 {
     public function getScenarioName(): string;
 
+    public function getReadableName(): string;
+
     public function addCondition(ConditionInterface $condition);
 
     public function getRequiredHandSize(): int;

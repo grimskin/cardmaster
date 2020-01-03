@@ -5,6 +5,7 @@ namespace App\Controller;
 
 
 use App\Factory\ConditionFactory;
+use App\Factory\ScenarioFactory;
 use App\Model\CardData;
 use App\Service\DataLoader;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -16,12 +17,16 @@ class ApiController extends AbstractController
 
     private $conditionFactory;
 
+    private $scenarioFactory;
+
     public function __construct(
         DataLoader $dataLoader,
-        ConditionFactory $conditionFactory
+        ConditionFactory $conditionFactory,
+        ScenarioFactory $scenarioFactory
     ) {
         $this->dataLoader = $dataLoader;
         $this->conditionFactory = $conditionFactory;
+        $this->scenarioFactory = $scenarioFactory;
     }
 
     public function cardsList()
@@ -37,5 +42,10 @@ class ApiController extends AbstractController
     public function conditionsList()
     {
         return new JsonResponse($this->conditionFactory->getRegisteredConditions());
+    }
+
+    public function scenariosList()
+    {
+        return new JsonResponse($this->scenarioFactory->getRegisteredScenarios());
     }
 }

@@ -7,3 +7,6 @@ api_cards_list:
 api_conditions_list:
     path: /api/conditions
     controller: App\Controller\ApiController:conditionsList
+api_scenarios_list:
+    path: /api/scenarios
+    controller: App\Controller\ApiController:scenariosList

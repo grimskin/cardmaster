@@ -21,6 +21,11 @@ abstract class AbstractScenario implements ScenarioInterface
      */
     protected $library;
 
+    public function getReadableName(): string
+    {
+        return $this->getScenarioName();
+    }
+
     public function addCondition(ConditionInterface $condition)
     {
         $this->conditions[$condition->getName()] = $condition;

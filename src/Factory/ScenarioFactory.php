@@ -19,6 +19,17 @@ class ScenarioFactory
         }
     }
 
+    public function getRegisteredScenarios(): array
+    {
+        return array_map(function (ScenarioInterface $scenario) {
+            return [
+                'name' => $scenario->getScenarioName(),
+                'title' => $scenario->getReadableName(),
+            ];
+        }, $this->scenarios);
+    }
+
+
     public function getScenario(string $scenarioName): ?ScenarioInterface
     {
         return $this->scenarios[$scenarioName] ?? null;
