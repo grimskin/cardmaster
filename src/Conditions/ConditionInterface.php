@@ -10,7 +10,7 @@ interface ConditionInterface
 {
     public function getName(): string;
 
-    public function getDescription(): string;
+    public function getReadableName(): string;
 
     public function testHand(CardDefinition ... $cardDefinitions): bool;
 

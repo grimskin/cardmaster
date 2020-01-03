@@ -28,7 +28,7 @@ class ConditionFactory
         return array_map(function (ConditionInterface $condition) {
             return [
                 'name' => $condition->getName(),
-                'description' => $condition->getDescription(),
+                'title' => $condition->getReadableName(),
             ];
         }, $this->conditions);
     }
