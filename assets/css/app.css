@@ -100,10 +100,11 @@ div.card_in_deck a::after {
 }
 
 div.ac_input_container {
+    position: relative;
     display: inline-block;
 }
 
-#scenario-selector select {
+#scenario-selector select, #condition-picker select {
     border: #8c8c8c 1px solid;
     border-radius: 2px;
     height: 2em;
