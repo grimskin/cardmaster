@@ -99,6 +99,10 @@ div.card_in_deck a::after {
     font-size: 0.857142em;
 }
 
+div.ac_input_container {
+    display: inline-block;
+}
+
 #scenario-selector select {
     border: #8c8c8c 1px solid;
     border-radius: 2px;

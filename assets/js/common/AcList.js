@@ -22,11 +22,15 @@ class AcList extends Component {
         });
 
         return (
-            <div id="ac_container" className="ac_items">
+            <div id={this.props.parentId + "-ac-container"} className="ac_items">
                 {items}
             </div>
         );
     };
 }
+
+AcList.defaultProps = {
+    parentId: ""
+};
 
 export default AcList;
