@@ -23,6 +23,16 @@ class ConditionFactory
         }
     }
 
+    public function getRegisteredConditions(): array
+    {
+        return array_map(function (ConditionInterface $condition) {
+            return [
+                'name' => $condition->getName(),
+                'description' => $condition->getDescription(),
+            ];
+        }, $this->conditions);
+    }
+
     public function getCondition(string $conditionName, array $params): ?ConditionInterface
     {
         $result = $this->conditions[$conditionName] ?? null;

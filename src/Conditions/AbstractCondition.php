@@ -14,6 +14,11 @@ abstract class AbstractCondition implements ConditionInterface
 
     abstract public function testHand(CardDefinition ... $cardDefinitions): bool;
 
+    public function getDescription(): string
+    {
+        return $this->getName();
+    }
+
     public function addParams(array $params)
     {
         $this->params = $params;

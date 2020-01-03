@@ -1,6 +1,9 @@
 index:
     path: /
     controller: App\Controller\DefaultController::index
-api:
+api_cards_list:
     path: /api/cards
     controller: App\Controller\ApiController:cardsList
+api_conditions_list:
+    path: /api/conditions
+    controller: App\Controller\ApiController:conditionsList
