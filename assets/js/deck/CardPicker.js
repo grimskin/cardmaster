@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import AcList from "../common/AcList";
 import AcInput from "../common/AcInput";
 
 class CardPicker extends Component {
