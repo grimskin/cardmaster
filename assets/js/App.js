@@ -10,7 +10,9 @@ class App extends Component {
         super(props);
 
         this.state = {
-            cards: []
+            cards: [],
+            conditions: [],
+            scenarios: []
         };
     }
 
@@ -18,6 +20,18 @@ class App extends Component {
         axios.get('/api/cards')
             .then(response => {
                 this.setState({ cards: response.data });
+            })
+            .catch(function (error) {
+            });
+        axios.get('/api/conditions')
+            .then(response => {
+                this.setState({ conditions: Object.values(response.data) });
+            })
+            .catch(function (error) {
+            });
+        axios.get('/api/scenarios')
+            .then(response => {
+                this.setState({ scenarios: Object.values(response.data) });
             })
             .catch(function (error) {
             });
