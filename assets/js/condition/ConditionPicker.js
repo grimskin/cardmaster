@@ -17,6 +17,11 @@ class ConditionPicker extends Component {
         this.updateConditionParam = this.updateConditionParam.bind(this);
         this.addCondition = this.addCondition.bind(this);
         this.removeCondition = this.removeCondition.bind(this)
+        this.getData = this.getData.bind(this);
+    }
+
+    getData() {
+        return this.state.conditions;
     }
 
     updateConditionParam(value) {

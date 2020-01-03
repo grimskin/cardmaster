@@ -14,6 +14,18 @@ class App extends Component {
             conditions: [],
             scenarios: []
         };
+
+        this.scenarioSelector = React.createRef();
+        this.conditionPicker = React.createRef();
+        this.deckComposer = React.createRef();
+
+        this.runExperiment = this.runExperiment.bind(this);
+    }
+
+    runExperiment() {
+        console.log(this.scenarioSelector.current.getData());
+        console.log(this.conditionPicker.current.getData());
+        console.log(this.deckComposer.current.getData());
     }
 
     componentDidMount() {
@@ -41,10 +53,23 @@ class App extends Component {
         return (
             <div id="App">
                 <Header/>
+                <div>
+                    <button onClick={this.runExperiment}>Evaluate</button>
+                </div>
                 <div id="AppContainer">
-                    <ScenarioSelector scenarios={this.state.scenarios} />
-                    <ConditionPicker cards={this.state.cards} conditions={this.state.conditions} />
-                    <DeckComposer cards={this.state.cards} />
+                    <ScenarioSelector
+                        scenarios={this.state.scenarios}
+                        ref={this.scenarioSelector}
+                    />
+                    <ConditionPicker
+                        cards={this.state.cards}
+                        conditions={this.state.conditions}
+                        ref={this.conditionPicker}
+                    />
+                    <DeckComposer
+                        cards={this.state.cards}
+                        ref={this.deckComposer}
+                    />
                 </div>
             </div>
         );

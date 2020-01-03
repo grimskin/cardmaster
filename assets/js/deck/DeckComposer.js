@@ -10,6 +10,11 @@ class DeckComposer extends Component {
         };
         this.addCard = this.addCard.bind(this);
         this.removeCard = this.removeCard.bind(this);
+        this.getData = this.getData.bind(this);
+    }
+
+    getData() {
+        return this.state.deck;
     }
 
     removeCard(name) {
