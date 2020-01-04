@@ -19,6 +19,16 @@ class ExperimentResult
         ++$this->successCount;
     }
 
+    public function getSuccessCount()
+    {
+        return $this->successCount;
+    }
+
+    public function getPassCount()
+    {
+        return $this->passCount;
+    }
+
     public function __toString()
     {
         return $this->successCount . '/' . $this->passCount;

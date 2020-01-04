@@ -4,12 +4,16 @@
 namespace App\Controller;
 
 
+use App\Factory\CardsFactory;
 use App\Factory\ConditionFactory;
 use App\Factory\ScenarioFactory;
 use App\Model\CardData;
+use App\Model\DeckDefinition;
 use App\Service\DataLoader;
+use App\Service\StatsCollector;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
 
 class ApiController extends AbstractController
 {
@@ -19,14 +23,22 @@ class ApiController extends AbstractController
 
     private $scenarioFactory;
 
+    private $cardsFactory;
+
+    private $statsCollector;
+
     public function __construct(
         DataLoader $dataLoader,
         ConditionFactory $conditionFactory,
-        ScenarioFactory $scenarioFactory
+        ScenarioFactory $scenarioFactory,
+        CardsFactory $cardsFactory,
+        StatsCollector $statsCollector
     ) {
         $this->dataLoader = $dataLoader;
         $this->conditionFactory = $conditionFactory;
         $this->scenarioFactory = $scenarioFactory;
+        $this->cardsFactory = $cardsFactory;
+        $this->statsCollector = $statsCollector;
     }
 
     public function cardsList()
@@ -47,5 +59,53 @@ class ApiController extends AbstractController
     public function scenariosList()
     {
         return new JsonResponse($this->scenarioFactory->getRegisteredScenarios());
+    }
+
+    public function simulation(Request $request)
+    {
+        $data = json_decode($request->getContent(), true);
+        $scenario = $data['scenario']['scenario'];
+        $conditions = $data['conditions'];
+        $cardData = $data['deck'];
+
+        $this->statsCollector->setScenario(
+            $this->scenarioFactory->getScenario($scenario)
+        );
+
+        foreach ($conditions as $condition) {
+            $this->statsCollector->addCondition(
+                $this->conditionFactory->getCondition($condition['name'], [$condition['param']])
+            );
+        }
+
+        $cardsCount = array_reduce($cardData, function ($carry, $item) {
+            return $carry + $item['amount'];
+        }, 0);
+
+        $stubsCount = 60 - $cardsCount;
+
+        $deck = new DeckDefinition();
+
+        foreach ($cardData as $cardDatum) {
+            $deck->addCards(
+                $this->cardsFactory->getCard($cardDatum['name']),
+                $cardDatum['amount']
+            );
+        }
+
+        if ($stubsCount) {
+            $deck->addCards($this->cardsFactory->getStub(), $stubsCount);
+        }
+
+        $this->statsCollector->setDeck($deck);
+        $this->statsCollector->setPassCount(10000);
+
+        $experimentResult = $this->statsCollector->runSimulation();
+        $this->statsCollector->getSuccessCount();
+
+        return new JsonResponse([
+            'success' => $experimentResult->getSuccessCount(),
+            'total' => $experimentResult->getPassCount(),
+        ]);
     }
 }

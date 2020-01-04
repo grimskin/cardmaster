@@ -10,3 +10,9 @@ api_conditions_list:
 api_scenarios_list:
     path: /api/scenarios
     controller: App\Controller\ApiController:scenariosList
+api_simulation:
+    path: /api/simulation
+    methods: POST
+    requirements:
+        _format: json
+    controller: App\Controller\ApiController:simulation
