@@ -112,6 +112,15 @@ div.ac_input_container {
     width: 14em;
 }
 
+#results-console {
+    text-align: right;
+    padding-right: 2em;
+}
+
+#results-console button {
+    margin: 0 1.5em;
+}
+
 #Header {
     background-color: #2e3436;
     color: white;

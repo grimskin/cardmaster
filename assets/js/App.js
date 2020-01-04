@@ -12,7 +12,9 @@ class App extends Component {
         this.state = {
             cards: [],
             conditions: [],
-            scenarios: []
+            scenarios: [],
+            totalRuns: 0,
+            successfulRuns: 0
         };
 
         this.scenarioSelector = React.createRef();
@@ -23,9 +25,19 @@ class App extends Component {
     }
 
     runExperiment() {
-        console.log(this.scenarioSelector.current.getData());
-        console.log(this.conditionPicker.current.getData());
-        console.log(this.deckComposer.current.getData());
+        axios.post('/api/simulation', {
+            scenario: this.scenarioSelector.current.getData(),
+            conditions: this.conditionPicker.current.getData(),
+            deck: this.deckComposer.current.getData()
+        })
+            .then(response => {
+                this.setState({
+                    successfulRuns: response.data.success,
+                    totalRuns: response.data.total
+                });
+            })
+            .catch(function (error) {
+            });
     }
 
     componentDidMount() {
@@ -53,7 +65,8 @@ class App extends Component {
         return (
             <div id="App">
                 <Header/>
-                <div>
+                <div id="results-console">
+                    Results: {this.state.successfulRuns} / {this.state.totalRuns}
                     <button onClick={this.runExperiment}>Evaluate</button>
                 </div>
                 <div id="AppContainer">
