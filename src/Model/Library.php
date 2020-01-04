@@ -81,25 +81,8 @@ class Library
         $this->cards = $this->definition->getCards();
     }
 
-    public function shuffle(int $resultAmount = 9999)
+    public function shuffle()
     {
-        $cards = $this->cards;
-        $library = [];
-
-        $cardsCount = count($cards);
-
-        while ($cardsCount > 1 && --$resultAmount) {
-            $position = mt_rand(0, $cardsCount-1);
-
-            $library[] = $cards[$position];
-            $cards[$position] = $cards[$cardsCount-1];
-            unset($cards[$cardsCount-1]);
-
-            $cardsCount--;
-        }
-
-        $library[] = $cards[0];
-
-        $this->cards = $library;
+        shuffle($this->cards);
     }
 }
