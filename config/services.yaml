@@ -54,10 +54,10 @@ services:
         calls:
             - method: loadDataFromFile
               arguments:
-                  - 'data/RNA.json'
+                  - 'data/GRN.json'
             - method: loadDataFromFile
               arguments:
-                  - 'data/GRN.json'
+                  - 'data/RNA.json'
             - method: loadDataFromFile
               arguments:
                   - 'data/WAR.json'
@@ -67,3 +67,9 @@ services:
             - method: loadDataFromFile
               arguments:
                   - 'data/ELD.json'
+            - method: loadDataFromFile
+              arguments:
+                  - 'data/THB.json'
+            - method: loadDataFromFile
+              arguments:
+                  - 'data/IKO.json'
