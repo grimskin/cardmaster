@@ -10,10 +10,12 @@ use App\Factory\ScenarioFactory;
 use App\Model\CardData;
 use App\Model\DeckDefinition;
 use App\Service\DataLoader;
+use App\Service\DeckFetcher;
 use App\Service\StatsCollector;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class ApiController extends AbstractController
 {
@@ -27,18 +29,22 @@ class ApiController extends AbstractController
 
     private $statsCollector;
 
+    private $deckFetcher;
+
     public function __construct(
         DataLoader $dataLoader,
         ConditionFactory $conditionFactory,
         ScenarioFactory $scenarioFactory,
         CardsFactory $cardsFactory,
-        StatsCollector $statsCollector
+        StatsCollector $statsCollector,
+        DeckFetcher $deckFetcher
     ) {
         $this->dataLoader = $dataLoader;
         $this->conditionFactory = $conditionFactory;
         $this->scenarioFactory = $scenarioFactory;
         $this->cardsFactory = $cardsFactory;
         $this->statsCollector = $statsCollector;
+        $this->deckFetcher = $deckFetcher;
     }
 
     public function cardsList()
@@ -63,6 +69,7 @@ class ApiController extends AbstractController
 
     public function simulation(Request $request)
     {
+        // TODO: Refactor
         $data = json_decode($request->getContent(), true);
         $scenario = $data['scenario']['scenario'];
         $conditions = $data['conditions'];
@@ -107,5 +114,13 @@ class ApiController extends AbstractController
             'success' => $experimentResult->getSuccessCount(),
             'total' => $experimentResult->getPassCount(),
         ]);
+    }
+
+    public function fetchDeck(Request $request)
+    {
+        $data = json_decode($request->getContent(), true);
+        $deckUrl = $data['deck_url'] ?? 'https://www.mtggoldfish.com/deck/arena_download/3013464';
+
+        return new JsonResponse($this->deckFetcher->fetchDeck($deckUrl));
     }
 }

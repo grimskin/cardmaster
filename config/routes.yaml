@@ -10,6 +10,9 @@ api_conditions_list:
 api_scenarios_list:
     path: /api/scenarios
     controller: App\Controller\ApiController:scenariosList
+api_fetch_deck:
+    path: /api/fetch/deck
+    controller: App\Controller\ApiController:fetchDeck
 api_simulation:
     path: /api/simulation
     methods: POST
