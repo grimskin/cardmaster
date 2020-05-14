@@ -97,6 +97,9 @@
             "src/Kernel.php"
         ]
     },
+    "symfony/http-client": {
+        "version": "v4.4.8"
+    },
     "symfony/http-foundation": {
         "version": "v4.2.4"
     },

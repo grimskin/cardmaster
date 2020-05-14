@@ -4,13 +4,14 @@
 namespace App\Service;
 
 
+use Symfony\Component\HttpClient\HttpClient;
+
 class DeckFetcher
 {
 
     public function fetchDeck(string $deckUrl)
     {
         // https://www.mtggoldfish.com/deck/arena_download/3013464
-        // <textarea class='copy-paste-box'>Deck
         $html = $this->downloadDeckPage($deckUrl);
 
         $cards = $this->getCardsSection($html);
@@ -34,8 +35,9 @@ class DeckFetcher
 
     private function downloadDeckPage(string $deckUrl): string
     {
-        // TODO use proper http client when I fix composer
-        return file_get_contents($deckUrl);
+        $client = HttpClient::create();
+        $response = $client->request('GET', $deckUrl);
+        return $response->getContent();
     }
 
 }
