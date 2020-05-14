@@ -4,19 +4,17 @@
 namespace App\Service;
 
 
+use App\Helper\MtgGoldfishUrl;
 use Symfony\Component\HttpClient\HttpClient;
 
 class DeckFetcher
 {
-
     public function fetchDeck(string $deckUrl)
     {
-        // https://www.mtggoldfish.com/deck/arena_download/3013464
-        $html = $this->downloadDeckPage($deckUrl);
+        $url = MtgGoldfishUrl::makeImportUrl($deckUrl);
+        $html = $this->downloadDeckPage($url);
 
-        $cards = $this->getCardsSection($html);
-
-        return $cards;
+        return $this->getCardsSection($html);
     }
 
     private function getCardsSection(string $html): array
@@ -39,5 +37,4 @@ class DeckFetcher
         $response = $client->request('GET', $deckUrl);
         return $response->getContent();
     }
-
 }
