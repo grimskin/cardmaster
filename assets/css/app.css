@@ -4,19 +4,19 @@
 }
 
 body {
-    background-color: lightgray;
+    background-color: #ffffff;
     margin: 0;
 }
 
-input {
-    border: #8c8c8c 1px solid;
-    border-radius: 2px;
+input, select {
+    border: 1px solid rgba(34,36,38,.15);
+    border-radius: 4px;
     height: 2em;
     box-sizing: border-box;
 }
 
-input:focus {
-    border-color: #337ab7;
+input:focus, select:focus {
+    border-color: #85b7d9;
 }
 
 a {
@@ -43,7 +43,8 @@ button {
     color: #337ab7;
     box-sizing: border-box;
     border: #337ab7 1px solid;
-    border-radius: 2px;
+    border-radius: 4px;
+    margin: 0 6px;
 }
 
 button:hover {
@@ -105,11 +106,8 @@ div.ac_input_container {
 }
 
 #scenario-selector select, #condition-picker select {
-    border: #8c8c8c 1px solid;
-    border-radius: 2px;
-    height: 2em;
     box-sizing: border-box;
-    width: 14em;
+    width: 24em;
 }
 
 #results-console {
@@ -130,10 +128,27 @@ div.ac_input_container {
     margin-bottom: 1em;
 }
 
-#AppContainer {
+div.container {
+    border: 1px solid rgba(34,36,38,.15);
+    border-radius: 4px;
+    background: #ffffff;
+    padding: 12px;
+    margin: 4px;
+}
+
+div.break {
+    flex-basis: 100% !important;
+    height: 0;
     display: flex;
 }
 
+#AppContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 #AppContainer > div {
-    flex: 1;
+    flex: auto;
 }

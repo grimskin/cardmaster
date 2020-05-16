@@ -74,6 +74,7 @@ class App extends Component {
                         scenarios={this.state.scenarios}
                         ref={this.scenarioSelector}
                     />
+                    <div className={"break"}> </div>
                     <ConditionPicker
                         cards={this.state.cards}
                         conditions={this.state.conditions}

@@ -32,7 +32,7 @@ class DeckComposer extends Component {
 
         let newDeck;
         if (currentAmount) {
-            newDeck = this.state.deck.map((item, i) => {
+            newDeck = this.state.deck.map((item) => {
                 if (item.name === name) {
                     item.amount += Number(amount);
                 }
@@ -59,7 +59,7 @@ class DeckComposer extends Component {
 
     render() {
         return (
-            <div id="deck_composer_container">
+            <div id="deck_composer_container" className={"container"}>
                 Deck Composer
                 <CardPicker callBackAddCard={this.addCard} cards={this.props.cards} />
                 <div id="cards-list-container">
