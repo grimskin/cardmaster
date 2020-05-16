@@ -21,6 +21,7 @@ class CardData
         $result->name = $cardDatum['name'];
         $result->subtypes = $cardDatum['subtypes'] ?? [];
         $result->supertypes = $cardDatum['supertypes'] ?? [];
+        $result->type = $cardDatum['type'] ?? [];
         $result->types = $cardDatum['types'] ?? [];
         $result->colorIdentity = $cardDatum['colorIdentity'];
         $result->parseTypes();
@@ -43,6 +44,11 @@ class CardData
     public function getType(): string
     {
         return $this->type;
+    }
+
+    public function getTypes(): array
+    {
+        return $this->types;
     }
 
     public function getColorIdentity()

@@ -12,6 +12,7 @@ class CardDefinition
     private $colorIdentity = [];
 
     private $type = '';
+    private $types = [];
 
     public function isStub(): bool
     {
@@ -67,7 +68,7 @@ class CardDefinition
 
     public function isLand(): bool
     {
-        return $this->type == self::T_BASIC_LAND || $this->type == self::T_LAND;
+        return $this->type == self::T_BASIC_LAND || $this->type == self::T_LAND || in_array('Land', $this->types);
     }
 
     private function canProduce(string $color)
@@ -87,6 +88,7 @@ class CardDefinition
 
         $this->name = $cardData->getName();
         $this->type = $cardData->getType();
+        $this->types = $cardData->getTypes();
         $this->colorIdentity = $cardData->getColorIdentity();
     }
 }
