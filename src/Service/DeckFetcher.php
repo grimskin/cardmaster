@@ -5,14 +5,19 @@ namespace App\Service;
 
 
 use App\Helper\MtgGoldfishUrl;
+use Exception;
 use Symfony\Component\HttpClient\HttpClient;
 
 class DeckFetcher
 {
-    public function fetchDeck(string $deckUrl)
+    public function fetchDeck(string $deckUrl): array
     {
         $url = MtgGoldfishUrl::makeImportUrl($deckUrl);
-        $html = $this->downloadDeckPage($url);
+        try {
+            $html = $this->downloadDeckPage($url);
+        } catch (Exception $e) {
+            return [];
+        }
 
         return $this->getCardsSection($html);
     }

@@ -1,20 +1,39 @@
 import React, { Component } from 'react';
 import CardPicker from "./CardPicker";
+import axios from "axios";
 
 class DeckComposer extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            deck: []
+            deck: [],
+            deckUrl: ""
         };
         this.addCard = this.addCard.bind(this);
         this.removeCard = this.removeCard.bind(this);
         this.getData = this.getData.bind(this);
+        this.fetchDeck = this.fetchDeck.bind(this);
+
+        this.urlInput = React.createRef();
     }
 
     getData() {
         return this.state.deck;
+    }
+
+    fetchDeck() {
+        let url = this.urlInput.current.value;
+
+        axios.get('/api/fetch/deck', { params: {deck_url: url} })
+            .then(response => {
+                Object.values(response.data).map((item) => {
+                    this.addCard(item.card_name, item.amount);
+                });
+            })
+            .catch(function (error) {
+            });
+
     }
 
     removeCard(name) {
@@ -62,6 +81,13 @@ class DeckComposer extends Component {
             <div id="deck_composer_container" className={"container"}>
                 Deck Composer
                 <CardPicker callBackAddCard={this.addCard} cards={this.props.cards} />
+                <input
+                    name={"deckUrl"}
+                    id={"input_deck_url"}
+                    placeholder={"Enter deck url"}
+                    ref={this.urlInput}
+                />
+                <button onClick={this.fetchDeck}>load</button>
                 <div id="cards-list-container">
                     {this.renderDeck()}
                 </div>

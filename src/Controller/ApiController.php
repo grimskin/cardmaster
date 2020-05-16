@@ -117,9 +117,6 @@ class ApiController extends AbstractController
 
     public function fetchDeck(Request $request)
     {
-        $data = json_decode($request->getContent(), true);
-        $deckUrl = $data['deck_url'] ?? 'https://www.mtggoldfish.com/deck/arena_download/3013464';
-
-        return new JsonResponse($this->deckFetcher->fetchDeck($deckUrl));
+        return new JsonResponse($this->deckFetcher->fetchDeck($request->get('deck_url', '')));
     }
 }
