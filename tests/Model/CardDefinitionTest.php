@@ -56,7 +56,7 @@ class CardDefinitionTest extends TestCase
 
     private function loadCardDefinition($cardName): ? CardDefinition {
         $cardDef = CardDefinition::define($cardName);
-        $cardDef->getData(
+        $cardDef->absorbData(
                 CardData::createFromDatum(json_decode(file_get_contents('tests/Fixtures/'.$cardName.'.json'), true))
             );
 

@@ -82,7 +82,7 @@ class CardDefinition implements JsonSerializable
         return false;
     }
 
-    public function getData(CardData $cardData)
+    public function absorbData(CardData $cardData)
     {
         if ($this->isStub()) {
             return ;

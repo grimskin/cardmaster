@@ -28,7 +28,7 @@ class CardsFactory
         $definition = CardDefinition::define($cardName);
 
         if ($cardData = $this->dataLoader->getDataByName($cardName)) {
-            $definition->getData($cardData);
+            $definition->absorbData($cardData);
         }
 
         $this->definitions[$cardName] = $definition;
@@ -61,7 +61,7 @@ class CardsFactory
         }
 
         $definition = new CardDefinition();
-        $definition->getData($cardData);
+        $definition->absorbData($cardData);
         $this->definitions[$cardName] = $definition;
 
         return $definition;
