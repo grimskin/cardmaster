@@ -22,6 +22,12 @@ class DataLoader
     private function parseCardData($cardDatum)
     {
         $card = CardData::createFromDatum($cardDatum);
+        // easiest way to get raw card data
+        /**
+        if ($card->getName() == 'Fabled Passage') {
+            echo json_encode($cardDatum, JSON_UNESCAPED_UNICODE); die();
+        }
+        */
 
         $this->cardData[$card->getName()] = $card;
     }

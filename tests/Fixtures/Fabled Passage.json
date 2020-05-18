@@ -1,0 +1,167 @@
+{
+  "artist": "Howard Lyon",
+  "borderColor": "black",
+  "colorIdentity": [],
+  "colors": [],
+  "convertedManaCost": 0,
+  "edhrecRank": 1256,
+  "flavorText": "From here, the path to anywhere may be found.",
+  "foreignData": [
+    {
+      "flavorText": "Von hier aus kann man den Pfad nach überall finden.",
+      "language": "German",
+      "multiverseId": 473475,
+      "name": "Sagenumwobener Durchgang",
+      "text": "{T}, opfere den Sagenumwobenen Durchgang: Durchsuche deine Bibliothek nach einer Standardland-Karte, bringe sie getappt ins Spiel und mische dann deine Bibliothek. Falls du dann vier oder mehr Länder kontrollierst, enttappe das Land.",
+      "type": "Land"
+    },
+    {
+      "flavorText": "Desde aquí se puede encontrar el camino a cualquier lugar.",
+      "language": "Spanish",
+      "multiverseId": 473744,
+      "name": "Pasaje de leyenda",
+      "text": "{T}, sacrificar el Paisaje de leyenda: Busca en tu biblioteca una carta de tierra básica, ponla en el campo de batalla girada y luego baraja tu biblioteca. Luego, si controlas cuatro o más tierras, endereza esa tierra.",
+      "type": "Tierra"
+    },
+    {
+      "flavorText": "D'ici, vous pouvez trouver un chemin menant partout.",
+      "language": "French",
+      "multiverseId": 474013,
+      "name": "Passage merveilleux",
+      "text": "{T}, sacrifiez le Passage merveilleux : Cherchez dans votre bibliothèque une carte de terrain de base, mettez-la sur le champ de bataille engagée et mélangez ensuite votre bibliothèque. Puis, si vous contrôlez au moins quatre terrains, dégagez ce terrain.",
+      "type": "Terrain"
+    },
+    {
+      "flavorText": "Da qui si può trovare il sentiero per qualsiasi luogo.",
+      "language": "Italian",
+      "multiverseId": 474282,
+      "name": "Passaggio Leggendario",
+      "text": "{T}, Sacrifica il Passaggio Leggendario: Passa in rassegna il tuo grimorio per una carta terra base, mettila sul campo di battaglia TAPpata, poi rimescola il tuo grimorio. Poi, se controlli quattro o più terre, STAPpa quella terra.",
+      "type": "Terra"
+    },
+    {
+      "flavorText": "ここからなら、どこへ行く道でも見つかるかもしれない。",
+      "language": "Japanese",
+      "multiverseId": 474551,
+      "name": "寓話の小道",
+      "text": "{T}, 寓話の小道を生け贄に捧げる：あなたのライブラリーから基本土地・カード１枚を探してタップ状態で戦場に出し、その後あなたのライブラリーを切り直す。その後あなたが土地を４つ以上コントロールしているなら、その土地をアンタップする。",
+      "type": "土地"
+    },
+    {
+      "flavorText": "그곳에서부터는, 어디로 가는 길이든 찾을 수 있다.",
+      "language": "Korean",
+      "multiverseId": 474820,
+      "name": "전설적인 통로",
+      "text": "{T}, 전설적인 통로를 희생한다: 당신의 서고에서 기본 대지 카드 한 장을 찾아, 탭된 상태로 전장에 놓은 후, 당신의 서고를 섞는다. 그 후, 당신이 대지를 네 개 이상 조종한다면, 그 대지를 언탭한다.",
+      "type": "대지"
+    },
+    {
+      "flavorText": "Daqui é possível achar o caminho para qualquer lugar.",
+      "language": "Portuguese (Brazil)",
+      "multiverseId": 475089,
+      "name": "Passagem Fabulosa",
+      "text": "{T}, sacrifique Passagem Fabulosa: Procure um card de terreno básico em seu grimório, coloque-o no campo de batalha virado e depois embaralhe seu grimório. Se você controla quatro ou mais terrenos, desvire aquele terreno.",
+      "type": "Terreno"
+    },
+    {
+      "flavorText": "Отсюда можно найти дорогу куда угодно.",
+      "language": "Russian",
+      "multiverseId": 475358,
+      "name": "Сказочный Проход",
+      "text": "{T}, пожертвуйте Сказочный Проход: найдите в вашей библиотеке карту базовой земли, положите ее на поле битвы повернутой, затем перетасуйте вашу библиотеку. Затем, если вы контролируете не менее четырех земель, разверните ту землю.",
+      "type": "Земля"
+    },
+    {
+      "flavorText": "此处密径错杂，寻对道路便可通达八方。",
+      "language": "Chinese Simplified",
+      "multiverseId": 475627,
+      "name": "神奇小径",
+      "text": "{T}，牺牲神奇小径：从你的牌库中搜寻一张基本地牌，将之横置放进战场，然后将你的牌库洗牌。然后如果你操控四个或更多地，则重置该地。",
+      "type": "地"
+    },
+    {
+      "flavorText": "此處密徑錯雜，尋對道路便可通達八方。",
+      "language": "Chinese Traditional",
+      "multiverseId": 475896,
+      "name": "神奇小徑",
+      "text": "{T}，犧牲神奇小徑：從你的牌庫中搜尋一張基本地牌，將之橫置放進戰場，然後將你的牌庫洗牌。然後如果你操控四個或更多地，則重置該地。",
+      "type": "地"
+    }
+  ],
+  "frameVersion": "2015",
+  "hasFoil": true,
+  "hasNonFoil": true,
+  "isArena": true,
+  "isMtgo": true,
+  "isPaper": true,
+  "layout": "normal",
+  "legalities": {
+    "brawl": "Legal",
+    "commander": "Legal",
+    "duel": "Legal",
+    "future": "Legal",
+    "historic": "Legal",
+    "legacy": "Legal",
+    "modern": "Legal",
+    "pioneer": "Legal",
+    "standard": "Legal",
+    "vintage": "Legal"
+  },
+  "mcmId": 401824,
+  "mcmMetaId": 282544,
+  "mtgArenaId": 70391,
+  "mtgoId": 78634,
+  "multiverseId": 473206,
+  "name": "Fabled Passage",
+  "number": "244",
+  "originalText": "{T}, Sacrifice Fabled Passage: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library. Then if you control four or more lands, untap that land.",
+  "originalType": "Land",
+  "prices": {
+    "mtgo": {
+      "2019-12-22": 4.21
+    },
+    "mtgoFoil": {
+      "2019-12-22": 4.64
+    },
+    "paper": {
+      "2019-12-05": 18.82
+    },
+    "paperFoil": {
+      "2019-12-05": 22.14
+    }
+  },
+  "printings": [
+    "ELD",
+    "PELD"
+  ],
+  "purchaseUrls": {
+    "cardmarket": "https:\/\/mtgjson.com\/links\/63ac7e0a27811a7a",
+    "tcgplayer": "https:\/\/mtgjson.com\/links\/e9a96e9afa9835e5"
+  },
+  "rarity": "rare",
+  "rulings": [
+    {
+      "date": "2019-10-04",
+      "text": "The land that you put onto the battlefield will be counted when determining whether you control four or more lands, but Fabled Passage will not."
+    },
+    {
+      "date": "2019-10-04",
+      "text": "If you control four or more lands, the basic land doesn’t enter the battlefield untapped; it enters tapped and then you untap it."
+    }
+  ],
+  "scryfallId": "b841bfa8-7c17-4df2-8466-780ab9a4a53a",
+  "scryfallIllustrationId": "ef88ab15-30ec-4dbc-874f-713d34867ac0",
+  "scryfallOracleId": "0c85b8f7-0bd0-4680-9ec5-d4b110460a54",
+  "subtypes": [],
+  "supertypes": [],
+  "tcgplayerProductId": 199428,
+  "text": "{T}, Sacrifice Fabled Passage: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library. Then if you control four or more lands, untap that land.",
+  "type": "Land",
+  "types": [
+    "Land"
+  ],
+  "uuid": "9fe60f7a-97f1-5334-8a01-826ae8b7ccd5",
+  "variations": [
+    "6da29c00-ea1a-5d7b-b9ce-8a5aac6c1d7b"
+  ]
+}

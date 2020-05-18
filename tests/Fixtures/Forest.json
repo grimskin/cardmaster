@@ -1,0 +1,169 @@
+{
+  "artist": "Richard Wright",
+  "borderColor": "black",
+  "colorIdentity": [
+    "G"
+  ],
+  "colors": [],
+  "convertedManaCost": 0,
+  "foreignData": [
+    {
+      "language": "German",
+      "multiverseId": 455618,
+      "name": "Wald",
+      "type": "Standardland — Wald"
+    },
+    {
+      "language": "Spanish",
+      "multiverseId": 455632,
+      "name": "Bosque",
+      "type": "Tierra básica — Bosque"
+    },
+    {
+      "language": "French",
+      "multiverseId": 455646,
+      "name": "Forêt",
+      "type": "Terrain de base : forêt"
+    },
+    {
+      "language": "Italian",
+      "multiverseId": 455660,
+      "name": "Foresta",
+      "type": "Terra Base — Foresta"
+    },
+    {
+      "language": "Japanese",
+      "multiverseId": 455674,
+      "name": "森",
+      "type": "基本土地 — 森"
+    },
+    {
+      "language": "Korean",
+      "multiverseId": 455688,
+      "name": "숲",
+      "type": "기본 대지 — 숲"
+    },
+    {
+      "language": "Portuguese (Brazil)",
+      "multiverseId": 455702,
+      "name": "Floresta",
+      "type": "Terreno Básico — Floresta"
+    },
+    {
+      "language": "Russian",
+      "multiverseId": 455716,
+      "name": "Лес",
+      "type": "Базовая Земля — Лес"
+    },
+    {
+      "language": "Chinese Simplified",
+      "multiverseId": 455730,
+      "name": "树林",
+      "type": "基本地 ～树林"
+    },
+    {
+      "language": "Chinese Traditional",
+      "multiverseId": 455744,
+      "name": "樹林",
+      "type": "基本地 ～樹林"
+    }
+  ],
+  "frameVersion": "2015",
+  "hasFoil": true,
+  "hasNonFoil": true,
+  "isStarter": true,
+  "layout": "normal",
+  "legalities": {
+    "commander": "Legal",
+    "duel": "Legal",
+    "frontier": "Legal",
+    "future": "Legal",
+    "legacy": "Legal",
+    "modern": "Legal",
+    "pauper": "Legal",
+    "penny": "Legal",
+    "standard": "Legal",
+    "vintage": "Legal"
+  },
+  "multiverseId": 455604,
+  "name": "Forest",
+  "number": "264",
+  "originalText": "G",
+  "originalType": "Basic Land — Forest",
+  "printings": [
+    "AKH",
+    "BBD",
+    "BFZ",
+    "C13",
+    "C14",
+    "C15",
+    "C16",
+    "C17",
+    "C18",
+    "CM2",
+    "CMA",
+    "DDL",
+    "DDM",
+    "DDO",
+    "DDP",
+    "DDR",
+    "DDS",
+    "DDU",
+    "DOM",
+    "DTK",
+    "E01",
+    "EVG",
+    "FRF",
+    "G17",
+    "GK1",
+    "GK2",
+    "GNT",
+    "GRN",
+    "GS1",
+    "GVL",
+    "HOU",
+    "J14",
+    "KLD",
+    "KTK",
+    "M14",
+    "M15",
+    "M19",
+    "ORI",
+    "PCA",
+    "PF19",
+    "PRM",
+    "PRW2",
+    "PRWK",
+    "PSS2",
+    "PSS3",
+    "PZ2",
+    "RIX",
+    "RNA",
+    "RTR",
+    "SOI",
+    "THS",
+    "TPR",
+    "UST",
+    "XLN"
+  ],
+  "rarity": "common",
+  "rulings": [],
+  "scryfallId": "d85892ae-dacd-4a55-a557-9db3c16017c7",
+  "scryfallIllustrationId": "1bd3c124-c4c5-43cc-9de0-89ec6cb2ba58",
+  "scryfallOracleId": "b34bb2dc-c1af-4d77-b0b3-a0fb342a5fc6",
+  "subtypes": [
+    "Forest"
+  ],
+  "supertypes": [
+    "Basic"
+  ],
+  "tcgplayerProductId": 176619,
+  "tcgplayerPurchaseUrl": "https:\/\/mtgjson.com\/links\/d5e76886cb80a0fc",
+  "text": "({T}: Add {G}.)",
+  "type": "Basic Land — Forest",
+  "types": [
+    "Land"
+  ],
+  "uuid": "96143f05-443e-50e6-97f2-0873ac5fbcbe",
+  "uuidV421": "3a5f36b3-41e9-563a-9d05-d7e1c0b5c13a"
+}
