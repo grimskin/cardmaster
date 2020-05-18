@@ -24,7 +24,8 @@ class DeckFetcher
 
     private function getCardsSection(string $html): array
     {
-        $html = substr($html, strpos($html, '<textarea class=\'copy-paste-box\'>Deck') + strlen('<textarea class=\'copy-paste-box\'>Deck'));
+        $html = substr($html, strpos($html, '<textarea class=\'copy-paste-box\'>') + strlen('<textarea class=\'copy-paste-box\'>'));
+        $html = substr($html, strpos($html, 'Deck') + strlen('Deck'));
         $html = substr($html, 0, strpos($html, 'Sideboard'));
 
         $cards = explode("\n", $html);
