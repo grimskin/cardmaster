@@ -75,14 +75,14 @@ class App extends Component {
                         ref={this.scenarioSelector}
                     />
                     <div className={"break"}> </div>
+                    <DeckComposer
+                        cards={this.state.cards}
+                        ref={this.deckComposer}
+                    />
                     <ConditionPicker
                         cards={this.state.cards}
                         conditions={this.state.conditions}
                         ref={this.conditionPicker}
-                    />
-                    <DeckComposer
-                        cards={this.state.cards}
-                        ref={this.deckComposer}
                     />
                 </div>
             </div>
