@@ -56,6 +56,13 @@ class ApiController extends AbstractController
         return new JsonResponse(array_values($sortedData));
     }
 
+    public function cardInfo(string $cardName)
+    {
+        $card = $this->cardsFactory->getCard($cardName);
+
+        return new JsonResponse($card);
+    }
+
     public function conditionsList()
     {
         return new JsonResponse($this->conditionFactory->getRegisteredConditions());

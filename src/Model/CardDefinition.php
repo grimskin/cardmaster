@@ -2,7 +2,9 @@
 
 namespace App\Model;
 
-class CardDefinition
+use JsonSerializable;
+
+class CardDefinition implements JsonSerializable
 {
     const T_BASIC_LAND = 'T_BASIC_LAND';
     const T_LAND = 'T_LAND';
@@ -90,5 +92,23 @@ class CardDefinition
         $this->type = $cardData->getType();
         $this->types = $cardData->getTypes();
         $this->colorIdentity = $cardData->getColorIdentity();
+    }
+
+    public function jsonSerialize()
+    {
+        $result = [
+            'name' => $this->getName(),
+            'isLand' => $this->isLand() ? 'true' : 'false',
+        ];
+
+        $result['canProduce'] = implode(', ', array_filter([
+            $this->canProduceWhite() ? 'W' : null,
+            $this->canProduceBlue() ? 'U' : null,
+            $this->canProduceBlack() ? 'B' : null,
+            $this->canProduceRed() ? 'R' : null,
+            $this->canProduceGreen() ? 'G' : null,
+        ]));
+
+        return $result;
     }
 }
