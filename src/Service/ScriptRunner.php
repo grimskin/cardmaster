@@ -8,7 +8,7 @@ use App\Factory\CardsFactory;
 use App\Factory\ConditionFactory;
 use App\Factory\ScenarioFactory;
 use App\Model\DeckDefinition;
-use App\Model\ExperimentResult;
+use Exception;
 
 class ScriptRunner
 {
@@ -71,14 +71,12 @@ class ScriptRunner
                     $this->collector->setPassCount($this->parser->getPassCount($row));
                     break;
                 default:
-                    throw new \Exception('Unknown command: ' . $command);
+                    throw new Exception('Unknown command: ' . $command);
             }
         }
 
         $this->collector->setDeck($deck);
 
-        $experimentResult = $this->collector->runSimulation();
-
-        return $experimentResult;
+        return $this->collector->runSimulation();
     }
 }
