@@ -11,6 +11,7 @@ use App\Model\CardData;
 use App\Model\DeckDefinition;
 use App\Service\DataLoader;
 use App\Service\DeckFetcher;
+use App\Service\SimulationSetUpHelper;
 use App\Service\StatsCollector;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -19,6 +20,8 @@ use Symfony\Component\HttpFoundation\Request;
 class ApiController extends AbstractController
 {
     private $dataLoader;
+
+    private $setUpHelper;
 
     private $conditionFactory;
 
@@ -32,6 +35,7 @@ class ApiController extends AbstractController
 
     public function __construct(
         DataLoader $dataLoader,
+        SimulationSetUpHelper $setUpHelper,
         ConditionFactory $conditionFactory,
         ScenarioFactory $scenarioFactory,
         CardsFactory $cardsFactory,
@@ -39,6 +43,7 @@ class ApiController extends AbstractController
         DeckFetcher $deckFetcher
     ) {
         $this->dataLoader = $dataLoader;
+        $this->setUpHelper = $setUpHelper;
         $this->conditionFactory = $conditionFactory;
         $this->scenarioFactory = $scenarioFactory;
         $this->cardsFactory = $cardsFactory;
@@ -77,18 +82,14 @@ class ApiController extends AbstractController
     {
         // TODO: Refactor
         $data = json_decode($request->getContent(), true);
-        $scenario = $data['scenario']['scenario'];
+        $scenarioName = $data['scenario']['scenario'];
         $conditions = $data['conditions'];
         $cardData = $data['deck'];
 
-        $this->statsCollector->setScenario(
-            $this->scenarioFactory->getScenario($scenario)
-        );
+        $this->setUpHelper->configureScenario($this->statsCollector, $scenarioName);
 
         foreach ($conditions as $condition) {
-            $this->statsCollector->addCondition(
-                $this->conditionFactory->getCondition($condition['name'], [$condition['param']])
-            );
+            $this->setUpHelper->configureCondition($this->statsCollector, $condition['name'], $condition['param']);
         }
 
         $cardsCount = array_reduce($cardData, function ($carry, $item) {
@@ -116,10 +117,7 @@ class ApiController extends AbstractController
         $experimentResult = $this->statsCollector->runSimulation();
         $this->statsCollector->getSuccessCount();
 
-        return new JsonResponse([
-            'success' => $experimentResult->getSuccessCount(),
-            'total' => $experimentResult->getPassCount(),
-        ]);
+        return new JsonResponse($experimentResult);
     }
 
     public function fetchDeck(Request $request)

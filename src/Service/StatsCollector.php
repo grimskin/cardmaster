@@ -47,7 +47,7 @@ class StatsCollector
         $this->conditions[] = $condition;
     }
 
-    public function runSimulation()
+    public function runSimulation(): ExperimentResult
     {
         $this->scenario->setPassCount($this->passCount);
         foreach ($this->conditions as $condition) {

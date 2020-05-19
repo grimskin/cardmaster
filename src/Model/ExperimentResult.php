@@ -4,7 +4,9 @@
 namespace App\Model;
 
 
-class ExperimentResult
+use JsonSerializable;
+
+class ExperimentResult implements JsonSerializable
 {
     private $passCount = 0;
     private $successCount = 0;
@@ -32,5 +34,13 @@ class ExperimentResult
     public function __toString()
     {
         return $this->successCount . '/' . $this->passCount;
+    }
+
+    public function jsonSerialize()
+    {
+        return [
+            'success' => $this->successCount,
+            'total' => $this->passCount,
+        ];
     }
 }
