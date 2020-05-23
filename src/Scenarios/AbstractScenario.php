@@ -53,12 +53,12 @@ abstract class AbstractScenario implements ScenarioInterface
         while ($passes) {
             $success = true;
 
+            $this->library->reset();
+            $this->library->shuffle();
+
+            $hand = $this->library->drawHand($this->getRequiredHandSize());
+
             foreach ($this->conditions as $condition) {
-                $this->library->reset();
-                $this->library->shuffle($this->getRequiredHandSize());
-
-                $hand = $this->library->drawHand($this->getRequiredHandSize());
-
                 if ($condition->testHand(...$hand)) {
                     continue;
                 }
