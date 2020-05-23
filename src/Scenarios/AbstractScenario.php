@@ -60,11 +60,12 @@ abstract class AbstractScenario implements ScenarioInterface
 
             foreach ($this->conditions as $condition) {
                 if ($condition->testHand(...$hand)) {
+                    $condition->recordCheck(true);
                     continue;
                 }
 
+                $condition->recordCheck(false);
                 $success = false;
-                break;
             }
 
             if ($success) {
@@ -75,6 +76,10 @@ abstract class AbstractScenario implements ScenarioInterface
             $result->tickPassCount();
 
             $passes--;
+        }
+
+        foreach ($this->conditions as $condition) {
+            $result->addCondition($condition);
         }
     }
 }

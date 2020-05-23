@@ -5,8 +5,9 @@ namespace App\Conditions;
 
 
 use App\Model\CardDefinition;
+use JsonSerializable;
 
-interface ConditionInterface
+interface ConditionInterface extends JsonSerializable
 {
     public function getName(): string;
 
@@ -15,4 +16,10 @@ interface ConditionInterface
     public function testHand(CardDefinition ... $cardDefinitions): bool;
 
     public function addParams(array $params);
+
+    public function getSuccessCount(): int;
+
+    public function getPassCount(): int;
+
+    public function recordCheck(bool $success);
 }
