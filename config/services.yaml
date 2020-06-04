@@ -46,6 +46,9 @@ services:
             - method: registerCondition
               arguments:
                   - App\Conditions\HasCard
+            - method: registerCondition
+              arguments:
+                  - App\Conditions\CanCast
 
 
     App\Service\DataLoader:

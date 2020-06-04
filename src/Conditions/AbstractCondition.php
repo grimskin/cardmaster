@@ -4,6 +4,7 @@
 namespace App\Conditions;
 
 
+use App\Factory\CardsFactory;
 use App\Model\CardDefinition;
 
 abstract class AbstractCondition implements ConditionInterface
@@ -13,6 +14,8 @@ abstract class AbstractCondition implements ConditionInterface
     protected $passCount = 0;
 
     protected $successCount = 0;
+
+    protected $cardsFactory;
 
     abstract public function getName(): string;
 
@@ -55,5 +58,9 @@ abstract class AbstractCondition implements ConditionInterface
             'success' => $this->successCount,
             'total' => $this->passCount,
         ];
+    }
+
+    public function setCardsFactory(CardsFactory $cardsFactory) {
+        $this->cardsFactory = $cardsFactory;
     }
 }

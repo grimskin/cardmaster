@@ -4,6 +4,7 @@
 namespace App\Conditions;
 
 
+use App\Factory\CardsFactory;
 use App\Model\CardDefinition;
 use JsonSerializable;
 
@@ -22,4 +23,6 @@ interface ConditionInterface extends JsonSerializable
     public function getPassCount(): int;
 
     public function recordCheck(bool $success);
+
+    public function setCardsFactory(CardsFactory $cardsFactory);
 }

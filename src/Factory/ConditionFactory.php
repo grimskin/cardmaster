@@ -14,6 +14,13 @@ class ConditionFactory
      */
     private $conditions = [];
 
+    private $cardsFactory;
+
+    public function __construct(CardsFactory $cardsFactory)
+    {
+        $this->cardsFactory = $cardsFactory;
+    }
+
     public function registerCondition(string $conditionClassName)
     {
         $condition = new $conditionClassName;
@@ -42,6 +49,7 @@ class ConditionFactory
         }
 
         $result->addParams($params);
+        $result->setCardsFactory($this->cardsFactory);
 
         return $result;
     }
