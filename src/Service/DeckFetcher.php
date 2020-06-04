@@ -31,7 +31,7 @@ class DeckFetcher
         $cards = explode("\n", $html);
         $cards = array_map(function(string $item) {
             [$amount, $cardName] = explode(' ', $item, 2);
-            return ['amount' => $amount, 'card_name' => $cardName];
+            return ['amount' => $amount, 'card_name' => htmlspecialchars_decode($cardName, ENT_QUOTES)];
         }, array_filter($cards));
 
         return $cards;
