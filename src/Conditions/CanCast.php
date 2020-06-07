@@ -15,6 +15,11 @@ class CanCast extends AbstractCondition
         return 'can-cast';
     }
 
+    public function getReadableName(): string
+    {
+        return 'Can cast the card';
+    }
+
     public function testHand(CardDefinition ...$cardDefinitions): bool
     {
         $cardName = $this->params[0] ?? '';

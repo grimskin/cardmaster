@@ -9,6 +9,7 @@ class CardData
     private $name;
     private $type = '';
 
+    private $manaCost;
     private $supertypes;
     private $subtypes;
     private $types;
@@ -24,6 +25,7 @@ class CardData
         $result->type = $cardDatum['type'] ?? [];
         $result->types = $cardDatum['types'] ?? [];
         $result->colorIdentity = $cardDatum['colorIdentity'];
+        $result->manaCost = $cardDatum['manaCost'] ?? '';
         $result->parseTypes();
 
         return $result;
@@ -54,5 +56,10 @@ class CardData
     public function getColorIdentity()
     {
         return $this->colorIdentity;
+    }
+
+    public function getManaCost()
+    {
+        return $this->manaCost;
     }
 }

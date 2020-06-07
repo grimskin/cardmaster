@@ -2,6 +2,7 @@
 
 namespace App\Model;
 
+use App\Domain\ManaCost;
 use JsonSerializable;
 
 class CardDefinition implements JsonSerializable
@@ -15,6 +16,8 @@ class CardDefinition implements JsonSerializable
 
     private $type = '';
     private $types = [];
+
+    private $manaCost;
 
     public function isStub(): bool
     {
@@ -31,10 +34,8 @@ class CardDefinition implements JsonSerializable
         return strtolower($this->name);
     }
 
-    public static function define(
-        string $name,
-        bool $isStub = false
-    ): self {
+    public static function define(string $name,bool $isStub = false): self
+    {
         $result = new self();
 
         $result->name = $name;
@@ -92,6 +93,7 @@ class CardDefinition implements JsonSerializable
         $this->type = $cardData->getType();
         $this->types = $cardData->getTypes();
         $this->colorIdentity = $cardData->getColorIdentity();
+        $this->manaCost = new ManaCost($cardData->getManaCost());
     }
 
     public function jsonSerialize()
@@ -99,6 +101,7 @@ class CardDefinition implements JsonSerializable
         $result = [
             'name' => $this->getName(),
             'isLand' => $this->isLand() ? 'true' : 'false',
+            'manaCost' => $this->manaCost,
         ];
 
         $result['canProduce'] = implode(', ', array_filter([
