@@ -13,6 +13,8 @@ class ManaCost implements JsonSerializable
     /** @var ManaCostItem[]  */
     private $manaItems = [];
 
+    private $costVariants;
+
     public function __construct(string $manaCostString)
     {
         $this->manaCostString = $manaCostString;
@@ -27,6 +29,37 @@ class ManaCost implements JsonSerializable
             $this->manaItems[] = new ManaCostItem(substr($cost, 0, $pos+1));
             $cost = substr($cost, $pos+1);
         }
+    }
+
+    public function getCostVariants()
+    {
+        if (null === $this->costVariants) {
+            $this->costVariants = $this->calculateCostVariants($this->manaItems);
+        }
+
+        return $this->costVariants;
+    }
+
+    private function calculateCostVariants(array $manaItems)
+    {
+        $result = [];
+
+        /** @var ManaCostItem $item */
+        $item = array_pop($manaItems);
+
+        if (!count($manaItems)) {
+            return $item->getItemVariants();
+        }
+
+        $leftoverVariants = $this->calculateCostVariants($manaItems);
+
+        foreach ($item->getItemVariants() as $variant) {
+            foreach ($leftoverVariants as $leftoverVariant) {
+                $result[] = array_merge($variant, $leftoverVariant);
+            }
+        }
+
+        return $result;
     }
 
     public function __toString()
