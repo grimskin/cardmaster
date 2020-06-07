@@ -1,0 +1,146 @@
+{
+    "artist": "Chase Stone",
+    "borderColor": "black",
+    "colorIdentity": [
+        "G",
+        "W"
+    ],
+    "colors": [
+        "G",
+        "W"
+    ],
+    "convertedManaCost": 5.0,
+    "foreignData": [
+        {
+            "language": "German",
+            "multiverseId": 453217,
+            "name": "Trostani die Entzweite",
+            "text": "Andere Kreaturen, die du kontrollierst, erhalten +1/+1.\nWenn Trostani die Entzweite ins Spiel kommt, erzeuge zwei 1/1 weiße Soldat-Kreaturenspielsteine mit Lebensverknüpfung.\nZu Beginn deines Endsegments übernimmt jeder Spieler die Kontrolle über alle Kreaturen, die er besitzt.",
+            "type": "Legendäre Kreatur — Dryade"
+        },
+        {
+            "language": "Spanish",
+            "multiverseId": 453476,
+            "name": "Trostani en desacuerdo",
+            "text": "Las otras criaturas que controlas obtienen +1/+1.\nCuando Trostani en desacuerdo entre al campo de batalla, crea dos fichas de criatura Soldado blancas 1/1 con la habilidad de vínculo vital.\nAl comienzo de tu paso final, cada jugador gana el control de todas las criaturas de las que es propietario.",
+            "type": "Criatura legendaria — Dríada"
+        },
+        {
+            "language": "French",
+            "multiverseId": 453735,
+            "name": "Trostani la discordante",
+            "text": "Les autres créatures que vous contrôlez gagnent +1/+1.\nQuand Trostani la discordante arrive sur le champ de bataille, créez deux jetons de créature 1/1 blanche Soldat avec le lien de vie.\nAu début de votre étape de fin, chaque joueur acquiert le contrôle de toutes les créatures qu'il possède.",
+            "type": "Créature légendaire : dryade"
+        },
+        {
+            "language": "Italian",
+            "multiverseId": 453994,
+            "name": "Trostani Discorde",
+            "text": "Le altre creature che controlli prendono +1/+1.\nQuando Trostani Discorde entra nel campo di battaglia, crea due pedine creatura Soldato 1/1 bianche con legame vitale.\nAll'inizio della tua sottofase finale, ogni giocatore prende il controllo di tutte le creature che possiede.",
+            "type": "Creatura Leggendaria — Driade"
+        },
+        {
+            "language": "Japanese",
+            "multiverseId": 454253,
+            "name": "不和のトロスターニ",
+            "text": "あなたがコントロールしている他のクリーチャーは＋１/＋１の修整を受ける。\n不和のトロスターニが戦場に出たとき、絆魂を持つ白の１/１の兵士・クリーチャー・トークンを２体生成する。\nあなたの終了ステップの開始時に、各プレイヤーは自分がオーナーであるすべてのクリーチャーのコントロールを得る。",
+            "type": "伝説のクリーチャー — ドライアド"
+        },
+        {
+            "language": "Korean",
+            "multiverseId": 454512,
+            "name": "불협화음의 트로스타니",
+            "text": "당신이 조종하는 다른 생물들은 +1/+1을 받는다.\n불협화음의 트로스타니가 전장에 들어올 때, 생명연결을 가진 1/1 백색 병사 생물 토큰 두 개를 만든다.\n당신의 종료단 시작에, 각 플레이어는 자신이 소유한 모든 생물의 조종권을 얻는다.",
+            "type": "전설적 생물 — 드라이어드"
+        },
+        {
+            "language": "Portuguese (Brazil)",
+            "multiverseId": 454771,
+            "name": "Trostani em Desacordo",
+            "text": "As outras criaturas que você controla recebem +1/+1.\nQuando Trostani em Desacordo entrar no campo de batalha, crie duas fichas de criatura branca 1/1 do tipo Soldado com vínculo com a vida.\nNo início de sua etapa final, cada jogador ganha o controle de todas as criaturas de que for dono.",
+            "type": "Criatura Lendária — Dríade"
+        },
+        {
+            "language": "Russian",
+            "multiverseId": 455030,
+            "name": "Тростани Расколотая",
+            "text": "Другие существа под вашим контролем получают +1/+1.\nКогда Тростани Расколотая выходит на поле битвы, создайте две фишки существа 1/1 белый Солдат с Цепью жизни.\nВ начале вашего заключительного шага каждый игрок получает контроль над всеми принадлежащими ему существами.",
+            "type": "Легендарное Существо — Дриада"
+        },
+        {
+            "language": "Chinese Simplified",
+            "multiverseId": 455289,
+            "name": "异声卓塔妮",
+            "text": "由你操控的其他生物得+1/+1。\n当异声卓塔妮进战场时，派出两个1/1白色，具系命异能的士兵衍生生物。\n在你的结束步骤开始时，每位牌手各获得所有由其拥有之生物的操控权。",
+            "type": "传奇生物 ～树灵"
+        },
+        {
+            "language": "Chinese Traditional",
+            "multiverseId": 455548,
+            "name": "異聲卓塔妮",
+            "text": "由你操控的其他生物得+1/+1。\n當異聲卓塔妮進戰場時，派出兩個1/1白色，具繫命異能的士兵衍生生物。\n在你的結束步驟開始時，每位玩家各獲得所有由其擁有之生物的操控權。",
+            "type": "傳奇生物 ～樹靈"
+        }
+    ],
+    "frameVersion": "2015",
+    "hasFoil": true,
+    "hasNonFoil": true,
+    "layout": "normal",
+    "legalities": {
+        "commander": "Legal",
+        "duel": "Legal",
+        "frontier": "Legal",
+        "future": "Legal",
+        "legacy": "Legal",
+        "modern": "Legal",
+        "standard": "Legal",
+        "vintage": "Legal"
+    },
+    "manaCost": "{3}{G}{W}",
+    "multiverseId": 452958,
+    "name": "Trostani Discordant",
+    "names": [],
+    "number": "208",
+    "originalText": "Other creatures you control get +1/+1.\nWhen Trostani Discordant enters the battlefield, create two 1/1 white Soldier creature tokens with lifelink.\nAt the beginning of your end step, each player gains control of all creatures they own.",
+    "originalType": "Legendary Creature — Dryad",
+    "power": "1",
+    "printings": [
+        "GRN",
+        "PGRN"
+    ],
+    "rarity": "mythic",
+    "rulings": [
+        {
+            "date": "2018-10-05",
+            "text": "The owner of a token is the player who created it."
+        },
+        {
+            "date": "2018-10-05",
+            "text": "Because damage remains marked on a creature until it’s removed as the turn ends, nonlethal damage dealt to other creatures you control may become lethal if Trostani leaves the battlefield during that turn."
+        },
+        {
+            "date": "2018-10-05",
+            "text": "If a creature has an ability that triggers at the beginning of each end step and Trostani’s ability causes you to gain control of it, the ability of that creature is still controlled by the creature’s former controller. If the creature has an ability that triggers at the beginning of your end step, that ability doesn’t trigger when you gain control of it."
+        }
+    ],
+    "scryfallId": "fa1190a4-3d7e-4500-991f-e36ec3d1d9dc",
+    "scryfallIllustrationId": "3fc48070-4c9f-44ab-bb49-1c314e9b07ca",
+    "scryfallOracleId": "9a2fdc0e-e0de-47fc-95e4-04e725ddf060",
+    "subtypes": [
+        "Dryad"
+    ],
+    "supertypes": [
+        "Legendary"
+    ],
+    "tcgplayerProductId": 176682,
+    "tcgplayerPurchaseUrl": "https://mtgjson.com/links/56d47867ef188004",
+    "text": "Other creatures you control get +1/+1.\nWhen Trostani Discordant enters the battlefield, create two 1/1 white Soldier creature tokens with lifelink.\nAt the beginning of your end step, each player gains control of all creatures they own.",
+    "toughness": "4",
+    "type": "Legendary Creature — Dryad",
+    "types": [
+        "Creature"
+    ],
+    "uuid": "b3486493-f2ad-5d72-adc8-d3339a718619",
+    "uuidV421": "23e9ea60-8577-5647-b99b-10958ffc2e13",
+    "watermark": "selesnya"
+}
