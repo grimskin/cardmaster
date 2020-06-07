@@ -78,7 +78,7 @@ class DeckComposer extends Component {
 
     render() {
         return (
-            <div id="deck_composer_container" className={"container"}>
+            <div id="deck-composer" className="container">
                 Deck Composer
                 <CardPicker callBackAddCard={this.addCard} cards={this.props.cards} />
                 <input

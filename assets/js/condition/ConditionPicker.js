@@ -53,7 +53,7 @@ class ConditionPicker extends Component {
 
     render() {
         return (
-            <div id="condition-picker" className={"container"}>
+            <div id="condition-picker" className="container">
                 Condition Picker
                 <br />
                 <select ref={this.conditionSelect}>

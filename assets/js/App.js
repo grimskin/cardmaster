@@ -65,16 +65,11 @@ class App extends Component {
         return (
             <div id="App">
                 <Header/>
-                <div id="results-console">
-                    Results: {this.state.successfulRuns} / {this.state.totalRuns}
-                    <button onClick={this.runExperiment}>Evaluate</button>
-                </div>
                 <div id="AppContainer">
                     <ScenarioSelector
                         scenarios={this.state.scenarios}
                         ref={this.scenarioSelector}
                     />
-                    <div className={"break"}> </div>
                     <DeckComposer
                         cards={this.state.cards}
                         ref={this.deckComposer}
@@ -84,6 +79,10 @@ class App extends Component {
                         conditions={this.state.conditions}
                         ref={this.conditionPicker}
                     />
+                    <div id="results-console" className="container">
+                        Results: {this.state.successfulRuns} / {this.state.totalRuns}
+                        <button onClick={this.runExperiment}>Evaluate</button>
+                    </div>
                 </div>
             </div>
         );
