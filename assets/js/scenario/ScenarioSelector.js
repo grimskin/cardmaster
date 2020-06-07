@@ -16,7 +16,6 @@ class ScenarioSelector extends Component {
     render() {
         return <div id="scenario-selector" className={"container"}>
             <select ref={this.scenarioSelect}>
-                <option value="">Select scenario</option>
                 {this.props.scenarios.map((item, i) => {
                     return <option value={item.name} key={i}>{item.title}</option>
                 })}
