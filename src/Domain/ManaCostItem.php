@@ -23,7 +23,7 @@ class ManaCostItem implements JsonSerializable
             return [ [$this->cleanString] ];
         }
 
-        if (preg_match("'^[W,U,B,R,G]/[W,U,B,R,G]$'", $this->cleanString)) {
+        if (preg_match("'^[WUBRG]/[WUBRG]$'", $this->cleanString)) {
             list($color1, $color2) = explode('/', $this->cleanString);
             return [[$color1], [$color2]];
         }
