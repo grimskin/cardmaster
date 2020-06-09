@@ -27,6 +27,8 @@ class ManaCostItem implements JsonSerializable
             list($color1, $color2) = explode('/', $this->cleanString);
             return [[$color1], [$color2]];
         }
+
+        return [];
     }
 
     public function jsonSerialize()
