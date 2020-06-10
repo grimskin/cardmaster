@@ -34,6 +34,11 @@ class CardDefinition implements JsonSerializable
         return strtolower($this->name);
     }
 
+    public function getManaCost()
+    {
+        return $this->manaCost;
+    }
+
     public static function define(string $name,bool $isStub = false): self
     {
         $result = new self();

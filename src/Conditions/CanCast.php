@@ -4,7 +4,9 @@
 namespace App\Conditions;
 
 
-use App\Factory\CardsFactory;
+use App\Domain\ManaCost;
+use App\Domain\ManaPool;
+use App\Helper\ManaVariator;
 use App\Model\CardDefinition;
 use Exception;
 
@@ -29,6 +31,18 @@ class CanCast extends AbstractCondition
         }
 
         $card = $this->cardsFactory->getCard($cardName);
+
+        $manaCost = new ManaCost($card->getManaCost());
+
+        $manaOptions = ManaVariator::getManaOptions(...$cardDefinitions);
+
+        foreach ($manaOptions as $manaOption) {
+            $manaPool = ManaPool::fromArray($manaOption);
+
+            if ($manaPool->canPayFor($manaCost)) {
+                return true;
+            }
+        }
 
         return false;
     }

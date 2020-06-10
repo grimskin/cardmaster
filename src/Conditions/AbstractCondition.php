@@ -15,6 +15,9 @@ abstract class AbstractCondition implements ConditionInterface
 
     protected $successCount = 0;
 
+    /**
+     * @var CardsFactory
+     */
     protected $cardsFactory;
 
     abstract public function getName(): string;
