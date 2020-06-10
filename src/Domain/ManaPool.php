@@ -55,4 +55,41 @@ class ManaPool
             return $carry + $item;
         });
     }
+
+    public function canPayFor(ManaCost $manaCost)
+    {
+        foreach ($manaCost->getCostVariants() as $costVariant) {
+            if ($this->canPayForVariant($costVariant)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private function canPayForVariant(array $costVariant)
+    {
+        $testPool = clone $this;
+
+        $genericAmount = 0;
+
+        foreach ($costVariant as $manaSymbol) {
+            if ($this->isGeneric($manaSymbol)) {
+                $genericAmount += $manaSymbol;
+            } else {
+                if (!$testPool->pool[$manaSymbol]) return false;
+
+                $testPool->pool[$manaSymbol]--;
+            }
+        }
+
+        if ($genericAmount <= $testPool->totalMana()) return true;
+
+        return false;
+    }
+
+    private function isGeneric(string $manaSymbol)
+    {
+        return preg_match("'^[WUBRG]$'", $manaSymbol) ? false : true;
+    }
 }
