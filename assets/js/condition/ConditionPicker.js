@@ -31,12 +31,14 @@ class ConditionPicker extends Component {
 
     addCondition() {
         const conditionName = this.conditionSelect.current.selectedOptions.item(0).value;
+        const conditionTitle = this.conditionSelect.current.selectedOptions.item(0).text;
 
         if (!conditionName || !this.state.conditionParam) return;
 
         let newConditions = this.state.conditions.concat([{
             key: this.conditionKey,
             name: conditionName,
+            title: conditionTitle,
             param: this.state.conditionParam
         }]);
         this.conditionKey++;

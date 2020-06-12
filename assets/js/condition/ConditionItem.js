@@ -13,8 +13,15 @@ class ConditionItem extends Component {
 
     render() {
         return <div className="condition_item">
-            {this.props.title ? this.props.title : this.props.name}: {this.props.param}
-            <a onClick={() => { this.removeCondition(); }}/>
+            <div className="condition_name">
+                {this.props.title ? this.props.title : this.props.name}
+            </div>
+            <div className="condition_param">
+                {this.props.param}
+            </div>
+            <div className="condition_control">
+                <button onClick={() => { this.removeCondition(); }}>remove</button>
+            </div>
         </div>;
     }
 }
