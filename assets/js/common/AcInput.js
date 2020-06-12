@@ -116,6 +116,7 @@ class AcInput extends Component {
         return <div className="ac_input_container">
             <input type="text"
                    name="cardName"
+                   className="input_auto_complete"
                    value={this.state.cardName}
                    onChange={this.handleInputChange}
                    onBlur={this.textInputBlur}
