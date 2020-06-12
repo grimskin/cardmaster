@@ -14,6 +14,11 @@ class HasXLands extends AbstractCondition
         return 'has-x-lands';
     }
 
+    public function getReadableName(): string
+    {
+        return 'Has X lands';
+    }
+
     public function testHand(CardDefinition ... $cardDefinitions): bool
     {
         $requireLands = (int) $this->params[0] ?? '';

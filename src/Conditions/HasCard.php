@@ -14,6 +14,11 @@ class HasCard extends AbstractCondition
         return 'has-card';
     }
 
+    public function getReadableName(): string
+    {
+        return 'Has card';
+    }
+
     public function testHand(CardDefinition ... $cardDefinitions): bool
     {
         $cardName = $this->params[0] ?? '';
