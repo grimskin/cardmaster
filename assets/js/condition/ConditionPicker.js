@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AcInput from "../common/AcInput";
+import ConditionItem from "./ConditionItem";
 
 class ConditionPicker extends Component {
     constructor(props) {
@@ -12,7 +13,7 @@ class ConditionPicker extends Component {
 
         this.acParamInput = React.createRef();
         this.conditionSelect = React.createRef();
-        this.conditionKey = 1;
+        this.conditionKey = 0;
 
         this.updateConditionParam = this.updateConditionParam.bind(this);
         this.addCondition = this.addCondition.bind(this);
@@ -43,9 +44,9 @@ class ConditionPicker extends Component {
         this.acParamInput.current.clearCardName();
     }
 
-    removeCondition(key) {
+    removeCondition(itemKey) {
         const newConditions = this.state.conditions.filter((item) => {
-            if (item.key !== key) return item;
+            if (item.key !== itemKey) return item;
         });
 
         this.setState({ conditions: newConditions });
@@ -71,12 +72,14 @@ class ConditionPicker extends Component {
                 <button onClick={this.addCondition}>add</button>
                 <div>
                     {this.state.conditions.map((item, i) => {
-                        return <div className="card_in_deck" key={i}>
-                            {item.name}: {item.param}
-                            <a onClick={() => {
-                                this.removeCondition(item.key)
-                            }}/>
-                        </div>;
+                        return <ConditionItem
+                                    key={i}
+                                    itemKey={item.key}
+                                    name={item.name}
+                                    title={item.title}
+                                    param={item.param}
+                                    removeConditionCallback={this.removeCondition}
+                        />;
                     })}
                 </div>
             </div>

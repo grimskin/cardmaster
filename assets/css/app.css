@@ -76,14 +76,14 @@ div.ac_option:hover, div.ac_option.ac_active {
     border-left-color: #337ab7;
 }
 
-div.card_in_deck {
+div.condition_item {
     background-color: white;
     padding: 0.25em;
     margin: 0 2em 1px 0;
     font-size: 0.857142em;
 }
 
-div.card_in_deck a::after {
+div.condition_item a::after {
     content: "[remove]";
     margin-left: 0.5em;
     float: right;
