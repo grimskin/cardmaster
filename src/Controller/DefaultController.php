@@ -11,23 +11,23 @@ class DefaultController extends AbstractController
 {
     public function index()
     {
-        return new Response(
-            <<<HTML
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="build/app.css">
-    <title>--</title>
-</head>
-<body>
-    <div id="root"></div>
-    
-    <script src="build/runtime.js"></script>
-    <script src="build/vendors~app.js"></script>
-    <script src="build/app.js"></script>
-</body>
-</html>
-HTML
-        );
+        $links = $this->getAssetsLinks();
+
+        $html = '<!DOCTYPE html><html lang="en"><head>'."\r\n";
+        foreach ($links['entrypoints']['app']['css'] as $cssLink) {
+            $html .= '<link rel="stylesheet" href="'.$cssLink.'">'."\r\n";
+        }
+        $html .= '<title>--</title></head><body><div id="root"></div>'."\r\n";
+        foreach ($links['entrypoints']['app']['js'] as $jsLink) {
+            $html .= '<script src="'.$jsLink.'"></script>'."\r\n";
+        }
+        $html .= '</body></html>';
+
+        return new Response($html);
+    }
+
+    private function getAssetsLinks()
+    {
+        return json_decode(file_get_contents($this->getParameter('kernel.project_dir') . '/public/build/entrypoints.json'), true);
     }
 }
