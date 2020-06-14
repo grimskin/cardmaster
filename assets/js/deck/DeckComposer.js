@@ -87,13 +87,6 @@ class DeckComposer extends Component {
             <div id="deck-composer" className="container">
                 Deck Composer
                 <CardPicker callBackAddCard={this.addCard} cards={this.props.cards} />
-                <input
-                    name={"deckUrl"}
-                    id={"input_deck_url"}
-                    placeholder={"Enter deck url"}
-                    ref={this.urlInput}
-                />
-                <button onClick={this.fetchDeck}>load</button>
                 <div id="cards-list-container">
                     {this.state.deck.map((item, i) => {
                         return <CardInDeck
@@ -103,6 +96,15 @@ class DeckComposer extends Component {
                             key={i}
                         />;
                     })}
+                </div>
+                <div className="deck_importer">
+                    <input
+                        name={"deckUrl"}
+                        id={"input_deck_url"}
+                        placeholder={"Enter deck url"}
+                        ref={this.urlInput}
+                    />
+                    <button onClick={this.fetchDeck}>load</button>
                 </div>
             </div>
         );

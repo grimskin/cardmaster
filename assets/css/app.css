@@ -201,3 +201,11 @@ div.card_in_deck button {
 div.card_in_deck:hover button {
     visibility: visible;
 }
+
+div#cards-list-container {
+    margin: 0.9em 0;
+}
+
+div.deck_importer {
+
+}
