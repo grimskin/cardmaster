@@ -13,11 +13,11 @@ class DefaultController extends AbstractController
     {
         $links = $this->getAssetsLinks();
 
-        $html = '<!DOCTYPE html><html lang="en"><head>'."\r\n";
+        $html = '<!DOCTYPE html><html lang="en"><head><title>--</title>'."\r\n";
         foreach ($links['entrypoints']['app']['css'] as $cssLink) {
             $html .= '<link rel="stylesheet" href="'.$cssLink.'">'."\r\n";
         }
-        $html .= '<title>--</title></head><body><div id="root"></div>'."\r\n";
+        $html .= '</head><body><div id="root"></div>'."\r\n";
         foreach ($links['entrypoints']['app']['js'] as $jsLink) {
             $html .= '<script src="'.$jsLink.'"></script>'."\r\n";
         }
