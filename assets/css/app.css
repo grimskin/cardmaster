@@ -186,3 +186,18 @@ div.condition_item a::after {
     margin-left: 0.5em;
     font-size: 0.857142em;
 }
+
+div.card_in_deck {
+
+}
+
+div.card_in_deck button {
+    visibility: hidden;
+
+    font-size: 0.7em;
+    border-radius: 1em;
+}
+
+div.card_in_deck:hover button {
+    visibility: visible;
+}

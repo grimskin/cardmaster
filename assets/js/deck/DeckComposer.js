@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CardPicker from "./CardPicker";
 import axios from "axios";
+import CardInDeck from "./CardInDeck";
 
 class DeckComposer extends Component {
     constructor(props) {
@@ -10,10 +11,12 @@ class DeckComposer extends Component {
             deck: [],
             deckUrl: ""
         };
+
         this.addCard = this.addCard.bind(this);
         this.removeCard = this.removeCard.bind(this);
         this.getData = this.getData.bind(this);
         this.fetchDeck = this.fetchDeck.bind(this);
+        this.changeCardAmount = this.changeCardAmount.bind(this);
 
         this.urlInput = React.createRef();
     }
@@ -34,6 +37,20 @@ class DeckComposer extends Component {
             .catch(function (error) {
             });
 
+    }
+
+    changeCardAmount(name, newAmount) {
+        if (newAmount === 0) {
+            this.removeCard(name);
+
+            return;
+        }
+
+        let currentAmount = this.state.deck.reduce((total, item) => {
+            return ((item.name === name) ? item.amount : 0) + total;
+        }, 0);
+
+        this.addCard(name, newAmount-currentAmount);
     }
 
     removeCard(name) {
@@ -65,17 +82,6 @@ class DeckComposer extends Component {
         this.setState({ deck: newDeck });
     }
 
-    renderDeck() {
-        return this.state.deck.map((item, i) => {
-            return <div className="card_in_deck" key={i}>
-                {item.amount}x {item.name}
-                <a onClick={() => {
-                    this.removeCard(item.name)
-                }}/>
-            </div>;
-        });
-    }
-
     render() {
         return (
             <div id="deck-composer" className="container">
@@ -89,7 +95,14 @@ class DeckComposer extends Component {
                 />
                 <button onClick={this.fetchDeck}>load</button>
                 <div id="cards-list-container">
-                    {this.renderDeck()}
+                    {this.state.deck.map((item, i) => {
+                        return <CardInDeck
+                            name={item.name}
+                            amount={item.amount}
+                            setAmountCallback={this.changeCardAmount}
+                            key={i}
+                        />;
+                    })}
                 </div>
             </div>
         );
