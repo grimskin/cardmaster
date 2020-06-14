@@ -21,7 +21,6 @@ class DefaultController extends AbstractController
         foreach ($links['entrypoints']['app']['js'] as $jsLink) {
             $html .= '<script src="'.$jsLink.'"></script>'."\r\n";
         }
-        $html .= '<!-- '.getcwd().' -->';
         $html .= '</body></html>';
 
         return new Response($html);
