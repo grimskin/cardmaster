@@ -7,6 +7,7 @@ namespace App\Model;
 class CardData
 {
     private $name;
+    private $faceName;
     private $type = '';
 
     private $manaCost;
@@ -20,6 +21,7 @@ class CardData
         $result = new self();
 
         $result->name = $cardDatum['name'];
+        $result->faceName = $cardDatum['faceName'] ?? '';
         $result->subtypes = $cardDatum['subtypes'] ?? [];
         $result->supertypes = $cardDatum['supertypes'] ?? [];
         $result->type = $cardDatum['type'] ?? [];
@@ -41,6 +43,11 @@ class CardData
     public function getName()
     {
         return $this->name;
+    }
+
+    public function getFaceName()
+    {
+        return $this->faceName;
     }
 
     public function getType(): string

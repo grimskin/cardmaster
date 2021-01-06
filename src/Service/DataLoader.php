@@ -14,6 +14,10 @@ class DataLoader
     {
         $data = json_decode(file_get_contents(__DIR__ . '/../../' . $fileName), true);
 
+        if (isset($data['data']['cards']) && !isset($data['cards'])) {
+            $data = $data['data'];
+        }
+
         foreach ($data['cards'] as $cardDatum) {
             $this->parseCardData($cardDatum);
         }
@@ -30,6 +34,10 @@ class DataLoader
         */
 
         $this->cardData[$card->getName()] = $card;
+
+        if ($card->getFaceName()) {
+            $this->cardData[$card->getFaceName()] = $card;
+        }
     }
 
     public function getDataByName($cardName): ?CardData

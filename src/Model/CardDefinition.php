@@ -11,6 +11,7 @@ class CardDefinition implements JsonSerializable
     const T_LAND = 'T_LAND';
 
     private $name = '';
+    private $faceName = '';
     private $isStub = false;
     private $colorIdentity = [];
 
@@ -27,6 +28,11 @@ class CardDefinition implements JsonSerializable
     public function getName(): string
     {
         return $this->name;
+    }
+
+    public function getFaceName(): string
+    {
+        return $this->faceName;
     }
 
     public function getCanonizedName(): string
@@ -95,6 +101,7 @@ class CardDefinition implements JsonSerializable
         }
 
         $this->name = $cardData->getName();
+        $this->faceName = $cardData->getFaceName();
         $this->type = $cardData->getType();
         $this->types = $cardData->getTypes();
         $this->colorIdentity = $cardData->getColorIdentity();
