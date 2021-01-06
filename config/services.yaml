@@ -79,3 +79,9 @@ services:
             - method: loadDataFromFile
               arguments:
                   - 'data/IKO.json'
+            - method: loadDataFromFile
+              arguments:
+                  - 'data/M21.json'
+            - method: loadDataFromFile
+              arguments:
+                  - 'data/ZNR.json'
