@@ -103,6 +103,7 @@ class DeckComposer extends Component {
                         id={"input_deck_url"}
                         placeholder={"Enter deck url"}
                         ref={this.urlInput}
+                        defaultValue={"https://www.mtggoldfish.com/deck/3666706#paper"}
                     />
                     <button onClick={this.fetchDeck}>load</button>
                 </div>
