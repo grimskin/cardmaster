@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import CardPicker from "./CardPicker";
 import axios from "axios";
 import CardInDeck from "./CardInDeck";
+// import mapStateToProps from "react-redux/lib/connect/mapStateToProps";
+import { connect } from 'react-redux';
 
 class DeckComposer extends Component {
     constructor(props) {
@@ -66,6 +68,8 @@ class DeckComposer extends Component {
             return ((item.name === name) ? item.amount : 0) + total;
         }, 0);
 
+        this.props.handleAddCard({name, amount});
+
         let newDeck;
         if (currentAmount) {
             newDeck = this.state.deck.map((item) => {
@@ -97,6 +101,16 @@ class DeckComposer extends Component {
                         />;
                     })}
                 </div>
+                <div id="cards-list-container">
+                    {this.props.deck.map((item, i) => {
+                        return <CardInDeck
+                            name={item.name}
+                            amount={item.amount}
+                            setAmountCallback={this.changeCardAmount}
+                            key={i}
+                        />;
+                    })}
+                </div>
                 <div className="deck_importer">
                     <input
                         name={"deckUrl"}
@@ -112,4 +126,15 @@ class DeckComposer extends Component {
     }
 }
 
-export default DeckComposer;
+
+const mapStateToProps = state => {
+    return { deck: state.deck };
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        handleAddCard: (card) => dispatch({ type: 'ADD_CARD', payload: card }),
+    };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(DeckComposer);
