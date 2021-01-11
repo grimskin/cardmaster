@@ -38,11 +38,6 @@ const rootReducer = (state, action) => {
 
             return newState;
 
-        case 'REMOVE_CARD':
-            newState.deck = removeCard(newState.deck, name);
-
-            return newState;
-
         case 'CHANGE_CARD_AMOUNT':
             if (amount === 0) {
                 newState.deck = removeCard(newState.deck, name);

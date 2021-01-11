@@ -61,7 +61,6 @@ class DeckComposer extends Component {
     }
 }
 
-
 const mapStateToProps = state => {
     return { deck: state.deck };
 }
@@ -69,7 +68,6 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         handleAddCard: (name, amount) => dispatch({ type: 'ADD_CARD', payload: {name, amount} }),
-        handleRemoveCard: (name) => dispatch({type: 'REMOVE_CARD', payload: {name} }),
         handleChangeCardAmount: (name, amount) => dispatch({type: 'CHANGE_CARD_AMOUNT', payload: {name, amount} }),
     };
 }
