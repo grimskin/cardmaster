@@ -4,15 +4,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from "./App";
 import '../css/app.css';
-import { createStore, compose, applyMiddleware } from "redux";
+import { createStore, applyMiddleware } from "redux";
 import { Provider } from 'react-redux';
 import thunk from "redux-thunk";
 import rootReducer from "./reducers/rootReducer";
+import { composeWithDevTools } from "redux-devtools-extension";
 
-const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
 const store = createStore(
     rootReducer,
-    composeEnhancers(applyMiddleware(thunk))
+    composeWithDevTools(applyMiddleware(thunk))
 );
 
 const domContainer = document.querySelector('#root');
