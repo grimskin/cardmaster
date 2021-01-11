@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import CardPicker from "./CardPicker";
 import axios from "axios";
 import CardInDeck from "./CardInDeck";
-// import mapStateToProps from "react-redux/lib/connect/mapStateToProps";
 import { connect } from 'react-redux';
 
 class DeckComposer extends Component {
@@ -14,17 +13,9 @@ class DeckComposer extends Component {
             deckUrl: ""
         };
 
-        this.addCard = this.addCard.bind(this);
-        this.removeCard = this.removeCard.bind(this);
-        this.getData = this.getData.bind(this);
         this.fetchDeck = this.fetchDeck.bind(this);
-        this.changeCardAmount = this.changeCardAmount.bind(this);
 
         this.urlInput = React.createRef();
-    }
-
-    getData() {
-        return this.state.deck;
     }
 
     fetchDeck() {
@@ -33,80 +24,24 @@ class DeckComposer extends Component {
         axios.get('/api/fetch/deck', { params: {deck_url: url} })
             .then(response => {
                 Object.values(response.data).map((item) => {
-                    this.addCard(item.card_name, item.amount);
+                    this.props.handleAddCard(item.card_name, item.amount);
                 });
             })
             .catch(function (error) {
             });
-
-    }
-
-    changeCardAmount(name, newAmount) {
-        if (newAmount === 0) {
-            this.removeCard(name);
-
-            return;
-        }
-
-        let currentAmount = this.state.deck.reduce((total, item) => {
-            return ((item.name === name) ? item.amount : 0) + total;
-        }, 0);
-
-        this.addCard(name, newAmount-currentAmount);
-    }
-
-    removeCard(name) {
-        const newDeck = this.state.deck.filter((item) => {
-            if (item.name !== name) return item;
-        });
-
-        this.setState({ deck: newDeck });
-    }
-
-    addCard(name, amount) {
-        let currentAmount = this.state.deck.reduce((total, item) => {
-            return ((item.name === name) ? item.amount : 0) + total;
-        }, 0);
-
-        this.props.handleAddCard({name, amount});
-
-        let newDeck;
-        if (currentAmount) {
-            newDeck = this.state.deck.map((item) => {
-                if (item.name === name) {
-                    item.amount += Number(amount);
-                }
-
-                return item;
-            });
-        } else {
-            newDeck = this.state.deck.concat([{name: name, amount: Number(amount)}]);
-        }
-
-        this.setState({ deck: newDeck });
     }
 
     render() {
         return (
             <div id="deck-composer" className="container">
                 Deck Composer
-                <CardPicker callBackAddCard={this.addCard} cards={this.props.cards} />
-                <div id="cards-list-container">
-                    {this.state.deck.map((item, i) => {
-                        return <CardInDeck
-                            name={item.name}
-                            amount={item.amount}
-                            setAmountCallback={this.changeCardAmount}
-                            key={i}
-                        />;
-                    })}
-                </div>
+                <CardPicker callBackAddCard={this.props.handleAddCard} cards={this.props.cards} />
                 <div id="cards-list-container">
                     {this.props.deck.map((item, i) => {
                         return <CardInDeck
                             name={item.name}
                             amount={item.amount}
-                            setAmountCallback={this.changeCardAmount}
+                            setAmountCallback={this.props.handleChangeCardAmount}
                             key={i}
                         />;
                     })}
@@ -133,7 +68,9 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        handleAddCard: (card) => dispatch({ type: 'ADD_CARD', payload: card }),
+        handleAddCard: (name, amount) => dispatch({ type: 'ADD_CARD', payload: {name, amount} }),
+        handleRemoveCard: (name) => dispatch({type: 'REMOVE_CARD', payload: {name} }),
+        handleChangeCardAmount: (name, amount) => dispatch({type: 'CHANGE_CARD_AMOUNT', payload: {name, amount} }),
     };
 }
 

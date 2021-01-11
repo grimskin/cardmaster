@@ -4,6 +4,7 @@ import ConditionPicker from "./condition/ConditionPicker";
 import ScenarioSelector from "./scenario/ScenarioSelector";
 import Header from "./Header";
 import axios from "axios";
+import {connect} from "react-redux";
 
 class App extends Component {
     constructor(props) {
@@ -19,7 +20,6 @@ class App extends Component {
 
         this.scenarioSelector = React.createRef();
         this.conditionPicker = React.createRef();
-        this.deckComposer = React.createRef();
 
         this.runExperiment = this.runExperiment.bind(this);
     }
@@ -28,7 +28,7 @@ class App extends Component {
         axios.post('/api/simulation', {
             scenario: this.scenarioSelector.current.getData(),
             conditions: this.conditionPicker.current.getData(),
-            deck: this.deckComposer.current.getData()
+            deck: this.props.deck,
         })
             .then(response => {
                 this.setState({
@@ -72,7 +72,6 @@ class App extends Component {
                     />
                     <DeckComposer
                         cards={this.state.cards}
-                        ref={this.deckComposer}
                     />
                     <ConditionPicker
                         cards={this.state.cards}
@@ -89,4 +88,8 @@ class App extends Component {
     }
 }
 
-export default App;
+const mapStateToProps = state => {
+    return { deck: state.deck };
+}
+
+export default connect(mapStateToProps, null)(App);
