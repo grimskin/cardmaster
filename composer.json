@@ -4,14 +4,14 @@
     "require": {
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "symfony/config": "5.0.*",
-        "symfony/console": "5.0.*",
-        "symfony/dotenv": "5.0.*",
+        "symfony/config": "5.*",
+        "symfony/console": "5.*",
+        "symfony/dotenv": "5.*",
         "symfony/flex": "^1.1",
-        "symfony/framework-bundle": "5.0.*",
-        "symfony/http-client": "5.0.*",
+        "symfony/framework-bundle": "5.*",
+        "symfony/http-client": "5.*",
         "symfony/webpack-encore-bundle": "^1.7",
-        "symfony/yaml": "5.0.*"
+        "symfony/yaml": "5.*"
     },
     "config": {
         "preferred-install": {
@@ -55,7 +55,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "5.0.*"
+            "require": "5.*"
         }
     },
     "require-dev": {
