@@ -4,19 +4,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from "./App";
 import '../css/app.css';
-import { createStore, compose } from "redux";
-import { Provider, connect } from 'react-redux';
+import { createStore, compose, applyMiddleware } from "redux";
+import { Provider } from 'react-redux';
+import thunk from "redux-thunk";
 import rootReducer from "./reducers/rootReducer";
 
 const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
 const store = createStore(
     rootReducer,
-    { deck: [], },
-    composeEnhancers()
+    composeEnhancers(applyMiddleware(thunk))
 );
 
 const domContainer = document.querySelector('#root');
-// const Container = connect()(App);
 
 ReactDOM.render(
     <Provider store={store}>

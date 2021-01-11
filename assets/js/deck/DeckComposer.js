@@ -9,7 +9,6 @@ class DeckComposer extends Component {
         super(props);
 
         this.state = {
-            deck: [],
             deckUrl: ""
         };
 
@@ -62,14 +61,14 @@ class DeckComposer extends Component {
 }
 
 const mapStateToProps = state => {
-    return { deck: state.deck };
-}
+    return { deck: state.deckComposer.deck };
+};
 
 const mapDispatchToProps = dispatch => {
     return {
         handleAddCard: (name, amount) => dispatch({ type: 'ADD_CARD', payload: {name, amount} }),
         handleChangeCardAmount: (name, amount) => dispatch({type: 'CHANGE_CARD_AMOUNT', payload: {name, amount} }),
     };
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(DeckComposer);
