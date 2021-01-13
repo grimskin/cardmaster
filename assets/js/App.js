@@ -89,7 +89,7 @@ class App extends Component {
 }
 
 const mapStateToProps = state => {
-    return { deck: state.deck };
+    return { deck: state.deckComposer.deck };
 }
 
 export default connect(mapStateToProps, null)(App);
