@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AcInput from "../common/AcInput";
 import ConditionItem from "./ConditionItem";
+import {connect} from "react-redux";
 
 class ConditionPicker extends Component {
     constructor(props) {
@@ -8,21 +9,13 @@ class ConditionPicker extends Component {
 
         this.state = {
             conditionParam: "",
-            conditions: []
         };
 
         this.acParamInput = React.createRef();
         this.conditionSelect = React.createRef();
-        this.conditionKey = 0;
 
         this.updateConditionParam = this.updateConditionParam.bind(this);
         this.addCondition = this.addCondition.bind(this);
-        this.removeCondition = this.removeCondition.bind(this)
-        this.getData = this.getData.bind(this);
-    }
-
-    getData() {
-        return this.state.conditions;
     }
 
     updateConditionParam(value) {
@@ -35,23 +28,9 @@ class ConditionPicker extends Component {
 
         if (!conditionName || !this.state.conditionParam) return;
 
-        let newConditions = this.state.conditions.concat([{
-            key: this.conditionKey,
-            name: conditionName,
-            title: conditionTitle,
-            param: this.state.conditionParam
-        }]);
-        this.conditionKey++;
-        this.setState({ conditions: newConditions });
         this.acParamInput.current.clearCardName();
-    }
 
-    removeCondition(itemKey) {
-        const newConditions = this.state.conditions.filter((item) => {
-            if (item.key !== itemKey) return item;
-        });
-
-        this.setState({ conditions: newConditions });
+        this.props.addCondition(conditionName, conditionTitle, this.state.conditionParam);
     }
 
     render() {
@@ -73,15 +52,8 @@ class ConditionPicker extends Component {
                 />
                 <button onClick={this.addCondition}>add</button>
                 <div>
-                    {this.state.conditions.map((item, i) => {
-                        return <ConditionItem
-                                    key={i}
-                                    itemKey={item.key}
-                                    name={item.name}
-                                    title={item.title}
-                                    param={item.param}
-                                    removeConditionCallback={this.removeCondition}
-                        />;
+                    {this.props.conditionsList.map((item, i) => {
+                        return <ConditionItem key={i} {...item} />;
                     })}
                 </div>
             </div>
@@ -89,4 +61,14 @@ class ConditionPicker extends Component {
     }
 }
 
-export default ConditionPicker;
+const mapStateToProps = state => {
+    return { conditionsList: state.conditionsReducer.conditions };
+};
+
+const mapDispatchToProps = dispatch => {
+    return {
+        addCondition: (name, title, param) => dispatch({ type: 'ADD_CONDITION', payload: {name, title, param} }),
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ConditionPicker);

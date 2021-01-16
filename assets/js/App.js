@@ -27,7 +27,7 @@ class App extends Component {
     runExperiment() {
         axios.post('/api/simulation', {
             scenario: this.scenarioSelector.current.getData(),
-            conditions: this.conditionPicker.current.getData(),
+            conditions: this.props.conditionsList,
             deck: this.props.deck,
         })
             .then(response => {
@@ -89,7 +89,10 @@ class App extends Component {
 }
 
 const mapStateToProps = state => {
-    return { deck: state.deckComposer.deck };
+    return {
+        deck: state.deckComposer.deck,
+        conditionsList: state.conditionsReducer.conditions,
+    };
 }
 
 export default connect(mapStateToProps, null)(App);

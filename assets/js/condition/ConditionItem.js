@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
+import {connect} from "react-redux";
 
 class ConditionItem extends Component {
-    constructor(props) {
-        super(props);
-
-        this.removeCondition = this.removeCondition.bind(this);
-    }
-
     removeCondition() {
-        this.props.removeConditionCallback(this.props.itemKey);
+        this.props.removeCondition(this.props.name, this.props.param);
     }
 
     render() {
@@ -27,11 +22,15 @@ class ConditionItem extends Component {
 }
 
 ConditionItem.defaultProps = {
-    itemKey: "",
     name: "",
     title: "",
     param: "",
-    removeConditionCallback: (itemKey) => {}
 };
 
-export default ConditionItem;
+const mapDispatchToProps = dispatch => {
+    return {
+        removeCondition: (name, param) => dispatch({type: 'REMOVE_CONDITION', payload: {name, param}}),
+    }
+};
+
+export default connect(null, mapDispatchToProps)(ConditionItem);

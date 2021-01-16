@@ -30,7 +30,6 @@ const addCard = (deck, name, amount) => {
 
 const deckReducer = (state, action) => {
     if (state === undefined) {
-    // if (!state) {
         state = { deck: [] };
     }
 
