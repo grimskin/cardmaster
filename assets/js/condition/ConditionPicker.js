@@ -8,29 +8,37 @@ class ConditionPicker extends Component {
         super(props);
 
         this.state = {
-            conditionParam: "",
+            conditionParam: '',
+            conditionName: '',
+            conditionTitle: '',
         };
 
         this.acParamInput = React.createRef();
-        this.conditionSelect = React.createRef();
 
         this.updateConditionParam = this.updateConditionParam.bind(this);
         this.addCondition = this.addCondition.bind(this);
+        this.handleNameChange = this.handleNameChange.bind(this);
     }
 
     updateConditionParam(value) {
         this.setState({ conditionParam: value });
     }
 
-    addCondition() {
-        const conditionName = this.conditionSelect.current.selectedOptions.item(0).value;
-        const conditionTitle = this.conditionSelect.current.selectedOptions.item(0).text;
+    handleNameChange(e) {
+        this.state.conditionName = e.target.value;
+        this.state.conditionTitle = e.target.selectedOptions.item(0).text;
+    }
 
-        if (!conditionName || !this.state.conditionParam) return;
+    addCondition() {
+        if (!this.state.conditionName || !this.state.conditionParam) return;
 
         this.acParamInput.current.clearCardName();
 
-        this.props.addCondition(conditionName, conditionTitle, this.state.conditionParam);
+        this.props.addCondition(
+            this.state.conditionName,
+            this.state.conditionTitle,
+            this.state.conditionParam
+        );
     }
 
     render() {
@@ -38,7 +46,7 @@ class ConditionPicker extends Component {
             <div id="condition-picker" className="container">
                 Condition Picker
                 <br />
-                <select ref={this.conditionSelect}>
+                <select onChange={this.handleNameChange}>
                     <option value="">--</option>
                     {this.props.conditions.map((item, i) => {
                         return <option value={item.name} key={i}>{item.title}</option>

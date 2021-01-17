@@ -19,7 +19,6 @@ class App extends Component {
         };
 
         this.scenarioSelector = React.createRef();
-        this.conditionPicker = React.createRef();
 
         this.runExperiment = this.runExperiment.bind(this);
     }
@@ -76,7 +75,6 @@ class App extends Component {
                     <ConditionPicker
                         cards={this.state.cards}
                         conditions={this.state.conditions}
-                        ref={this.conditionPicker}
                     />
                     <div id="results-console" className="container">
                         Results: {this.state.successfulRuns} / {this.state.totalRuns}
