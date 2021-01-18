@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import AcInput from "../common/AcInput";
 import ConditionItem from "./ConditionItem";
 import {connect} from "react-redux";
+import AcInput2 from "../common/AcInput2";
 
 class ConditionPicker extends Component {
     constructor(props) {
@@ -11,9 +11,8 @@ class ConditionPicker extends Component {
             conditionParam: '',
             conditionName: '',
             conditionTitle: '',
+            acKey: 0,
         };
-
-        this.acParamInput = React.createRef();
 
         this.updateConditionParam = this.updateConditionParam.bind(this);
         this.addCondition = this.addCondition.bind(this);
@@ -32,13 +31,13 @@ class ConditionPicker extends Component {
     addCondition() {
         if (!this.state.conditionName || !this.state.conditionParam) return;
 
-        this.acParamInput.current.clearCardName();
-
         this.props.addCondition(
             this.state.conditionName,
             this.state.conditionTitle,
             this.state.conditionParam
         );
+
+        this.setState({acKey: this.state.acKey+1});
     }
 
     render() {
@@ -52,8 +51,8 @@ class ConditionPicker extends Component {
                         return <option value={item.name} key={i}>{item.title}</option>
                     })}
                 </select>
-                <AcInput id="condition-picker"
-                         ref={this.acParamInput}
+                <AcInput2 id="condition-picker-2"
+                         key={this.state.acKey}
                          cards={this.props.cards}
                          updateCardCallback={this.updateConditionParam}
                          addCardCallback={this.addCondition}
