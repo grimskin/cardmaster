@@ -9,9 +9,7 @@ const conditionsReducer = (state, action) => {
     switch (action.type) {
         case 'ADD_CONDITION':
             newState.conditions = newState.conditions.concat([{
-                name: name,
-                title: title,
-                param: param,
+                name, title, param,
             }]);
             return newState;
         case 'REMOVE_CONDITION':
