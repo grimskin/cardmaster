@@ -19,6 +19,7 @@ class CardDefinition implements JsonSerializable
 
     private string $type = '';
     private array $types = [];
+    private array $subtypes = [];
 
     private ?ManaCost $manaCost;
 
@@ -93,6 +94,19 @@ class CardDefinition implements JsonSerializable
         return $this->type == self::T_BASIC_LAND || $this->type == self::T_LAND || in_array('Land', $this->types);
     }
 
+    public function isCreature(): bool
+    {
+        return in_array('Creature', $this->types);
+    }
+
+    #[Pure]
+    public function getCreatureTypes(): array
+    {
+        if (!$this->isCreature()) return [];
+
+        return $this->subtypes;
+    }
+
     #[Pure]
     private function canProduce(string $color): bool
     {
@@ -113,6 +127,7 @@ class CardDefinition implements JsonSerializable
         $this->faceName = $cardData->getFaceName();
         $this->type = $cardData->getType();
         $this->types = $cardData->getTypes();
+        $this->subtypes = $cardData->getSubtypes();
         $this->colorIdentity = $cardData->getColorIdentity();
         $this->manaCost = new ManaCost($cardData->getManaCost());
     }

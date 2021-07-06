@@ -60,6 +60,11 @@ class CardData
         return $this->types;
     }
 
+    public function getSubtypes(): array
+    {
+        return $this->subtypes;
+    }
+
     public function getColorIdentity()
     {
         return $this->colorIdentity;

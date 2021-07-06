@@ -1,0 +1,164 @@
+{
+    "artist": "James Zapata",
+    "borderColor": "black",
+    "colorIdentity": [],
+    "colors": [],
+    "convertedManaCost": 4.0,
+    "edhrecRank": 13871,
+    "flavorText": "\"I know its lightness, for I have seen it fly. I know its weight, for I have seen it strike.\"\n—Brigone, soldier of Meletis",
+    "foreignData": [
+        {
+            "flavorText": "„Ich weiß um seine Leichtigkeit, denn ich habe ihn fliegen sehen. Ich weiß um sein Gewicht, denn ich habe ihn zuschlagen sehen.\"\n—Brigone, Soldatin aus Meletis",
+            "language": "German",
+            "multiverseId": 467255,
+            "name": "Schmiedeeiserner Raubvogel",
+            "text": "Fliegend\nErstschlag (Diese Kreatur fügt Kampfschaden vor Kreaturen ohne Erstschlag zu.)",
+            "type": "Artefaktkreatur — Vogel"
+        },
+        {
+            "flavorText": "\"Sé lo ligero que es, pues he visto su vuelo. Sé lo pesado que es, pues he visto su ataque\".\n—Brígona, soldado de Meletis",
+            "language": "Spanish",
+            "multiverseId": 467535,
+            "name": "Rapaz de metal forjado",
+            "text": "Vuela.\nDaña primero. (Esta criatura hace daño de combate antes que las criaturas sin la habilidad de dañar primero.)",
+            "type": "Criatura artefacto — Ave"
+        },
+        {
+            "flavorText": "« Je connais sa légèreté pour l'avoir vu voler. Je connais son poids pour l'avoir vu frapper. »\n—Brigone, soldat de Mélétis",
+            "language": "French",
+            "multiverseId": 467815,
+            "name": "Rapace forgé",
+            "text": "Vol\nInitiative (Cette créature inflige des blessures de combat avant les créatures sans l'initiative.)",
+            "type": "Créature-artefact : oiseau"
+        },
+        {
+            "flavorText": "\"Conosco la sua leggerezza, poiché l'ho visto volare. Conosco il suo peso, poiché l'ho visto colpire.\"\n—Brìgone, soldatessa di Meletis",
+            "language": "Italian",
+            "multiverseId": 468095,
+            "name": "Rapace Forgiato",
+            "text": "Volare\nAttacco improvviso (Questa creatura infligge danno da combattimento prima delle creature senza attacco improvviso.)",
+            "type": "Creatura Artefatto — Uccello"
+        },
+        {
+            "flavorText": "「私はそれが空を飛ぶのを見たことがあり、故にその軽さを知っている。私はそれが攻撃する様をも見ていて、故にその重さも知っている。」\n――メレティスの兵士、ブリゴニー",
+            "language": "Japanese",
+            "multiverseId": 468375,
+            "name": "金床鋳込みの猛禽",
+            "text": "飛行\n先制攻撃（このクリーチャーは先制攻撃を持たないクリーチャーよりも先に戦闘ダメージを与える。）",
+            "type": "アーティファクト・クリーチャー — 鳥"
+        },
+        {
+            "flavorText": "\"나는 것을 볼 때는 매우 가벼운 듯 하다. 하지만 공격할 때 보면 그 무게를 느낄 수 있지.\"\n—멜레티스의 군인, 브리고니",
+            "language": "Korean",
+            "multiverseId": 468655,
+            "name": "대장간에서 태어난 새",
+            "text": "비행\n선제공격 (이 생물은 선제공격이 없는 생물보다 먼저 전투피해를 입힌다.)",
+            "type": "마법물체 생물 — 조류"
+        },
+        {
+            "flavorText": "\"Conheço sua leveza, pois o vi voar. Conheço seu peso, pois o vi atacar.\"\n— Brigone, soldado de Meletis",
+            "language": "Portuguese (Brazil)",
+            "multiverseId": 468935,
+            "name": "Raptor Forjado na Bigorna",
+            "text": "Voar\nIniciativa (Esta criatura causa dano de combate antes das criaturas sem iniciativa.)",
+            "type": "Criatura Artefato — Ave"
+        },
+        {
+            "flavorText": "«Я знаю, как она легка, ведь я видела ее в полете. Я знаю, как она тяжела, ведь я видела ее в бою».\n— Бригона, солдат из Мелетиды",
+            "language": "Russian",
+            "multiverseId": 469215,
+            "name": "Кованая Птица",
+            "text": "Полет\nПервый удар (Это существо наносит боевые повреждения раньше существ без Первого удара.)",
+            "type": "Артефакт Существо — Птица"
+        },
+        {
+            "flavorText": "「其身轻如燕，我曾亲眼见它飞翔天空。其力大无穷，我曾亲眼见它突袭成功。」\n～迈勒提斯士兵布莉戈涅",
+            "language": "Chinese Simplified",
+            "multiverseId": 469495,
+            "name": "锻砧猛禽",
+            "text": "飞行\n先攻（此生物会比不具先攻异能的生物提前造成战斗伤害。）",
+            "type": "神器生物 ～鸟"
+        },
+        {
+            "flavorText": "「其身輕如燕，我曾親眼見它飛翔天空。其力大無窮，我曾親眼見它突襲成功。」\n～邁勒提斯士兵布莉戈涅",
+            "language": "Chinese Traditional",
+            "multiverseId": 469775,
+            "name": "鍛砧猛禽",
+            "text": "飛行\n先攻（此生物會比不具先攻異能的生物提前造成戰鬥傷害。）",
+            "type": "神器生物 ～鳥"
+        }
+    ],
+    "frameVersion": "2015",
+    "hasFoil": true,
+    "hasNonFoil": true,
+    "isArena": true,
+    "isMtgo": true,
+    "isPaper": true,
+    "isReprint": true,
+    "layout": "normal",
+    "legalities": {
+        "brawl": "Legal",
+        "commander": "Legal",
+        "duel": "Legal",
+        "future": "Legal",
+        "historic": "Legal",
+        "legacy": "Legal",
+        "modern": "Legal",
+        "pauper": "Legal",
+        "penny": "Legal",
+        "pioneer": "Legal",
+        "standard": "Legal",
+        "vintage": "Legal"
+    },
+    "manaCost": "{4}",
+    "mcmId": 379578,
+    "mcmMetaId": 208813,
+    "mtgArenaId": 70006,
+    "mtgoId": 73341,
+    "multiverseId": 466975,
+    "name": "Anvilwrought Raptor",
+    "number": "221",
+    "originalText": "Flying\nFirst strike <i>(This creature deals combat damage before creatures without first strike.)</i>",
+    "originalType": "Artifact Creature — Bird",
+    "power": "2",
+    "prices": {
+        "mtgo": {
+            "2019-12-22": 0.03
+        },
+        "mtgoFoil": {
+            "2019-12-22": 0.01
+        },
+        "paper": {
+            "2019-12-05": 0.03
+        },
+        "paperFoil": {
+            "2019-12-05": 0.06
+        }
+    },
+    "printings": [
+        "M20",
+        "THS"
+    ],
+    "purchaseUrls": {
+        "cardmarket": "https://mtgjson.com/links/49046ffc5def56a0",
+        "tcgplayer": "https://mtgjson.com/links/f538e19a624e3dcc"
+    },
+    "rarity": "common",
+    "rulings": [],
+    "scryfallId": "aa6d7bbe-0418-4a58-a97b-13b50eb0b642",
+    "scryfallIllustrationId": "ae55a775-a8fa-48cc-98a2-57ea5b4f013a",
+    "scryfallOracleId": "d87ebd8c-ad2c-45c9-8c97-f046aeda861c",
+    "subtypes": [
+        "Bird"
+    ],
+    "supertypes": [],
+    "tcgplayerProductId": 192908,
+    "text": "Flying\nFirst strike (This creature deals combat damage before creatures without first strike.)",
+    "toughness": "1",
+    "type": "Artifact Creature — Bird",
+    "types": [
+        "Artifact",
+        "Creature"
+    ],
+    "uuid": "dc6f681c-413d-5248-9258-c32c2d7eea74"
+}

@@ -54,6 +54,39 @@ class CardDefinitionTest extends TestCase
         $this->assertFalse($cardDef->canProduceBlack());
     }
 
+    /**
+     * @test
+     */
+    public function shouldRecognizeCreature()
+    {
+        $cardDef = $this->loadCardDefinition('Fabled Passage');
+        $this->assertFalse($cardDef->isCreature());
+
+        $cardDef = $this->loadCardDefinition('Anvilwrought Raptor');
+        $this->assertTrue($cardDef->isCreature());
+
+        $cardDef = $this->loadCardDefinition('Yorion, Sky Nomad');
+        $this->assertTrue($cardDef->isCreature());
+    }
+
+    /**
+     * @test
+     */
+    public function shouldReturnCreatureTypes()
+    {
+        $cardDef = $this->loadCardDefinition('Fabled Passage');
+        $this->assertCount(0, $cardDef->getCreatureTypes());
+
+        $cardDef = $this->loadCardDefinition('Anvilwrought Raptor');
+        $this->assertCount(1, $cardDef->getCreatureTypes());
+        $this->assertContains('Bird', $cardDef->getCreatureTypes());
+
+        $cardDef = $this->loadCardDefinition('Yorion, Sky Nomad');
+        $this->assertCount(2, $cardDef->getCreatureTypes());
+        $this->assertContains('Bird', $cardDef->getCreatureTypes());
+        $this->assertContains('Serpent', $cardDef->getCreatureTypes());
+    }
+
     private function loadCardDefinition($cardName): ? CardDefinition {
         $cardDef = CardDefinition::define($cardName);
         $cardDef->absorbData(
