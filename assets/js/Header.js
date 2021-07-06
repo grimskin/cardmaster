@@ -4,7 +4,7 @@ class Header extends Component {
     render() {
         return (
             <header id="Header">
-                MtG Probability Checker
+                MtG: Probability Checker
             </header>
         );
     }
