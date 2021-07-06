@@ -6,7 +6,7 @@ namespace App\Service;
 
 class ScriptFileReader
 {
-    private $experimentsDir;
+    private string $experimentsDir;
 
     public function __construct(string $projectDir)
     {
