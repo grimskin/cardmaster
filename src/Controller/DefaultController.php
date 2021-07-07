@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends AbstractController
 {
-    public function index()
+    public function index(): Response
     {
         $links = $this->getAssetsLinks();
 
