@@ -1,0 +1,12 @@
+* {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+}
+
+@import "probability";
+@import "set";
