@@ -25,8 +25,7 @@ class SetStatsController extends AbstractController
         $this->collector->addCards($this->dataLoader->loadSet($set));
 
         return $this->render('set/stats.html.twig', [
-            'set' => $set,
-            'cards' => $this->collector->getCards(),
+            'stats' => $this->collector,
         ]);
     }
 }

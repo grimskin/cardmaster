@@ -22,7 +22,9 @@ class DataLoader
             $cards[] = CardData::createFromDatum($cardDatum);
         }
 
-        return $cards;
+        $data['cards'] = $cards;
+
+        return $data;
     }
 
     public function loadDataFromFile(string $fileName, $lazy = true)

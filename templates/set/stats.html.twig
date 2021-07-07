@@ -1,8 +1,8 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-    {{ set }} <br>
-    {% for card in cards %}
+    {{ stats.getSetName() }} <br>
+    {% for card in stats.cards %}
     {{ card.getNumber() }} - {{ card.getName() }} - {{ card.getFaceName() }}<br>
     {% endfor %}
 {% endblock %}

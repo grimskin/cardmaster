@@ -9,6 +9,8 @@ use JsonSerializable;
 
 class CardDefinition implements JsonSerializable
 {
+    private ?CardData $cardData;
+
     const T_BASIC_LAND = 'T_BASIC_LAND';
     const T_LAND = 'T_LAND';
 
@@ -94,6 +96,11 @@ class CardDefinition implements JsonSerializable
         return $this->type == self::T_BASIC_LAND || $this->type == self::T_LAND || in_array('Land', $this->types);
     }
 
+    public function isBasicLand(): bool
+    {
+        return $this->type == self::T_BASIC_LAND;
+    }
+
     public function isCreature(): bool
     {
         return in_array('Creature', $this->types);
@@ -119,6 +126,8 @@ class CardDefinition implements JsonSerializable
 
     public function absorbData(CardData $cardData)
     {
+        $this->cardData = $cardData;
+
         if ($this->isStub()) {
             return ;
         }
@@ -130,6 +139,12 @@ class CardDefinition implements JsonSerializable
         $this->subtypes = $cardData->getSubtypes();
         $this->colorIdentity = $cardData->getColorIdentity();
         $this->manaCost = new ManaCost($cardData->getManaCost());
+    }
+
+    #[Pure]
+    public function getNumber(): string
+    {
+        return $this->cardData?->getNumber();
     }
 
     #[ArrayShape([
