@@ -11,6 +11,7 @@
         "symfony/flex": "^1.1",
         "symfony/framework-bundle": "5.*",
         "symfony/http-client": "5.*",
+        "symfony/intl": "5.*",
         "symfony/monolog-bundle": "^3.0",
         "symfony/runtime": "5.*",
         "symfony/stopwatch": "^5.3",
