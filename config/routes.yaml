@@ -3,27 +3,27 @@ index:
     controller: App\Controller\DefaultController::index
 api_cards_list:
     path: /api/cards
-    controller: App\Controller\ApiController:cardsList
+    controller: App\Controller\ApiController::cardsList
 api_cards_info:
     path: /api/cards/{cardName}
-    controller: App\Controller\ApiController:cardInfo
+    controller: App\Controller\ApiController::cardInfo
 api_conditions_list:
     path: /api/conditions
-    controller: App\Controller\ApiController:conditionsList
+    controller: App\Controller\ApiController::conditionsList
 api_scenarios_list:
     path: /api/scenarios
-    controller: App\Controller\ApiController:scenariosList
+    controller: App\Controller\ApiController::scenariosList
 api_fetch_deck:
     path: /api/fetch/deck
-    controller: App\Controller\ApiController:fetchDeck
+    controller: App\Controller\ApiController::fetchDeck
 api_simulation:
     path: /api/simulation
     methods: POST
     requirements:
         _format: json
-    controller: App\Controller\ApiController:simulation
+    controller: App\Controller\ApiController::simulation
 
 set_view:
     path: /graphics/{set}/view
     methods: GET
-    controller: App\Controller\SetStatsController:setStats
+    controller: App\Controller\SetStatsController::setStats
