@@ -83,3 +83,6 @@ services:
             - method: loadDataFromFile
               arguments:
                   - 'data/ZNR.json'
+            - method: loadDataFromFile
+              arguments:
+                  - 'data/STX.json'

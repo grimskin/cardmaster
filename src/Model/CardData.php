@@ -6,9 +6,10 @@ namespace App\Model;
 
 class CardData
 {
-    private $name;
+    private string $name;
     private $faceName;
     private $type = '';
+    private string $number;
 
     private $manaCost;
     private $supertypes;
@@ -28,6 +29,7 @@ class CardData
         $result->types = $cardDatum['types'] ?? [];
         $result->colorIdentity = $cardDatum['colorIdentity'];
         $result->manaCost = $cardDatum['manaCost'] ?? '';
+        $result->number = $cardDatum['number'] ?? '';
         $result->parseTypes();
 
         return $result;
@@ -48,6 +50,11 @@ class CardData
     public function getFaceName()
     {
         return $this->faceName;
+    }
+
+    public function getNumber(): string
+    {
+        return $this->number;
     }
 
     public function getType(): string
