@@ -11,6 +11,7 @@
         "symfony/framework-bundle": "5.*",
         "symfony/http-client": "5.*",
         "symfony/runtime": "5.*",
+        "symfony/twig-bundle": "5.*",
         "symfony/webpack-encore-bundle": "^1.7",
         "symfony/yaml": "5.*"
     },
