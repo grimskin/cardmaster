@@ -42,15 +42,15 @@ class ManaVariator
         return $result;
     }
 
-    public static function getLandManaOptions(CardDefinition $card)
+    public static function getLandManaOptions(CardDefinition $card): array
     {
         return array_values(array_filter([
             '1',
-            $card->canProduceWhite() ? 'W' : null,
-            $card->canProduceBlue() ? 'U' : null,
-            $card->canProduceBlack() ? 'B' : null,
-            $card->canProduceRed() ? 'R' : null,
-            $card->canProduceGreen() ? 'G' : null,
+            $card->canProduce(CardDefinition::COLOR_WHITE) ? CardDefinition::COLOR_WHITE : null,
+            $card->canProduce(CardDefinition::COLOR_BLUE) ? CardDefinition::COLOR_BLUE : null,
+            $card->canProduce(CardDefinition::COLOR_BLACK) ? CardDefinition::COLOR_BLACK : null,
+            $card->canProduce(CardDefinition::COLOR_RED) ? CardDefinition::COLOR_RED : null,
+            $card->canProduce(CardDefinition::COLOR_GREEN) ? CardDefinition::COLOR_GREEN : null,
         ]));
     }
 }

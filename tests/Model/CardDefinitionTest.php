@@ -17,11 +17,11 @@ class CardDefinitionTest extends TestCase
     {
         $cardDef = $this->loadCardDefinition('Raugrin Triome');
 
-        $this->assertTrue($cardDef->canProduceRed());
-        $this->assertTrue($cardDef->canProduceWhite());
-        $this->assertTrue($cardDef->canProduceBlue());
-        $this->assertFalse($cardDef->canProduceGreen());
-        $this->assertFalse($cardDef->canProduceBlack());
+        $this->assertTrue($cardDef->canProduce(CardDefinition::COLOR_RED));
+        $this->assertTrue($cardDef->canProduce(CardDefinition::COLOR_WHITE));
+        $this->assertTrue($cardDef->canProduce(CardDefinition::COLOR_BLUE));
+        $this->assertFalse($cardDef->canProduce(CardDefinition::COLOR_GREEN));
+        $this->assertFalse($cardDef->canProduce(CardDefinition::COLOR_BLACK));
     }
 
     /**
@@ -32,11 +32,11 @@ class CardDefinitionTest extends TestCase
         $cardDef = $this->loadCardDefinition('Forest');
 
         $this->assertTrue($cardDef->isLand());
-        $this->assertFalse($cardDef->canProduceRed());
-        $this->assertFalse($cardDef->canProduceWhite());
-        $this->assertFalse($cardDef->canProduceBlue());
-        $this->assertTrue($cardDef->canProduceGreen());
-        $this->assertFalse($cardDef->canProduceBlack());
+        $this->assertFalse($cardDef->canProduce(CardDefinition::COLOR_RED));
+        $this->assertFalse($cardDef->canProduce(CardDefinition::COLOR_WHITE));
+        $this->assertFalse($cardDef->canProduce(CardDefinition::COLOR_BLUE));
+        $this->assertTrue($cardDef->canProduce(CardDefinition::COLOR_GREEN));
+        $this->assertFalse($cardDef->canProduce(CardDefinition::COLOR_BLACK));
     }
 
     /**
@@ -47,11 +47,11 @@ class CardDefinitionTest extends TestCase
         $cardDef = $this->loadCardDefinition('Fabled Passage');
 
         $this->assertTrue($cardDef->isLand());
-        $this->assertFalse($cardDef->canProduceRed());
-        $this->assertFalse($cardDef->canProduceWhite());
-        $this->assertFalse($cardDef->canProduceBlue());
-        $this->assertFalse($cardDef->canProduceGreen());
-        $this->assertFalse($cardDef->canProduceBlack());
+        $this->assertFalse($cardDef->canProduce(CardDefinition::COLOR_RED));
+        $this->assertFalse($cardDef->canProduce(CardDefinition::COLOR_WHITE));
+        $this->assertFalse($cardDef->canProduce(CardDefinition::COLOR_BLUE));
+        $this->assertFalse($cardDef->canProduce(CardDefinition::COLOR_GREEN));
+        $this->assertFalse($cardDef->canProduce(CardDefinition::COLOR_BLACK));
     }
 
     /**

@@ -14,6 +14,12 @@ class CardDefinition implements JsonSerializable
     const T_BASIC_LAND = 'T_BASIC_LAND';
     const T_LAND = 'T_LAND';
 
+    const COLOR_WHITE = 'W';
+    const COLOR_BLUE = 'U';
+    const COLOR_BLACK = 'B';
+    const COLOR_RED = 'R';
+    const COLOR_GREEN = 'G';
+
     private string $name = '';
     private string $faceName = '';
     private bool $isStub = false;
@@ -61,36 +67,6 @@ class CardDefinition implements JsonSerializable
         return $result;
     }
 
-    #[Pure]
-    public function canProduceWhite(): bool
-    {
-        return $this->canProduce('W');
-    }
-
-    #[Pure]
-    public function canProduceBlue(): bool
-    {
-        return $this->canProduce('U');
-    }
-
-    #[Pure]
-    public function canProduceBlack(): bool
-    {
-        return $this->canProduce('B');
-    }
-
-    #[Pure]
-    public function canProduceRed(): bool
-    {
-        return $this->canProduce('R');
-    }
-
-    #[Pure]
-    public function canProduceGreen(): bool
-    {
-        return $this->canProduce('G');
-    }
-
     public function isLand(): bool
     {
         return $this->type == self::T_BASIC_LAND || $this->type == self::T_LAND || in_array('Land', $this->types);
@@ -115,7 +91,7 @@ class CardDefinition implements JsonSerializable
     }
 
     #[Pure]
-    private function canProduce(string $color): bool
+    public function canProduce(string $color): bool
     {
         if ($this->isLand() && in_array($color, $this->colorIdentity)) {
             return true;
@@ -150,7 +126,7 @@ class CardDefinition implements JsonSerializable
     #[ArrayShape([
         'name' => "string",
         'isLand' => "string",
-        'manaCost' => "",
+        'manaCost' => "App\\Domain\\ManaCost",
         'canProduce' => "string"
     ])]
     public function jsonSerialize(): array
@@ -162,11 +138,11 @@ class CardDefinition implements JsonSerializable
         ];
 
         $result['canProduce'] = implode(', ', array_filter([
-            $this->canProduceWhite() ? 'W' : null,
-            $this->canProduceBlue() ? 'U' : null,
-            $this->canProduceBlack() ? 'B' : null,
-            $this->canProduceRed() ? 'R' : null,
-            $this->canProduceGreen() ? 'G' : null,
+            $this->canProduce(self::COLOR_WHITE) ? self::COLOR_WHITE : null,
+            $this->canProduce(self::COLOR_BLUE) ? self::COLOR_BLUE : null,
+            $this->canProduce(self::COLOR_BLACK) ? self::COLOR_BLACK : null,
+            $this->canProduce(self::COLOR_RED) ? self::COLOR_RED : null,
+            $this->canProduce(self::COLOR_GREEN) ? self::COLOR_GREEN : null,
         ]));
 
         return $result;
