@@ -13,6 +13,14 @@ class CardDefinition implements JsonSerializable
 
     const T_BASIC_LAND = 'T_BASIC_LAND';
     const T_LAND = 'T_LAND';
+    const T_ENCHANTMENT = 'Enchantment';
+    const T_ARTIFACT = 'Artifact';
+    const T_CREATURE = 'Creature';
+    const T_INSTANT = 'Instant';
+    const T_SORCERY = 'Sorcery';
+    const T_PLANESWALKER = 'Planeswalker';
+
+    const ST_LEGENDARY = 'Legendary';
 
     const COLOR_WHITE = 'W';
     const COLOR_BLUE = 'U';
@@ -90,6 +98,11 @@ class CardDefinition implements JsonSerializable
         return $this->subtypes;
     }
 
+    public function getSubTypes(): array
+    {
+        return $this->subtypes;
+    }
+
     #[Pure]
     public function canProduce(string $color): bool
     {
@@ -98,6 +111,11 @@ class CardDefinition implements JsonSerializable
         }
 
         return false;
+    }
+
+    public function isOfType(string $type): bool
+    {
+        return in_array($type, $this->types);
     }
 
     public function absorbData(CardData $cardData)

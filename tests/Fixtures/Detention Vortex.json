@@ -1,0 +1,156 @@
+{
+    "artist": "Campbell White",
+    "availability": [
+        "arena",
+        "mtgo",
+        "paper"
+    ],
+    "borderColor": "black",
+    "colorIdentity": [
+        "W"
+    ],
+    "colors": [
+        "W"
+    ],
+    "convertedManaCost": 1.0,
+    "edhrecRank": 16308,
+    "foreignData": [
+        {
+            "language": "German",
+            "multiverseId": 513781,
+            "name": "Arrestblase",
+            "text": "Verzaubert eine bleibende Karte, die kein Land ist\nDie verzauberte bleibende Karte kann nicht angreifen oder blocken, und ihre aktivierten Fähigkeiten können nicht aktiviert werden.\n{3}: Zerstöre die Arrestblase. Nur deine Gegner können diese Fähigkeit aktivieren, und nur wie eine Hexerei.",
+            "type": "Verzauberung — Aura"
+        },
+        {
+            "language": "Spanish",
+            "multiverseId": 514072,
+            "name": "Vórtice de detención",
+            "text": "Encantar permanente que no sea tierra.\nEl permanente encantado no puede atacar ni bloquear y no pueden activarse sus habilidades activadas.\n{3}: Destruye el Vórtice de detención. Solo tus oponentes pueden activar esta habilidad y solo como un conjuro.",
+            "type": "Encantamiento — Aura"
+        },
+        {
+            "language": "French",
+            "multiverseId": 514363,
+            "name": "Vortex de retenue",
+            "text": "Enchanter : permanent non-terrain\nLe permanent enchanté ne peut ni attaquer ni bloquer et ses capacités activées ne peuvent pas être activées.\n{3} : Détruisez le Vortex de retenue. Seuls vos adversaires peuvent activer cette capacité et uniquement lorsqu'ils pourraient lancer un rituel.",
+            "type": "Enchantement : aura"
+        },
+        {
+            "language": "Italian",
+            "multiverseId": 514654,
+            "name": "Vortice di Detenzione",
+            "text": "Incanta permanente non terra\nIl permanente incantato non può attaccare o bloccare e le sue abilità attivate non possono essere attivate.\n{3}: Distruggi il Vortice di Detenzione. Solo i tuoi avversari possono attivare questa abilità e solo come una stregoneria.",
+            "type": "Incantesimo — Aura"
+        },
+        {
+            "language": "Japanese",
+            "multiverseId": 514945,
+            "name": "居残りの渦",
+            "text": "エンチャント（土地でないパーマネント）\nエンチャントしているパーマネントでは攻撃もブロックもできず、それの起動型能力は起動できない。\n{3}：居残りの渦を破壊する。この能力は、対戦相手のみが、ソーサリーとしてのみ起動できる。",
+            "type": "エンチャント — オーラ"
+        },
+        {
+            "language": "Korean",
+            "multiverseId": 515236,
+            "name": "억류의 소용돌이",
+            "text": "대지가 아닌 지속물에 부여\n부여된 지속물은 공격하거나 방어할 수 없으며, 그 지속물의 활성화능력은 활성화될 수 없다.\n{3}: 억류의 소용돌이를 파괴한다. 당신의 상대들만이 이 능력을 활성화할 수 있고 집중마법 시기에만 활성화할 수 있다.",
+            "type": "부여마법 — 마법진"
+        },
+        {
+            "language": "Portuguese (Brazil)",
+            "multiverseId": 515527,
+            "name": "Vórtice de Detenção",
+            "text": "Encantar permanente não de terreno\nA permanente encantada não pode atacar nem bloquear e suas habilidades ativadas não podem ser ativadas.\n{3}: Destrua Vórtice de Detenção. Apenas seus oponentes podem ativar esta habilidade e somente como um feitiço.",
+            "type": "Encantamento — Aura"
+        },
+        {
+            "language": "Russian",
+            "multiverseId": 515818,
+            "name": "Вихрь Задержания",
+            "text": "Зачаровать не являющийся землей перманент\nЗачарованный перманент не может атаковать или блокировать, и его активируемые способности не могут быть активированы.\n{3}: уничтожьте Вихрь Задержания. Эту способность могут активировать только ваши оппоненты и только как волшебство.",
+            "type": "Чары — Аура"
+        },
+        {
+            "language": "Chinese Simplified",
+            "multiverseId": 516109,
+            "name": "拘禁漩涡",
+            "text": "结附于非地永久物\n所结附的永久物不能进行攻击或阻挡，其起动式异能也不能起动。\n{3}：消灭拘禁漩涡。只有对手可以起动此异能，且仅限法术时机。",
+            "type": "结界 ～灵气"
+        },
+        {
+            "language": "Chinese Traditional",
+            "multiverseId": 516400,
+            "name": "拘禁漩渦",
+            "text": "結附於非地永久物\n所結附的永久物不能進行攻擊或阻擋，其起動式異能也不能起動。\n{3}：消滅拘禁漩渦。只有對手可以起動此異能，且僅限巫術時機。",
+            "type": "結界 ～靈氣"
+        }
+    ],
+    "frameVersion": "2015",
+    "hasFoil": true,
+    "hasNonFoil": true,
+    "identifiers": {
+        "cardKingdomFoilId": "244762",
+        "cardKingdomId": "244446",
+        "mcmId": "558008",
+        "mcmMetaId": "339072",
+        "mtgArenaId": "76406",
+        "mtgjsonV4Id": "2939f739-2992-59e7-8e95-61f49c7dc4ca",
+        "mtgoId": "88503",
+        "multiverseId": "513490",
+        "scryfallId": "54ebe581-be17-415a-a160-28d8f4e95636",
+        "scryfallIllustrationId": "8c56c5a5-e87b-456e-aa96-8f9b9e523a5c",
+        "scryfallOracleId": "5383a1c1-662f-46fe-a0e5-0f38efe1a37a",
+        "tcgplayerProductId": "235893"
+    },
+    "keywords": [
+        "Enchant"
+    ],
+    "layout": "normal",
+    "legalities": {
+        "brawl": "Legal",
+        "commander": "Legal",
+        "duel": "Legal",
+        "future": "Legal",
+        "gladiator": "Legal",
+        "historic": "Legal",
+        "legacy": "Legal",
+        "modern": "Legal",
+        "penny": "Legal",
+        "pioneer": "Legal",
+        "standard": "Legal",
+        "vintage": "Legal"
+    },
+    "manaCost": "{W}",
+    "name": "Detention Vortex",
+    "number": "13",
+    "originalText": "Enchant nonland permanent\nEnchanted permanent can't attack or block, and its activated abilities can't be activated.\n{3}: Destroy Detention Vortex. Only your opponents may activate this ability and only as a sorcery.",
+    "originalType": "Enchantment — Aura",
+    "printings": [
+        "STX"
+    ],
+    "purchaseUrls": {
+        "cardKingdom": "https://mtgjson.com/links/40fe9a867200e9f1",
+        "cardKingdomFoil": "https://mtgjson.com/links/686804c1654c70a1",
+        "cardmarket": "https://mtgjson.com/links/2b7e55f815f41255",
+        "tcgplayer": "https://mtgjson.com/links/11fe167ef1e6674a"
+    },
+    "rarity": "uncommon",
+    "rulings": [
+        {
+            "date": "2021-04-16",
+            "text": "In a multiplayer game, any opponent may activate Detention Vortex’s last ability, not just an opponent who controls the permanent that it is enchanting."
+        }
+    ],
+    "setCode": "STX",
+    "subtypes": [
+        "Aura"
+    ],
+    "supertypes": [],
+    "text": "Enchant nonland permanent\nEnchanted permanent can't attack or block, and its activated abilities can't be activated.\n{3}: Destroy Detention Vortex. Only your opponents may activate this ability and only as a sorcery.",
+    "type": "Enchantment — Aura",
+    "types": [
+        "Enchantment"
+    ],
+    "uuid": "258b0ad9-fc37-53a8-a2a4-4e250b0db22d"
+}

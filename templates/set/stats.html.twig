@@ -2,7 +2,8 @@
 
 {% block body %}
     {{ stats.getSetName() }} <br>
-    {% for card in stats.cards %}
-    {{ card.getNumber() }} - {{ card.getName() }} - {{ card.getFaceName() }}<br>
+    Different types - {{ stats.creatureTypesStats|length }} <br>
+    {% for type, amount in stats.creatureTypesStats %}
+    {{ type }} - {{ amount }} <br>
     {% endfor %}
 {% endblock %}

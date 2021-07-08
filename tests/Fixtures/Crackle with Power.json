@@ -1,0 +1,166 @@
+{
+    "artist": "Micah Epstein",
+    "availability": [
+        "arena",
+        "mtgo",
+        "paper"
+    ],
+    "borderColor": "black",
+    "colorIdentity": [
+        "R"
+    ],
+    "colors": [
+        "R"
+    ],
+    "convertedManaCost": 2.0,
+    "edhrecRank": 4430,
+    "flavorText": "Will gasped as Rowan drew from the raw power of the Strixhaven Snarl. For a moment, she was luminous, transcendent, terrible.",
+    "foreignData": [
+        {
+            "flavorText": "Will hielt den Atem an, als Rowan die rohe Macht des Strixhaven-Knotens anzapfte. Einen Augenblick lang leuchtete sie, übermenschlich und schrecklich.",
+            "language": "German",
+            "multiverseId": 513863,
+            "name": "Knisternde Macht",
+            "text": "Die Knisternde Macht fügt bis zu X Zielen jeweils fünfmal X Schadenspunkte zu.",
+            "type": "Hexerei"
+        },
+        {
+            "flavorText": "Will jadeó cuando Rowan extrajo el poder en estado puro de la maraña de Strixhaven. Fue resplandeciente, trascendente y espantosa por un momento.",
+            "language": "Spanish",
+            "multiverseId": 514154,
+            "name": "Crepitar con poder",
+            "text": "Crepitar con poder hace el quíntuple de X puntos de daño a cada uno de hasta X objetivos.",
+            "type": "Conjuro"
+        },
+        {
+            "flavorText": "Will eut le souffle coupé lorsque Rowan canalisa la puissance brute du Lacis de Strixhaven. Un court instant, elle était lumineuse, transcendante, redoutable.",
+            "language": "French",
+            "multiverseId": 514445,
+            "name": "Crépitement de puissance",
+            "text": "Ciblez jusqu'à X cibles. Le Crépitement de puissance inflige cinq fois X blessures à chacune d'elles.",
+            "type": "Rituel"
+        },
+        {
+            "flavorText": "Will rimase senza fiato quando Rowan attinse al puro potere dell'Intreccio di Strixhaven. Per un momento diventò splendente, trascendente, terribile.",
+            "language": "Italian",
+            "multiverseId": 514736,
+            "name": "Crepitare di Potere",
+            "text": "Scegli fino a X bersagli. Crepitare di Potere infligge danno pari a cinque volte X a ognuno di essi.",
+            "type": "Stregoneria"
+        },
+        {
+            "flavorText": "ローアンがストリクスヘイヴンの交錯から未開の力を引き出すのを見て、ウィルは息をのんだ。その瞬間、彼女は光明で卓絶で恐怖だった。",
+            "language": "Japanese",
+            "multiverseId": 515027,
+            "name": "弾ける力",
+            "text": "クリーチャーやプレインズウォーカーやプレイヤー合わせて最大Ｘ個を対象とする。弾ける力はそれらにそれぞれＸの５倍の点数のダメージを与える。",
+            "type": "ソーサリー"
+        },
+        {
+            "flavorText": "로완이 스트릭스헤이븐 얽힘에서 정제되지 않은 힘을 끌어내는 것을 보고 윌은 숨을 헉 하고 들이마셨다. 잠시 동안, 그녀는 휘황찬란하고, 초월적이었으며, 끔찍했다.",
+            "language": "Korean",
+            "multiverseId": 515318,
+            "name": "파지직거리는 힘",
+            "text": "원하는 목표를 최대 X개까지 정한다. 파지직거리는 힘은 그 목표들에게 X의 다섯 배만큼 피해를 입힌다.",
+            "type": "집중마법"
+        },
+        {
+            "flavorText": "Will ficou sem fôlego quando Rowan extraiu o poder bruto do Liame de Strixhaven. Por um momento, ela se tornou luminosa, transcendental e terrível.",
+            "language": "Portuguese (Brazil)",
+            "multiverseId": 515609,
+            "name": "Estalar de Poder",
+            "text": "Estalar de Poder causa cinco vezes X pontos de dano a até X alvos.",
+            "type": "Feitiço"
+        },
+        {
+            "flavorText": "Уилл пораженно ахнул, когда Рован зачерпнула сырую мощь сплетения Стриксхейвена. В это мгновение она была яркой, превосходящей, ужасной.",
+            "language": "Russian",
+            "multiverseId": 515900,
+            "name": "Искрящаяся Мощь",
+            "text": "Искрящаяся Мощь наносит X повреждений в пятикратном размере каждой из не более X целей.",
+            "type": "Волшебство"
+        },
+        {
+            "flavorText": "看着萝婉不断地从斯翠海文魔旋中汲取原始魔力，威尔不由得屏住呼吸。在一瞬之间，只见萝婉通体红光闪耀，宛若毁灭神下凡。",
+            "language": "Chinese Simplified",
+            "multiverseId": 516191,
+            "name": "聚力劈响",
+            "text": "聚力劈响对至多X个目标各造成五倍于X数量的伤害。",
+            "type": "法术"
+        },
+        {
+            "flavorText": "看著蘿婉不斷地從斯翠海文魔旋中汲取原始魔力，威爾不由得屏住呼吸。在一瞬之間，只見蘿婉通體紅光閃耀，宛若毀滅神下凡。",
+            "language": "Chinese Traditional",
+            "multiverseId": 516482,
+            "name": "聚力劈響",
+            "text": "聚力劈響對至多X個目標各造成五倍於X數量的傷害。",
+            "type": "巫術"
+        }
+    ],
+    "frameVersion": "2015",
+    "hasFoil": true,
+    "hasNonFoil": true,
+    "identifiers": {
+        "cardKingdomFoilId": "244747",
+        "cardKingdomId": "244416",
+        "mcmId": "557648",
+        "mcmMetaId": "338935",
+        "mtgArenaId": "76488",
+        "mtgjsonV4Id": "11ec82a2-0ee5-5f7d-899c-4d5ff21fc07a",
+        "mtgoId": "88667",
+        "multiverseId": "513572",
+        "scryfallId": "de547f52-3798-4b3a-947d-24873251204b",
+        "scryfallIllustrationId": "44236180-e86d-4ec4-b82b-4f3c07a43aa6",
+        "scryfallOracleId": "273f5483-b67e-4dd6-bba8-c0a047fa34d7",
+        "tcgplayerProductId": "235881"
+    },
+    "isStorySpotlight": true,
+    "layout": "normal",
+    "legalities": {
+        "brawl": "Legal",
+        "commander": "Legal",
+        "duel": "Legal",
+        "future": "Legal",
+        "gladiator": "Legal",
+        "historic": "Legal",
+        "legacy": "Legal",
+        "modern": "Legal",
+        "pioneer": "Legal",
+        "standard": "Legal",
+        "vintage": "Legal"
+    },
+    "manaCost": "{X}{X}{X}{R}{R}",
+    "name": "Crackle with Power",
+    "number": "95",
+    "originalText": "Crackle with Power deals five times X damage to each of up to X targets.",
+    "originalType": "Sorcery",
+    "printings": [
+        "PSTX",
+        "STX"
+    ],
+    "purchaseUrls": {
+        "cardKingdom": "https://mtgjson.com/links/a67812d4428a16d8",
+        "cardKingdomFoil": "https://mtgjson.com/links/5ffe9d349cff538e",
+        "cardmarket": "https://mtgjson.com/links/fb58348d28d94a7c",
+        "tcgplayer": "https://mtgjson.com/links/f2c2a9217202e914"
+    },
+    "rarity": "mythic",
+    "rulings": [
+        {
+            "date": "2021-04-16",
+            "text": "If you choose 1 for the value of X, Crackle with Power will cost {3}{R}{R} to cast and deal five damage to a single target. If you choose 2 for the value of X, it will cost {6}{R}{R} to cast and deal ten damage to each of up to two targets, and so on."
+        }
+    ],
+    "setCode": "STX",
+    "subtypes": [],
+    "supertypes": [],
+    "text": "Crackle with Power deals five times X damage to each of up to X targets.",
+    "type": "Sorcery",
+    "types": [
+        "Sorcery"
+    ],
+    "uuid": "e893af38-0a32-5027-b7b8-4a447e542e35",
+    "variations": [
+        "22c784f1-cf53-5fdb-b82b-3b4fd3cb5de3"
+    ]
+}

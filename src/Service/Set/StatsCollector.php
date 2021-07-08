@@ -6,6 +6,7 @@ namespace App\Service\Set;
 
 use App\Model\CardData;
 use App\Model\CardDefinition;
+use App\Service\Set\Collector\CreatureTypes;
 
 class StatsCollector
 {
@@ -15,6 +16,7 @@ class StatsCollector
      */
     private array $cards;
     private ?int $uniqueCardsCount = null;
+    private ?CreatureTypes $creatureTypesStats = null;
 
     public function addCards(array $data)
     {
@@ -60,6 +62,13 @@ class StatsCollector
     public function getCards(): array
     {
         return $this->cards;
+    }
+
+    public function getCreatureTypesStats(): array
+    {
+        if (!$this->creatureTypesStats) $this->creatureTypesStats = CreatureTypes::fromCards($this->cards);
+
+        return $this->creatureTypesStats->getStats();
     }
 
     public function getSetName(): string

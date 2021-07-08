@@ -1,0 +1,158 @@
+{
+    "artist": "Bram Sels",
+    "availability": [
+        "arena",
+        "mtgo",
+        "paper"
+    ],
+    "borderColor": "black",
+    "colorIdentity": [
+        "B"
+    ],
+    "colors": [
+        "B"
+    ],
+    "convertedManaCost": 3.0,
+    "edhrecRank": 14321,
+    "flavorText": "The sport of Mage Tower was conceived as a playful testing ground for young spellcasters.",
+    "foreignData": [
+        {
+            "flavorText": "Magierturm soll jungen Zauberkundigen die Möglichkeit bieten, sich spielerisch zu erproben.",
+            "language": "German",
+            "multiverseId": 513857,
+            "name": "Schattenhafte Finte",
+            "text": "Bestimme eines —\n• Ein Spieler deiner Wahl opfert eine Kreatur oder einen Planeswalker.\n• Erzeuge einen 2/1 weißen und schwarzen Tintling-Kreaturenspielstein mit Flugfähigkeit.",
+            "type": "Spontanzauber"
+        },
+        {
+            "flavorText": "El deporte de las torres mágicas se concibió como un lugar para que los hechiceros jóvenes pusieran a prueba sus habilidades.",
+            "language": "Spanish",
+            "multiverseId": 514148,
+            "name": "Finta de la umbra",
+            "text": "Elige uno:\n• El jugador objetivo sacrifica una criatura o un planeswalker.\n• Crea una ficha de criatura Tintícola blanca y negra 2/1 con la habilidad de volar.",
+            "type": "Instantáneo"
+        },
+        {
+            "flavorText": "Le sport du Tour-polo des mages a été conçu comme un terrain d'entraînement amical pour les jeunes lanceurs de sorts.",
+            "language": "French",
+            "multiverseId": 514439,
+            "name": "Feinte des ombres",
+            "text": "Choisissez l'un —\n• Un joueur ciblé sacrifie une créature ou un planeswalker.\n• Créez un jeton de créature 2/1 blanche et noire Encrelin avec le vol.",
+            "type": "Éphémère"
+        },
+        {
+            "flavorText": "Lo sport di Torre del mago è stato ideato come campo di prova informale per i giovani incantatori.",
+            "language": "Italian",
+            "multiverseId": 514730,
+            "name": "Smarcamento d'Ombra",
+            "text": "Scegli uno —\n• Un giocatore bersaglio scarifica una creatura o un planeswalker.\n• Crea una pedina creatura Scarabocchio 2/1 bianca e nera con volare.",
+            "type": "Istantaneo"
+        },
+        {
+            "flavorText": "メイジタワーの競技は、若い呪文使いたちが楽しみながら腕を試す場として考案された。",
+            "language": "Japanese",
+            "multiverseId": 515021,
+            "name": "陰影のフェイント",
+            "text": "以下から１つを選ぶ。\n• プレイヤー１人を対象とする。そのプレイヤーはクリーチャー１体かプレインズウォーカー１体を生け贄に捧げる。\n• 飛行を持つ白黒の２/１の墨獣・クリーチャー・トークン１体を生成する。",
+            "type": "インスタント"
+        },
+        {
+            "flavorText": "마도사의 탑 스포츠는 젊은 주문술사들에게 재미있는 시도를 해 볼 수 있는 장으로 여겨졌다.",
+            "language": "Korean",
+            "multiverseId": 515312,
+            "name": "그림자의 몸놀림",
+            "text": "하나를 선택한다 —\n• 플레이어를 목표로 정한다. 그 플레이어는 생물 또는 플레인즈워커 한 개를 희생한다.\n• 비행을 가진 2/1 백색 및 흑색 잉클링 생물 토큰 한 개를 만든다.",
+            "type": "순간마법"
+        },
+        {
+            "flavorText": "O esporte Torre do Mago foi criado como um campo de teste lúdico para jovens conjuradores.",
+            "language": "Portuguese (Brazil)",
+            "multiverseId": 515603,
+            "name": "Drible Umbral",
+            "text": "Escolha um —\n• O jogador alvo sacrifica uma criatura ou um planeswalker.\n• Crie uma ficha de criatura Nanquíneo branca e preta 2/1 com voar.",
+            "type": "Mágica Instantânea"
+        },
+        {
+            "flavorText": "Башня магов задумывалась как площадка для юных заклинателей, где они могут испытать свои заклинания в увлекательной игре.",
+            "language": "Russian",
+            "multiverseId": 515894,
+            "name": "Подлый Прием",
+            "text": "Выберите одно —\n• Целевой игрок жертвует существо или planeswalker'а.\n• Создайте одну фишку существа 2/1 белый и черный Чернильник с Полетом.",
+            "type": "Мгновенное заклинание"
+        },
+        {
+            "flavorText": "斗法塔运动既充满竞技又富有乐趣，因此被视作年轻法师的最佳试炼场。",
+            "language": "Chinese Simplified",
+            "multiverseId": 516185,
+            "name": "幽影佯攻",
+            "text": "选择一项～\n•目标牌手牺牲一个生物或鹏洛客。\n•派出一个2/1，白黑双色，具飞行异能的墨灵衍生生物。",
+            "type": "瞬间"
+        },
+        {
+            "flavorText": "鬥法塔運動既充滿競技又富有樂趣，因此被視作年輕法師的最佳試煉場。",
+            "language": "Chinese Traditional",
+            "multiverseId": 516476,
+            "name": "幽影佯攻",
+            "text": "選擇一項～\n•目標玩家犧牲一個生物或鵬洛客。\n•派出一個2/1，白黑雙色，具飛行異能的墨靈衍生生物。",
+            "type": "瞬間"
+        }
+    ],
+    "frameVersion": "2015",
+    "hasFoil": true,
+    "hasNonFoil": true,
+    "identifiers": {
+        "cardKingdomFoilId": "244770",
+        "cardKingdomId": "244454",
+        "mcmId": "558023",
+        "mcmMetaId": "339086",
+        "mtgArenaId": "76482",
+        "mtgjsonV4Id": "5c8928b6-4bcd-517e-ab40-4cb32c3c1935",
+        "mtgoId": "88655",
+        "multiverseId": "513566",
+        "scryfallId": "3fbd0921-e953-492b-ad73-c8a8bfaa750b",
+        "scryfallIllustrationId": "c6cd8a3c-b49e-4646-a0b9-b6c3a21ff8fc",
+        "scryfallOracleId": "d56afdf6-51e0-4151-a86c-4c4827a50a0e",
+        "tcgplayerProductId": "235903"
+    },
+    "layout": "normal",
+    "legalities": {
+        "brawl": "Legal",
+        "commander": "Legal",
+        "duel": "Legal",
+        "future": "Legal",
+        "gladiator": "Legal",
+        "historic": "Legal",
+        "legacy": "Legal",
+        "modern": "Legal",
+        "penny": "Legal",
+        "pioneer": "Legal",
+        "standard": "Legal",
+        "vintage": "Legal"
+    },
+    "manaCost": "{2}{B}",
+    "name": "Umbral Juke",
+    "number": "89",
+    "originalText": "Choose one —\n• Target player sacrifices a creature or planeswalker.\n• Create a 2/1 white and black Inkling creature token with flying.",
+    "originalType": "Instant",
+    "printings": [
+        "STX"
+    ],
+    "purchaseUrls": {
+        "cardKingdom": "https://mtgjson.com/links/3c0ec750c0cc0127",
+        "cardKingdomFoil": "https://mtgjson.com/links/9bed166e806c45dd",
+        "cardmarket": "https://mtgjson.com/links/00cbe471a1b89674",
+        "tcgplayer": "https://mtgjson.com/links/8e27249d761493bf"
+    },
+    "rarity": "uncommon",
+    "rulings": [],
+    "setCode": "STX",
+    "subtypes": [],
+    "supertypes": [],
+    "text": "Choose one —\n• Target player sacrifices a creature or planeswalker.\n• Create a 2/1 white and black Inkling creature token with flying.",
+    "type": "Instant",
+    "types": [
+        "Instant"
+    ],
+    "uuid": "09661ca1-1ab2-57ec-afca-96fe858c246b",
+    "watermark": "silverquill"
+}

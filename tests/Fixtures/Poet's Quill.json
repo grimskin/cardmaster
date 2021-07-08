@@ -1,0 +1,173 @@
+{
+    "artist": "Anna Fehr",
+    "availability": [
+        "arena",
+        "mtgo",
+        "paper"
+    ],
+    "borderColor": "black",
+    "colorIdentity": [
+        "B"
+    ],
+    "colors": [
+        "B"
+    ],
+    "convertedManaCost": 2.0,
+    "edhrecRank": 12119,
+    "foreignData": [
+        {
+            "language": "German",
+            "multiverseId": 513850,
+            "name": "Federkiel des Poeten",
+            "text": "Wenn der Federkiel des Poeten ins Spiel kommt, lerne eine Lektion. (Du kannst eine Lektion-Karte von außerhalb der Partie, die du besitzt, offen vorzeigen und auf deine Hand nehmen, oder eine Karte abwerfen und dann eine Karte ziehen.)\nDie ausgerüstete Kreatur erhält +1/+1 und hat Lebensverknüpfung.\nAusrüsten {1}{B}",
+            "type": "Artefakt — Ausrüstung"
+        },
+        {
+            "language": "Spanish",
+            "multiverseId": 514141,
+            "name": "Pluma de poeta",
+            "text": "Cuando la Pluma de poeta entre al campo de batalla, aprende. (Puedes mostrar una carta de Lección de la cual eres propietario de fuera del juego y ponerla en tu mano o descartar una carta para robar una carta.)\nLa criatura equipada obtiene +1/+1 y tiene la habilidad de vínculo vital.\nEquipar {1}{B}.",
+            "type": "Artefacto — Equipo"
+        },
+        {
+            "language": "French",
+            "multiverseId": 514432,
+            "name": "Plume du poète",
+            "text": "Quand la Plume du poète arrive sur le champ de bataille, apprenez. (Vous pouvez révéler une carte de leçon que vous possédez en dehors de la partie et la mettre dans votre main, ou vous défausser d'une carte pour piocher une carte.)\nLa créature équipée gagne +1/+1 et a le lien de vie.\nÉquipement {1}{B}",
+            "type": "Artefact : équipement"
+        },
+        {
+            "language": "Italian",
+            "multiverseId": 514723,
+            "name": "Penna del Poeta",
+            "text": "Quando la Penna del Poeta entra nel campo di battaglia, apprendi. (Puoi rivelare una carta Lezione che possiedi al di fuori della partita e aggiungerla alla tua mano o scartare una carta per pescare una carta.)\nLa creatura equipaggiata prende +1/+1 e ha legame vitale.\nEquipaggiare {1}{B}",
+            "type": "Artefatto — Equipaggiamento"
+        },
+        {
+            "language": "Japanese",
+            "multiverseId": 515014,
+            "name": "詩人の羽ペン",
+            "text": "詩人の羽ペンが戦場に出たとき、履修を行う。（あなたは、ゲームの外部からあなたがオーナーである講義・カード１枚を公開しあなたの手札に加えるか、カード１枚を捨てカード１枚を引くか、どちらかを行ってもよい。）\n装備しているクリーチャーは＋１/＋１の修整を受け絆魂を持つ。\n装備{1}{B}",
+            "type": "アーティファクト — 装備品"
+        },
+        {
+            "language": "Korean",
+            "multiverseId": 515305,
+            "name": "시인의 깃펜",
+            "text": "시인의 깃펜이 전장에 들어올 때, 학습한다. (당신은 게임 밖에서 당신이 소유한 수업 카드 한 장을 공개하고 그 카드를 당신의 손에 넣거나, 카드 한 장을 버린 후 카드 한 장을 뽑을 수 있다.)\n장착된 생물은 +1/+1을 받고 생명연결을 가진다.\n장착 {1}{B}",
+            "type": "마법물체 — 장비"
+        },
+        {
+            "language": "Portuguese (Brazil)",
+            "multiverseId": 515596,
+            "name": "Pena do Poeta",
+            "text": "Quando Pena do Poeta entrar no campo de batalha, aprenda. (Você pode revelar um card de Lição seu de fora do jogo e colocá-lo em sua mão, ou descartar um card para comprar um card.)\nA criatura equipada recebe +1/+1 e tem vínculo com a vida.\nEquipar {1}{B}",
+            "type": "Artefato — Equipamento"
+        },
+        {
+            "language": "Russian",
+            "multiverseId": 515887,
+            "name": "Перо Поэта",
+            "text": "Когда Перо Поэта выходит на поле битвы, выучите урок. (Вы можете показать принадлежащую вам карту Урока вне игры и положить ее в вашу руку, или вы можете сбросить карту, чтобы взять карту.)\nСнаряженное существо получает +1/+1 и имеет Цепь жизни.\nСнарядить {1}{B}",
+            "type": "Артефакт — Снаряжение"
+        },
+        {
+            "language": "Chinese Simplified",
+            "multiverseId": 516178,
+            "name": "诗人笔毫",
+            "text": "当诗人笔毫进战场时，温习。（你可以从游戏外展示一张由你拥有的课程牌并置于你手上，或弃一张牌来抓一张牌。）\n佩带此武具的生物得+1/+1且具有系命异能。\n佩带{1}{B}",
+            "type": "神器 ～武具"
+        },
+        {
+            "language": "Chinese Traditional",
+            "multiverseId": 516469,
+            "name": "詩人筆毫",
+            "text": "當詩人筆毫進戰場時，溫習。（你可以從遊戲外展示一張由你擁有的課程牌並置於你手上，或棄一張牌來抽一張牌。）\n佩帶此武具的生物得+1/+1且具有繫命異能。\n佩帶{1}{B}",
+            "type": "神器 ～武具"
+        }
+    ],
+    "frameVersion": "2015",
+    "hasFoil": true,
+    "hasNonFoil": true,
+    "identifiers": {
+        "cardKingdomFoilId": "244818",
+        "cardKingdomId": "244513",
+        "mcmId": "558085",
+        "mcmMetaId": "339135",
+        "mtgArenaId": "76475",
+        "mtgjsonV4Id": "fe29d3eb-25b9-5cb4-a0ec-44e14d22af24",
+        "mtgoId": "88641",
+        "multiverseId": "513559",
+        "scryfallId": "e7006f43-0b10-4693-b06f-e7cf86ab4129",
+        "scryfallIllustrationId": "4650276a-5c56-4a98-8a5e-952cae9e6072",
+        "scryfallOracleId": "f474d421-5fd0-4d76-95cb-4824a2381a29",
+        "tcgplayerProductId": "235977"
+    },
+    "keywords": [
+        "Equip",
+        "Learn"
+    ],
+    "layout": "normal",
+    "legalities": {
+        "brawl": "Legal",
+        "commander": "Legal",
+        "duel": "Legal",
+        "future": "Legal",
+        "gladiator": "Legal",
+        "historic": "Legal",
+        "legacy": "Legal",
+        "modern": "Legal",
+        "penny": "Legal",
+        "pioneer": "Legal",
+        "standard": "Legal",
+        "vintage": "Legal"
+    },
+    "manaCost": "{1}{B}",
+    "name": "Poet's Quill",
+    "number": "82",
+    "originalText": "When Poet's Quill enters the battlefield, learn. (You may reveal a Lesson card you own from outside the game and put it into your hand, or discard a card to draw a card.)\nEquipped creature gets +1/+1 and has lifelink.\nEquip {1}{B}",
+    "originalType": "Artifact — Equipment",
+    "printings": [
+        "PSTX",
+        "STX"
+    ],
+    "purchaseUrls": {
+        "cardKingdom": "https://mtgjson.com/links/757026bfb961a405",
+        "cardKingdomFoil": "https://mtgjson.com/links/4933a62a62f363cd",
+        "cardmarket": "https://mtgjson.com/links/f786a15dd205d14e",
+        "tcgplayer": "https://mtgjson.com/links/d1565b10d89a2e3e"
+    },
+    "rarity": "rare",
+    "rulings": [
+        {
+            "date": "2021-04-16",
+            "text": "If a card is brought into the game from outside the game, it will stay in the game until it ends or until its owner leaves the game, whichever comes first."
+        },
+        {
+            "date": "2021-04-16",
+            "text": "If you bring a card into the game from outside the game in a Constructed tournament (or a Constructed game played under tournament conditions), you may select only a card from your sideboard. In casual Constructed games, the card comes from your collection."
+        },
+        {
+            "date": "2021-04-16",
+            "text": "If you bring a card into the game from outside the game in a Sealed Deck or Booster Draft event, you may select only a card that is in the card pool that you built your deck from."
+        },
+        {
+            "date": "2021-04-16",
+            "text": "If instructed to learn, you may do nothing. Discarding a card and putting a Lesson card into your hand are both optional."
+        }
+    ],
+    "setCode": "STX",
+    "subtypes": [
+        "Equipment"
+    ],
+    "supertypes": [],
+    "text": "When Poet's Quill enters the battlefield, learn. (You may reveal a Lesson card you own from outside the game and put it into your hand, or discard a card to draw a card.)\nEquipped creature gets +1/+1 and has lifelink.\nEquip {1}{B}",
+    "type": "Artifact — Equipment",
+    "types": [
+        "Artifact"
+    ],
+    "uuid": "bc37a4e4-e812-5681-a5d5-cc6f21cc97cf",
+    "variations": [
+        "d891b14c-e774-5f76-a856-411e0db80c0e"
+    ]
+}

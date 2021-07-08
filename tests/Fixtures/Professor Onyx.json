@@ -1,0 +1,195 @@
+{
+    "artist": "Kieran Yanner",
+    "availability": [
+        "arena",
+        "mtgo",
+        "paper"
+    ],
+    "borderColor": "black",
+    "colorIdentity": [
+        "B"
+    ],
+    "colors": [
+        "B"
+    ],
+    "convertedManaCost": 6.0,
+    "edhrecRank": 4466,
+    "foreignData": [
+        {
+            "language": "German",
+            "multiverseId": 513851,
+            "name": "Professorin Onyx",
+            "text": "Magiefertigkeit — Immer wenn du einen Spontanzauber oder eine Hexerei wirkst oder kopierst, verliert jeder Gegner 2 Lebenspunkte und du erhältst 2 Lebenspunkte dazu.\n+1: Du verlierst 1 Lebenspunkt. Schaue dir die obersten drei Karten deiner Bibliothek an. Nimm eine davon auf deine Hand und lege den Rest auf deinen Friedhof.\n−3: Jeder Gegner opfert eine Kreatur mit der höchsten Stärke unter den Kreaturen, die er kontrolliert.\n−8: Jeder Gegner kann eine Karte abwerfen. Falls er dies nicht tut, verliert er 3 Lebenspunkte. Wiederhole diesen Vorgang noch sechs Mal.",
+            "type": "Legendärer Planeswalker — Liliana"
+        },
+        {
+            "language": "Spanish",
+            "multiverseId": 514142,
+            "name": "Profesora Ónix",
+            "text": "Hechicería — Siempre que lances o copies un hechizo de instantáneo o de conjuro, cada oponente pierde 2 vidas y tú ganas 2 vidas.\n+1: Pierdes 1 vida. Mira las tres primeras cartas de tu biblioteca. Pon una de ellas en tu mano y el resto en tu cementerio.\n−3: Cada oponente sacrifica una criatura con la mayor fuerza entre las criaturas que controla ese jugador.\n−8: Cada oponente puede descartar una carta. Si no lo hace, pierde 3 vidas. Repite este proceso seis veces más.",
+            "type": "Planeswalker legendario — Liliana"
+        },
+        {
+            "language": "French",
+            "multiverseId": 514433,
+            "name": "Professeur Onyx",
+            "text": "Sorcellerie — À chaque fois que vous lancez ou copiez un sort d'éphémère ou de rituel, chaque adversaire perd 2 points de vie et vous gagnez 2 points de vie.\n+1: Vous perdez 1 point de vie. Regardez les trois cartes du dessus de votre bibliothèque. Mettez l'une d'elles dans votre main et le reste dans votre cimetière.\n-3: Chaque adversaire sacrifie une créature avec la force la plus élevée parmi les créatures que ce joueur contrôle.\n-8: Chaque adversaire peut se défausser d'une carte. S'il ne le fait pas, il perd 3 points de vie. Répétez ce processus six fois.",
+            "type": "Planeswalker légendaire : Liliana"
+        },
+        {
+            "language": "Italian",
+            "multiverseId": 514724,
+            "name": "Professoressa Onyx",
+            "text": "Artemagica — Ogniqualvolta lanci o copi una magia istantaneo o stregoneria, ogni avversario perde 2 punti vita e tu guadagni 2 punti vita.\n+1: Perdi 1 punto vita. Guarda le prime tre carte del tuo grimorio. Aggiungine una alla tua mano e metti le altre nel tuo cimitero.\n−3: Ogni avversario sacrifica una creatura con la forza maggiore tra le creature che controlla.\n−8: Ogni avversario può scartare una carta. Se non lo fa, perde 3 punti vita. Ripeti questo procedimento altre sei volte.",
+            "type": "Planeswalker Leggendario — Liliana"
+        },
+        {
+            "language": "Japanese",
+            "multiverseId": 515015,
+            "name": "オニキス教授",
+            "text": "魔技 ― あなたがインスタントやソーサリーである呪文を唱えるかコピーするたび、各対戦相手はそれぞれ２点のライフを失い、あなたは２点のライフを得る。\n+1：あなたは１点のライフを失う。あなたのライブラリーの一番上からカード３枚を見る。そのうち１枚をあなたの手札に、残りをあなたの墓地に置く。\n-3：各対戦相手はそれぞれ、自分がコントロールしているクリーチャーの中で最大のパワーを持つクリーチャー１体を生け贄に捧げる。\n-8：各対戦相手はそれぞれカード１枚を捨ててもよい。そうしなかったなら、そのプレイヤーは３点のライフを失う。この手順をもう６回繰り返す。",
+            "type": "伝説のプレインズウォーカー — リリアナ"
+        },
+        {
+            "language": "Korean",
+            "multiverseId": 515306,
+            "name": "오닉스 교수",
+            "text": "마도제작술 — 당신이 순간마법 또는 집중마법 주문을 발동하거나 복사할 때마다, 각 상대는 생명 2점을 잃고 당신은 생명 2점을 얻는다.\n+1: 당신은 생명 1점을 잃는다. 당신의 서고 맨 위 카드 세 장을 본다. 그중 한 장을 당신의 손으로 가져가고 나머지는 당신의 무덤에 넣는다.\n−3: 각 상대는 그 플레이어가 조종하는 생물들 중 공격력이 제일 높은 생물을 희생한다.\n−8: 각 상대는 카드 한 장을 버릴 수 있다. 그러지 않으면, 그 플레이어는 생명 3점을 잃는다. 이 과정을 여섯 번 더 반복한다.",
+            "type": "전설적 플레인즈워커 — 릴리아나"
+        },
+        {
+            "language": "Portuguese (Brazil)",
+            "multiverseId": 515597,
+            "name": "Professora Ônix",
+            "text": "Magifício — Toda vez que você conjura uma mágica instantânea ou um feitiço, cada oponente perde 2 pontos de vida e você ganha 2 pontos de vida.\n+1: Você perde 1 ponto de vida. Olhe os três cards do topo de seu grimório. Coloque um deles em sua mão e o restante em seu cemitério.\n−3: Cada oponente sacrifica uma criatura com o maior poder dentre as criaturas que aquele jogador controla.\n−8: Cada oponente pode descartar um card. Se não fizer isso, ele perde 3 pontos de vida. Repita esse processo mais seis vezes.",
+            "type": "Planeswalker Lendário — Liliana"
+        },
+        {
+            "language": "Russian",
+            "multiverseId": 515888,
+            "name": "Профессор Оникс",
+            "text": "Чародейство — Каждый раз, когда вы разыгрываете или копируете мгновенное заклинание или заклинание волшебства, каждый оппонент теряет 2 жизни, а вы получаете 2 жизни.\n+1: вы теряете 1 жизнь. Посмотрите три верхние карты вашей библиотеки. Положите одну из них в вашу руку, а остальные — на ваше кладбище.\n−3: каждый оппонент жертвует существо с наибольшим значением силы среди существ под его контролем.\n−8: каждый оппонент может сбросить карту. Если он этого не делает, он теряет 3 жизни. Повторите этот процесс еще шесть раз.",
+            "type": "Легендарный Planeswalker — Лилиана"
+        },
+        {
+            "language": "Chinese Simplified",
+            "multiverseId": 516179,
+            "name": "黑玉教授",
+            "text": "魔艺～每当你施放或复制瞬间或法术咒语时，每位对手各失去2点生命，且你获得2点生命。\n+1：你失去1点生命。检视你牌库顶的三张牌。将其中一张置于你手上，其余的牌则置入你的坟墓场。\n−3：每位对手各牺牲一个生物，且须是由其操控的生物中力量最大者。\n−8：每位对手各可以弃一张牌。若其未如此作，则其失去3点生命。将此流程再重复六次。",
+            "type": "传奇鹏洛客 ～莉莲娜"
+        },
+        {
+            "language": "Chinese Traditional",
+            "multiverseId": 516470,
+            "name": "黑玉教授",
+            "text": "魔藝～每當你施放或複製瞬間或巫術咒語時，每位對手各失去2點生命，且你獲得2點生命。\n+1：你失去1點生命。檢視你牌庫頂的三張牌。將其中一張置於你手上，其餘的牌則置入你的墳墓場。\n−3：每位對手各犧牲一個生物，且須是由其操控的生物中力量最大者。\n−8：每位對手各可以棄一張牌。若其未如此作，則其失去3點生命。將此流程再重複六次。",
+            "type": "傳奇鵬洛客 ～莉蓮娜"
+        }
+    ],
+    "frameVersion": "2015",
+    "hasFoil": true,
+    "hasNonFoil": true,
+    "identifiers": {
+        "cardKingdomFoilId": "244589",
+        "cardKingdomId": "243825",
+        "mcmId": "554118",
+        "mcmMetaId": "337368",
+        "mtgArenaId": "76476",
+        "mtgjsonV4Id": "f92a1975-6b98-5672-8532-dc1529f0b99f",
+        "mtgoId": "88643",
+        "multiverseId": "513560",
+        "scryfallId": "013eeb99-1b66-4fba-ad96-78deee901ea4",
+        "scryfallIllustrationId": "0220d4a8-ca08-4446-b316-30275bc3f50f",
+        "scryfallOracleId": "9df2e909-ed13-456a-9636-7398732009a9",
+        "tcgplayerProductId": "234963"
+    },
+    "keywords": [
+        "Magecraft"
+    ],
+    "layout": "normal",
+    "leadershipSkills": {
+        "brawl": true,
+        "commander": false,
+        "oathbreaker": true
+    },
+    "legalities": {
+        "brawl": "Legal",
+        "commander": "Legal",
+        "duel": "Legal",
+        "future": "Legal",
+        "gladiator": "Legal",
+        "historic": "Legal",
+        "legacy": "Legal",
+        "modern": "Legal",
+        "pioneer": "Legal",
+        "standard": "Legal",
+        "vintage": "Legal"
+    },
+    "loyalty": "5",
+    "manaCost": "{4}{B}{B}",
+    "name": "Professor Onyx",
+    "number": "83",
+    "originalText": "Magecraft — Whenever you cast or copy an instant or sorcery spell, each opponent loses 2 life and you gain 2 life.\n+1: You lose 1 life. Look at the top three cards of your library. Put one of them into your hand and the rest into your graveyard.\n−3: Each opponent sacrifices a creature with the greatest power among creatures that player controls.\n−8: Each opponent may discard a card. If they don't, they lose 3 life. Repeat this process six more times.",
+    "originalType": "Legendary Planeswalker — Liliana",
+    "printings": [
+        "PSTX",
+        "STX"
+    ],
+    "purchaseUrls": {
+        "cardKingdom": "https://mtgjson.com/links/f05f75ce3fb0a886",
+        "cardKingdomFoil": "https://mtgjson.com/links/cbcb0131711f4a4c",
+        "cardmarket": "https://mtgjson.com/links/d0f883f3774dd41a",
+        "tcgplayer": "https://mtgjson.com/links/abcccd713b0e857b"
+    },
+    "rarity": "mythic",
+    "rulings": [
+        {
+            "date": "2021-04-16",
+            "text": "For Professor Onyx’s second loyalty ability, if an opponent has multiple creatures with the greatest power, that player choose which one to sacrifice. The next opponent in turn order chooses which creature they are sacrificing, then each other opponent in turn order does the same, knowing the choices made before them. Then all chosen creatures are sacrificed at the same time."
+        },
+        {
+            "date": "2021-04-16",
+            "text": "For Professor Onyx’s last loyalty ability, “this process” is the following: First, the next opponent in turn order may choose a card in hand without revealing it, then each other opponent in turn order does the same. Then all the chosen cards are revealed and discarded at the same time and each opponent who didn’t discard a card (whether they chose not to or had an empty hand) loses 3 life. This all will happen seven times, for a maximum loss of 21 life per opponent."
+        },
+        {
+            "date": "2021-04-16",
+            "text": "If Professor Onyx seems familiar, it’s probably because you’ve seen this type of planeswalker before."
+        },
+        {
+            "date": "2021-04-16",
+            "text": "Each magecraft ability has a different effect, although they all have the same trigger condition, whenever you cast or copy an instant or sorcery spell."
+        },
+        {
+            "date": "2021-04-16",
+            "text": "For example, if you control Archmage Emeritus and cast an instant or sorcery spell, Archmage Emeritus’s magecraft ability will trigger and you will draw a card."
+        },
+        {
+            "date": "2021-04-16",
+            "text": "If an effect creates a copy of an instant or sorcery spell, this will also cause the magecraft ability to trigger."
+        },
+        {
+            "date": "2021-04-16",
+            "text": "If an effect creates multiple copies of an instant or sorcery spell, magecraft abilities trigger once for each copy created by the effect."
+        },
+        {
+            "date": "2021-04-16",
+            "text": "Some effects instruct you to copy an instant or sorcery card in a zone other than the stack. These copies do not cause magecraft abilities to trigger. However, most effects that do this also allow you to cast the copy, and casting the copy will cause magecraft abilities to trigger."
+        }
+    ],
+    "setCode": "STX",
+    "subtypes": [
+        "Liliana"
+    ],
+    "supertypes": [
+        "Legendary"
+    ],
+    "text": "Magecraft — Whenever you cast or copy an instant or sorcery spell, each opponent loses 2 life and you gain 2 life.\n[+1]: You lose 1 life. Look at the top three cards of your library. Put one of them into your hand and the rest into your graveyard.\n[−3]: Each opponent sacrifices a creature with the greatest power among creatures that player controls.\n[−8]: Each opponent may discard a card. If they don't, they lose 3 life. Repeat this process six more times.",
+    "type": "Legendary Planeswalker — Liliana",
+    "types": [
+        "Planeswalker"
+    ],
+    "uuid": "1420f900-a294-5a49-8a03-3275a17dc90e",
+    "variations": [
+        "1650c445-7420-5c07-9962-da32a94d0b46"
+    ]
+}

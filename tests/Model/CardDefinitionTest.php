@@ -4,12 +4,14 @@
 namespace App\Tests\Model;
 
 
-use App\Model\CardData;
 use App\Model\CardDefinition;
+use App\Tests\Fixtures\FixtureLoad;
 use PHPUnit\Framework\TestCase;
 
 class CardDefinitionTest extends TestCase
 {
+    use FixtureLoad;
+
     /**
      * @test
      */
@@ -87,12 +89,14 @@ class CardDefinitionTest extends TestCase
         $this->assertContains('Serpent', $cardDef->getCreatureTypes());
     }
 
-    private function loadCardDefinition($cardName): ? CardDefinition {
-        $cardDef = CardDefinition::define($cardName);
-        $cardDef->absorbData(
-                CardData::createFromDatum(json_decode(file_get_contents('tests/Fixtures/'.$cardName.'.json'), true))
-            );
+    /**
+     * @test
+     */
+    public function shouldRecognizeType()
+    {
+        $cardDef = $this->loadCardDefinition('Yorion, Sky Nomad');
 
-        return $cardDef;
+        $this->assertTrue($cardDef->isOfType(CardDefinition::T_CREATURE));
+        $this->assertFalse($cardDef->isOfType(CardDefinition::T_ENCHANTMENT));
     }
 }
