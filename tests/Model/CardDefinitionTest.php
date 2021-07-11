@@ -74,6 +74,18 @@ class CardDefinitionTest extends TestCase
     /**
      * @test
      */
+    public function shouldRecognizeLegendaries()
+    {
+        $cardDef = $this->loadCardDefinition('Anvilwrought Raptor');
+        $this->assertFalse($cardDef->isLegendary());
+
+        $cardDef = $this->loadCardDefinition('Trostani Discordant');
+        $this->assertTrue($cardDef->isLegendary());
+    }
+
+    /**
+     * @test
+     */
     public function shouldReturnCreatureTypes()
     {
         $cardDef = $this->loadCardDefinition('Fabled Passage');

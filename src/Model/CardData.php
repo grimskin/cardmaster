@@ -7,15 +7,15 @@ namespace App\Model;
 class CardData
 {
     private string $name;
-    private $faceName;
-    private $type = '';
+    private string $faceName;
+    private string $type = '';
     private string $number;
 
-    private $manaCost;
-    private $supertypes;
-    private $subtypes;
-    private $types;
-    private $colorIdentity;
+    private string $manaCost;
+    private array $supertypes;
+    private array $subtypes;
+    private array $types;
+    private array $colorIdentity;
 
     public static function createFromDatum($cardDatum): ?self
     {
@@ -42,12 +42,12 @@ class CardData
         }
     }
 
-    public function getName()
+    public function getName(): string
     {
         return $this->name;
     }
 
-    public function getFaceName()
+    public function getFaceName(): string
     {
         return $this->faceName;
     }
@@ -72,12 +72,17 @@ class CardData
         return $this->subtypes;
     }
 
-    public function getColorIdentity()
+    public function getSuperTypes(): array
+    {
+        return $this->supertypes;
+    }
+
+    public function getColorIdentity(): array
     {
         return $this->colorIdentity;
     }
 
-    public function getManaCost()
+    public function getManaCost(): string
     {
         return $this->manaCost;
     }

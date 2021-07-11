@@ -8,16 +8,17 @@ use JsonSerializable;
 
 class ManaCost implements JsonSerializable
 {
-    private $manaCostString = '';
+    private string $manaCostString = '';
 
-    /** @var ManaCostItem[]  */
-    private $manaItems = [];
+    /** @var ManaCostItem[] */
+    private array $manaItems = [];
 
-    private $costVariants;
+    private ?array $costVariants;
 
     public function __construct(string $manaCostString)
     {
         $this->manaCostString = $manaCostString;
+        $this->costVariants = null;
         $this->parseManaCost();
     }
 
@@ -31,7 +32,7 @@ class ManaCost implements JsonSerializable
         }
     }
 
-    public function getCostVariants()
+    public function getCostVariants(): array
     {
         if (null === $this->costVariants) {
             $this->costVariants = $this->calculateCostVariants($this->manaItems);
@@ -40,7 +41,7 @@ class ManaCost implements JsonSerializable
         return $this->costVariants;
     }
 
-    private function calculateCostVariants(array $manaItems)
+    private function calculateCostVariants(array $manaItems): array
     {
         $result = [];
 
