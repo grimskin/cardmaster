@@ -1,5 +1,6 @@
 $scale: 2;
 
+.div-h-0 { height: 0 !important; display: none; }
 .div-h-1 { height: $scale * 0.1rem !important; }
 .div-h-2 { height: $scale * 0.2rem !important; }
 .div-h-3 { height: $scale * 0.3rem !important; }

@@ -1,0 +1,59 @@
+@import "../set-stats-colors";
+
+$section-color: $creature-color;
+
+div#creature-stats-breakdown {
+    color: $section-color;
+
+    h3 {
+        font-size: 2rem;
+        padding-left: 1rem;
+        padding-top: 2rem;
+        border-bottom: 3px $section-color solid;
+    }
+
+    div.stats-histogram {
+        border-radius: 1rem;
+        padding: 1.2rem 1.5rem 1.5rem;
+        border: 1px $section-color solid;
+        margin-top: 1.5rem;
+        display: flex;
+        flex-flow: row wrap;
+
+        h4 {
+            font-size: 1.3rem;
+            padding-left: 1rem;
+            padding-bottom: 0.3rem;
+            width: 100%;
+            margin: 0;
+            border-bottom: 1px $section-color solid;
+        }
+
+        div {
+            width: 3rem;
+            padding-top: 4rem;
+            margin-left: auto;
+            margin-right: auto;
+            align-self: flex-end;
+
+            div.label {
+                white-space: nowrap;
+                padding: 0;
+                text-align: center;
+                margin-bottom: 0.2rem;
+            }
+
+            div.div-hx {
+                border-top-left-radius: 0.5rem;
+                border-top-right-radius: 0.5rem;
+                padding-top: 1.5rem;
+                background-color: $section-color;
+            }
+
+            div.amount {
+                padding-top: 3px;
+                text-align: center;
+            }
+        }
+    }
+}

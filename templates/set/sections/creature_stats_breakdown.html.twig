@@ -1,0 +1,36 @@
+<div id="creature-stats-breakdown">
+    <h3>Creature stats breakdown</h3>
+
+    <div class="stats-histogram">
+        <h4>Power</h4>
+        {% for value, count in stats.creatureStatsStats.powerBreakdown %}
+        <div>
+            <div class="label">{% if count > 0 %}{{ count }}{% endif %}</div>
+            <div class="div-hx div-h-{{ count }}"></div>
+            <div class="amount">{{ value }}</div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="stats-histogram">
+        <h4>Toughness</h4>
+        {% for value, count in stats.creatureStatsStats.toughnessBreakdown %}
+        <div>
+            <div class="label">{% if count > 0 %}{{ count }}{% endif %}</div>
+            <div class="div-hx div-h-{{ count }}"></div>
+            <div class="amount">{{ value }}</div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="stats-histogram">
+        <h4>Mana Value</h4>
+        {% for value, count in stats.creatureStatsStats.manaValueBreakdown %}
+        <div>
+            <div class="label">{% if count > 0 %}{{ count }}{% endif %}</div>
+            <div class="div-hx div-h-{{ count }}"></div>
+            <div class="amount">{{ value }}</div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

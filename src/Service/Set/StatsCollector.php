@@ -6,6 +6,7 @@ namespace App\Service\Set;
 
 use App\Model\CardData;
 use App\Model\CardDefinition;
+use App\Service\Set\Collector\CreatureStats;
 use App\Service\Set\Collector\CreatureTypes;
 use App\Service\Set\Collector\LegendaryCounter;
 
@@ -18,6 +19,7 @@ class StatsCollector
     private array $cards;
     private ?int $uniqueCardsCount = null;
     private ?CreatureTypes $creatureTypesStats = null;
+    private ?CreatureStats $creatureStatsStats = null;
     private ?LegendaryCounter $legendaryCounter = null;
 
     public function addCards(array $data)
@@ -71,6 +73,13 @@ class StatsCollector
         if (!$this->creatureTypesStats) $this->creatureTypesStats = CreatureTypes::fromCards($this->cards);
 
         return $this->creatureTypesStats;
+    }
+
+    public function getCreatureStatsStats(): CreatureStats
+    {
+        if (!$this->creatureStatsStats) $this->creatureStatsStats = CreatureStats::fromCards($this->cards);
+
+        return $this->creatureStatsStats;
     }
 
     public function getLegendaryCounts(): LegendaryCounter

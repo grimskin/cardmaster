@@ -12,10 +12,14 @@ class CardData
     private string $number;
 
     private string $manaCost;
+    private string $manaValue;
     private array $supertypes;
     private array $subtypes;
     private array $types;
     private array $colorIdentity;
+
+    private string $power;
+    private string $toughness;
 
     public static function createFromDatum($cardDatum): ?self
     {
@@ -29,7 +33,10 @@ class CardData
         $result->types = $cardDatum['types'] ?? [];
         $result->colorIdentity = $cardDatum['colorIdentity'];
         $result->manaCost = $cardDatum['manaCost'] ?? '';
+        $result->manaValue = (int) $cardDatum['convertedManaCost'] ?? 0;
         $result->number = $cardDatum['number'] ?? '';
+        $result->power = $cardDatum['power'] ?? '';
+        $result->toughness = $cardDatum['toughness'] ?? '';
         $result->parseTypes();
 
         return $result;
@@ -85,5 +92,20 @@ class CardData
     public function getManaCost(): string
     {
         return $this->manaCost;
+    }
+
+    public function getManaValue(): string
+    {
+        return $this->manaValue;
+    }
+
+    public function getPower(): string
+    {
+        return $this->power;
+    }
+
+    public function getToughness(): string
+    {
+        return $this->toughness;
     }
 }

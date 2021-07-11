@@ -111,4 +111,18 @@ class CardDefinitionTest extends TestCase
         $this->assertTrue($cardDef->isOfType(CardDefinition::T_CREATURE));
         $this->assertFalse($cardDef->isOfType(CardDefinition::T_ENCHANTMENT));
     }
+
+    /**
+     * @test
+     */
+    public function shouldRecogniseAsteriskedStats()
+    {
+        $cardDef = $this->loadCardDefinition('Ashaya, Soul of the Wild');
+        $this->assertFalse($cardDef->isNumericPower());
+        $this->assertFalse($cardDef->isNumericToughness());
+
+        $cardDef = $this->loadCardDefinition('Yorion, Sky Nomad');
+        $this->assertTrue($cardDef->isNumericPower());
+        $this->assertTrue($cardDef->isNumericToughness());
+    }
 }

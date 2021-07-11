@@ -28,17 +28,21 @@ class CardDefinition implements JsonSerializable
     const COLOR_RED = 'R';
     const COLOR_GREEN = 'G';
 
-    private string $name = '';
     private string $faceName = '';
     private bool $isStub = false;
     private array $colorIdentity = [];
+    private string $name = '';
 
-    private string $type = '';
-    private array $types = [];
+    private string $power = '';
+    private string $toughness = '';
+
     private array $subtypes = [];
     private array $superTypes = [];
+    private string $type = '';
+    private array $types = [];
 
     private ?ManaCost $manaCost;
+    private int $manaValue;
 
     public function isStub(): bool
     {
@@ -63,6 +67,31 @@ class CardDefinition implements JsonSerializable
     public function getManaCost(): ?ManaCost
     {
         return $this->manaCost;
+    }
+
+    public function getManaValue(): int
+    {
+        return $this->manaValue;
+    }
+
+    public function getPower(): string
+    {
+        return $this->power;
+    }
+
+    public function isNumericPower(): bool
+    {
+        return is_numeric($this->power);
+    }
+
+    public function isNumericToughness(): bool
+    {
+        return is_numeric($this->toughness);
+    }
+
+    public function getToughness(): string
+    {
+        return $this->toughness;
     }
 
     #[Pure]
@@ -145,6 +174,9 @@ class CardDefinition implements JsonSerializable
         $this->superTypes = $cardData->getSuperTypes();
         $this->colorIdentity = $cardData->getColorIdentity();
         $this->manaCost = new ManaCost($cardData->getManaCost());
+        $this->manaValue = $cardData->getManaValue();
+        $this->power = $cardData->getPower();
+        $this->toughness = $cardData->getToughness();
     }
 
     #[Pure]
