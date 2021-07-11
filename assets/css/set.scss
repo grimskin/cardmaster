@@ -1,19 +1,95 @@
+body#set-stats {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    background-color: #dfe6e9;
+}
+
 div#set-infographics {
+    width:1200px;
+    margin: auto;
+    background-color: #fff;
+    padding: 4rem 4rem 4rem 5rem;
+
+    h2#set-name {
+        font-size: 48px;
+        text-align: center;
+    }
 
     div#creature-types-breakdown {
+        color: #2e6da4;
+
         h3 {}
 
         div.top3 {
-            h4 {}
+            h4 {
+                text-align: center;
+                font-size: 2rem;
+            }
 
             div.top3-block {
-                span.amount {}
+                display: flex;
 
-                span.type {}
+                div.top3-item {
+                    flex-grow: 1;
+                    margin: 0.5rem;
+                    border: 3px #2e6da4 solid;
+                    border-radius: 1.5rem;
+                    text-align: center;
+                    padding: 2rem;
+                    font-weight: 800;
+
+                    span.amount {
+                        font-size: 2rem;
+                    }
+                    span.type {
+                        font-size: 1.6rem;
+                    }
+                }
             }
         }
-        div.other-types {}
+        div.other-types {
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            padding: 1.5rem 4rem 1.5rem 1.5rem;
+            border: 1px #2e6da4 solid;
+            margin-top: 1.5rem;
+            display: flex;
+            flex-flow: row wrap;
+            border-bottom: 0;
+
+            div {
+                width: 1.6rem;
+            padding-top: 4rem;
+                margin-left: auto;
+                margin-right: auto;
+
+                div.label {
+                    white-space: nowrap;
+                    transform-origin: top left;
+                    padding: 5px 0 0;
+                    margin-bottom: -0.4rem;
+                    transform: rotate(310deg);
+                }
+
+                div.div-hx {
+                    width: 1rem;
+                    border-radius: 0.5rem;
+                    padding-top: 1.5rem;
+                    background-color: #2e6da4;
+                }
+
+                div.amount {
+                    padding-top: 3px;
+                    text-align: center;
+                }
+            }
+        }
         div.one-ofs {
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            border: 1px #2e6da4 solid;
+            padding: 0 1.5rem 1.5rem;
+
             h4 {}
         }
     }
@@ -22,3 +98,5 @@ div#set-infographics {
         h3 {}
     }
 }
+
+@import "div-h-x";

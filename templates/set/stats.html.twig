@@ -3,9 +3,10 @@
 {% block body %}
 {#  Longest card name  #}
 {# Special types - Equipments, Auras #}
-
-    {{ stats.getSetName() }} <br>
+<div id="set-infographics">
+    <h2 id="set-name">{{ stats.getSetName() }}</h2>
 
     {% include 'set/sections/creature_type_breakdown.html.twig' %}
     {% include 'set/sections/legendary_counts.html.twig' %}
+</div>
 {% endblock %}
