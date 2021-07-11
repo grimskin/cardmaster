@@ -31,4 +31,40 @@ class CreatureTypesTest extends TestCase
         $this->assertEquals(1, $stats['Serpent']);
         $this->assertEquals('Bird', array_key_first($stats));
     }
+
+    /**
+     * @test
+     */
+    public function shouldSortOneOffs()
+    {
+        $fixtures = [
+            $this->loadCardDefinition('Yorion, Sky Nomad'),
+            $this->loadCardDefinition('Anvilwrought Raptor'),
+            $this->loadCardDefinition('Trostani Discordant'),
+        ];
+
+        $oneOffs = CreatureTypes::fromCards($fixtures)->getOneOffs();
+        $this->assertCount(2, $oneOffs);
+        $this->assertContains('Dryad', $oneOffs);
+        $this->assertContains('Serpent', $oneOffs);
+        $this->assertEquals('Dryad', $oneOffs[0]);
+    }
+
+    /**
+     * @test
+     */
+    public function shouldBreakDownTypesCounts()
+    {
+        $fixtures = [
+            $this->loadCardDefinition('Yorion, Sky Nomad'),
+            $this->loadCardDefinition('Anvilwrought Raptor'),
+            $this->loadCardDefinition('Trostani Discordant'),
+        ];
+
+        $typesCounts = CreatureTypes::fromCards($fixtures)->getTypesOnCreature();
+        $this->assertCount(2, $typesCounts);
+        $this->assertEquals(1, $typesCounts[2]); // one creature with 2 types - Yorion
+        $this->assertEquals(2, $typesCounts[1]); // two creatures with 1 types
+        $this->assertEquals(2, array_key_first($typesCounts)); // Results are sorted in descending order
+    }
 }

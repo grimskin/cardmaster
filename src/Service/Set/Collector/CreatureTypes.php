@@ -10,6 +10,7 @@ class CreatureTypes
 {
     private array $types = [];
     private array $oneOffs = [];
+    private array $typesOnCreature = [];
 
     /**
      * @param CardDefinition[] $cards
@@ -29,6 +30,8 @@ class CreatureTypes
             if ($count === 1) $result->oneOffs[] = $type;
         }
         asort($result->oneOffs, SORT_NATURAL);
+        ksort($result->typesOnCreature, SORT_NUMERIC);
+        $result->typesOnCreature = array_reverse($result->typesOnCreature, true);
 
         return $result;
     }
@@ -43,6 +46,11 @@ class CreatureTypes
         return $this->types;
     }
 
+    public function getTypesOnCreature(): array
+    {
+        return $this->typesOnCreature;
+    }
+
     private function processCard(CardDefinition $card)
     {
         if (!$card->isOfType(CardDefinition::T_CREATURE)) return;
@@ -54,5 +62,9 @@ class CreatureTypes
                 $this->types[$subType] = 1;
             }
         }
+
+        $typesCount = count($card->getSubTypes());
+        if (!isset($this->typesOnCreature[$typesCount])) $this->typesOnCreature[$typesCount] = 0;
+        $this->typesOnCreature[$typesCount]++;
     }
 }
