@@ -66,11 +66,11 @@ class StatsCollector
         return $this->cards;
     }
 
-    public function getCreatureTypesStats(): array
+    public function getCreatureTypesStats(): CreatureTypes
     {
         if (!$this->creatureTypesStats) $this->creatureTypesStats = CreatureTypes::fromCards($this->cards);
 
-        return $this->creatureTypesStats->getStats();
+        return $this->creatureTypesStats;
     }
 
     public function getLegendaryCounts(): LegendaryCounter

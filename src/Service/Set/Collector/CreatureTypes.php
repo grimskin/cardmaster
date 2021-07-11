@@ -9,6 +9,7 @@ use App\Model\CardDefinition;
 class CreatureTypes
 {
     private array $types = [];
+    private array $oneOffs = [];
 
     /**
      * @param CardDefinition[] $cards
@@ -24,7 +25,17 @@ class CreatureTypes
         asort($result->types, SORT_NUMERIC);
         $result->types = array_reverse($result->types);
 
+        foreach ($result->types as $type=>$count) {
+            if ($count === 1) $result->oneOffs[] = $type;
+        }
+        asort($result->oneOffs, SORT_NATURAL);
+
         return $result;
+    }
+
+    public function getOneOffs(): array
+    {
+        return $this->oneOffs;
     }
 
     public function getStats(): array
