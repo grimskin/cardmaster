@@ -1,0 +1,26 @@
+<div id="creature-types-breakdown">
+    <h3>Different types - {{ stats.creatureTypesStats|length }}</h3>
+    <div class="top3">
+        <h4>Top 3</h4>
+
+        {% for type, amount in stats.creatureTypesStats|slice(0,3) %}
+            <div class="top3-block">
+                <span class="amount">{{ amount }}</span>
+                <span class="type">{{ type }}</span>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="other-types">
+        {% for type, amount in stats.creatureTypesStats|slice(3)|filter(v => v > 1) %}
+            {{ amount }}x {{ type }}{% if not loop.last %}, {% endif %}
+        {% endfor %}
+    </div>
+
+    <div class="one-ofs">
+        <h4>Honorable mentions</h4>
+        {% for type, amount in stats.creatureTypesStats|slice(3)|filter(v => v == 1) %}
+            {{ type }}{% if not loop.last %}, {% endif %}
+        {% endfor %}
+    </div>
+</div>

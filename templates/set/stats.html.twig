@@ -2,21 +2,7 @@
 
 {% block body %}
 {#  Longest card name  #}
-
     {{ stats.getSetName() }} <br>
-    Different types - {{ stats.creatureTypesStats|length }} <br>
-    <hr>
-    Top 5 <br>
-    {% for type, amount in stats.creatureTypesStats|slice(0,5) %}
-    {{ type }} - {{ amount }} <br>
-    {% endfor %}
-    <hr>
-    {% for type, amount in stats.creatureTypesStats|slice(5)|filter(v => v > 1) %}
-    {{ type }} - {{ amount }} <br>
-    {% endfor %}
-    <hr>
-    Honorable mentions <br>
-    {% for type, amount in stats.creatureTypesStats|slice(3)|filter(v => v == 1) %}
-    {{ type }} - {{ amount }} <br>
-    {% endfor %}
+
+    {% include 'set/sections/creature_type_breakdown.html.twig' %}
 {% endblock %}
