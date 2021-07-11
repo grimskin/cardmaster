@@ -1,0 +1,183 @@
+{
+    "artist": "Chase Stone",
+    "availability": [
+        "arena",
+        "mtgo",
+        "paper"
+    ],
+    "borderColor": "black",
+    "colorIdentity": [
+        "G"
+    ],
+    "colors": [
+        "G"
+    ],
+    "convertedManaCost": 5.0,
+    "edhrecRank": 2768,
+    "foreignData": [
+        {
+            "language": "German",
+            "multiverseId": 492140,
+            "name": "Ashaya, Seele der Wildnis",
+            "text": "Stärke und Widerstandskraft von Ashaya, Seele der Wildnis, sind gleich der Anzahl an Ländern, die du kontrollierst.\nNichtspielsteinkreaturen, die du kontrollierst, sind zusätzlich zu ihren anderen Typen Länder mit dem Untertyp Wald. (Sie sind immer noch von Einsatzverzögerung betroffen.)",
+            "type": "Legendäre Kreatur — Elementarwesen"
+        },
+        {
+            "language": "Spanish",
+            "multiverseId": 492456,
+            "name": "Ashaya, el Alma de lo Salvaje",
+            "text": "Tanto la fuerza como la resistencia de Ashaya, el Alma de lo Salvaje son iguales a la cantidad de tierras que controlas.\nLas criaturas que no sean fichas que controlas son tierras Bosque, además de sus otros tipos. (Siguen estando afectadas por el mareo de invocación.)",
+            "type": "Criatura legendaria — Elemental"
+        },
+        {
+            "language": "French",
+            "multiverseId": 492772,
+            "name": "Ashaya, âme de la nature",
+            "text": "La force et l'endurance d'Ashaya, âme de la nature sont chacune égales au nombre de terrains que vous contrôlez.\nLes créatures non-jeton que vous contrôlez sont des terrains Forêt en plus de leurs autres types. (Elles sont toujours affectées par le mal d'invocation.)",
+            "type": "Créature légendaire : élémental"
+        },
+        {
+            "language": "Italian",
+            "multiverseId": 493088,
+            "name": "Ashaya, Anima delle Terre Selvagge",
+            "text": "La forza e la costituzione di Ashaya, Anima delle Terre Selvagge sono pari al numero di terre che controlli.\nLe creature non pedina che controlli sono terre Foresta in aggiunta ai loro altri tipi. (Sono comunque affette da debolezza da evocazione.)",
+            "type": "Creatura Leggendaria — Elementale"
+        },
+        {
+            "language": "Japanese",
+            "multiverseId": 493404,
+            "name": "野生の魂、アシャヤ",
+            "text": "野生の魂、アシャヤのパワーとタフネスは、それぞれあなたがコントロールしている土地の総数に等しい。\nあなたがコントロールしていてトークンでないクリーチャーは、それらの他のタイプに加えて森・土地である。（それらは依然として召喚酔いの影響を受ける。）",
+            "type": "伝説のクリーチャー — エレメンタル"
+        },
+        {
+            "language": "Korean",
+            "multiverseId": 493720,
+            "name": "야생의 영혼, 아샤야",
+            "text": "야생의 영혼, 아샤야의 공격력과 방어력은 각각 당신이 조종하는 대지의 수와 같다.\n당신이 조종하는 토큰이 아닌 생물들은 자신의 다른 유형에 더불어 숲 대지이다. (그 생물들은 여전히 소환후유증의 영향을 받는다.)",
+            "type": "전설적 생물 — 정령"
+        },
+        {
+            "language": "Portuguese (Brazil)",
+            "multiverseId": 494036,
+            "name": "Ashaya, Alma da Natureza",
+            "text": "O poder e a resistência de Ashaya, Alma da Natureza, são ambos iguais ao número de terrenos que você controla.\nAs criaturas que você controla que não sejam fichas são terrenos do tipo Floresta além de seus outros tipos. (Elas ainda são afetadas pelo enjoo de invocação.)",
+            "type": "Criatura Lendária — Elemental"
+        },
+        {
+            "language": "Russian",
+            "multiverseId": 494352,
+            "name": "Ашайя, Душа Дебрей",
+            "text": "Сила и выносливость Ашайи, Души Дебрей равны количеству земель под вашим контролем.\nНе являющиеся фишками существа под вашим контролем являются землями Лес в дополнение к своим другим типам. (На них продолжает действовать болезнь вызова.)",
+            "type": "Легендарное Существо — Элементаль"
+        },
+        {
+            "language": "Chinese Simplified",
+            "multiverseId": 494668,
+            "name": "荒野之魂艾莎娅",
+            "text": "荒野之魂艾莎娅的力量和防御力各等同于由你操控的地数量。\n由你操控且非衍生物的生物都是树林地，且仍具有原本类别。（它们仍会受召唤失调影响。）",
+            "type": "传奇生物 ～元素"
+        },
+        {
+            "language": "Chinese Traditional",
+            "multiverseId": 494984,
+            "name": "荒野之魂艾莎婭",
+            "text": "荒野之魂艾莎婭的力量和防禦力各等同於由你操控的地數量。\n由你操控且非衍生物的生物都是樹林地，且仍具有原本類別。（它們仍會受召喚失調影響。）",
+            "type": "傳奇生物 ～元素"
+        }
+    ],
+    "frameEffects": [
+        "legendary"
+    ],
+    "frameVersion": "2015",
+    "hasFoil": true,
+    "hasNonFoil": true,
+    "identifiers": {
+        "cardKingdomFoilId": "237667",
+        "cardKingdomId": "237015",
+        "mcmId": "495199",
+        "mcmMetaId": "316229",
+        "mtgArenaId": "73385",
+        "mtgjsonV4Id": "64187d8d-f272-556b-9422-2cb84a0031fa",
+        "mtgoId": "83341",
+        "multiverseId": "491824",
+        "scryfallId": "74943390-d25f-47cb-90bb-cbf70c87f4a2",
+        "scryfallIllustrationId": "2b4588ac-af0a-4c2b-8697-45731e59e0b7",
+        "scryfallOracleId": "162572f2-1757-42e9-bd97-e6bd9a762c0e",
+        "tcgplayerProductId": "221884"
+    },
+    "layout": "normal",
+    "leadershipSkills": {
+        "brawl": true,
+        "commander": true,
+        "oathbreaker": false
+    },
+    "legalities": {
+        "brawl": "Legal",
+        "commander": "Legal",
+        "duel": "Legal",
+        "future": "Legal",
+        "historic": "Legal",
+        "legacy": "Legal",
+        "modern": "Legal",
+        "pioneer": "Legal",
+        "standard": "Legal",
+        "vintage": "Legal"
+    },
+    "manaCost": "{3}{G}{G}",
+    "name": "Ashaya, Soul of the Wild",
+    "number": "179",
+    "originalText": "Ashaya, Soul of the Wild's power and toughness are each equal to the number of lands you control.\nNontoken creatures you control are Forest lands in addition to their other types. (They're still affected by summoning sickness.)",
+    "originalType": "Legendary Creature — Elemental",
+    "power": "*",
+    "printings": [
+        "PZNR",
+        "ZNR"
+    ],
+    "purchaseUrls": {
+        "cardKingdom": "https://mtgjson.com/links/7227a35d50b21281",
+        "cardKingdomFoil": "https://mtgjson.com/links/7e1c7356284a6fac",
+        "cardmarket": "https://mtgjson.com/links/91bb9f63ae1ba2b0",
+        "tcgplayer": "https://mtgjson.com/links/bb3f1f3378240fc6"
+    },
+    "rarity": "mythic",
+    "rulings": [
+        {
+            "date": "2020-09-25",
+            "text": "The ability that defines Ashaya’s power and toughness applies in all zones, not just the battlefield."
+        },
+        {
+            "date": "2020-09-25",
+            "text": "As long as Ashaya is on the battlefield, it’s affected by its second ability and thus its first ability counts itself."
+        },
+        {
+            "date": "2020-09-25",
+            "text": "Because damage remains marked on a creature until the damage is removed as the turn ends, nonlethal damage dealt to Ashaya may become lethal if lands you control leave the battlefield during that turn."
+        },
+        {
+            "date": "2020-09-25",
+            "text": "You can’t play creature cards as lands; you’ll still have to cast them as spells, and they’ll enter the battlefield as lands (in addition to their other types)."
+        },
+        {
+            "date": "2020-09-25",
+            "text": "A land that’s a Forest has the intrinsic mana ability “{T}: Add {G}.”"
+        }
+    ],
+    "setCode": "ZNR",
+    "subtypes": [
+        "Elemental"
+    ],
+    "supertypes": [
+        "Legendary"
+    ],
+    "text": "Ashaya, Soul of the Wild's power and toughness are each equal to the number of lands you control.\nNontoken creatures you control are Forest lands in addition to their other types. (They're still affected by summoning sickness.)",
+    "toughness": "*",
+    "type": "Legendary Creature — Elemental",
+    "types": [
+        "Creature"
+    ],
+    "uuid": "4f0e2df4-7c35-5fab-a10f-b1314ce2b456",
+    "variations": [
+        "ce1ad15d-07a3-5bb5-bde7-6f85e8d9bf23"
+    ]
+}
