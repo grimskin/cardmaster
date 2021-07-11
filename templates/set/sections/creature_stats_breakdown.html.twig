@@ -1,26 +1,25 @@
 <div id="creature-stats-breakdown">
     <h3>Creature stats breakdown</h3>
 
-    <div class="stats-histogram">
+    <div class="stats-histogram part1">
         <h4>Power</h4>
-        {% for value, count in stats.creatureStatsStats.powerBreakdown %}
+        {% for value, count in stats.creatureStatsStats.ptBreakdown %}
         <div>
-            <div class="label">{% if count > 0 %}{{ count }}{% endif %}</div>
-            <div class="div-hx div-h-{{ count }}"></div>
+            <div class="label">{% if count.p > 0 %}{{ count.p }}{% endif %}</div>
+            <div class="div-hx div-h-{{ count.p }}"></div>
             <div class="amount">{{ value }}</div>
         </div>
         {% endfor %}
     </div>
 
-    <div class="stats-histogram">
-        <h4>Toughness</h4>
-        {% for value, count in stats.creatureStatsStats.toughnessBreakdown %}
+    <div class="stats-histogram part2">
+        {% for value, count in stats.creatureStatsStats.ptBreakdown %}
         <div>
-            <div class="label">{% if count > 0 %}{{ count }}{% endif %}</div>
-            <div class="div-hx div-h-{{ count }}"></div>
-            <div class="amount">{{ value }}</div>
+            <div class="div-hx div-h-{{ count.t }}"></div>
+            <div class="label">{% if count.t > 0 %}{{ count.t }}{% endif %}</div>
         </div>
         {% endfor %}
+        <h4>Toughness</h4>
     </div>
 
     <div class="stats-histogram">

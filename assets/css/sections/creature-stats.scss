@@ -20,6 +20,46 @@ div#creature-stats-breakdown {
         display: flex;
         flex-flow: row wrap;
 
+        &.part1 {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom: 0;
+            padding-bottom: 0;
+
+            div.amount {
+                border-bottom: 0;
+            }
+        }
+
+        &.part2 {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-top: 0;
+            margin-top: 0;
+            padding-top: 0;
+            padding-bottom: 1.2rem;
+
+            h4 {
+                padding-top: 0.3rem;
+                width: 100%;
+                margin: 0;
+                margin-top: 0.6rem;
+                border-top: 1px $section-color solid;
+                border-bottom: 0;
+            }
+
+            div {
+                align-self: flex-start;
+                padding-top: 0;
+
+                div.div-hx {
+                    border-radius: 0 0 0.5rem 0.5rem;
+                    padding-top: 1.5rem;
+                    background-color: $section-color;
+                }
+            }
+        }
+
         h4 {
             font-size: 1.3rem;
             padding-left: 1rem;
@@ -31,7 +71,7 @@ div#creature-stats-breakdown {
 
         div {
             width: 3rem;
-            padding-top: 4rem;
+            padding-top: 1rem;
             margin-left: auto;
             margin-right: auto;
             align-self: flex-end;
@@ -47,12 +87,18 @@ div#creature-stats-breakdown {
                 border-top-left-radius: 0.5rem;
                 border-top-right-radius: 0.5rem;
                 padding-top: 1.5rem;
+                box-sizing: border-box;
+                border: 1px $section-color solid;
                 background-color: $section-color;
             }
 
             div.amount {
                 padding-top: 3px;
                 text-align: center;
+                box-sizing: border-box;
+                padding-bottom: 0.2rem;
+                border: 1px $section-color solid;
+                border-top: 0;
             }
         }
     }

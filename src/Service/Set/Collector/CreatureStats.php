@@ -66,6 +66,20 @@ class CreatureStats
         return $result;
     }
 
+    public function getPtBreakdown(): array
+    {
+        $count = ($this->maxPower > $this->maxToughness) ? $this->maxPower : $this->maxToughness;
+
+        $result = [];
+        for ($i=0; $i<=$count; $i++) {
+            $result[$i] = [
+                'p' => $this->powerBreakdown[$i] ?? 0,
+                't' => $this->toughnessBreakdown[$i] ?? 0,
+            ];
+        }
+        return $result;
+    }
+
     public function getPowerBreakdown(): array
     {
         return $this->powerBreakdown;
