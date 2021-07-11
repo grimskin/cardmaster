@@ -1,0 +1,61 @@
+{
+    "artist": "Irina Nordsol",
+    "availability": [
+        "arena",
+        "mtgo",
+        "paper"
+    ],
+    "borderColor": "black",
+    "colorIdentity": [],
+    "colors": [],
+    "convertedManaCost": 3.0,
+    "foreignData": [],
+    "frameEffects": [
+        "legendary"
+    ],
+    "frameVersion": "2015",
+    "hasFoil": true,
+    "hasNonFoil": true,
+    "identifiers": {
+        "mcmId": "571864",
+        "mcmMetaId": "344021",
+        "mtgjsonV4Id": "ffec68e7-6f01-5876-9994-6a575fa38488",
+        "scryfallId": "ddd0beb7-80dc-4665-bab2-747c795d97db",
+        "scryfallIllustrationId": "8fd4aced-4f7e-49ef-8064-01aab915fefd",
+        "scryfallOracleId": "3b7f0dd3-5b4c-4ac0-a43a-ddc62a44663e"
+    },
+    "keywords": [
+        "Equip"
+    ],
+    "layout": "normal",
+    "legalities": {
+        "future": "Legal"
+    },
+    "manaCost": "{3}",
+    "name": "Hand of Vecna",
+    "number": "246",
+    "printings": [
+        "AFR"
+    ],
+    "purchaseUrls": {
+        "cardmarket": "https://mtgjson.com/links/1698fb950e79550c"
+    },
+    "rarity": "rare",
+    "rulings": [],
+    "setCode": "AFR",
+    "subtypes": [
+        "Equipment"
+    ],
+    "supertypes": [
+        "Legendary"
+    ],
+    "text": "At the beginning of combat on your turn, equipped creature or a creature you control named Vecna gets +X/+X until end of turn, where X is the number of cards in your hand.\nEquip—Pay 1 life for each card in your hand.\nEquip {2}",
+    "type": "Legendary Artifact — Equipment",
+    "types": [
+        "Artifact"
+    ],
+    "uuid": "9812417d-9bae-525a-9cd4-e28db7e6e902",
+    "variations": [
+        "ce758da1-a482-5e75-bd0e-0cb31ab18977"
+    ]
+}

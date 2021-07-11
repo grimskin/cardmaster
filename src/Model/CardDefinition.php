@@ -124,6 +124,11 @@ class CardDefinition implements JsonSerializable
         return in_array($type, $this->types);
     }
 
+    public function getTypes(): array
+    {
+        return $this->types;
+    }
+
     public function absorbData(CardData $cardData)
     {
         $this->cardData = $cardData;

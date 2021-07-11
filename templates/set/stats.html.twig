@@ -2,7 +2,10 @@
 
 {% block body %}
 {#  Longest card name  #}
+{# Special types - Equipments, Auras #}
+
     {{ stats.getSetName() }} <br>
 
     {% include 'set/sections/creature_type_breakdown.html.twig' %}
+    {% include 'set/sections/legendary_counts.html.twig' %}
 {% endblock %}

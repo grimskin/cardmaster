@@ -1,0 +1,80 @@
+{
+    "artist": "Mila Pesic",
+    "availability": [
+        "arena",
+        "mtgo",
+        "paper"
+    ],
+    "borderColor": "black",
+    "colorIdentity": [
+        "G",
+        "U"
+    ],
+    "colors": [
+        "G",
+        "U"
+    ],
+    "convertedManaCost": 2.0,
+    "edhrecRank": 20988,
+    "flavorText": "\"Plant what you wish to see grow. Listen for the stories you want to hear told.\"",
+    "foreignData": [],
+    "frameEffects": [
+        "legendary"
+    ],
+    "frameVersion": "2015",
+    "hasFoil": true,
+    "hasNonFoil": true,
+    "identifiers": {
+        "cardKingdomFoilId": "248456",
+        "cardKingdomId": "248113",
+        "mcmId": "571360",
+        "mcmMetaId": "343763",
+        "mtgjsonV4Id": "663f92e1-3bec-5c31-82ff-3100646703a2",
+        "scryfallId": "3c8b248e-1460-4650-9721-85c134c21b89",
+        "scryfallIllustrationId": "a255c5ec-9b28-48ef-b981-be63bba5bb4c",
+        "scryfallOracleId": "cedeea30-b580-4ea7-bbc3-7358fed8ae61",
+        "tcgplayerProductId": "243254"
+    },
+    "layout": "normal",
+    "leadershipSkills": {
+        "brawl": false,
+        "commander": true,
+        "oathbreaker": false
+    },
+    "legalities": {
+        "future": "Legal"
+    },
+    "manaCost": "{G}{U}",
+    "name": "Gretchen Titchwillow",
+    "number": "223",
+    "power": "0",
+    "printings": [
+        "AFR"
+    ],
+    "purchaseUrls": {
+        "cardKingdom": "https://mtgjson.com/links/36534b589a1707a8",
+        "cardKingdomFoil": "https://mtgjson.com/links/4f3b34f1277fa582",
+        "cardmarket": "https://mtgjson.com/links/968831a90fabd99d",
+        "tcgplayer": "https://mtgjson.com/links/6282a9f6d02e0444"
+    },
+    "rarity": "uncommon",
+    "rulings": [],
+    "setCode": "AFR",
+    "subtypes": [
+        "Halfling",
+        "Druid"
+    ],
+    "supertypes": [
+        "Legendary"
+    ],
+    "text": "{2}{G}{U}: Draw a card. You may put a land card from your hand onto the battlefield.",
+    "toughness": "4",
+    "type": "Legendary Creature — Halfling Druid",
+    "types": [
+        "Creature"
+    ],
+    "uuid": "62e115a1-4bb6-538e-ac9e-49a42fd238f7",
+    "variations": [
+        "3bb59b6f-8a31-58d1-9239-0475966a8c96"
+    ]
+}

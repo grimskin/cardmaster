@@ -1,0 +1,7 @@
+<div id="legendary-counts">
+    <h3>Legendaries in set - {{ stats.legendaryCounts.total }}</h3>
+
+    {% for type, amount in stats.legendaryCounts.counts %}
+        {{ amount }}x {{ type }}
+    {% endfor %}
+</div>
