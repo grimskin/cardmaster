@@ -17,6 +17,29 @@ div#set-infographics {
         text-align: center;
     }
 
+    div.section {
+        div.highlights-block {
+            display: flex;
+
+            div.highlights-item {
+                flex-grow: 1;
+                margin: 0.5rem;
+                border: 3px $section-color solid;
+                border-radius: 1.5rem;
+                text-align: center;
+                padding: 2rem;
+                font-weight: 800;
+
+                span.bigger {
+                    font-size: 2rem;
+                }
+                span.smaller {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
     @import "sections/creature-types";
     @import "sections/creature-stats";
 

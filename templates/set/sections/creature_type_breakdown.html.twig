@@ -1,15 +1,14 @@
-<div id="creature-types-breakdown">
+<div id="creature-types-breakdown" class="section">
     <h3>Creature types breakdown</h3>
-    <div class="top3">
-        <div class="top3-block">
-            {% for type, amount in stats.creatureTypesStats.stats|slice(0,3) %}
-                <div class="top3-item">
-                    <span class="amount">{{ amount }}x</span>
-                    <br>
-                    <span class="type">{{ type }}</span>
-                </div>
-            {% endfor %}
-        </div>
+
+    <div class="highlights-block">
+        {% for type, amount in stats.creatureTypesStats.stats|slice(0,3) %}
+            <div class="highlights-item">
+                <span class="bigger">{{ amount }}x</span>
+                <br>
+                <span class="smaller">{{ type }}</span>
+            </div>
+        {% endfor %}
     </div>
 
     <div class="other-types">
