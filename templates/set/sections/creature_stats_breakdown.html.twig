@@ -1,6 +1,21 @@
 <div id="creature-stats-breakdown">
     <h3>Creature stats breakdown</h3>
 
+    <div class="highlights">
+        <div class="highlights-block">
+            <div class="highlights-item">
+                <span class="smaller">Average Power</span>
+                <br>
+                <span class="bigger">{{ stats.creatureStatsStats.averagePower|round(2) }}</span>
+            </div>
+            <div class="highlights-item">
+                <span class="smaller">Average Toughness</span>
+                <br>
+                <span class="bigger">{{ stats.creatureStatsStats.averageToughness|round(2) }}</span>
+            </div>
+        </div>
+    </div>
+
     <div class="stats-histogram part1">
         <h4>Power</h4>
         {% for value, count in stats.creatureStatsStats.ptBreakdown %}
@@ -11,7 +26,6 @@
         </div>
         {% endfor %}
     </div>
-
     <div class="stats-histogram part2">
         {% for value, count in stats.creatureStatsStats.ptBreakdown %}
         <div>

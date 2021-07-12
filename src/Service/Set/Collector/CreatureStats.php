@@ -95,6 +95,16 @@ class CreatureStats
         return $this->manaValueBreakdown;
     }
 
+    public function getAveragePower(): float
+    {
+        return $this->totalPower / $this->creaturesCount;
+    }
+
+    public function getAverageToughness(): float
+    {
+        return $this->totalToughness / $this->creaturesCount;
+    }
+
     private function processCard(CardDefinition $card)
     {
         if (!$card->isOfType(CardDefinition::T_CREATURE)) return;
