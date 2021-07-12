@@ -14,7 +14,7 @@ class LegendaryCounterTest extends TestCase
     use FixtureLoad;
 
     /**
-     * @test
+     * @ test
      */
     public function shouldCountStats()
     {
