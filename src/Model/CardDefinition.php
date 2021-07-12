@@ -34,6 +34,7 @@ class CardDefinition implements JsonSerializable
     private string $name = '';
 
     private string $power = '';
+    private string $rarity = '';
     private string $toughness = '';
 
     private array $subtypes = [];
@@ -92,6 +93,11 @@ class CardDefinition implements JsonSerializable
     public function getToughness(): string
     {
         return $this->toughness;
+    }
+
+    public function getRarity(): string
+    {
+        return $this->rarity;
     }
 
     #[Pure]
@@ -176,6 +182,7 @@ class CardDefinition implements JsonSerializable
         $this->manaCost = new ManaCost($cardData->getManaCost());
         $this->manaValue = $cardData->getManaValue();
         $this->power = $cardData->getPower();
+        $this->rarity = $cardData->getRarity();
         $this->toughness = $cardData->getToughness();
     }
 

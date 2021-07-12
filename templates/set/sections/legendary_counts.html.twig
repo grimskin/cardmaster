@@ -1,9 +1,24 @@
-<div id="legendary-counts">
-    <h3>Legendaries in set - {{ stats.legendaryCounts.total }}</h3>
-
-    {# Table breaking down legendary counts by types and rarity #}
-
-    {% for type, amount in stats.legendaryCounts.counts %}
-        {{ amount }}x {{ type }}
-    {% endfor %}
+<div id="legendary-counts" class="section">
+    <h3>Set - Legendaries</h3>
+    <div class="table-holder">
+        <table>
+            <tbody>
+                <tr class="inverted">
+                    <th class="indented"></th>
+                    <th class="indented">Mythic</th>
+                    <th class="indented">Rare</th>
+                    <th class="indented">Uncommon</th>
+                    <th></th>
+                </tr>
+                {% for rarity, counts in stats.legendaryCounts.breakdown %}
+                <tr {% if loop.last %}class="inverted"{% endif %}>
+                    <th class="left indented">{{ rarity }}</th>
+                    {% for count in counts %}
+                    <td {% if not loop.last %}class="indented"{% endif %}>{% if count %}{{ count }}{% endif %}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </div>

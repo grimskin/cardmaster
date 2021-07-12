@@ -8,7 +8,14 @@ use App\Model\CardDefinition;
 
 class LegendaryCounter
 {
-    private array $counts = [];
+    private const RARITIES = [
+        'mythic' => 'Mythic',
+        'rare' => 'Rare',
+        'uncommon' => 'Uncommon',
+        // there were no common legendaries for a long time
+    ];
+
+    private array $breakdown = [];
     private int $total = 0;
 
     /**
@@ -22,8 +29,14 @@ class LegendaryCounter
             $result->processCard($card);
         }
 
-        asort($result->counts, SORT_NUMERIC);
-        $result->counts = array_reverse($result->counts);
+        uasort($result->breakdown, function($a, $b) { return $b['Total'] <=> $a['Total']; });
+        $result->initBreakdownForType('');
+
+        foreach ($result->breakdown as $stats) {
+            foreach ($stats as $rarity=>$count) {
+                $result->breakdown[''][$rarity] += $count;
+            }
+        }
 
         return $result;
     }
@@ -33,9 +46,9 @@ class LegendaryCounter
         return $this->total;
     }
 
-    public function getCounts(): array
+    public function getBreakdown(): array
     {
-        return $this->counts;
+        return $this->breakdown;
     }
 
     private function processCard(CardDefinition $card)
@@ -44,10 +57,26 @@ class LegendaryCounter
 
         $this->total++;
 
-        foreach ($card->getTypes() as $type) {
-            if (!isset($this->counts[$type])) $this->counts[$type] = 0;
+        $rarityName = self::RARITIES[$card->getRarity()];
 
-            $this->counts[$type]++;
+        foreach ($card->getTypes() as $type) {
+            $this->initBreakdownForType($type);
+
+            $this->breakdown[$type][$rarityName]++;
+            $this->breakdown[$type]['Total']++;
+        }
+    }
+
+    private function initBreakdownForType(string $type)
+    {
+        if (isset($this->breakdown[$type])) return;
+
+        $this->breakdown[$type] = self::RARITIES;
+        $this->breakdown[$type] = array_flip($this->breakdown[$type]);
+        $this->breakdown[$type]['Total'] = 0;
+
+        foreach ($this->breakdown[$type] as $key=>$value) {
+            $this->breakdown[$type][$key] = 0;
         }
     }
 }

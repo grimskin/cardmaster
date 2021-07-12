@@ -18,6 +18,15 @@ div#set-infographics {
     }
 
     div.section {
+        color: $section-color;
+
+        h3 {
+            font-size: 2rem;
+            padding-left: 1rem;
+            padding-top: 2rem;
+            border-bottom: 3px $section-color solid;
+        }
+
         div.highlights-block {
             display: flex;
 
@@ -47,6 +56,7 @@ div#set-infographics {
 
     @import "sections/creature-types";
     @import "sections/creature-stats";
+    @import "sections/legendaries-breakdown";
 
     div#legendary-counts {
         h3 {}

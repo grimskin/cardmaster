@@ -1,0 +1,48 @@
+@import "../set-stats-colors";
+
+div#legendary-counts {
+
+    div.table-holder {
+        display: flex;
+
+        table {
+            border-radius: 1.5rem;
+            margin: auto;
+            width: 98%;
+            border-collapse: collapse;
+
+            th, td {
+                border: 1px solid $section-color;
+                padding-top: 0.2rem;
+                padding-bottom: 0.2rem;
+            }
+
+            th {
+                text-align: center;
+                padding-left: 1rem;
+                font-weight: normal;
+                width: 20%;
+
+                &.left {
+                    text-align: right;
+                    padding-right: 1rem;
+                }
+            }
+
+            td {
+                text-align: center;
+                padding-left: 1rem;
+            }
+
+            tr.inverted {
+                th, td {
+                    background-color: $section-color;
+                    color: $section-background;
+                    &.indented {
+                        border-right: 1px solid $section-background;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,15 +1,6 @@
 @import "../set-stats-colors";
 
 div#creature-types-breakdown {
-    color: $section-color;
-
-    h3 {
-        font-size: 2rem;
-        padding-left: 1rem;
-        padding-top: 2rem;
-        border-bottom: 3px $section-color solid;
-    }
-
     div.other-types {
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;

@@ -13,6 +13,7 @@ class CardData
 
     private string $manaCost;
     private string $manaValue;
+    private string $rarity;
     private array $supertypes;
     private array $subtypes;
     private array $types;
@@ -36,6 +37,7 @@ class CardData
         $result->manaValue = (int) $cardDatum['convertedManaCost'] ?? 0;
         $result->number = $cardDatum['number'] ?? '';
         $result->power = $cardDatum['power'] ?? '';
+        $result->rarity = $cardDatum['rarity'] ?? '';
         $result->toughness = $cardDatum['toughness'] ?? '';
         $result->parseTypes();
 
@@ -107,5 +109,10 @@ class CardData
     public function getToughness(): string
     {
         return $this->toughness;
+    }
+
+    public function getRarity(): string
+    {
+        return $this->rarity;
     }
 }
