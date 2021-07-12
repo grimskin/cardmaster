@@ -20,6 +20,7 @@ class CreatureStats
 
     private int $totalPower = 0;
     private int $totalToughness = 0;
+    private int $totalManaValue = 0;
 
     private int $asteriskPowerCount = 0;
     private int $asteriskToughnessCount = 0;
@@ -105,6 +106,11 @@ class CreatureStats
         return $this->totalToughness / $this->creaturesCount;
     }
 
+    public function getAverageManaValue(): float
+    {
+        return $this->totalManaValue / $this->creaturesCount;
+    }
+
     private function processCard(CardDefinition $card)
     {
         if (!$card->isOfType(CardDefinition::T_CREATURE)) return;
@@ -127,6 +133,7 @@ class CreatureStats
 
             $this->totalPower += (int) $card->getPower();
             $this->totalToughness += (int) $card->getToughness();
+            $this->totalManaValue += $card->getManaValue();
         }
     }
 }
