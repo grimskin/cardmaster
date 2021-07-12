@@ -111,6 +111,16 @@ class CreatureStats
         return $this->totalManaValue / $this->creaturesCount;
     }
 
+    public function getAsteriskAnyCount(): int
+    {
+        return $this->asteriskAnyCount;
+    }
+
+    public function getCreaturesCount(): int
+    {
+        return $this->creaturesCount;
+    }
+
     private function processCard(CardDefinition $card)
     {
         if (!$card->isOfType(CardDefinition::T_CREATURE)) return;

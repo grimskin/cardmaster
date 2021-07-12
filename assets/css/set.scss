@@ -38,6 +38,11 @@ div#set-infographics {
                 }
             }
         }
+        div.info {
+            font-size: 1rem;
+            margin-top: 1rem;
+            padding-left: 0.7rem;
+        }
     }
 
     @import "sections/creature-types";
