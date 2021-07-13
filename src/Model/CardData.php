@@ -17,6 +17,7 @@ class CardData
     private array $supertypes;
     private array $subtypes;
     private array $types;
+    private array $colors;
     private array $colorIdentity;
 
     private string $power;
@@ -32,6 +33,7 @@ class CardData
         $result->supertypes = $cardDatum['supertypes'] ?? [];
         $result->type = $cardDatum['type'] ?? [];
         $result->types = $cardDatum['types'] ?? [];
+        $result->colors = $cardDatum['colors'];
         $result->colorIdentity = $cardDatum['colorIdentity'];
         $result->manaCost = $cardDatum['manaCost'] ?? '';
         $result->manaValue = (int) $cardDatum['convertedManaCost'] ?? 0;
@@ -84,6 +86,11 @@ class CardData
     public function getSuperTypes(): array
     {
         return $this->supertypes;
+    }
+
+    public function getColors(): array
+    {
+        return $this->colors;
     }
 
     public function getColorIdentity(): array

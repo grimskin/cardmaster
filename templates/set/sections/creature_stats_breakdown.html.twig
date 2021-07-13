@@ -50,6 +50,17 @@
         {% endfor %}
     </div>
 
+    <div class="stats-histogram">
+        <h4>Color</h4>
+        {% for color, count in stats.creatureStatsStats.colorBreakDown %}
+        <div>
+            <div class="label">{% if count > 0 %}{{ count }}{% endif %}</div>
+            <div class="div-hx div-h-{{ count }} mana-{{ color }}"></div>
+            <div class="amount">{{ color }}</div>
+        </div>
+        {% endfor %}
+    </div>
+
     <div class="info">
         There are {{ stats.creatureStatsStats.creaturesCount }} creatures in the set.
         Among them there's {{ stats.creatureStatsStats.asteriskAnyCount }}

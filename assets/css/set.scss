@@ -32,6 +32,14 @@ div#set-nav {
     }
 }
 
+.mana-W { background-color: $mana-white !important; }
+.mana-U { background-color: $mana-blue !important; }
+.mana-B { background-color: $mana-black !important; }
+.mana-R { background-color: $mana-red !important; }
+.mana-G { background-color: $mana-green !important; }
+.mana-M { background-color: $mana-multi !important; }
+.mana-E { background-color: $mana-colorless !important; }
+
 div#set-infographics {
     width: $view-width;
     margin: auto;

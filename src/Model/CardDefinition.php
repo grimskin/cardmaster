@@ -37,6 +37,7 @@ class CardDefinition implements JsonSerializable
 
     private string $faceName = '';
     private bool $isStub = false;
+    private array $colors = [];
     private array $colorIdentity = [];
     private string $name = '';
 
@@ -105,6 +106,11 @@ class CardDefinition implements JsonSerializable
     public function getRarity(): string
     {
         return $this->rarity;
+    }
+
+    public function getColors(): array
+    {
+        return $this->colors;
     }
 
     public function getColorIdentity(): array
@@ -190,6 +196,7 @@ class CardDefinition implements JsonSerializable
         $this->types = $cardData->getTypes();
         $this->subtypes = $cardData->getSubtypes();
         $this->superTypes = $cardData->getSuperTypes();
+        $this->colors = $cardData->getColors();
         $this->colorIdentity = $cardData->getColorIdentity();
         $this->manaCost = new ManaCost($cardData->getManaCost());
         $this->manaValue = $cardData->getManaValue();

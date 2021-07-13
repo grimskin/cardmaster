@@ -161,7 +161,7 @@ class CreatureStats
             $this->totalManaValue += $card->getManaValue();
         }
 
-        $colorIdentity = $card->getColorIdentity();
+        $colorIdentity = $card->getColors();
 
         if (count($colorIdentity) === 0) {
             $this->colorBreakDown[CardDefinition::COLOR_COLORLESS]++;
