@@ -18,6 +18,16 @@ class CreatureStats
     private array $toughnessBreakdown = [];
     private array $manaValueBreakdown = [];
 
+    private array $colorBreakDown = [
+        CardDefinition::COLOR_WHITE => 0,
+        CardDefinition::COLOR_BLUE => 0,
+        CardDefinition::COLOR_BLACK => 0,
+        CardDefinition::COLOR_RED => 0,
+        CardDefinition::COLOR_GREEN => 0,
+        CardDefinition::COLOR_MULTI => 0,
+        CardDefinition::COLOR_COLORLESS => 0,
+    ];
+
     private int $totalPower = 0;
     private int $totalToughness = 0;
     private int $totalManaValue = 0;
@@ -121,6 +131,11 @@ class CreatureStats
         return $this->creaturesCount;
     }
 
+    public function getColorBreakDown(): array
+    {
+        return $this->colorBreakDown;
+    }
+
     private function processCard(CardDefinition $card)
     {
         if (!$card->isOfType(CardDefinition::T_CREATURE)) return;
@@ -144,6 +159,16 @@ class CreatureStats
             $this->totalPower += (int) $card->getPower();
             $this->totalToughness += (int) $card->getToughness();
             $this->totalManaValue += $card->getManaValue();
+        }
+
+        $colorIdentity = $card->getColorIdentity();
+
+        if (count($colorIdentity) === 0) {
+            $this->colorBreakDown[CardDefinition::COLOR_COLORLESS]++;
+        } elseif (count($colorIdentity) === 1) {
+            $this->colorBreakDown[$colorIdentity[0]]++;
+        } else {
+            $this->colorBreakDown[CardDefinition::COLOR_MULTI]++;
         }
     }
 }

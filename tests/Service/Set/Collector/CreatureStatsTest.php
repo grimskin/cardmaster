@@ -4,6 +4,7 @@
 namespace App\Tests\Service\Set\Collector;
 
 
+use App\Model\CardDefinition;
 use App\Service\Set\Collector\CreatureStats;
 use App\Tests\Fixtures\FixtureLoad;
 use PHPUnit\Framework\TestCase;
@@ -116,5 +117,32 @@ class CreatureStatsTest extends TestCase
         $this->assertEquals(0, $stats[3]);
         $this->assertEquals(1, $stats[4]);
         $this->assertEquals(2, $stats[5]);
+    }
+
+    /**
+     * @test
+     */
+    public function shouldBreakDownColors()
+    {
+        $counter = CreatureStats::fromCards([
+            $this->loadCardDefinition('Yorion, Sky Nomad'),
+            $this->loadCardDefinition('Professor Onyx'),
+            $this->loadCardDefinition('Anvilwrought Raptor'),
+            $this->loadCardDefinition('Trostani Discordant'),
+            $this->loadCardDefinition('Gretchen Titchwillow'),
+            $this->loadCardDefinition('Ashaya, Soul of the Wild'),
+        ]);
+
+        $stats = $counter->getColorBreakDown();
+
+        $this->assertCount(7, $stats);
+
+        $this->assertEquals(0, $stats[CardDefinition::COLOR_WHITE]);
+        $this->assertEquals(0, $stats[CardDefinition::COLOR_BLUE]);
+        $this->assertEquals(0, $stats[CardDefinition::COLOR_BLACK]);
+        $this->assertEquals(0, $stats[CardDefinition::COLOR_RED]);
+        $this->assertEquals(1, $stats[CardDefinition::COLOR_GREEN]);
+        $this->assertEquals(3, $stats[CardDefinition::COLOR_MULTI]);
+        $this->assertEquals(1, $stats[CardDefinition::COLOR_COLORLESS]);
     }
 }

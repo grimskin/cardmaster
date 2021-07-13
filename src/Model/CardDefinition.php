@@ -32,6 +32,8 @@ class CardDefinition implements JsonSerializable
     const COLOR_BLACK = 'B';
     const COLOR_RED = 'R';
     const COLOR_GREEN = 'G';
+    const COLOR_MULTI = 'M';
+    const COLOR_COLORLESS = 'E';
 
     private string $faceName = '';
     private bool $isStub = false;
@@ -103,6 +105,11 @@ class CardDefinition implements JsonSerializable
     public function getRarity(): string
     {
         return $this->rarity;
+    }
+
+    public function getColorIdentity(): array
+    {
+        return $this->colorIdentity;
     }
 
     #[Pure]
