@@ -20,6 +20,11 @@ class CardDefinition implements JsonSerializable
     const T_SORCERY = 'Sorcery';
     const T_PLANESWALKER = 'Planeswalker';
 
+    const R_MYTHIC = 'Mythic';
+    const R_RARE = 'Rare';
+    const R_UNCOMMON = 'Uncommon';
+    const R_COMMON = 'Common';
+
     const ST_LEGENDARY = 'Legendary';
 
     const COLOR_WHITE = 'W';

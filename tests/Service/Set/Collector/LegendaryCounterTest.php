@@ -14,7 +14,7 @@ class LegendaryCounterTest extends TestCase
     use FixtureLoad;
 
     /**
-     * @ test
+     * @test
      */
     public function shouldCountStats()
     {
@@ -31,15 +31,17 @@ class LegendaryCounterTest extends TestCase
 
         $this->assertEquals(5, $counter->getTotal());
 
-        $stats = $counter->getCounts();
+        $stats = $counter->getBreakdown();
 
-        $this->assertCount(3, $stats);
+        $this->assertCount(4, $stats);
         $this->assertArrayHasKey(CardDefinition::T_CREATURE, $stats);
         $this->assertArrayHasKey(CardDefinition::T_ARTIFACT, $stats);
         $this->assertArrayHasKey(CardDefinition::T_PLANESWALKER, $stats);
-        $this->assertEquals(3, $stats[CardDefinition::T_CREATURE]);
-        $this->assertEquals(1, $stats[CardDefinition::T_PLANESWALKER]);
-        $this->assertEquals(1, $stats[CardDefinition::T_ARTIFACT]);
+        $this->assertEquals(1, $stats[CardDefinition::T_CREATURE][CardDefinition::R_MYTHIC]);
+        $this->assertEquals(1, $stats[CardDefinition::T_CREATURE][CardDefinition::R_RARE]);
+        $this->assertEquals(1, $stats[CardDefinition::T_CREATURE][CardDefinition::R_UNCOMMON]);
+        $this->assertEquals(3, $stats[CardDefinition::T_CREATURE]['Total']);
         $this->assertEquals(CardDefinition::T_CREATURE, array_key_first($stats));
+        $this->assertEquals($counter->getTotal(), $stats['']['Total']);
     }
 }

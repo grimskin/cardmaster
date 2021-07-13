@@ -9,9 +9,9 @@ use App\Model\CardDefinition;
 class LegendaryCounter
 {
     private const RARITIES = [
-        'mythic' => 'Mythic',
-        'rare' => 'Rare',
-        'uncommon' => 'Uncommon',
+        'mythic' => CardDefinition::R_MYTHIC,
+        'rare' => CardDefinition::R_RARE,
+        'uncommon' => CardDefinition::R_UNCOMMON,
         // there were no common legendaries for a long time
     ];
 
