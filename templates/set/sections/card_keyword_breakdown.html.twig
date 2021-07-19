@@ -1,0 +1,23 @@
+<div id="card-keyword-breakdown" class="section">
+    <h3>Set - Keywords</h3>
+
+    <div class="histogram-bended">
+        {% for type, amount in stats.keywords.keywords %}
+            <div>
+                <div class="label">{{ type }}</div>
+                <div class="div-hx div-h-{{ amount }}"></div>
+                <div class="amount">{{ amount }}</div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="info">
+        Different keywords - {{ stats.keywords.keywords|length }}.
+        There's
+        {% for types, count in stats.keywords.keywordsOnCard %}
+            {{ count }} card{% if count > 1 %}s{% endif%}
+            with {% if types > 0 %}{{ types }}{% else %}no{% endif %}
+            keyword{% if types != 1 %}s{% endif%}{% if not loop.last %}, {% else %}.{% endif %}
+        {% endfor %}
+    </div>
+</div>

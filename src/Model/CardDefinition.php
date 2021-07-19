@@ -39,6 +39,7 @@ class CardDefinition implements JsonSerializable
     private bool $isStub = false;
     private array $colors = [];
     private array $colorIdentity = [];
+    private array $keywords = [];
     private string $name = '';
 
     private string $power = '';
@@ -182,6 +183,11 @@ class CardDefinition implements JsonSerializable
         return $this->types;
     }
 
+    public function getKeywords(): array
+    {
+        return $this->keywords;
+    }
+
     public function absorbData(CardData $cardData)
     {
         $this->cardData = $cardData;
@@ -190,19 +196,20 @@ class CardDefinition implements JsonSerializable
             return ;
         }
 
-        $this->name = $cardData->getName();
-        $this->faceName = $cardData->getFaceName();
-        $this->type = $cardData->getType();
-        $this->types = $cardData->getTypes();
-        $this->subtypes = $cardData->getSubtypes();
-        $this->superTypes = $cardData->getSuperTypes();
-        $this->colors = $cardData->getColors();
         $this->colorIdentity = $cardData->getColorIdentity();
+        $this->colors = $cardData->getColors();
+        $this->faceName = $cardData->getFaceName();
+        $this->keywords = $cardData->getKeywords();
         $this->manaCost = new ManaCost($cardData->getManaCost());
         $this->manaValue = $cardData->getManaValue();
+        $this->name = $cardData->getName();
         $this->power = $cardData->getPower();
         $this->rarity = $cardData->getRarity();
+        $this->subtypes = $cardData->getSubtypes();
+        $this->superTypes = $cardData->getSuperTypes();
         $this->toughness = $cardData->getToughness();
+        $this->type = $cardData->getType();
+        $this->types = $cardData->getTypes();
     }
 
     #[Pure]

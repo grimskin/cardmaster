@@ -9,10 +9,11 @@ class CardData
     private string $name;
     private string $faceName;
     private string $type = '';
-    private string $number;
 
+    private array $keywords;
     private string $manaCost;
     private string $manaValue;
+    private string $number;
     private string $rarity;
     private array $supertypes;
     private array $subtypes;
@@ -35,6 +36,7 @@ class CardData
         $result->types = $cardDatum['types'] ?? [];
         $result->colors = $cardDatum['colors'];
         $result->colorIdentity = $cardDatum['colorIdentity'];
+        $result->keywords = $cardDatum['keywords'] ?? [];
         $result->manaCost = $cardDatum['manaCost'] ?? '';
         $result->manaValue = (int) $cardDatum['convertedManaCost'] ?? 0;
         $result->number = $cardDatum['number'] ?? '';
@@ -121,5 +123,10 @@ class CardData
     public function getRarity(): string
     {
         return $this->rarity;
+    }
+
+    public function getKeywords(): array
+    {
+        return $this->keywords;
     }
 }

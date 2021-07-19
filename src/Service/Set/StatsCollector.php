@@ -8,6 +8,7 @@ use App\Model\CardData;
 use App\Model\CardDefinition;
 use App\Service\Set\Collector\CreatureStats;
 use App\Service\Set\Collector\CreatureTypes;
+use App\Service\Set\Collector\Keywords;
 use App\Service\Set\Collector\LegendaryCounter;
 use App\Service\Set\Collector\RandomFacts;
 
@@ -22,6 +23,7 @@ class StatsCollector
     private ?CreatureTypes $creatureTypesStats = null;
     private ?CreatureStats $creatureStatsStats = null;
     private ?LegendaryCounter $legendaryCounter = null;
+    private ?Keywords $keywords = null;
     private ?RandomFacts $randomFacts = null;
 
     public function addCards(array $data)
@@ -82,6 +84,13 @@ class StatsCollector
         if (!$this->creatureStatsStats) $this->creatureStatsStats = CreatureStats::fromCards($this->cards);
 
         return $this->creatureStatsStats;
+    }
+
+    public function getKeywords(): Keywords
+    {
+        if (!$this->keywords) $this->keywords = Keywords::fromCards($this->cards);
+
+        return $this->keywords;
     }
 
     public function getLegendaryCounts(): LegendaryCounter

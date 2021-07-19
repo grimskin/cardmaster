@@ -24,7 +24,7 @@ class CreatureTypes
         }
 
         asort($result->types, SORT_NUMERIC);
-        $result->types = array_reverse($result->types);
+        $result->types = array_reverse($result->types, true);
 
         foreach ($result->types as $type=>$count) {
             if ($count === 1) $result->oneOffs[] = $type;
