@@ -1,0 +1,82 @@
+{
+    "artist": "Andrew Mar",
+    "availability": [
+        "arena",
+        "mtgo",
+        "paper"
+    ],
+    "borderColor": "black",
+    "colorIdentity": [
+        "B",
+        "R"
+    ],
+    "colors": [
+        "B",
+        "R"
+    ],
+    "convertedManaCost": 4.0,
+    "edhrecRank": 20088,
+    "foreignData": [],
+    "frameEffects": [
+        "legendary"
+    ],
+    "frameVersion": "2015",
+    "hasFoil": true,
+    "hasNonFoil": true,
+    "identifiers": {
+        "cardKingdomFoilId": "248444",
+        "cardKingdomId": "248101",
+        "mcmId": "571339",
+        "mcmMetaId": "343749",
+        "mtgjsonV4Id": "11db4575-2976-578c-bb58-1ed0fb63d5ea",
+        "scryfallId": "91f5c6d3-fb04-4a2e-87b6-9ed2314085a8",
+        "scryfallIllustrationId": "2543c278-57b7-40c7-b75b-596d588b1552",
+        "scryfallOracleId": "9d02b5e1-bd29-45ad-b11d-f2cd21c48979",
+        "tcgplayerProductId": "243235"
+    },
+    "keywords": [
+        "Flying",
+        "Trample"
+    ],
+    "layout": "normal",
+    "leadershipSkills": {
+        "brawl": false,
+        "commander": true,
+        "oathbreaker": false
+    },
+    "legalities": {
+        "future": "Legal"
+    },
+    "manaCost": "{X}{2}{B}{R}",
+    "name": "Orcus, Prince of Undeath",
+    "number": "229",
+    "power": "5",
+    "printings": [
+        "AFR"
+    ],
+    "purchaseUrls": {
+        "cardKingdom": "https://mtgjson.com/links/b24a64800482f1eb",
+        "cardKingdomFoil": "https://mtgjson.com/links/f7baec639447ad3d",
+        "cardmarket": "https://mtgjson.com/links/352e7165871cee1b",
+        "tcgplayer": "https://mtgjson.com/links/c3803404d5d2db9d"
+    },
+    "rarity": "rare",
+    "rulings": [],
+    "setCode": "AFR",
+    "subtypes": [
+        "Demon"
+    ],
+    "supertypes": [
+        "Legendary"
+    ],
+    "text": "Flying, trample\nWhen Orcus, Prince of Undeath enters the battlefield, choose one —\n• Each other creature gets -X/-X until end of turn. You lose X life.\n• Return up to X target creature cards with total mana value X or less from your graveyard to the battlefield. They gain haste until end of turn.",
+    "toughness": "3",
+    "type": "Legendary Creature — Demon",
+    "types": [
+        "Creature"
+    ],
+    "uuid": "d1d00ca5-0006-5753-b03f-c83b27c75bb6",
+    "variations": [
+        "2732175b-a9e0-5f1f-8be7-fca50d8826f1"
+    ]
+}
