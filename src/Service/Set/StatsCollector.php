@@ -9,6 +9,7 @@ use App\Model\CardDefinition;
 use App\Service\Set\Collector\CreatureStats;
 use App\Service\Set\Collector\CreatureTypes;
 use App\Service\Set\Collector\LegendaryCounter;
+use App\Service\Set\Collector\RandomFacts;
 
 class StatsCollector
 {
@@ -21,6 +22,7 @@ class StatsCollector
     private ?CreatureTypes $creatureTypesStats = null;
     private ?CreatureStats $creatureStatsStats = null;
     private ?LegendaryCounter $legendaryCounter = null;
+    private ?RandomFacts $randomFacts = null;
 
     public function addCards(array $data)
     {
@@ -87,6 +89,16 @@ class StatsCollector
         if (!$this->legendaryCounter) $this->legendaryCounter = LegendaryCounter::fromCards($this->cards);
 
         return $this->legendaryCounter;
+    }
+
+    public function getRandomFacts(): RandomFacts
+    {
+        if ($this->randomFacts) return $this->randomFacts;
+
+        $this->randomFacts = RandomFacts::fromCards($this->cards);
+        $this->randomFacts->setCreatureStats($this->getCreatureStatsStats());;
+
+        return $this->randomFacts;
     }
 
     public function getSetName(): string

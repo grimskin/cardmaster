@@ -1,0 +1,23 @@
+<div id="random-facts" class="section">
+    <h3>Set - Random facts</h3>
+    <div class="info">
+        <span>
+            {% if stats.randomFacts.asteriskAnyCount > 0 %}
+                There {% if stats.randomFacts.asteriskAnyCount > 1 %}are {% else %}is {% endif %}
+                {{ stats.randomFacts.asteriskAnyCount }}
+                creature{% if stats.randomFacts.asteriskAnyCount > 1 %}s{% endif %}
+                with asterisk in power/toughness.
+            {% else %} There are no creatures with asterisks in power/toughness.
+            {% endif %}
+        </span>
+        <br />
+        <span>
+            Longest card name in the set contains {{ stats.randomFacts.longestNameLength }} symbols.
+            {% if stats.randomFacts.longestNames|length > 1 %}
+                Cards with such long name are: "{{ stats.randomFacts.longestNames|join('", "') }}"
+            {% else %}
+                There's only one card with such long name - {{ stats.randomFacts.longestNames[0] }}
+            {% endif %}
+        </span>
+    </div>
+</div>
