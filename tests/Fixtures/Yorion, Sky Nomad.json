@@ -1,221 +1,227 @@
 {
-  "artist": "Steven Belledin",
-  "borderColor": "black",
-  "colorIdentity": [
-    "U",
-    "W"
-  ],
-  "colors": [
-    "U",
-    "W"
-  ],
-  "convertedManaCost": 5.0,
-  "edhrecRank": 10004,
-  "foreignData": [
-    {
-      "language": "German",
-      "multiverseId": 480011,
-      "name": "Yorion der Himmelsnomade",
-      "text": "Gefährte — Dein Startdeck enthält mindestens zwanzig Karten mehr als die minimale Deckgröße. (Falls du diese Karte als deinen Gefährten erwählt hast, kannst du sie einmal von außerhalb der Partie wirken.)\nFliegend\nWenn Yorion ins Spiel kommt, schicke eine beliebige Anzahl an anderen bleibenden Karten, die keine Länder sind und die du besitzt und kontrollierst, ins Exil. Bringe sie zu Beginn des nächsten Endsegments ins Spiel zurück.",
-      "type": "Legendäre Kreatur — Vogel, Schlange"
+    "artist": "Steven Belledin",
+    "availability": [
+        "arena",
+        "mtgo",
+        "paper"
+    ],
+    "borderColor": "black",
+    "colorIdentity": [
+        "U",
+        "W"
+    ],
+    "colors": [
+        "U",
+        "W"
+    ],
+    "convertedManaCost": 5,
+    "edhrecRank": 2532,
+    "foreignData": [
+        {
+            "language": "German",
+            "multiverseId": 480011,
+            "name": "Yorion der Himmelsnomade",
+            "text": "Gefährte — Dein Startdeck enthält mindestens zwanzig Karten mehr als die minimale Deckgröße. (Falls du diese Karte als deinen Gefährten erwählt hast, kannst du sie einmal von außerhalb der Partie wirken.)\nFliegend\nWenn Yorion ins Spiel kommt, schicke eine beliebige Anzahl an anderen bleibenden Karten, die keine Länder sind und die du besitzt und kontrollierst, ins Exil. Bringe sie zu Beginn des nächsten Endsegments ins Spiel zurück.",
+            "type": "Legendäre Kreatur — Vogel, Schlange"
+        },
+        {
+            "language": "Spanish",
+            "multiverseId": 480270,
+            "name": "Yorion, Nómada del Cielo",
+            "text": "Compañero — Tu mazo inicial contiene al menos veinte cartas más que el tamaño mínimo de mazo. (Si esta carta es el compañero que eliges, puedes lanzarla una vez desde fuera del juego.)\nVuela.\nCuando Yorion entre al campo de batalla, exilia cualquier cantidad de otros permanentes que no sean tierra de los que eres propietario y controlas. Regresa esas cartas al campo de batalla al comienzo del próximo paso final.",
+            "type": "Criatura legendaria — Serpiente ave"
+        },
+        {
+            "language": "French",
+            "multiverseId": 480529,
+            "name": "Yorion, nomade céleste",
+            "text": "Compagnon — Votre deck de départ contient au moins vingt cartes de plus que la taille de deck minimale. (Si cette carte est le compagnon de votre choix, vous pouvez la lancer une fois depuis l'extérieur de la partie.)\nVol\nQuand Yorion arrive sur le champ de bataille, exilez n'importe quel nombre d'autres permanents non-terrain que vous possédez et que vous contrôlez. Renvoyez ces cartes sur le champ de bataille au début de la prochaine étape de fin.",
+            "type": "Créature légendaire : oiseau et grand serpent"
+        },
+        {
+            "language": "Italian",
+            "multiverseId": 480788,
+            "name": "Yorion, Nomade dei Cieli",
+            "text": "Compagno — Il tuo mazzo iniziale contiene almeno venti carte in più della dimensione minima del mazzo. (Se questa carta è il compagno che hai scelto, puoi lanciarla una volta dal di fuori della partita.)\nVolare\nQuando Yorion entra nel campo di battaglia, esilia un qualsiasi numero di altri permanenti non terra che possiedi e controlli. Rimetti quelle carte sul campo di battaglia all'inizio della prossima sottofase finale.",
+            "type": "Creatura Leggendaria — Serpe Uccello"
+        },
+        {
+            "language": "Japanese",
+            "multiverseId": 481047,
+            "name": "空を放浪するもの、ヨーリオン",
+            "text": "相棒 ― あなたの開始時のデッキに、カードが、デッキの最小サイズよりも少なくとも20枚多く入っていること。（このカードがあなたの選んだ相棒であるなら、あなたは１回のみゲームの外部からこれを唱えてもよい。）\n飛行\n空を放浪するもの、ヨーリオンが戦場に出たとき、他の、あなたがオーナーであってあなたがコントロールしていて土地でない、望む数のパーマネントを追放する。次の終了ステップの開始時に、それらのカードを戦場に戻す。",
+            "type": "伝説のクリーチャー — 鳥・海蛇"
+        },
+        {
+            "language": "Korean",
+            "multiverseId": 481306,
+            "name": "창공 유목민, 요리온",
+            "text": "단짝 — 당신의 시작 덱은 최소 덱 크기보다 최소한 20장이 더 많다. (이 카드가 당신이 선택한 단짝이라면, 당신은 이 카드를 게임 밖에서 한 번 발동할 수 있다.)\n비행\n요리온이 전장에 들어올 때, 당신이 소유하고 조종하는 다른 대지가 아닌 지속물들을 원하는 수만큼 추방한다. 다음 종료단 시작에 그 카드들을 전장으로 되돌린다.",
+            "type": "전설적 생물 — 조류 이무기"
+        },
+        {
+            "language": "Portuguese (Brazil)",
+            "multiverseId": 481565,
+            "name": "Yorion, Nômade Celeste",
+            "text": "Companheiro — Seu deck inicial contém ao menos vinte cards além do tamanho mínimo do deck. (Se este card for o companheiro que escolheu, você poderá conjurá-lo uma vez de fora do jogo.)\nVoar\nQuando Yorion entra no campo de batalha, exile qualquer número de outras permanentes que não sejam terrenos que você possui e controla. Devolva aqueles cards ao campo de batalha no início da próxima etapa final.",
+            "type": "Criatura Lendária — Ave Serpente"
+        },
+        {
+            "language": "Russian",
+            "multiverseId": 481824,
+            "name": "Йорион, Небесный Скиталец",
+            "text": "Компаньон — Размер вашей начальной колоды как минимум на двадцать карт превышает минимальный. (Если эта карта является вашим избранным Компаньоном, то вы можете один раз разыграть ее из-за пределов игры.)\nПолет\nКогда Йорион выходит на поле битвы, изгоните любое количество других принадлежащих вам не являющихся землями перманентов под вашим контролем. Верните те карты на поле битвы в начале следующего заключительного шага.",
+            "type": "Легендарное Существо — Птица Змей"
+        },
+        {
+            "language": "Chinese Simplified",
+            "multiverseId": 482083,
+            "name": "游空牧鸟约力昂",
+            "text": "行侣～你起始套牌中包含之牌张数量须比套牌数量下限多至少二十张。（如果你选择这张牌作为你的行侣，则你可以从游戏外施放它，但仅限一次。）\n飞行\n当约力昂进战场时，放逐任意数量由你拥有且操控的其他非地永久物。在下一个结束步骤开始时，将这些牌移回战场。",
+            "type": "传奇生物 ～鸟／巨蛇"
+        },
+        {
+            "language": "Chinese Traditional",
+            "multiverseId": 482342,
+            "name": "遊空牧鳥約力昂",
+            "text": "行侶～你起始套牌中包含之牌張數量須比套牌數量下限多至少二十張。（如果你選擇這張牌作為你的行侶，則你可以從遊戲外施放它，但僅限一次。）\n飛行\n當約力昂進戰場時，放逐任意數量由你擁有且操控的其他非地永久物。在下一個結束步驟開始時，將這些牌移回戰場。",
+            "type": "傳奇生物 ～鳥／巨蛇"
+        }
+    ],
+    "frameEffects": [
+        "companion",
+        "legendary"
+    ],
+    "frameVersion": "2015",
+    "hasFoil": true,
+    "hasNonFoil": true,
+    "identifiers": {
+        "cardKingdomFoilId": "233096",
+        "cardKingdomId": "232807",
+        "mcmId": "455533",
+        "mcmMetaId": "301998",
+        "mtgArenaId": "71299",
+        "mtgjsonV4Id": "8e4f33ea-7b50-5eac-8223-431a65433160",
+        "mtgoId": "80473",
+        "multiverseId": "479752",
+        "scryfallId": "275426c4-c14e-47d0-a9d4-24da7f6f6911",
+        "scryfallIllustrationId": "b91fb435-3541-44fa-99a8-eabf59376ee5",
+        "scryfallOracleId": "e15504a7-2b67-4185-b916-172145f10b19",
+        "tcgplayerProductId": "212715"
     },
-    {
-      "language": "Spanish",
-      "multiverseId": 480270,
-      "name": "Yorion, Nómada del Cielo",
-      "text": "Compañero — Tu mazo inicial contiene al menos veinte cartas más que el tamaño mínimo de mazo. (Si esta carta es el compañero que eliges, puedes lanzarla una vez desde fuera del juego.)\nVuela.\nCuando Yorion entre al campo de batalla, exilia cualquier cantidad de otros permanentes que no sean tierra de los que eres propietario y controlas. Regresa esas cartas al campo de batalla al comienzo del próximo paso final.",
-      "type": "Criatura legendaria — Serpiente ave"
+    "keywords": [
+        "Companion",
+        "Flying"
+    ],
+    "layout": "normal",
+    "leadershipSkills": {
+        "brawl": true,
+        "commander": true,
+        "oathbreaker": false
     },
-    {
-      "language": "French",
-      "multiverseId": 480529,
-      "name": "Yorion, nomade céleste",
-      "text": "Compagnon — Votre deck de départ contient au moins vingt cartes de plus que la taille de deck minimale. (Si cette carte est le compagnon de votre choix, vous pouvez la lancer une fois depuis l'extérieur de la partie.)\nVol\nQuand Yorion arrive sur le champ de bataille, exilez n'importe quel nombre d'autres permanents non-terrain que vous possédez et que vous contrôlez. Renvoyez ces cartes sur le champ de bataille au début de la prochaine étape de fin.",
-      "type": "Créature légendaire : oiseau et grand serpent"
+    "legalities": {
+        "brawl": "Legal",
+        "commander": "Legal",
+        "duel": "Legal",
+        "gladiator": "Legal",
+        "historic": "Legal",
+        "legacy": "Legal",
+        "modern": "Legal",
+        "pioneer": "Legal",
+        "standard": "Legal",
+        "vintage": "Legal"
     },
-    {
-      "language": "Italian",
-      "multiverseId": 480788,
-      "name": "Yorion, Nomade dei Cieli",
-      "text": "Compagno — Il tuo mazzo iniziale contiene almeno venti carte in più della dimensione minima del mazzo. (Se questa carta è il compagno che hai scelto, puoi lanciarla una volta dal di fuori della partita.)\nVolare\nQuando Yorion entra nel campo di battaglia, esilia un qualsiasi numero di altri permanenti non terra che possiedi e controlli. Rimetti quelle carte sul campo di battaglia all'inizio della prossima sottofase finale.",
-      "type": "Creatura Leggendaria — Serpe Uccello"
+    "manaCost": "{3}{W\/U}{W\/U}",
+    "name": "Yorion, Sky Nomad",
+    "number": "232",
+    "originalText": "Companion — Your starting deck contains at least twenty cards more than the minimum deck size. (If this card is your chosen companion, you may cast it once from outside the game.)\nFlying\nWhen Yorion enters the battlefield, exile any number of other nonland permanents you own and control. Return those cards to the battlefield at the beginning of the next end step.",
+    "originalType": "Legendary Creature — Bird Serpent",
+    "power": "4",
+    "printings": [
+        "IKO",
+        "PIKO"
+    ],
+    "purchaseUrls": {
+        "cardKingdom": "https:\/\/mtgjson.com\/links\/96cb9b72b586550b",
+        "cardKingdomFoil": "https:\/\/mtgjson.com\/links\/3dc250a150023498",
+        "cardmarket": "https:\/\/mtgjson.com\/links\/7a4334c9b250e296",
+        "tcgplayer": "https:\/\/mtgjson.com\/links\/b38b040bbc71b3e0"
     },
-    {
-      "language": "Japanese",
-      "multiverseId": 481047,
-      "name": "空を放浪するもの、ヨーリオン",
-      "text": "相棒 ― あなたの開始時のデッキに、カードが、デッキの最小サイズよりも少なくとも20枚多く入っていること。（このカードがあなたの選んだ相棒であるなら、あなたは１回のみゲームの外部からこれを唱えてもよい。）\n飛行\n空を放浪するもの、ヨーリオンが戦場に出たとき、他の、あなたがオーナーであってあなたがコントロールしていて土地でない、望む数のパーマネントを追放する。次の終了ステップの開始時に、それらのカードを戦場に戻す。",
-      "type": "伝説のクリーチャー — 鳥・海蛇"
-    },
-    {
-      "language": "Korean",
-      "multiverseId": 481306,
-      "name": "창공 유목민, 요리온",
-      "text": "단짝 — 당신의 시작 덱은 최소 덱 크기보다 최소한 20장이 더 많다. (이 카드가 당신이 선택한 단짝이라면, 당신은 이 카드를 게임 밖에서 한 번 발동할 수 있다.)\n비행\n요리온이 전장에 들어올 때, 당신이 소유하고 조종하는 다른 대지가 아닌 지속물들을 원하는 수만큼 추방한다. 다음 종료단 시작에 그 카드들을 전장으로 되돌린다.",
-      "type": "전설적 생물 — 조류 이무기"
-    },
-    {
-      "language": "Portuguese (Brazil)",
-      "multiverseId": 481565,
-      "name": "Yorion, Nômade Celeste",
-      "text": "Companheiro — Seu deck inicial contém ao menos vinte cards além do tamanho mínimo do deck. (Se este card for o companheiro que escolheu, você poderá conjurá-lo uma vez de fora do jogo.)\nVoar\nQuando Yorion entra no campo de batalha, exile qualquer número de outras permanentes que não sejam terrenos que você possui e controla. Devolva aqueles cards ao campo de batalha no início da próxima etapa final.",
-      "type": "Criatura Lendária — Ave Serpente"
-    },
-    {
-      "language": "Russian",
-      "multiverseId": 481824,
-      "name": "Йорион, Небесный Скиталец",
-      "text": "Компаньон — Размер вашей начальной колоды как минимум на двадцать карт превышает минимальный. (Если эта карта является вашим избранным Компаньоном, то вы можете один раз разыграть ее из-за пределов игры.)\nПолет\nКогда Йорион выходит на поле битвы, изгоните любое количество других принадлежащих вам не являющихся землями перманентов под вашим контролем. Верните те карты на поле битвы в начале следующего заключительного шага.",
-      "type": "Легендарное Существо — Птица Змей"
-    },
-    {
-      "language": "Chinese Simplified",
-      "multiverseId": 482083,
-      "name": "游空牧鸟约力昂",
-      "text": "行侣～你起始套牌中包含之牌张数量须比套牌数量下限多至少二十张。（如果你选择这张牌作为你的行侣，则你可以从游戏外施放它，但仅限一次。）\n飞行\n当约力昂进战场时，放逐任意数量由你拥有且操控的其他非地永久物。在下一个结束步骤开始时，将这些牌移回战场。",
-      "type": "传奇生物 ～鸟／巨蛇"
-    },
-    {
-      "language": "Chinese Traditional",
-      "multiverseId": 482342,
-      "name": "遊空牧鳥約力昂",
-      "text": "行侶～你起始套牌中包含之牌張數量須比套牌數量下限多至少二十張。（如果你選擇這張牌作為你的行侶，則你可以從遊戲外施放它，但僅限一次。）\n飛行\n當約力昂進戰場時，放逐任意數量由你擁有且操控的其他非地永久物。在下一個結束步驟開始時，將這些牌移回戰場。",
-      "type": "傳奇生物 ～鳥／巨蛇"
-    }
-  ],
-  "frameEffect": "companion",
-  "frameEffects": [
-    "companion"
-  ],
-  "frameVersion": "2015",
-  "hasFoil": true,
-  "hasNonFoil": true,
-  "isArena": true,
-  "isMtgo": true,
-  "isPaper": true,
-  "layout": "normal",
-  "leadershipSkills": {
-    "brawl": false,
-    "commander": true,
-    "oathbreaker": false
-  },
-  "legalities": {
-    "brawl": "Legal",
-    "commander": "Legal",
-    "duel": "Legal",
-    "future": "Legal",
-    "historic": "Legal",
-    "legacy": "Legal",
-    "modern": "Legal",
-    "pioneer": "Legal",
-    "standard": "Legal",
-    "vintage": "Legal"
-  },
-  "manaCost": "{3}{W/U}{W/U}",
-  "mcmId": 455533,
-  "mcmMetaId": 301998,
-  "mtgoId": 80473,
-  "multiverseId": 479752,
-  "name": "Yorion, Sky Nomad",
-  "number": "232",
-  "originalText": "Companion — Your starting deck contains at least twenty cards more than the minimum deck size. (If this card is your chosen companion, you may cast it once from outside the game.)\nFlying\nWhen Yorion enters the battlefield, exile any number of other nonland permanents you own and control. Return those cards to the battlefield at the beginning of the next end step.",
-  "originalType": "Legendary Creature — Bird Serpent",
-  "power": "4",
-  "prices": {
-    "mtgo": {
-      "2020-05-11": 0.6
-    },
-    "mtgoFoil": {
-      "2020-05-11": 0.91
-    },
-    "paper": {
-      "2020-05-10": 3.16
-    },
-    "paperFoil": {
-      "2020-05-10": 15.14
-    }
-  },
-  "printings": [
-    "IKO"
-  ],
-  "purchaseUrls": {
-    "cardmarket": "https://mtgjson.com/links/1a1f4e000ff6bb35",
-    "tcgplayer": "https://mtgjson.com/links/1db3b2bfdac324dc"
-  },
-  "rarity": "rare",
-  "rulings": [
-    {
-      "date": "2020-04-17",
-      "text": "Your minimum deck size is forty cards for Limited events (such as Booster Draft and Sealed Deck) and sixty cards for Constructed events (such as Standard or casual freeform play). Certain variants may have other minimums. The Commander variant requires exactly one hundred cards, so Yorion can never be your chosen companion in a Commander game."
-    },
-    {
-      "date": "2020-04-17",
-      "text": "You choose which permanents to exile as Yorion’s triggered ability resolves. No player may take action between the time you choose the permanents and the time they’re exiled."
-    },
-    {
-      "date": "2020-04-17",
-      "text": "You can’t exile permanents you control but don’t own, or permanents that you own but don’t control."
-    },
-    {
-      "date": "2020-04-17",
-      "text": "Auras attached to the exiled permanents will be put into their owners’ graveyards. Equipment attached to the exiled permanents will become unattached and remain on the battlefield. Any counters on the exiled permanents will cease to exist. Once the exiled permanents return, they’re considered new objects with no relation to the objects that they were."
-    },
-    {
-      "date": "2020-04-17",
-      "text": "If a token is exiled this way, it will cease to exist and won’t return to the battlefield."
-    },
-    {
-      "date": "2020-04-17",
-      "text": "Your companion begins the game outside the game. In tournament play, this means your sideboard. In casual play, it’s simply a card you own that’s not in your starting deck."
-    },
-    {
-      "date": "2020-04-17",
-      "text": "Before shuffling your deck to become your library, you may reveal one card from outside the game to be your companion if your starting deck meets the requirements of the companion ability. You can’t reveal more than one. It remains revealed outside the game as the game begins."
-    },
-    {
-      "date": "2020-04-17",
-      "text": "The requirements of the companion ability apply only to your starting deck. They do not apply to your sideboard."
-    },
-    {
-      "date": "2020-04-17",
-      "text": "If more than one player wishes to reveal a companion, the starting player does so first, and players proceed in turn order. Once a player has chosen not to reveal a companion, that player can’t change their mind."
-    },
-    {
-      "date": "2020-04-17",
-      "text": "If you reveal a companion outside the game, for as long as it remains there, you may cast it any time it’s legal to cast. Once you do, it comes into the game and behaves like any other card you’ve brought into the game. For example, if it’s countered or destroyed, it’s put into your graveyard, remaining in the game."
-    },
-    {
-      "date": "2020-04-17",
-      "text": "The companion’s other abilities apply only if the creature is on the battlefield. They have no effect while the companion is outside the game."
-    },
-    {
-      "date": "2020-04-17",
-      "text": "The companion ability has no effect if the card is in your starting deck and creates no restriction on putting a card with a companion ability into your starting deck. For example, Zirda may be in your starting deck even if your other permanent cards don’t all have activated abilities."
-    },
-    {
-      "date": "2020-04-17",
-      "text": "You may have one companion in the Commander variant. Your deck, including your commander, must meet its companion requirement. Your companion is not one of your one hundred cards."
-    }
-  ],
-  "scryfallId": "275426c4-c14e-47d0-a9d4-24da7f6f6911",
-  "scryfallIllustrationId": "b91fb435-3541-44fa-99a8-eabf59376ee5",
-  "scryfallOracleId": "e15504a7-2b67-4185-b916-172145f10b19",
-  "subtypes": [
-    "Bird",
-    "Serpent"
-  ],
-  "supertypes": [
-    "Legendary"
-  ],
-  "tcgplayerProductId": 212715,
-  "text": "Companion — Your starting deck contains at least twenty cards more than the minimum deck size. (If this card is your chosen companion, you may cast it once from outside the game.)\nFlying\nWhen Yorion enters the battlefield, exile any number of other nonland permanents you own and control. Return those cards to the battlefield at the beginning of the next end step.",
-  "toughness": "5",
-  "type": "Legendary Creature — Bird Serpent",
-  "types": [
-    "Creature"
-  ],
-  "uuid": "8e4f33ea-7b50-5eac-8223-431a65433160",
-  "variations": [
-    "04f391b8-7cee-5d23-a9e5-69ef62b5f6d1"
-  ]
+    "rarity": "rare",
+    "rulings": [
+        {
+            "date": "2020-04-17",
+            "text": "You choose which permanents to exile as Yorion’s triggered ability resolves. No player may take action between the time you choose the permanents and the time they’re exiled."
+        },
+        {
+            "date": "2020-04-17",
+            "text": "You can’t exile permanents you control but don’t own, or permanents that you own but don’t control."
+        },
+        {
+            "date": "2020-04-17",
+            "text": "Auras attached to the exiled permanents will be put into their owners’ graveyards. Equipment attached to the exiled permanents will become unattached and remain on the battlefield. Any counters on the exiled permanents will cease to exist. Once the exiled permanents return, they’re considered new objects with no relation to the objects that they were."
+        },
+        {
+            "date": "2020-04-17",
+            "text": "If a token is exiled this way, it will cease to exist and won’t return to the battlefield."
+        },
+        {
+            "date": "2020-04-17",
+            "text": "Your companion begins the game outside the game. In tournament play, this means your sideboard. In casual play, it’s simply a card you own that’s not in your starting deck."
+        },
+        {
+            "date": "2020-04-17",
+            "text": "The companion’s other abilities apply only if the creature is on the battlefield. They have no effect while the companion is outside the game."
+        },
+        {
+            "date": "2020-04-17",
+            "text": "The requirements of the companion ability apply only to your starting deck. They do not apply to your sideboard."
+        },
+        {
+            "date": "2020-04-17",
+            "text": "If more than one player wishes to reveal a companion, the starting player does so first, and players proceed in turn order. Once a player has chosen not to reveal a companion, that player can’t change their mind."
+        },
+        {
+            "date": "2020-04-17",
+            "text": "The companion ability has no effect if the card is in your starting deck and creates no restriction on putting a card with a companion ability into your starting deck. For example, Zirda may be in your starting deck even if your other permanent cards don’t all have activated abilities."
+        },
+        {
+            "date": "2020-04-17",
+            "text": "You may have one companion in the Commander variant. Your deck, including your commander, must meet its companion requirement. Your companion is not one of your one hundred cards."
+        },
+        {
+            "date": "2020-04-17",
+            "text": "Before shuffling your deck to become your library, you may reveal one card from outside the game to be your companion if your starting deck meets the requirements of the companion ability. You can’t reveal more than one. It remains revealed outside the game as the game begins."
+        },
+        {
+            "date": "2020-04-17",
+            "text": "Your minimum deck size is forty cards for Limited events (such as Booster Draft and Sealed Deck) and sixty cards for Constructed events (such as Standard or casual freeform play). Certain variants may have other minimums. The Commander variant requires exactly one hundred cards, so Yorion can never be your chosen companion in a Commander game."
+        },
+        {
+            "date": "2020-06-01",
+            "text": "Once you put your companion into your hand, it behaves like any other card you’ve brought into the game. For example, if it’s countered or destroyed, it’s put into your graveyard, remaining in the game."
+        },
+        {
+            "date": "2020-06-01",
+            "text": "Wizards of the Coast has issued functional errata for the Companion mechanic. Instead of casting companions from outside the game: Once per game, any time you could cast a sorcery (during your main phase when the stack is empty), you can pay {3} to put your companion from your sideboard into your hand. This is a special action, not an activated ability. It happens immediately and can’t be responded to. It can’t be countered or stopped by cards like Phyrexian Revoker. For more information please see https:\/\/magic.wizards.com\/en\/articles\/archive\/news\/june-1-2020-banned-and-restricted-announcement"
+        }
+    ],
+    "setCode": "IKO",
+    "subtypes": [
+        "Bird",
+        "Serpent"
+    ],
+    "supertypes": [
+        "Legendary"
+    ],
+    "text": "Companion — Your starting deck contains at least twenty cards more than the minimum deck size. (If this card is your chosen companion, you may put it into your hand from outside the game for {3} any time you could cast a sorcery.)\nFlying\nWhen Yorion enters the battlefield, exile any number of other nonland permanents you own and control. Return those cards to the battlefield at the beginning of the next end step.",
+    "toughness": "5",
+    "type": "Legendary Creature — Bird Serpent",
+    "types": [
+        "Creature"
+    ],
+    "uuid": "1b6b455a-34dd-5426-99c5-13f60e9bfcb4",
+    "variations": [
+        "4902cb6d-64cd-5c4c-8745-647a23a94d60"
+    ]
 }

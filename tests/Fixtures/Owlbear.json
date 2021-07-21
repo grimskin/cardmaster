@@ -1,0 +1,169 @@
+{
+    "artist": "Ilse Gort",
+    "availability": [
+        "arena",
+        "mtgo",
+        "paper"
+    ],
+    "borderColor": "black",
+    "colorIdentity": [
+        "G"
+    ],
+    "colors": [
+        "G"
+    ],
+    "convertedManaCost": 5,
+    "edhrecRank": 20403,
+    "flavorText": "Many people believe a misguided wizard created the first owlbear, but others insist that these creatures have always dwelled in the Feywild.",
+    "foreignData": [
+        {
+            "flavorText": "Viele glauben, ein fehlgeleiteter Magier habe den ersten Eulenbären geschaffen, aber andere beharren darauf, dass diese Kreaturen schon immer im Feywild gelebt haben.",
+            "language": "German",
+            "multiverseId": 527745,
+            "name": "Eulenbär",
+            "text": "Verursacht Trampelschaden\nScharfe Sinne — Wenn der Eulenbär ins Spiel kommt, ziehe eine Karte.",
+            "type": "Kreatur — Vogel, Bär"
+        },
+        {
+            "flavorText": "Muchos creen que un mago creó por error al primer oso lechuza, pero hay quienes insisten en que estas criaturas siempre moraron en los Parajes Feéricos.",
+            "language": "Spanish",
+            "multiverseId": 528006,
+            "name": "Oso lechuza",
+            "text": "Arrolla.\nSentidos agudos — Cuando el Oso lechuza entre al campo de batalla, roba una carta.",
+            "type": "Criatura — Oso ave"
+        },
+        {
+            "flavorText": "Nombreux sont ceux qui croient qu'un magicien malavisé a créé le premier ours-hibou, mais d'autres insistent que ces créatures ont toujours existé dans la Féerie sauvage.",
+            "language": "French",
+            "multiverseId": 528267,
+            "name": "Ours-hibou",
+            "text": "Piétinement\nSens aiguisés — Quand l'Ours-hibou arrive sur le champ de bataille, piochez une carte.",
+            "type": "Créature : oiseau et ours"
+        },
+        {
+            "flavorText": "Si crede che il primo orsogufo sia stato creato da un mago malaccorto, ma c'è chi insiste che queste creature abitino nella Selva Fatata da sempre.",
+            "language": "Italian",
+            "multiverseId": 528528,
+            "name": "Orsogufo",
+            "text": "Travolgere\nSensi Acuti — Quando l'Orsogufo entra nel campo di battaglia, pesca una carta.",
+            "type": "Creatura — Orso Uccello"
+        },
+        {
+            "flavorText": "多くの人はアウルベアがウィザードによって誤って作られたと信じているが、このクリーチャーが昔からフェイワイルドに生息していたと力説する者もいる。",
+            "language": "Japanese",
+            "multiverseId": 528789,
+            "name": "アウルベア",
+            "text": "トランプル\n鋭い感覚 — アウルベアが戦場に出たとき、カード１枚を引く。",
+            "type": "クリーチャー — 鳥・熊"
+        },
+        {
+            "flavorText": "많은 사람이 마법을 잘못 이해한 마법사가 최초의 부엉이곰을 만들어냈다고 믿지만, 다른 이들은 이런 생물들이 페이와일드에서 계속 살고 있었다고 주장한다.",
+            "language": "Korean",
+            "multiverseId": 529049,
+            "name": "부엉이곰",
+            "text": "돌진\n예민한 감각 — 부엉이곰이 전장에 들어올 때, 카드 한 장을 뽑는다.",
+            "type": "생물 — 조류 곰"
+        },
+        {
+            "flavorText": "Muitos acreditam que o primeiro urso-coruja tenha sido criado por um mago insensato, mas outros afirmam que essas criaturas sempre habitaram Faéria.",
+            "language": "Portuguese (Brazil)",
+            "multiverseId": 529310,
+            "name": "Urso-coruja",
+            "text": "Atropelar\nSentidos aguçados — Quando Urso-coruja entrar no campo de batalha, compre um card.",
+            "type": "Criatura — Ave Urso"
+        },
+        {
+            "flavorText": "Многие считают, что первый медвесыч появился в результате ошибки волшебника, другие же настаивают на том, что эти существа всегда обитали в Стране Фей.",
+            "language": "Russian",
+            "multiverseId": 529571,
+            "name": "Медвесыч",
+            "text": "Пробивной удар\nОстрое восприятие — Когда Медвесыч выходит на поле битвы, возьмите карту.",
+            "type": "Существо — Птица Медведь"
+        },
+        {
+            "flavorText": "许多人相信第一头枭头熊是法师出错的成品，其他人则坚持认为这些生物一直住在妖精荒野。",
+            "language": "Chinese Simplified",
+            "multiverseId": 529831,
+            "name": "枭头熊",
+            "text": "践踏\n感官异常灵敏～当枭头熊进战场时，抓一张牌。",
+            "type": "生物 ～鸟／熊"
+        },
+        {
+            "flavorText": "許多人相信第一頭梟頭熊是法師出錯的成品，其他人則堅持認為這些生物一直住在妖精荒野。",
+            "language": "Chinese Traditional",
+            "multiverseId": 530091,
+            "name": "梟頭熊",
+            "text": "踐踏\n感官異常靈敏～當梟頭熊進戰場時，抽一張牌。",
+            "type": "生物 ～鳥／熊"
+        }
+    ],
+    "frameVersion": "2015",
+    "hasFoil": true,
+    "hasNonFoil": true,
+    "identifiers": {
+        "cardKingdomFoilId": "248389",
+        "cardKingdomId": "248017",
+        "mcmId": "571253",
+        "mcmMetaId": "343708",
+        "mtgArenaId": "77303",
+        "mtgjsonV4Id": "976eb4d0-5117-5ce1-809c-17c3cdab0bd1",
+        "mtgoId": "91898",
+        "multiverseId": "527485",
+        "scryfallId": "30e8a00f-8131-470d-8072-4c23b812281a",
+        "scryfallIllustrationId": "0a197b35-65ed-4279-a7ce-adc45fe4ea54",
+        "scryfallOracleId": "0fab815f-bccf-40ef-95e9-ba64b137fb8c",
+        "tcgplayerProductId": "243182"
+    },
+    "keywords": [
+        "Keen senses",
+        "Trample"
+    ],
+    "layout": "normal",
+    "legalities": {
+        "brawl": "Legal",
+        "commander": "Legal",
+        "duel": "Legal",
+        "future": "Legal",
+        "gladiator": "Legal",
+        "historic": "Legal",
+        "legacy": "Legal",
+        "modern": "Legal",
+        "pauper": "Legal",
+        "pioneer": "Legal",
+        "standard": "Legal",
+        "vintage": "Legal"
+    },
+    "manaCost": "{3}{G}{G}",
+    "name": "Owlbear",
+    "number": "198",
+    "originalText": "Trample\nKeen Senses — When Owlbear enters the battlefield, draw a card.",
+    "originalType": "Creature — Bird Bear",
+    "power": "4",
+    "printings": [
+        "AFR"
+    ],
+    "purchaseUrls": {
+        "cardKingdom": "https:\/\/mtgjson.com\/links\/4a80559a0bf47a88",
+        "cardKingdomFoil": "https:\/\/mtgjson.com\/links\/23c4317ec9c2e01c",
+        "cardmarket": "https:\/\/mtgjson.com\/links\/c78edbb706491006",
+        "tcgplayer": "https:\/\/mtgjson.com\/links\/17e4c9f0c660d74f"
+    },
+    "rarity": "common",
+    "rulings": [],
+    "setCode": "AFR",
+    "subtypes": [
+        "Bird",
+        "Bear"
+    ],
+    "supertypes": [],
+    "text": "Trample\nKeen Senses — When Owlbear enters the battlefield, draw a card.",
+    "toughness": "4",
+    "type": "Creature — Bird Bear",
+    "types": [
+        "Creature"
+    ],
+    "uuid": "6fabca4e-6b8d-5c0d-897d-6398de7a1a4b",
+    "variations": [
+        "9e24da46-619b-576e-b218-39f2f3c77e79"
+    ]
+}

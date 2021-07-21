@@ -1,164 +1,165 @@
 {
-  "artist": "Jonas De Ro",
-  "borderColor": "black",
-  "colorIdentity": [
-    "R",
-    "U",
-    "W"
-  ],
-  "colors": [],
-  "convertedManaCost": 0,
-  "edhrecRank": 6105,
-  "flavorText": "Raugrin meets the sea with jaws wide, its coast spiked with teeth of crystal and granite.",
-  "foreignData": [
-    {
-      "flavorText": "Raugrin trifft auf das Meer mit geöffnetem Kiefer, seine Küste gespickt mit Zähnen aus Kristallen und Granit.",
-      "language": "German",
-      "multiverseId": 480030,
-      "name": "Raugrin-Triom",
-      "text": "({T}: Erzeuge {U}, {R} oder {W}.)\nDas Raugrin-Triom kommt getappt ins Spiel.\nUmwandlung {3} ({3}, wirf diese Karte ab: Ziehe eine Karte.)",
-      "type": "Land — Insel, Gebirge, Ebene"
+    "artist": "Jonas De Ro",
+    "availability": [
+        "arena",
+        "mtgo",
+        "paper"
+    ],
+    "borderColor": "black",
+    "colorIdentity": [
+        "R",
+        "U",
+        "W"
+    ],
+    "colors": [],
+    "convertedManaCost": 0,
+    "edhrecRank": 589,
+    "flavorText": "Raugrin meets the sea with jaws wide, its coast spiked with teeth of crystal and granite.",
+    "foreignData": [
+        {
+            "flavorText": "Raugrin trifft auf das Meer mit geöffnetem Kiefer, seine Küste gespickt mit Zähnen aus Kristallen und Granit.",
+            "language": "German",
+            "multiverseId": 480030,
+            "name": "Raugrin-Triom",
+            "text": "({T}: Erzeuge {U}, {R} oder {W}.)\nDas Raugrin-Triom kommt getappt ins Spiel.\nUmwandlung {3} ({3}, wirf diese Karte ab: Ziehe eine Karte.)",
+            "type": "Land — Insel, Gebirge, Ebene"
+        },
+        {
+            "flavorText": "Raugrin recibe al mar con las fauces abiertas, una costa salpicada por dientes de cristal y granito.",
+            "language": "Spanish",
+            "multiverseId": 480289,
+            "name": "Trioma de Raugrin",
+            "text": "({T}: Agrega {U}, {R} o {W}.)\nEl Trioma de Raugrin entra al campo de batalla girado.\nCiclo {3}. ({3}, descartar esta carta: Roba una carta.)",
+            "type": "Tierra — Isla montaña llanura"
+        },
+        {
+            "flavorText": "Raugrin rejoint l'océan, la gueule grande ouverte. Sa côte est jonchée de crocs de cristal et de granite.",
+            "language": "French",
+            "multiverseId": 480548,
+            "name": "Triome de Raugrin",
+            "text": "({T} : Ajoutez {U}, {R} ou {W}.)\nLe Triome de Raugrin arrive sur le champ de bataille engagé.\nRecyclage {3} ({3}, défaussez-vous de cette carte : Piochez une carte.)",
+            "type": "Terrain : île et montagne et plaine"
+        },
+        {
+            "flavorText": "Raugrin accoglie il mare con le fauci spalancate della sua costa irta di denti di cristallo e granito.",
+            "language": "Italian",
+            "multiverseId": 480807,
+            "name": "Trioma di Raugrin",
+            "text": "({T}: Aggiungi {U}, {R} o {W}.)\nIl Trioma di Raugrin entra nel campo di battaglia TAPpato.\nCiclo {3} ({3}, Scarta questa carta: Pesca una carta.)",
+            "type": "Terra — Isola Montagna Pianura"
+        },
+        {
+            "flavorText": "ラウグリンは海に面して大きく口を開き、海岸線には水晶と花崗岩の鋭い歯が並んでいる。",
+            "language": "Japanese",
+            "multiverseId": 481066,
+            "name": "ラウグリンのトライオーム",
+            "text": "（{T}：{U}か{R}か{W}を加える。）\nラウグリンのトライオームはタップ状態で戦場に出る。\nサイクリング{3}（{3}, このカードを捨てる：カードを１枚引く。）",
+            "type": "土地 — 島・山・平地"
+        },
+        {
+            "flavorText": "라우그린은 수정과 화강암들이 삐죽삐죽한 이빨처럼 나 있는 해안선으로 만들어진 아가리를 쩍 벌리고 바다를 맞이한다.",
+            "language": "Korean",
+            "multiverseId": 481325,
+            "name": "라우그린 삼생물군계",
+            "text": "({T}: {U}, {R}, 또는 {W}를 추가한다.)\n라우그린 삼생물군계는 탭된 채로 전장에 들어온다.\n순환 {3} ({3}, 이 카드를 버린다: 카드 한 장을 뽑는다.)",
+            "type": "대지 — 섬 산 들"
+        },
+        {
+            "flavorText": "Raugrin encontra o mar com os dentes à mostra, na costa repleta de presas de cristal e granito.",
+            "language": "Portuguese (Brazil)",
+            "multiverseId": 481584,
+            "name": "Trioma de Raugrin",
+            "text": "({T}: Adicione {U}, {R} ou {W}.)\nTrioma de Raugrin entra no campo de batalha virado.\nReciclar {3} ({3}, descarte este card: Compre um card.)",
+            "type": "Terreno — Ilha Montanha Planície"
+        },
+        {
+            "flavorText": "Раугрин встречает море, широко раскрыв пасть. Его берега топорщатся зубами из кристаллов и гранита.",
+            "language": "Russian",
+            "multiverseId": 481843,
+            "name": "Триом Раугрин",
+            "text": "({T}: добавьте {U}, {R} или {W}.)\nТриом Раугрин выходит на поле битвы повернутым.\nЦикл {3} ({3}, сбросьте эту карту: возьмите карту.)",
+            "type": "Земля — Остров Гора Равнина"
+        },
+        {
+            "flavorText": "洛格凌张开巨口迎接海洋，水晶岩石仿佛尖牙耸立岸边。",
+            "language": "Chinese Simplified",
+            "multiverseId": 482102,
+            "name": "洛格凌群系",
+            "text": "（{T}：加{U}，{R}或{W}。）\n洛格凌群系须横置进战场。\n循环{3}（{3}，弃掉此牌：抓一张牌。）",
+            "type": "地 ～海岛／山脉／平原"
+        },
+        {
+            "flavorText": "洛格凌張開巨口迎接海洋，水晶岩石彷彿尖牙聳立岸邊。",
+            "language": "Chinese Traditional",
+            "multiverseId": 482361,
+            "name": "洛格凌群系",
+            "text": "（{T}：加{U}，{R}或{W}。）\n洛格凌群系須橫置進戰場。\n循環{3}（{3}，棄掉此牌：抽一張牌。）",
+            "type": "地 ～海島／山脈／平原"
+        }
+    ],
+    "frameVersion": "2015",
+    "hasFoil": true,
+    "hasNonFoil": true,
+    "identifiers": {
+        "cardKingdomFoilId": "233023",
+        "cardKingdomId": "232727",
+        "mcmId": "455008",
+        "mcmMetaId": "301688",
+        "mtgArenaId": "71318",
+        "mtgjsonV4Id": "23eaf943-817b-5701-9a3c-4dcc460355e2",
+        "mtgoId": "80511",
+        "multiverseId": "479771",
+        "scryfallId": "02138fbb-3962-4348-8d31-faaefba0b8b2",
+        "scryfallIllustrationId": "601afc7d-b8e5-4f94-ad0d-c0813caa4f77",
+        "scryfallOracleId": "c7fa1dda-9312-4ec8-82cd-a1ba7bc33497",
+        "tcgplayerProductId": "212695"
     },
-    {
-      "flavorText": "Raugrin recibe al mar con las fauces abiertas, una costa salpicada por dientes de cristal y granito.",
-      "language": "Spanish",
-      "multiverseId": 480289,
-      "name": "Trioma de Raugrin",
-      "text": "({T}: Agrega {U}, {R} o {W}.)\nEl Trioma de Raugrin entra al campo de batalla girado.\nCiclo {3}. ({3}, descartar esta carta: Roba una carta.)",
-      "type": "Tierra — Isla montaña llanura"
+    "keywords": [
+        "Cycling"
+    ],
+    "layout": "normal",
+    "legalities": {
+        "brawl": "Legal",
+        "commander": "Legal",
+        "duel": "Legal",
+        "gladiator": "Legal",
+        "historic": "Legal",
+        "legacy": "Legal",
+        "modern": "Legal",
+        "pioneer": "Legal",
+        "standard": "Legal",
+        "vintage": "Legal"
     },
-    {
-      "flavorText": "Raugrin rejoint l'océan, la gueule grande ouverte. Sa côte est jonchée de crocs de cristal et de granite.",
-      "language": "French",
-      "multiverseId": 480548,
-      "name": "Triome de Raugrin",
-      "text": "({T} : Ajoutez {U}, {R} ou {W}.)\nLe Triome de Raugrin arrive sur le champ de bataille engagé.\nRecyclage {3} ({3}, défaussez-vous de cette carte : Piochez une carte.)",
-      "type": "Terrain : île et montagne et plaine"
+    "name": "Raugrin Triome",
+    "number": "251",
+    "originalText": "({T}: Add {U}, {R}, or {W}.)\nRaugrin Triome enters the battlefield tapped.\nCycling {3} ({3}, Discard this card: Draw a card.)",
+    "originalType": "Land — Island Mountain Plains",
+    "printings": [
+        "IKO",
+        "PIKO"
+    ],
+    "purchaseUrls": {
+        "cardKingdom": "https:\/\/mtgjson.com\/links\/5244f97e5cc5be12",
+        "cardKingdomFoil": "https:\/\/mtgjson.com\/links\/2ddcc2cf24c4ba67",
+        "cardmarket": "https:\/\/mtgjson.com\/links\/7ace0affe800fe1c",
+        "tcgplayer": "https:\/\/mtgjson.com\/links\/78c56df0e5b98caa"
     },
-    {
-      "flavorText": "Raugrin accoglie il mare con le fauci spalancate della sua costa irta di denti di cristallo e granito.",
-      "language": "Italian",
-      "multiverseId": 480807,
-      "name": "Trioma di Raugrin",
-      "text": "({T}: Aggiungi {U}, {R} o {W}.)\nIl Trioma di Raugrin entra nel campo di battaglia TAPpato.\nCiclo {3} ({3}, Scarta questa carta: Pesca una carta.)",
-      "type": "Terra — Isola Montagna Pianura"
-    },
-    {
-      "flavorText": "ラウグリンは海に面して大きく口を開き、海岸線には水晶と花崗岩の鋭い歯が並んでいる。",
-      "language": "Japanese",
-      "multiverseId": 481066,
-      "name": "ラウグリンのトライオーム",
-      "text": "（{T}：{U}か{R}か{W}を加える。）\nラウグリンのトライオームはタップ状態で戦場に出る。\nサイクリング{3}（{3}, このカードを捨てる：カードを１枚引く。）",
-      "type": "土地 — 島・山・平地"
-    },
-    {
-      "flavorText": "라우그린은 수정과 화강암들이 삐죽삐죽한 이빨처럼 나 있는 해안선으로 만들어진 아가리를 쩍 벌리고 바다를 맞이한다.",
-      "language": "Korean",
-      "multiverseId": 481325,
-      "name": "라우그린 삼생물군계",
-      "text": "({T}: {U}, {R}, 또는 {W}를 추가한다.)\n라우그린 삼생물군계는 탭된 채로 전장에 들어온다.\n순환 {3} ({3}, 이 카드를 버린다: 카드 한 장을 뽑는다.)",
-      "type": "대지 — 섬 산 들"
-    },
-    {
-      "flavorText": "Raugrin encontra o mar com os dentes à mostra, na costa repleta de presas de cristal e granito.",
-      "language": "Portuguese (Brazil)",
-      "multiverseId": 481584,
-      "name": "Trioma de Raugrin",
-      "text": "({T}: Adicione {U}, {R} ou {W}.)\nTrioma de Raugrin entra no campo de batalha virado.\nReciclar {3} ({3}, descarte este card: Compre um card.)",
-      "type": "Terreno — Ilha Montanha Planície"
-    },
-    {
-      "flavorText": "Раугрин встречает море, широко раскрыв пасть. Его берега топорщатся зубами из кристаллов и гранита.",
-      "language": "Russian",
-      "multiverseId": 481843,
-      "name": "Триом Раугрин",
-      "text": "({T}: добавьте {U}, {R} или {W}.)\nТриом Раугрин выходит на поле битвы повернутым.\nЦикл {3} ({3}, сбросьте эту карту: возьмите карту.)",
-      "type": "Земля — Остров Гора Равнина"
-    },
-    {
-      "flavorText": "洛格凌张开巨口迎接海洋，水晶岩石仿佛尖牙耸立岸边。",
-      "language": "Chinese Simplified",
-      "multiverseId": 482102,
-      "name": "洛格凌群系",
-      "text": "（{T}：加{U}，{R}或{W}。）\n洛格凌群系须横置进战场。\n循环{3}（{3}，弃掉此牌：抓一张牌。）",
-      "type": "地 ～海岛／山脉／平原"
-    },
-    {
-      "flavorText": "洛格凌張開巨口迎接海洋，水晶岩石彷彿尖牙聳立岸邊。",
-      "language": "Chinese Traditional",
-      "multiverseId": 482361,
-      "name": "洛格凌群系",
-      "text": "（{T}：加{U}，{R}或{W}。）\n洛格凌群系須橫置進戰場。\n循環{3}（{3}，棄掉此牌：抽一張牌。）",
-      "type": "地 ～海島／山脈／平原"
-    }
-  ],
-  "frameVersion": "2015",
-  "hasFoil": true,
-  "hasNonFoil": true,
-  "isArena": true,
-  "isMtgo": true,
-  "isPaper": true,
-  "layout": "normal",
-  "legalities": {
-    "brawl": "Legal",
-    "commander": "Legal",
-    "duel": "Legal",
-    "future": "Legal",
-    "historic": "Legal",
-    "legacy": "Legal",
-    "modern": "Legal",
-    "pioneer": "Legal",
-    "standard": "Legal",
-    "vintage": "Legal"
-  },
-  "mcmId": 455008,
-  "mcmMetaId": 301688,
-  "mtgoId": 80511,
-  "multiverseId": 479771,
-  "name": "Raugrin Triome",
-  "number": "251",
-  "originalText": "({T}: Add {U}, {R}, or {W}.)\nRaugrin Triome enters the battlefield tapped.\nCycling {3} ({3}, Discard this card: Draw a card.)",
-  "originalType": "Land — Island Mountain Plains",
-  "prices": {
-    "mtgo": {
-      "2020-05-11": 1.82
-    },
-    "mtgoFoil": {
-      "2020-05-11": 3
-    },
-    "paper": {
-      "2020-05-10": 8.86
-    },
-    "paperFoil": {
-      "2020-05-10": 19.76
-    }
-  },
-  "printings": [
-    "IKO"
-  ],
-  "purchaseUrls": {
-    "cardmarket": "https:\/\/mtgjson.com\/links\/9e7cbbbceaffa712",
-    "tcgplayer": "https:\/\/mtgjson.com\/links\/203e1d13c356210c"
-  },
-  "rarity": "rare",
-  "rulings": [],
-  "scryfallId": "02138fbb-3962-4348-8d31-faaefba0b8b2",
-  "scryfallIllustrationId": "601afc7d-b8e5-4f94-ad0d-c0813caa4f77",
-  "scryfallOracleId": "c7fa1dda-9312-4ec8-82cd-a1ba7bc33497",
-  "subtypes": [
-    "Island",
-    "Mountain",
-    "Plains"
-  ],
-  "supertypes": [],
-  "tcgplayerProductId": 212695,
-  "text": "({T}: Add {U}, {R}, or {W}.)\nRaugrin Triome enters the battlefield tapped.\nCycling {3} ({3}, Discard this card: Draw a card.)",
-  "type": "Land — Island Mountain Plains",
-  "types": [
-    "Land"
-  ],
-  "uuid": "23eaf943-817b-5701-9a3c-4dcc460355e2",
-  "variations": [
-    "87a5fb06-7840-5984-b263-dd3e9635ccae"
-  ]
+    "rarity": "rare",
+    "rulings": [],
+    "setCode": "IKO",
+    "subtypes": [
+        "Island",
+        "Mountain",
+        "Plains"
+    ],
+    "supertypes": [],
+    "text": "({T}: Add {U}, {R}, or {W}.)\nRaugrin Triome enters the battlefield tapped.\nCycling {3} ({3}, Discard this card: Draw a card.)",
+    "type": "Land — Island Mountain Plains",
+    "types": [
+        "Land"
+    ],
+    "uuid": "1d9c469f-5526-5262-ade1-9bcc627d7247",
+    "variations": [
+        "1c93509b-3a8c-5ce2-a710-2cb545d9f73d"
+    ]
 }

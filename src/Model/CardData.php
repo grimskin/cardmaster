@@ -24,7 +24,9 @@ class CardData
     private string $power;
     private string $toughness;
 
-    public static function createFromDatum($cardDatum): ?self
+    private ?array $datum = null;
+
+    public static function createFromDatum($cardDatum, bool $storeDatum = false): ?self
     {
         $result = new self();
 
@@ -45,7 +47,14 @@ class CardData
         $result->toughness = $cardDatum['toughness'] ?? '';
         $result->parseTypes();
 
+        if ($storeDatum) $result->datum = $cardDatum;
+
         return $result;
+    }
+
+    public function getJson(): ?string
+    {
+        return $this->datum ? json_encode($this->datum, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) : null;
     }
 
     private function parseTypes()

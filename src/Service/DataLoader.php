@@ -12,14 +12,14 @@ class DataLoader
     private array $filenames = [];
     private array $cardData = [];
 
-    public function loadSet(string $setName): array
+    public function loadSet(string $setName, bool $storeDatum = false): array
     {
         $data = $this->loadJsonFromFile($this->setNameToFileName($setName));
 
         $cards = [];
 
         foreach ($data['cards'] as $cardDatum) {
-            $cards[] = CardData::createFromDatum($cardDatum);
+            $cards[] = CardData::createFromDatum($cardDatum, $storeDatum);
         }
 
         $data['cards'] = $cards;
