@@ -63,6 +63,15 @@ class ManaCost implements JsonSerializable
         return $result;
     }
 
+    public function hasX(): bool
+    {
+        foreach ($this->manaItems as $item) {
+            if ($item->isX()) return true;
+        }
+
+        return false;
+    }
+
     public function __toString()
     {
         return $this->manaCostString;

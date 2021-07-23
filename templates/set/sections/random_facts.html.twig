@@ -19,5 +19,21 @@
                 There's only one card with such long name - {{ stats.randomFacts.longestNames[0] }}
             {% endif %}
         </span>
+        {% if stats.randomFacts.countInstantsWithX or stats.randomFacts.countSorceriesWithX %}
+            <br />
+            <span>
+                There are
+                {% if stats.randomFacts.countInstantsWithX %}
+                    {{ stats.randomFacts.countInstantsWithX }} instants
+                {% endif %}
+                {% if stats.randomFacts.countInstantsWithX and stats.randomFacts.countSorceriesWithX %}
+                    and
+                {% endif %}
+                {% if stats.randomFacts.countSorceriesWithX %}
+                    {{ stats.randomFacts.countSorceriesWithX }} sorceries
+                {% endif %}
+                with X in the mana cost.
+            </span>
+        {% endif %}
     </div>
 </div>

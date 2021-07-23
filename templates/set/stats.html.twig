@@ -3,10 +3,11 @@
 {% block body %}
 {# Instants vs sorceries #}
 {# Special types - Equipments, Auras #}
-{# Command to create card fixture #}
+{# Random facts - count all types with X #}
 <div id="set-infographics">
     <h2 id="set-name">{{ stats.getSetName() }}</h2>
 
+    {% include 'set/sections/instants_vs_sorceries.html.twig' %}
     {% include 'set/sections/creature_type_breakdown.html.twig' %}
     {% include 'set/sections/creature_stats_breakdown.html.twig' %}
     {% include 'set/sections/card_keyword_breakdown.html.twig' %}

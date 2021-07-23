@@ -1,0 +1,28 @@
+<div id="instants-vs-sorceries" class="section">
+    <h3>Instants and Sorceries</h3>
+
+    <div class="info">
+        There are {{ stats.instantsVsSorceries.countInstants }} instants
+        and {{ stats.instantsVsSorceries.countSorceries }} sorceries in the set.
+    </div>
+
+    <div class="stats-histogram part1">
+        <h4>Instants</h4>
+        {% for value, count in stats.instantsVsSorceries.manaBreakdownInstants %}
+        <div>
+            <div class="label">{% if count > 0 %}{{ count }}{% endif %}</div>
+            <div class="div-hx div-h-{{ count }}"></div>
+            <div class="amount">{{ value }}</div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="stats-histogram part2">
+        {% for value, count in stats.instantsVsSorceries.manaBreakdownSorceries %}
+        <div>
+            <div class="div-hx div-h-{{ count }}"></div>
+            <div class="label">{% if count > 0 %}{{ count }}{% endif %}</div>
+        </div>
+        {% endfor %}
+        <h4>Sorceries</h4>
+    </div>
+</div>

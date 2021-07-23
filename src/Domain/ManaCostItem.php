@@ -8,8 +8,8 @@ use JsonSerializable;
 
 class ManaCostItem implements JsonSerializable
 {
-    private $itemString;
-    private $cleanString;
+    private string $itemString;
+    private string $cleanString;
 
     public function __construct(string $itemString)
     {
@@ -17,7 +17,7 @@ class ManaCostItem implements JsonSerializable
         $this->cleanString = substr($itemString, 1, -1);
     }
 
-    public function getItemVariants()
+    public function getItemVariants(): array
     {
         if (strlen($this->cleanString) == 1) {
             return [ [$this->cleanString] ];
@@ -31,7 +31,12 @@ class ManaCostItem implements JsonSerializable
         return [];
     }
 
-    public function jsonSerialize()
+    public function isX(): bool
+    {
+        return $this->cleanString === 'X';
+    }
+
+    public function jsonSerialize(): string
     {
         return $this->cleanString;
     }

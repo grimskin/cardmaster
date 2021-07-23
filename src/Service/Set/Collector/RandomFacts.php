@@ -10,6 +10,7 @@ use JetBrains\PhpStorm\Pure;
 class RandomFacts
 {
     private ?CreatureStats $creatureStats;
+    private ?InstantsVsSorceries $instantsVsSorceries;
 
     private array $longestNames = [];
     private int $longestNameLength = 0;
@@ -42,6 +43,21 @@ class RandomFacts
     public function setCreatureStats(CreatureStats $creatureStats)
     {
         $this->creatureStats = $creatureStats;
+    }
+
+    public function setInstantsVsSorceries(?InstantsVsSorceries $instantsVsSorceries): void
+    {
+        $this->instantsVsSorceries = $instantsVsSorceries;
+    }
+
+    public function countInstantsWithX(): int
+    {
+        return $this->instantsVsSorceries->getXCountInstants();
+    }
+
+    public function countSorceriesWithX(): int
+    {
+        return $this->instantsVsSorceries->getXCountSorceries();
     }
 
     public function getLongestNames(): array
