@@ -176,6 +176,65 @@ div#set-infographics {
             }
         }
 
+        div.stats-histogram-horizontal {
+            border-radius: 1rem;
+            padding: 1.2rem 1.5rem 1.5rem;
+            border: 1px $section-color solid;
+            margin-top: 1.5rem;
+            display: flex;
+            flex-flow: column;
+
+            h4 {
+                font-size: 1.3rem;
+                padding-left: 1rem;
+                padding-bottom: 0.3rem;
+                width: 100%;
+                margin: 0 0 1.3rem;
+                border-bottom: 1px $section-color solid;
+            }
+
+            &>div {
+                padding-top: 1rem;
+                margin-left: 2rem;
+                margin-right: 2rem;
+                align-self: flex-start;
+                display: flex;
+
+                div {
+                    height: 2rem;
+                    box-sizing: border-box;
+
+                    &.amount {
+                        white-space: nowrap;
+                        text-align: left;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                    }
+
+                    &.div-wx-rtl {
+                        border-bottom-right-radius: 0.5rem;
+                        border-top-right-radius: 0.5rem;
+                        border: 1px $section-color solid;
+                        background-color: $section-color;
+                        border-left: 0;
+                    }
+
+                    &.label {
+                        display: flex;
+                        justify-content: end;
+                        align-items: center;
+                        border: 1px $section-color solid;
+                        padding-right: 0.4rem;
+                        padding-left: 0.4rem;
+                        width: 7rem;
+                    }
+                }
+            }
+        }
+
         @import "sections/histogram-bended";
     }
 

@@ -50,13 +50,13 @@
         {% endfor %}
     </div>
 
-    <div class="stats-histogram">
+    <div class="stats-histogram-horizontal">
         <h4>Color</h4>
         {% for color, count in stats.creatureStatsStats.colorBreakDown %}
         <div>
-            <div class="label">{% if count > 0 %}{{ count }}{% endif %}</div>
-            <div class="div-hx div-h-{{ count }} mana-{{ color }}"></div>
-            <div class="amount">{{ color }}</div>
+            <div class="label">{{ colorNames[color] }}</div>
+            <div class="div-wx-rtl div-2w-{{ count }} mana-{{ color }}"></div>
+            <div class="amount">{% if count > 0 %}{{ count }}{% endif %}</div>
         </div>
         {% endfor %}
     </div>

@@ -62,6 +62,36 @@ class MakeCss extends Command
         }
         $content[] = '';
 
+        $content[] = '.div-w-0 {';
+        $content[] = '    width: 0.1rem !important;';
+        $content[] = '    background-color: transparent !important;';
+        $content[] = '}';
+
+        $minWidth = 2;
+        $step = 1;
+        $scale = 5;
+        for ($i=1; $i<90; $i++) {
+            $content[] = sprintf(
+                '.div-w-%d { width: %01.1Frem !important; }', $i, round($minWidth + ($scale * $step * $i / 10), 2)
+            );
+        }
+        $content[] = '';
+
+        $content[] = '.div-2w-0 {';
+        $content[] = '    width: 0.1rem !important;';
+        $content[] = '    background-color: transparent !important;';
+        $content[] = '}';
+
+        $minWidth = 2;
+        $step = 2;
+        $scale = 5;
+        for ($i=1; $i<90; $i++) {
+            $content[] = sprintf(
+                '.div-2w-%d { width: %01.1Frem !important; }', $i, round($minWidth + ($scale * $step * $i / 10), 2)
+            );
+        }
+        $content[] = '';
+
         $fs = new Filesystem();
         $fs->dumpFile(
             $this->projectDir . $this->cssPath . $fileName,
