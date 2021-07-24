@@ -30,12 +30,13 @@ class MakeCss extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
+        $scale = 2;
+        $minHeight = 1.6;
+        $step = 1;
+
         $fileName = 'div-h-x.scss';
         $content = [];
 
-        $content[] = '$scale: 2;';
-        $content[] = '$minHeight: 1.6rem;';
-        $content[] = '';
         $content[] = '.div-h-0 {';
         $content[] = '    height: 0.1rem !important;';
         $content[] = '    background-color: transparent !important;';
@@ -43,9 +44,20 @@ class MakeCss extends Command
 
         for ($i=1; $i<90; $i++) {
             $content[] = sprintf(
-                '.div-h-%d { height: $minHeight + $scale * %01.1Frem !important; }',
-                $i,
-                round($i / 10, 2)
+                '.div-h-%d { height: %01.1Frem !important; }', $i, round($minHeight + ($scale * $step *  $i / 10), 2)
+            );
+        }
+        $content[] = '';
+
+        $content[] = '.div-2h-0 {';
+        $content[] = '    height: 0.1rem !important;';
+        $content[] = '    background-color: transparent !important;';
+        $content[] = '}';
+
+        $step = 2;
+        for ($i=1; $i<90; $i++) {
+            $content[] = sprintf(
+                '.div-2h-%d { height: %01.1Frem !important; }', $i, round($minHeight + ($scale * $step * $i / 10), 2)
             );
         }
         $content[] = '';

@@ -11,7 +11,7 @@
         {% for value, count in stats.instantsVsSorceries.manaBreakdownInstants %}
         <div>
             <div class="label">{% if count > 0 %}{{ count }}{% endif %}</div>
-            <div class="div-hx div-h-{{ count }}"></div>
+            <div class="div-hx div-2h-{{ count }}"></div>
             <div class="amount">{{ value }}</div>
         </div>
         {% endfor %}
@@ -19,7 +19,7 @@
     <div class="stats-histogram part2">
         {% for value, count in stats.instantsVsSorceries.manaBreakdownSorceries %}
         <div>
-            <div class="div-hx div-h-{{ count }}"></div>
+            <div class="div-hx div-2h-{{ count }}"></div>
             <div class="label">{% if count > 0 %}{{ count }}{% endif %}</div>
         </div>
         {% endfor %}
