@@ -21,6 +21,7 @@ class InstantsVsSorceries
         CardDefinition::T_INSTANT => 0,
         CardDefinition::T_SORCERY => 0,
     ];
+    private array $colorBreakDown;
 
     /**
      * @param CardDefinition[] $cards
@@ -28,6 +29,7 @@ class InstantsVsSorceries
     public static function fromCards(array $cards): self
     {
         $result = new self();
+        $result->initColorBreakdown();
 
         foreach ($cards as $card) {
             $result->processCard($card);
@@ -78,6 +80,39 @@ class InstantsVsSorceries
         return $this->xCount[CardDefinition::T_SORCERY];
     }
 
+    private function initColorBreakdown()
+    {
+        $this->colorBreakDown = [];
+        $this->colorBreakDown[CardDefinition::T_INSTANT] = [
+            CardDefinition::COLOR_WHITE => 0,
+            CardDefinition::COLOR_BLUE => 0,
+            CardDefinition::COLOR_BLACK => 0,
+            CardDefinition::COLOR_RED => 0,
+            CardDefinition::COLOR_GREEN => 0,
+            CardDefinition::COLOR_MULTI => 0,
+            CardDefinition::COLOR_COLORLESS => 0,
+        ];
+        $this->colorBreakDown[CardDefinition::T_SORCERY] = [
+            CardDefinition::COLOR_WHITE => 0,
+            CardDefinition::COLOR_BLUE => 0,
+            CardDefinition::COLOR_BLACK => 0,
+            CardDefinition::COLOR_RED => 0,
+            CardDefinition::COLOR_GREEN => 0,
+            CardDefinition::COLOR_MULTI => 0,
+            CardDefinition::COLOR_COLORLESS => 0,
+        ];
+    }
+
+    public function getColorsInstants()
+    {
+        return $this->colorBreakDown[CardDefinition::T_INSTANT];
+    }
+
+    public function getColorsSorceries()
+    {
+        return $this->colorBreakDown[CardDefinition::T_SORCERY];
+    }
+
     private function processCard(CardDefinition $card)
     {
         if (!$card->isOfType(CardDefinition::T_INSTANT) && !$card->isOfType(CardDefinition::T_SORCERY)) return;
@@ -92,5 +127,14 @@ class InstantsVsSorceries
         $this->manaBreakdown[$type][$card->getManaValue()]++;
 
         if ($card->getManaValue() > $this->maxManaValue) $this->maxManaValue = $card->getManaValue();
+
+        $colorIdentity = $card->getColors();
+        if (count($colorIdentity) === 0) {
+            $this->colorBreakDown[$type][CardDefinition::COLOR_COLORLESS]++;
+        } elseif (count($colorIdentity) === 1) {
+            $this->colorBreakDown[$type][$colorIdentity[0]]++;
+        } else {
+            $this->colorBreakDown[$type][CardDefinition::COLOR_MULTI]++;
+        }
     }
 }

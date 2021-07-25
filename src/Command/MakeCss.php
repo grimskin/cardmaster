@@ -60,14 +60,15 @@ class MakeCss extends Command
                 '.div-2h-%d { height: %01.1Frem !important; }', $i, round($minHeight + ($scale * $step * $i / 10), 2)
             );
         }
+
         $content[] = '';
 
+        $minWidth = 2;
         $content[] = '.div-w-0 {';
-        $content[] = '    width: 0.1rem !important;';
+        $content[] = sprintf('    width: %01.1Frem !important;', $minWidth);
         $content[] = '    background-color: transparent !important;';
         $content[] = '}';
 
-        $minWidth = 2;
         $step = 1;
         $scale = 5;
         for ($i=1; $i<90; $i++) {
@@ -78,7 +79,7 @@ class MakeCss extends Command
         $content[] = '';
 
         $content[] = '.div-2w-0 {';
-        $content[] = '    width: 0.1rem !important;';
+        $content[] = sprintf('    width: %01.1Frem !important;', $minWidth);
         $content[] = '    background-color: transparent !important;';
         $content[] = '}';
 

@@ -25,4 +25,22 @@
         {% endfor %}
         <h4>Sorceries</h4>
     </div>
+    {% set colorInstants = stats.instantsVsSorceries.colorsInstants %}
+    {% set colorSorceries = stats.instantsVsSorceries.colorsSorceries %}
+
+    <div class="stats-histogram-horizontal two-sides">
+        <h4>Color</h4>
+        {% for color, count in colorInstants %}
+            <div>
+                <div class="left-side-spike">
+                    <div class="amount">{% if count > 0 %}{{ count }}{% endif %}</div>
+                    <div class="div-wx-ltr div-2w-{{ count }} mana-{{ color }}"></div>
+                </div>
+                <div class="label">{{ colorNames[color] }}</div>
+                <div class="div-wx-rtl div-2w-{{ colorSorceries[color] }} mana-{{ color }}"></div>
+                <div class="amount">{% if colorSorceries[color] > 0 %}{{ colorSorceries[color] }}{% endif %}</div>
+            </div>
+        {% endfor %}
+    </div>
+
 </div>

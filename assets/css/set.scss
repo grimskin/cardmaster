@@ -193,12 +193,22 @@ div#set-infographics {
                 border-bottom: 1px $section-color solid;
             }
 
+            &.two-sides div.label {
+                justify-content: center;
+            }
+
             &>div {
                 padding-top: 1rem;
                 margin-left: 2rem;
                 margin-right: 2rem;
                 align-self: flex-start;
                 display: flex;
+
+                div.left-side-spike {
+                    width: 350px;
+                    display: flex;
+                    justify-content: right;
+                }
 
                 div {
                     height: 2rem;
@@ -220,6 +230,14 @@ div#set-infographics {
                         border: 1px $section-color solid;
                         background-color: $section-color;
                         border-left: 0;
+                    }
+
+                    &.div-wx-ltr {
+                        border-bottom-left-radius: 0.5rem;
+                        border-top-left-radius: 0.5rem;
+                        border: 1px $section-color solid;
+                        background-color: $section-color;
+                        border-right: 0;
                     }
 
                     &.label {
