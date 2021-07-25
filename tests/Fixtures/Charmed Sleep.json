@@ -1,0 +1,154 @@
+{
+    "artist": "Zoltan Boros",
+    "availability": [
+        "arena",
+        "mtgo",
+        "paper"
+    ],
+    "borderColor": "black",
+    "colorIdentity": [
+        "U"
+    ],
+    "colors": [
+        "U"
+    ],
+    "convertedManaCost": 3,
+    "edhrecRank": 10496,
+    "foreignData": [
+        {
+            "language": "German",
+            "multiverseId": 527597,
+            "name": "Magischer Schlaf",
+            "text": "Verzaubert eine Kreatur\nWenn der Magische Schlaf ins Spiel kommt, tappe die verzauberte Kreatur.\nDie verzauberte Kreatur enttappt nicht während des Enttappsegments ihres Beherrschers.",
+            "type": "Verzauberung — Aura"
+        },
+        {
+            "language": "Spanish",
+            "multiverseId": 527858,
+            "name": "Sueño hechizado",
+            "text": "Encantar criatura.\nCuando el Sueño hechizado entre al campo de batalla, gira la criatura encantada.\nLa criatura encantada no se endereza durante el paso de enderezar de su controlador.",
+            "type": "Encantamiento — Aura"
+        },
+        {
+            "language": "French",
+            "multiverseId": 528119,
+            "name": "Sommeil enchanté",
+            "text": "Enchanter : créature\nQuand le Sommeil enchanté arrive sur le champ de bataille, engagez la créature enchantée.\nLa créature enchantée ne se dégage pas pendant l'étape de dégagement de son contrôleur.",
+            "type": "Enchantement : aura"
+        },
+        {
+            "language": "Italian",
+            "multiverseId": 528380,
+            "name": "Sonno Incantato",
+            "text": "Incanta creatura\nQuando il Sonno Incantato entra nel campo di battaglia, TAPpa la creatura incantata.\nLa creatura incantata non STAPpa durante lo STAP del suo controllore.",
+            "type": "Incantesimo — Aura"
+        },
+        {
+            "language": "Japanese",
+            "multiverseId": 528641,
+            "name": "魔法の眠り",
+            "text": "エンチャント（クリーチャー）\n魔法の眠りが戦場に出たとき、エンチャントしているクリーチャーをタップする。\nエンチャントしているクリーチャーは、それのコントローラーのアンタップ・ステップにアンタップしない。",
+            "type": "エンチャント — オーラ"
+        },
+        {
+            "language": "Korean",
+            "multiverseId": 528901,
+            "name": "마법에 걸린 수면",
+            "text": "생물에게 부여\n마법에 걸린 수면이 전장에 들어올 때, 부여된 생물을 탭한다.\n부여된 생물은 조종자의 언탭단에 언탭되지 않는다.",
+            "type": "부여마법 — 마법진"
+        },
+        {
+            "language": "Portuguese (Brazil)",
+            "multiverseId": 529162,
+            "name": "Sono Encantado",
+            "text": "Encantar criatura\nQuando Sono Encantado entrar no campo de batalha, vire a criatura encantada.\nA criatura encantada não desvira durante a etapa de desvirar de seu controlador.",
+            "type": "Encantamento — Aura"
+        },
+        {
+            "language": "Russian",
+            "multiverseId": 529423,
+            "name": "Колдовской Сон",
+            "text": "Зачаровать существо\nКогда Колдовской Сон выходит на поле битвы, поверните зачарованное существо.\nЗачарованное существо не разворачивается во время шага разворота контролирующего его игрока.",
+            "type": "Чары — Аура"
+        },
+        {
+            "language": "Chinese Simplified",
+            "multiverseId": 529683,
+            "name": "受魅安眠",
+            "text": "结附于生物\n当受魅安眠进战场时，横置所结附的生物。\n所结附的生物于其操控者的重置步骤中不能重置。",
+            "type": "结界 ～灵气"
+        },
+        {
+            "language": "Chinese Traditional",
+            "multiverseId": 529943,
+            "name": "受魅安眠",
+            "text": "結附於生物\n當受魅安眠進戰場時，橫置所結附的生物。\n所結附的生物於其操控者的重置步驟中不能重置。",
+            "type": "結界 ～靈氣"
+        }
+    ],
+    "frameVersion": "2015",
+    "hasFoil": true,
+    "hasNonFoil": true,
+    "identifiers": {
+        "cardKingdomFoilId": "248332",
+        "cardKingdomId": "247934",
+        "mcmId": "571055",
+        "mcmMetaId": "283039",
+        "mtgArenaId": "77155",
+        "mtgjsonV4Id": "e022341a-0d9b-5e90-a5f9-17b79a0ae668",
+        "mtgoId": "91602",
+        "multiverseId": "527337",
+        "scryfallId": "4238ad00-af9c-4535-a589-c5afb0d2ec57",
+        "scryfallIllustrationId": "e6f0f7fe-a43e-4865-b936-a30db589021d",
+        "scryfallOracleId": "cb33edaf-b604-48b8-8b9c-d6e462a8bebb",
+        "tcgplayerProductId": "243037"
+    },
+    "isReprint": true,
+    "keywords": [
+        "Enchant"
+    ],
+    "layout": "normal",
+    "legalities": {
+        "brawl": "Legal",
+        "commander": "Legal",
+        "duel": "Legal",
+        "future": "Legal",
+        "gladiator": "Legal",
+        "historic": "Legal",
+        "legacy": "Legal",
+        "modern": "Legal",
+        "pauper": "Legal",
+        "penny": "Legal",
+        "pioneer": "Legal",
+        "standard": "Legal",
+        "vintage": "Legal"
+    },
+    "manaCost": "{1}{U}{U}",
+    "name": "Charmed Sleep",
+    "number": "50",
+    "originalText": "Enchant creature\nWhen Charmed Sleep enters the battlefield, tap enchanted creature.\nEnchanted creature doesn't untap during its controller's untap step.",
+    "originalType": "Enchantment — Aura",
+    "printings": [
+        "AFR",
+        "ELD"
+    ],
+    "purchaseUrls": {
+        "cardKingdom": "https:\/\/mtgjson.com\/links\/a13a47653cc36b29",
+        "cardKingdomFoil": "https:\/\/mtgjson.com\/links\/66ef24d783654e32",
+        "cardmarket": "https:\/\/mtgjson.com\/links\/8dc60b1a6333c731",
+        "tcgplayer": "https:\/\/mtgjson.com\/links\/db90b1429c04b097"
+    },
+    "rarity": "common",
+    "rulings": [],
+    "setCode": "AFR",
+    "subtypes": [
+        "Aura"
+    ],
+    "supertypes": [],
+    "text": "Enchant creature\nWhen Charmed Sleep enters the battlefield, tap enchanted creature.\nEnchanted creature doesn't untap during its controller's untap step.",
+    "type": "Enchantment — Aura",
+    "types": [
+        "Enchantment"
+    ],
+    "uuid": "8915342f-a13c-57cd-a477-e96ec7e00f17"
+}

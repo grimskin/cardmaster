@@ -1,0 +1,147 @@
+{
+    "artist": "Svetlin Velinov",
+    "availability": [
+        "arena",
+        "mtgo",
+        "paper"
+    ],
+    "borderColor": "black",
+    "colorIdentity": [
+        "G"
+    ],
+    "colors": [
+        "G"
+    ],
+    "convertedManaCost": 2,
+    "edhrecRank": 17434,
+    "foreignData": [
+        {
+            "language": "German",
+            "multiverseId": 527727,
+            "name": "Klasse der Druiden",
+            "text": "(Erhöhe die Stufe wie eine Hexerei, um ihre Fähigkeit freizuschalten.)\nImmer wenn ein Land unter deiner Kontrolle ins Spiel kommt, erhältst du 1 Lebenspunkt dazu.\n{2}{G}: Stufe 2\n\/\/Level_2\/\/\nDu darfst in jedem deiner Züge ein zusätzliches Land spielen.\n{4}{G}: Stufe 3\n\/\/Level_3\/\/\nWenn diese Klasse Stufe 3 erreicht, wird ein Land deiner Wahl, das du kontrollierst, zu einer Kreatur mit Eile und „Stärke und Widerstandskraft dieser Kreatur sind gleich der Anzahl an Ländern, die du kontrollierst.\" Es ist immer noch ein Land.",
+            "type": "Verzauberung — Klasse"
+        },
+        {
+            "language": "Spanish",
+            "multiverseId": 527988,
+            "name": "Clase: druida",
+            "text": "(Gana un nivel como un conjuro para agregar su habilidad.)\nSiempre que una tierra entre al campo de batalla bajo tu control, ganas 1 vida.\n{2}{G}: Nivel 2\n\/\/Level_2\/\/\nPuedes jugar una tierra adicional en cada uno de tus turnos.\n{4}{G}: Nivel 3\n\/\/Level_3\/\/\nCuando esta Clase alcance el nivel 3, la tierra objetivo que controlas se convierte en una criatura con la habilidad de prisa y \"Tanto la fuerza como la resistencia de esta criatura son iguales a la cantidad de tierras que controlas\". Sigue siendo una tierra.",
+            "type": "Encantamiento — Clase"
+        },
+        {
+            "language": "French",
+            "multiverseId": 528249,
+            "name": "Classe : druide",
+            "text": "(Acquérez le prochain niveau lorsque vous pourriez lancer un rituel pour ajouter sa capacité.)\nÀ chaque fois qu'un terrain arrive sur le champ de bataille sous votre contrôle, vous gagnez 1 point de vie.\n{2}{G} : Niveau 2\n\/\/Level_2\/\/\nVous pouvez jouer un terrain supplémentaire pendant chacun de vos tours.\n{4}{G} : Niveau 3\n\/\/Level_3\/\/\nQuand cette classe devient niveau 3, un terrain ciblé que vous contrôlez devient une créature avec la célérité et « La force et l'endurance de cette créature sont chacune égales au nombre de terrains que vous contrôlez. » C'est toujours un terrain.",
+            "type": "Enchantement : classe"
+        },
+        {
+            "language": "Italian",
+            "multiverseId": 528510,
+            "name": "Classe del Druido",
+            "text": "(Guadagni il livello successivo come una stregoneria per aggiungerne l'abilità.)\nOgniqualvolta una terra entra nel campo di battaglia sotto il tuo controllo, guadagni 1 punto vita.\n{2}{G}: Livello 2\n\/\/Level_2\/\/\nPuoi giocare una terra addizionale in ognuno dei tuoi turni.\n{4}{G}: Livello 3\n\/\/Level_3\/\/\nQuando questa Classe diventa di livello 3, una terra bersaglio che controlli diventa una creatura con rapidità e \"La forza e la costituzione di questa creatura sono pari al numero di terre che controlli\". È ancora una terra.",
+            "type": "Incantesimo — Classe"
+        },
+        {
+            "language": "Japanese",
+            "multiverseId": 528771,
+            "name": "ドルイド・クラス",
+            "text": "（次のレベルになることはソーサリーとして行う。そのレベルの能力を得る。）\n土地１つがあなたのコントロール下で戦場に出るたび、あなたは１点のライフを得る。\n{2}{G}：レベル２\n\/\/Level_2\/\/\nあなたの各ターンに、あなたは追加で土地１つをプレイしてもよい。\n{4}{G}：レベル３\n\/\/Level_3\/\/\nこのクラスがレベル３になったとき、あなたがコントロールしている土地１つを対象とする。それは速攻と「このクリーチャーのパワーとタフネスは、それぞれあなたがコントロールしている土地の総数に等しい。」を持つクリーチャーになる。それは土地でもある。",
+            "type": "エンチャント — クラス"
+        },
+        {
+            "language": "Korean",
+            "multiverseId": 529031,
+            "name": "드루이드 직업",
+            "text": "(집중마법 시기에 다음 레벨을 얻어 자신의 능력에 추가한다.)\n대지가 당신의 조종하에 전장에 들어올 때마다, 당신은 생명 1점을 얻는다.\n{2}{G}: 2레벨\n\/\/Level_2\/\/\n당신은 당신의 각 턴에 대지 한 개를 추가로 플레이할 수 있다.\n{4}{G}: 3레벨\n\/\/Level_3\/\/\n이 직업이 3레벨이 될 때, 당신이 조종하는 대지를 목표로 정한다. 그 대지는 신속 및 \"이 생물의 기본 공격력 및 방어력은 당신이 조종하는 대지의 수와 같다.\"를 가진 생물이 된다. 이 생물은 여전히 대지다.",
+            "type": "부여마법 — 직업"
+        },
+        {
+            "language": "Portuguese (Brazil)",
+            "multiverseId": 529292,
+            "name": "Classe: Druida",
+            "text": "(Ganhe o próximo nível como um feitiço para adicionar sua habilidade.)\nToda vez que um terreno entra no campo de batalha sob seu controle, você ganha 1 ponto de vida.\n{2}{G}: Nível 2\n\/\/Level_2\/\/\nVocê pode jogar um terreno adicional em cada um de seus turnos.\n{4}{G}: Nível 3\n\/\/Level_3\/\/\nQuando esta Classe chega ao nível 3, o terreno alvo que você controla se torna uma criatura com ímpeto e \"O poder e a resistência desta criatura são ambos iguais ao número de terrenos que você controla\". Ele ainda é um terreno.",
+            "type": "Encantamento — Classe"
+        },
+        {
+            "language": "Russian",
+            "multiverseId": 529553,
+            "name": "Класс: Друид",
+            "text": "(Получите следующий уровень как волшебство, чтобы добавить его способность.)\nКаждый раз, когда земля выходит на поле битвы под вашим контролем, вы получаете 1 жизнь.\n{2}{G}: Уровень 2\n\/\/Level_2\/\/\nВы можете разыгрывать одну дополнительную землю в каждом из ваших ходов.\n{4}{G}: Уровень 3\n\/\/Level_3\/\/\nКогда этот Класс становится уровня 3, целевая земля под вашим контролем становится существом с Ускорением и способностью «Сила и выносливость этого существа равны количеству земель под вашим контролем». При этом она остается землей.",
+            "type": "Чары — Класс"
+        },
+        {
+            "language": "Chinese Simplified",
+            "multiverseId": 529813,
+            "name": "职业：德鲁伊",
+            "text": "（获得下一等级便能新增相应异能；只能于法术时机如此作。）\n每当一个地在你的操控下进战场时，你获得1点生命。\n{2}{G}：等级2\n\/\/Level_2\/\/\n你在自己的每个回合中可以额外使用一个地。\n{4}{G}：等级3\n\/\/Level_3\/\/\n当此职业成为等级3时，目标由你操控的地成为生物，且具有敏捷与「此生物的力量和防御力各等同于由你操控的地数量。」它仍然是地。",
+            "type": "结界 ～职业"
+        },
+        {
+            "language": "Chinese Traditional",
+            "multiverseId": 530073,
+            "name": "職業：德魯伊",
+            "text": "（獲得下一等級便能新增相應異能；只能於巫術時機如此作。）\n每當一個地在你的操控下進戰場時，你獲得1點生命。\n{2}{G}：等級2\n\/\/Level_2\/\/\n你在自己的每個回合中可以額外使用一個地。\n{4}{G}：等級3\n\/\/Level_3\/\/\n當此職業成為等級3時，目標由你操控的地成為生物，且具有敏捷與「此生物的力量和防禦力各等同於由你操控的地數量。」它仍然是地。",
+            "type": "結界 ～職業"
+        }
+    ],
+    "frameVersion": "2015",
+    "hasFoil": true,
+    "hasNonFoil": true,
+    "identifiers": {
+        "cardKingdomFoilId": "248504",
+        "cardKingdomId": "248190",
+        "mcmId": "571533",
+        "mcmMetaId": "343868",
+        "mtgArenaId": "77285",
+        "mtgjsonV4Id": "209996f5-f1a7-5505-a466-12b6ca035ce1",
+        "mtgoId": "91862",
+        "multiverseId": "527467",
+        "scryfallId": "09278e95-eaae-4cd4-a0d8-a2d15b0abb58",
+        "scryfallIllustrationId": "00e3f921-1d98-4249-81ef-cc42153154cb",
+        "scryfallOracleId": "dcbcbf42-4654-487a-acad-21f2606d229b",
+        "tcgplayerProductId": "243352"
+    },
+    "layout": "class",
+    "legalities": {
+        "brawl": "Legal",
+        "commander": "Legal",
+        "duel": "Legal",
+        "future": "Legal",
+        "gladiator": "Legal",
+        "historic": "Legal",
+        "legacy": "Legal",
+        "modern": "Legal",
+        "pioneer": "Legal",
+        "standard": "Legal",
+        "vintage": "Legal"
+    },
+    "manaCost": "{1}{G}",
+    "name": "Druid Class",
+    "number": "180",
+    "originalText": "(Gain the next level as a sorcery to add its ability.)\nWhenever a land enters the battlefield under your control, you gain 1 life.\n{2}{G}: Level 2\n\/\/Level_2\/\/\nYou may play an additional land on each of your turns.\n{4}{G}: Level 3\n\/\/Level_3\/\/\nWhen this Class becomes level 3, target land you control becomes a creature with haste and \"This creature's power and toughness are each equal to the number of lands you control.\" It's still a land.",
+    "originalType": "Enchantment — Class",
+    "printings": [
+        "AFR"
+    ],
+    "purchaseUrls": {
+        "cardKingdom": "https:\/\/mtgjson.com\/links\/199f05b82e2d1752",
+        "cardKingdomFoil": "https:\/\/mtgjson.com\/links\/b15d8a1ec86a8768",
+        "cardmarket": "https:\/\/mtgjson.com\/links\/0e7e9b2e2c559d35",
+        "tcgplayer": "https:\/\/mtgjson.com\/links\/a506922c1d0b3af0"
+    },
+    "rarity": "uncommon",
+    "rulings": [],
+    "setCode": "AFR",
+    "subtypes": [
+        "Class"
+    ],
+    "supertypes": [],
+    "text": "(Gain the next level as a sorcery to add its ability.)\nWhenever a land enters the battlefield under your control, you gain 1 life.\n{2}{G}: Level 2\nYou may play an additional land on each of your turns.\n{4}{G}: Level 3\nWhen this Class becomes level 3, target land you control becomes a creature with haste and \"This creature's power and toughness are each equal to the number of lands you control.\" It's still a land.",
+    "type": "Enchantment — Class",
+    "types": [
+        "Enchantment"
+    ],
+    "uuid": "2737a540-8d73-55f6-ae84-bccb67ea8014"
+}

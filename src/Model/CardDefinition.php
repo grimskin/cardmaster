@@ -27,6 +27,11 @@ class CardDefinition implements JsonSerializable
 
     const ST_LEGENDARY = 'Legendary';
 
+    const SBT_EQUIPMENT = 'Equipment';
+    const SBT_CLASS = 'Class';
+    const SBT_AURA = 'Aura';
+    const SBT_SAGA = 'Saga';
+
     const COLOR_WHITE = 'W';
     const COLOR_BLUE = 'U';
     const COLOR_BLACK = 'B';
@@ -161,6 +166,11 @@ class CardDefinition implements JsonSerializable
     public function getSubTypes(): array
     {
         return $this->subtypes;
+    }
+
+    public function hasSubType(string $subtype): bool
+    {
+        return in_array($subtype, $this->subtypes);
     }
 
     #[Pure]

@@ -1,0 +1,201 @@
+{
+    "artist": "Igor Kieryluk",
+    "availability": [
+        "arena",
+        "mtgo",
+        "paper"
+    ],
+    "borderColor": "black",
+    "colorIdentity": [
+        "G",
+        "W"
+    ],
+    "colors": [
+        "G",
+        "W"
+    ],
+    "convertedManaCost": 3,
+    "edhrecRank": 8686,
+    "foreignData": [
+        {
+            "language": "German",
+            "multiverseId": 504120,
+            "name": "Schlacht um Bretagard",
+            "text": "(Je eine Sagenmarke beim Ins-Spiel-Kommen und nach deinem Ziehsegment. Opfern nach III.)\nI — Erzeuge einen 1\/1 weißen Mensch-Krieger-Kreaturenspielstein.\nII — Erzeuge einen 1\/1 grünen Elf-Krieger-Kreaturenspielstein.\nIII — Bestimme eine beliebige Anzahl an Artefaktspielsteinen und\/oder Kreaturenspielsteinen, die du kontrollierst und die unterschiedliche Namen haben. Erzeuge für jeden davon einen Spielstein, der eine Kopie von ihm ist.",
+            "type": "Verzauberung — Sage"
+        },
+        {
+            "language": "Spanish",
+            "multiverseId": 504421,
+            "name": "Batalla por Bretagard",
+            "text": "(En cuanto esta Saga entre y después de tu paso de robar, agrega un contador de sabiduría. Sacrifícala después de III.)\nI — Crea una ficha de criatura Guerrero Humano blanca 1\/1.\nII — Crea una ficha de criatura Guerrero Elfo verde 1\/1.\nIII — Elige cualquier cantidad de fichas de artefacto y\/o fichas de criatura que controlas con nombres diferentes. Por cada una de ellas, crea una ficha que es una copia de ella.",
+            "type": "Encantamiento — Saga"
+        },
+        {
+            "language": "French",
+            "multiverseId": 504722,
+            "name": "Bataille de Bretagard",
+            "text": "(Au moment où cette saga arrive sur le champ de bataille et après votre étape de pioche, ajoutez un marqueur « sapience ». Sacrifiez après III.)\nI — Créez un jeton de créature 1\/1 blanche Humain et Guerrier.\nII — Créez un jeton de créature 1\/1 verte Elfe et Guerrier.\nIII — Choisissez n'importe quel nombre de jetons d'artefact et\/ou de jetons de créature que vous contrôlez avec des noms différents. Pour chacun d'entre eux, créez un jeton qui en est une copie.",
+            "type": "Enchantement : saga"
+        },
+        {
+            "language": "Italian",
+            "multiverseId": 505023,
+            "name": "Battaglia per Bretagard",
+            "text": "(Mentre questa Saga entra e dopo la tua sottofase di acquisizione, aggiungi un segnalino sapere. Sacrifica dopo III.)\nI — Crea una pedina creatura Guerriero Umano 1\/1 bianca.\nII — Crea una pedina creatura Guerriero Elfo 1\/1 verde.\nIII — Scegli un qualsiasi numero di pedine artefatto e\/o pedine creatura che controlli con nomi diversi. Per ognuna di esse, crea una pedina che è una copia di quel permanente.",
+            "type": "Incantesimo — Saga"
+        },
+        {
+            "language": "Japanese",
+            "multiverseId": 505324,
+            "name": "ブレタガルドをかけた戦い",
+            "text": "（この英雄譚が出た際とあなたのドロー・ステップの後に、伝承カウンターを１個加える。IIIの後に、生け贄に捧げる。）\nI ― 白の１\/１の人間・戦士・クリーチャー・トークン１体を生成する。\nII ― 緑の１\/１のエルフ・戦士・クリーチャー・トークン１体を生成する。\nIII ― あなたがコントロールしていて互いに異なる名前を持ちアーティファクトやクリーチャーである望む数のトークンを選ぶ。それらそれぞれにつき、それのコピーであるトークン１つを生成する。",
+            "type": "エンチャント — 英雄譚"
+        },
+        {
+            "language": "Korean",
+            "multiverseId": 505625,
+            "name": "브레타가르드 전투",
+            "text": "(이 서사시가 들어오면서 그리고 당신의 뽑기단 후에, 전승 카운터 한 개를 추가한다. III 이후에 희생한다.)\nI — 1\/1 백색 인간 전사 생물 토큰 한 개를 만든다.\nII — 1\/1 녹색 엘프 전사 생물 토큰 한 개를 만든다.\nIII — 당신이 조종하며 서로 이름이 다른 마법물체 토큰 및\/또는 생물 토큰을 원하는 수만큼 선택한다. 그 지속물들 각각에 대해, 그 지속물의 복사본인 토큰 한 개를 만든다.",
+            "type": "부여마법 — 서사시"
+        },
+        {
+            "language": "Portuguese (Brazil)",
+            "multiverseId": 505926,
+            "name": "Batalha por Bretagard",
+            "text": "(Conforme esta Saga entra e após sua etapa de compra, adicione um marcador de conhecimento. Sacrifique-a após III.)\nI — Crie uma ficha de criatura Humano Guerreiro branca 1\/1.\nII — Crie uma ficha de criatura Elfo Guerreiro verde 1\/1.\nIII — Escolha qualquer número de fichas de artefato e\/ou de criatura que você controle com nomes diferentes. Para cada uma delas, crie uma ficha que seja uma cópia dela.",
+            "type": "Encantamento — Saga"
+        },
+        {
+            "language": "Russian",
+            "multiverseId": 506227,
+            "name": "Битва за Бретагард",
+            "text": "(При выходе этой Саги и после вашего шага взятия карты добавьте один жетон знаний. Пожертвуйте после III.)\nI — Создайте одну фишку существа 1\/1 белый Человек Воин.\nII — Создайте одну фишку существа 1\/1 зеленый Эльф Воин.\nIII — Выберите любое количество фишек артефактов и\/или фишек существ с различными именами под вашим контролем. За каждую из них создайте одну фишку, являющуюся ее копией.",
+            "type": "Чары — Сага"
+        },
+        {
+            "language": "Chinese Simplified",
+            "multiverseId": 506528,
+            "name": "碧塔嘉保卫战",
+            "text": "（于此传纪进战场时及于你抓牌步骤后，加一个学问指示物。到III后牺牲之。）\nI — 派出一个1\/1白色人类／战士衍生生物。\nII — 派出一个1\/1绿色妖精／战士衍生生物。\nIII — 选择任意数量由你操控的衍生神器和／或衍生生物，且其名称须各不相同。对每个这类衍生物而言，派出一个为前者之复制品的衍生物。",
+            "type": "结界 ～传纪"
+        },
+        {
+            "language": "Chinese Traditional",
+            "multiverseId": 506829,
+            "name": "碧塔嘉保衛戰",
+            "text": "（於此傳紀進戰場時及於你抽牌步驟後，加一個學問指示物。到III後犧牲之。）\nI — 派出一個1\/1白色人類／戰士衍生生物。\nII — 派出一個1\/1綠色妖精／戰士衍生生物。\nIII — 選擇任意數量由你操控的衍生神器和／或衍生生物，且其名稱須各不相同。對每個這類衍生物而言，派出一個為前者之複製品的衍生物。",
+            "type": "結界 ～傳紀"
+        }
+    ],
+    "frameVersion": "2015",
+    "hasFoil": true,
+    "hasNonFoil": true,
+    "identifiers": {
+        "cardKingdomFoilId": "241010",
+        "cardKingdomId": "240556",
+        "mcmId": "531037",
+        "mcmMetaId": "329042",
+        "mtgArenaId": "75250",
+        "mtgjsonV4Id": "4907ca2a-a8d5-54d2-930d-5d5ede7a0539",
+        "mtgoId": "87749",
+        "multiverseId": "503819",
+        "scryfallId": "cd31ec15-2fe0-40ab-b320-bc4333db4787",
+        "scryfallIllustrationId": "a747c1b3-5f2c-4d65-86a2-acd3ca26ae29",
+        "scryfallOracleId": "8294539d-7982-4ec9-8392-99eed78542f5",
+        "tcgplayerProductId": "230457"
+    },
+    "isStorySpotlight": true,
+    "layout": "saga",
+    "legalities": {
+        "brawl": "Legal",
+        "commander": "Legal",
+        "duel": "Legal",
+        "future": "Legal",
+        "gladiator": "Legal",
+        "historic": "Legal",
+        "legacy": "Legal",
+        "modern": "Legal",
+        "penny": "Legal",
+        "pioneer": "Legal",
+        "standard": "Legal",
+        "vintage": "Legal"
+    },
+    "manaCost": "{1}{G}{W}",
+    "name": "Battle for Bretagard",
+    "number": "203",
+    "originalText": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\nI — Create a 1\/1 white Human Warrior creature token.\nII — Create a 1\/1 green Elf Warrior creature token.\nIII — Choose any number of artifact tokens and\/or creature tokens you control with different names. For each of them, create a token that's a copy of it.",
+    "originalType": "Enchantment — Saga",
+    "printings": [
+        "KHM",
+        "PKHM"
+    ],
+    "purchaseUrls": {
+        "cardKingdom": "https:\/\/mtgjson.com\/links\/5c1889d2c00e83c9",
+        "cardKingdomFoil": "https:\/\/mtgjson.com\/links\/9527663b96b4f858",
+        "cardmarket": "https:\/\/mtgjson.com\/links\/026c64cc99e08460",
+        "tcgplayer": "https:\/\/mtgjson.com\/links\/1c06bf62ab1ffcab"
+    },
+    "rarity": "rare",
+    "rulings": [
+        {
+            "date": "2021-02-05",
+            "text": "The chapter III ability doesn’t target any of the tokens. You choose which ones you’re copying as the ability resolves."
+        },
+        {
+            "date": "2021-02-05",
+            "text": "Unless the effect that creates a token specifies a different name, the name of a token is the same as its creature types. In particular, a Human Warrior creature token has a different name than an Elf Warrior creature token, and you may create a copy of each using the chapter III ability."
+        },
+        {
+            "date": "2021-02-05",
+            "text": "Each token you create copies the original characteristics of the token it’s copying as stated by the effect that created that token. The newly created token doesn’t copy whether the original token is tapped or untapped, whether it has any counters on it, whether it has any Auras and\/or Equipment attached to it, or any non-copy effects that changed its power, toughness, types, color, and so on."
+        },
+        {
+            "date": "2021-02-05",
+            "text": "If the original token is copying something else, the token you create will use the copiable values of the original token. In most cases, it will be a copy of whatever the original token is copying. If it’s copying a permanent or card with {X} in its mana cost, X is 0."
+        },
+        {
+            "date": "2021-02-05",
+            "text": "Any enters-the-battlefield abilities of tokens you create will trigger when they enter the battlefield. Any “As [this permanent] enters the battlefield” or “[This permanent] enters the battlefield with” abilities of the tokens will also work."
+        },
+        {
+            "date": "2021-02-05",
+            "text": "As a Saga enters the battlefield, its controller puts a lore counter on it. As your precombat main phase begins (immediately after your draw step), you put another lore counter on each Saga you control. Putting a lore counter on a Saga in either of these ways doesn’t use the stack."
+        },
+        {
+            "date": "2021-02-05",
+            "text": "Each symbol on the left of a Saga’s text box represents a chapter ability. A chapter ability is a triggered ability that triggers when a lore counter that is put on the Saga causes the number of lore counters on the Saga to become equal to or greater than the ability’s chapter number. Chapter abilities are put onto the stack and may be responded to."
+        },
+        {
+            "date": "2021-02-05",
+            "text": "A chapter ability doesn’t trigger if a lore counter is put on a Saga that already had a number of lore counters greater than or equal to that chapter’s number. For example, the third lore counter put on a Saga causes the chapter III ability to trigger, but chapters I and II won’t trigger again."
+        },
+        {
+            "date": "2021-02-05",
+            "text": "Once a chapter ability has triggered, the ability on the stack won’t be affected if the Saga gains or loses counters, or if it leaves the battlefield."
+        },
+        {
+            "date": "2021-02-05",
+            "text": "If multiple chapter abilities trigger at the same time, their controller puts them on the stack in any order. If any of them require targets, those targets are chosen as you put the abilities on the stack, before any of those abilities resolve."
+        },
+        {
+            "date": "2021-02-05",
+            "text": "Removing lore counters won’t cause a previous chapter ability to trigger. If lore counters are removed from a Saga, the appropriate chapter abilities will trigger again when the Saga receives more lore counters."
+        },
+        {
+            "date": "2021-02-05",
+            "text": "Once the number of lore counters on a Saga is greater than or equal to the greatest number among its chapter abilities, the Saga’s controller sacrifices it as soon as its chapter ability has left the stack, most likely by resolving or being countered. This state-based action doesn’t use the stack."
+        }
+    ],
+    "setCode": "KHM",
+    "subtypes": [
+        "Saga"
+    ],
+    "supertypes": [],
+    "text": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\nI — Create a 1\/1 white Human Warrior creature token.\nII — Create a 1\/1 green Elf Warrior creature token.\nIII — Choose any number of artifact tokens and\/or creature tokens you control with different names. For each of them, create a token that's a copy of it.",
+    "type": "Enchantment — Saga",
+    "types": [
+        "Enchantment"
+    ],
+    "uuid": "163dac49-fd7c-5d40-ad76-662be57810b2"
+}

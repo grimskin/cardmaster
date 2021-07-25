@@ -11,6 +11,7 @@ class RandomFacts
 {
     private ?CreatureStats $creatureStats;
     private ?InstantsVsSorceries $instantsVsSorceries;
+    private ?SpecialsCount $specialsCount;
 
     private array $longestNames = [];
     private int $longestNameLength = 0;
@@ -25,6 +26,8 @@ class RandomFacts
         foreach ($cards as $card) {
             $result->processCard($card);
         }
+
+        $result->setSpecialsCount(SpecialsCount::fromCards($cards));
 
         return $result;
     }
@@ -48,6 +51,16 @@ class RandomFacts
     public function setInstantsVsSorceries(?InstantsVsSorceries $instantsVsSorceries): void
     {
         $this->instantsVsSorceries = $instantsVsSorceries;
+    }
+
+    public function getSpecialsCount(): ?SpecialsCount
+    {
+        return $this->specialsCount;
+    }
+
+    private function setSpecialsCount(?SpecialsCount $specialsCount): void
+    {
+        $this->specialsCount = $specialsCount;
     }
 
     public function countInstantsWithX(): int
