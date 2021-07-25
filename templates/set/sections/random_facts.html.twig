@@ -35,11 +35,11 @@
                 with X in the mana cost.
             </span>
         {% endif %}
-        <br />
-        <span>
-            {{ stats.randomFacts.specialsCount.dfcCount }} double-faced
-            card{% if stats.randomFacts.specialsCount.dfcCount != 1 %}s{% endif %} in the set.
-        </span>
+{#        <br />#}
+{#        <span>#}
+{#            {{ stats.randomFacts.specialsCount.dfcCount }} double-faced#}
+{#            card{% if stats.randomFacts.specialsCount.dfcCount != 1 %}s{% endif %} in the set.#}
+{#        </span>#}
         <br />
         <span>
             {{ stats.randomFacts.specialsCount.classCount }}
@@ -55,10 +55,10 @@
             {{ stats.randomFacts.specialsCount.sagaCount }}
             Saga{% if stats.randomFacts.specialsCount.sagaCount != 1 %}s{% endif %} in the set.
         </span>
-{#        <br />#}
-{#        <span>#}
-{#            {{ stats.randomFacts.specialsCount.equipmentCount }}#}
-{#            Equipment{% if stats.randomFacts.specialsCount.equipmentCount != 1 %}s{% endif %} in the set.#}
-{#        </span>#}
+        <br />
+        <span>
+            {{ stats.randomFacts.specialsCount.equipmentCount }}
+            Equipment{% if stats.randomFacts.specialsCount.equipmentCount != 1 %}s{% endif %} in the set.
+        </span>
     </div>
 </div>
