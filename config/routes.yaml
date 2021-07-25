@@ -23,7 +23,11 @@ api_simulation:
         _format: json
     controller: App\Controller\ApiController::simulation
 
+set_index:
+    path: /mtg-sets
+    methods: GET
+    controller: App\Controller\SetStatsController::index
 set_view:
-    path: /graphics/{set}/view
+    path: /mtg-sets/{set}/view
     methods: GET
     controller: App\Controller\SetStatsController::setStats
