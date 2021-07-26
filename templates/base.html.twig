@@ -17,6 +17,7 @@
         {% block javascripts %}
             {#{{ encore_entry_script_tags('app') }}#}
         {% endblock %}
+        {% if app_environment == 'prod' %}
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5RX8MCD4S"></script>
         <script>
@@ -24,8 +25,9 @@
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'G-D5RX8MCD4S');
+            gtag('config', '{{ ga_code }}');
         </script>
+        {% endif %}
     </head>
     <body id="set-stats">
         <div id="set-nav">
