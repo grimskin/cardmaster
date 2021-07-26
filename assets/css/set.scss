@@ -40,11 +40,29 @@ div#set-nav {
 .mana-M { background-color: $mana-multi !important; }
 .mana-E { background-color: $mana-colorless !important; }
 
+div#disclaimers {
+    width: $view-width;
+    margin: auto;
+    background-color: $section-color;
+    color: #ffffff;
+    padding: 7rem 5rem 2rem 4rem;
+    font-size: 0.8rem;
+
+    span {
+        padding-bottom: 0.6rem;
+        display: inline-block;
+    }
+
+    a, a:hover, a:active, a:visited {
+        color: #ffffff;
+    }
+}
+
 div#set-infographics {
     width: $view-width;
     margin: auto;
     background-color: #fff;
-    padding: 4rem 4rem 4rem 5rem;
+    padding: 4rem 4rem 8rem 5rem;
     color: $section-color;
 
     h2#set-name {
