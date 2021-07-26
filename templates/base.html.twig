@@ -17,6 +17,15 @@
         {% block javascripts %}
             {#{{ encore_entry_script_tags('app') }}#}
         {% endblock %}
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5RX8MCD4S"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-D5RX8MCD4S');
+        </script>
     </head>
     <body id="set-stats">
         <div id="set-nav">
@@ -29,6 +38,7 @@
             <a href="{{ path('set_view', {set:'IKO'}) }}">IKO</a>
             <a href="{{ path('set_view', {set:'THB'}) }}">THB</a>
             <a href="{{ path('set_view', {set:'ELD'}) }}">ELD</a>
+            <a href="{{ path('set_view', {set:'ELD'}) }}">Donate</a>
         </div>
 
         {% block body %}{% endblock %}
