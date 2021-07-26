@@ -1,0 +1,46 @@
+{% if app_environment == 'prod' %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_code }}"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+    window.addEventListener('load', function(){
+        window.cookieconsent.initialise({
+            revokeBtn: "<div class='cc-revoke'></div>",
+            type: "opt-in",
+            theme: "classic",
+            palette: {
+                popup: {
+                    background: "#2e6da4",
+                    text: "#fff"
+                },
+                button: {
+                    background: "#fd0",
+                    text: "#000"
+                }
+            },
+            content: {
+                link: "Cookie notice",
+                href: "https://2gdpr.com/cookies"
+            },
+            onInitialise: function(status) {
+                if(status == cookieconsent.status.allow) myScripts();
+            },
+            onStatusChange: function(status) {
+                if (this.hasConsented()) myScripts();
+            }
+        })
+    });
+
+    function myScripts() {
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', '{{ ga_code }}');
+    }
+</script>
+{% endif %}
