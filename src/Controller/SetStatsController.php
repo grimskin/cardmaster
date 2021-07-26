@@ -12,6 +12,8 @@ use Symfony\Component\HttpFoundation\Response;
 
 class SetStatsController extends AbstractController
 {
+    const DEFAULT_SET = 'AFR';
+
     private StatsCollector $collector;
     private DataLoader $dataLoader;
 
@@ -24,16 +26,29 @@ class SetStatsController extends AbstractController
     public function index(): Response
     {
         return new RedirectResponse(
-            $this->generateUrl('set_view', ['set' => 'AFR'])
+            $this->generateUrl('set_view', ['set' => self::DEFAULT_SET])
         );
     }
 
     public function setStats(string $set): Response
     {
+        if (!$this->isValidSet($set)) {
+            return new RedirectResponse($this->generateUrl('set_view', ['set' => self::DEFAULT_SET]));
+        }
+
         $this->collector->addCards($this->dataLoader->loadSet($set));
 
         return $this->render('set/stats.html.twig', [
             'stats' => $this->collector,
         ]);
+    }
+
+    private function isValidSet(string $set): bool
+    {
+        $validSets = [
+            'AFR', 'STX', 'KHM', 'ZNR', 'M21', 'IKO', 'THB', 'ELD',
+        ];
+
+        return in_array(strtoupper($set), $validSets);
     }
 }
