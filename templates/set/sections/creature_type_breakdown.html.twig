@@ -22,7 +22,7 @@
     </div>
 
     <div class="one-ofs">
-        <h4>One-offs</h4>
+        <h4>Singletons</h4>
         {% for type in stats.creatureTypesStats.oneOffs %}
             {{ type }}{% if not loop.last %}, {% endif %}
         {% endfor %}
