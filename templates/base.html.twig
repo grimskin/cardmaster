@@ -17,7 +17,6 @@
         {% block javascripts %}
             {#{{ encore_entry_script_tags('app') }}#}
         {% endblock %}
-        {% include 'stats.html.twig' %}
     </head>
     <body id="set-stats">
         <div id="set-nav">
@@ -62,5 +61,6 @@
                 using our email at <a href="mailto:myrobotmadethis@gmail.com">myrobotmadethis@gmail.com</a>.
             </span>
         </div>
+        {% include 'stats.html.twig' %}
     </body>
 </html>
