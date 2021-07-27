@@ -11,6 +11,11 @@ class DefaultController extends AbstractController
 {
     public function index(): Response
     {
+        return $this->render('home.html.twig');
+    }
+
+    public function probabilities(): Response
+    {
         $links = $this->getAssetsLinks();
 
         $html = '<!DOCTYPE html><html lang="en"><head><title>--</title>'."\r\n";
