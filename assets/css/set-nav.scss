@@ -1,0 +1,60 @@
+@import "set-stats-colors";
+
+div#set-nav {
+    display: flex;
+    width: $view-width;
+    margin: auto;
+    flex-flow: row wrap;
+    background-color: $section-color;
+    padding-left: 4rem;
+    padding-right: 5rem;
+
+    a, span {
+        display: block;
+        text-align: center;
+        margin: auto;
+        width: 1rem;
+        background-color: $section-color;
+        color: $section-background;
+        flex-grow: 1;
+        text-decoration: none;
+        border-left: 1px solid $section-background;
+        border-right: 1px solid $section-background;
+        padding: 0.4rem;
+    }
+
+    span#nav-item-donate {
+        position: relative;
+
+        &:hover {
+            background-color: $section-background;
+            color: $section-color;
+
+            div#donate-tooltip {
+                display: block;
+            }
+        }
+
+        div#donate-tooltip {
+            display: none;
+            position: absolute;
+            border: 1px solid $section-color;
+            color: $section-color;
+            background-color: $section-background;
+            top: 2rem;
+            right: -2px;
+            width: 15rem;
+            padding: 2rem;
+            border-bottom-right-radius: 1.5rem;
+            border-bottom-left-radius: 1.5rem;
+            text-align: justify;
+        }
+
+        a#donate-button {
+            position: static;
+            width: 10rem;
+            margin-top: 2.0rem;
+            border-radius: 1rem;
+        }
+    }
+}

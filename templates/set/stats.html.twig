@@ -1,12 +1,14 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
+{# Page for web-site home page #}
 {# Shortest card name #}
 {# Random facts - count all types with X #}
 {# Random facts - total cards in the set #}
 {# Textual comparison to previous sets - new types, keywords? #}
-{# PayPal button #}
-{# Google Analytics? #}
+{# Use UL for Random Facts section #}
+{# "Contact us" e-mail at disclaimer section #}
+{# Move "Cookie notice" page and CSS to our website, ideally - JS too  #}
 {% set colorNames = {
     W: 'White',
     U: 'Blue',
@@ -19,8 +21,8 @@
 <div id="set-infographics">
     <h2 id="set-name">{{ stats.getSetName() }}</h2>
 
-    {% include 'set/sections/instants_vs_sorceries.html.twig' %}
     {% include 'set/sections/creature_type_breakdown.html.twig' %}
+    {% include 'set/sections/instants_vs_sorceries.html.twig' %}
     {% include 'set/sections/creature_stats_breakdown.html.twig' %}
     {% include 'set/sections/card_keyword_breakdown.html.twig' %}
     {% include 'set/sections/legendary_counts.html.twig' %}

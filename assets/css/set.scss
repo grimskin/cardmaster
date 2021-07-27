@@ -8,29 +8,7 @@ body#set-stats {
     background-color: #dfe6e9;
 }
 
-div#set-nav {
-    display: flex;
-    width: $view-width;
-    margin: auto;
-    flex-flow: row wrap;
-    background-color: $section-color;
-    padding-left: 4rem;
-    padding-right: 5rem;
-
-    a {
-        display: block;
-        text-align: center;
-        margin: auto;
-        width: 1rem;
-        background-color: $section-color;
-        color: $section-background;
-        flex-grow: 1;
-        text-decoration: none;
-        border-left: 1px solid $section-background;
-        border-right: 1px solid $section-background;
-        padding: 0.4rem;
-    }
-}
+@import "set-nav";
 
 .mana-W { background-color: $mana-white !important; }
 .mana-U { background-color: $mana-blue !important; }
