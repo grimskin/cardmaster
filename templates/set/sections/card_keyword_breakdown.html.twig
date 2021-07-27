@@ -1,5 +1,5 @@
 <div id="card-keyword-breakdown" class="section">
-    <h3>Set - Keywords</h3>
+    <h3>Keywords</h3>
 
     <div class="histogram-bended">
         {% for type, amount in stats.keywords.keywords %}
@@ -13,7 +13,7 @@
 
     <div class="info">
         Different keywords - {{ stats.keywords.keywords|length }}.
-        There's
+        Set contains
         {% for types, count in stats.keywords.keywordsOnCard %}
             {{ count }} card{% if count > 1 %}s{% endif%}
             with {% if types > 0 %}{{ types }}{% else %}no{% endif %}
