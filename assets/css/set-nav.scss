@@ -8,6 +8,10 @@ div#set-nav {
     background-color: $section-color;
     padding-left: 4rem;
     padding-right: 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 5000;
+    border-bottom: 1px solid $section-background;
 
     a, span {
         display: block;
