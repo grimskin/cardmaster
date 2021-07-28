@@ -252,6 +252,16 @@ div#set-infographics {
         @import "sections/histogram-bended";
     }
 
+    #random-facts {
+        ul {
+            padding-left: 1rem;
+
+            li {
+                padding-bottom: 0.4rem;
+            }
+        }
+    }
+
     @import "sections/creature-types";
     @import "sections/creature-stats";
     @import "sections/legendaries-breakdown";

@@ -1,64 +1,66 @@
 <div id="random-facts" class="section">
-    <h3>Set - Random facts</h3>
+    <h3>Some facts</h3>
     <div class="info">
-        <span>
-            {% if stats.randomFacts.asteriskAnyCount > 0 %}
-                There {% if stats.randomFacts.asteriskAnyCount > 1 %}are {% else %}is {% endif %}
-                {{ stats.randomFacts.asteriskAnyCount }}
-                creature{% if stats.randomFacts.asteriskAnyCount > 1 %}s{% endif %}
-                with asterisk in power/toughness.
-            {% else %} There are no creatures with asterisks in power/toughness.
+        <ul>
+            <li>
+                {% if stats.randomFacts.asteriskAnyCount > 0 %}
+                    There {% if stats.randomFacts.asteriskAnyCount > 1 %}are {% else %}is {% endif %}
+                    {{ stats.randomFacts.asteriskAnyCount }}
+                    creature{% if stats.randomFacts.asteriskAnyCount > 1 %}s{% endif %}
+                    with asterisk in power/toughness.
+                {% else %} There are no creatures with asterisks in power/toughness.
+                {% endif %}
+            </li>
+
+            <li>
+                Longest card name in the set contains {{ stats.randomFacts.longestNameLength }} symbols.
+                {% if stats.randomFacts.longestNames|length > 1 %}
+                    Cards with such long name are: "{{ stats.randomFacts.longestNames|join('", "') }}"
+                {% else %}
+                    There's only one card with such long name - {{ stats.randomFacts.longestNames[0] }}
+                {% endif %}
+            </li>
+            {% if stats.randomFacts.countInstantsWithX or stats.randomFacts.countSorceriesWithX %}
+                <li>
+                    There are
+                    {% if stats.randomFacts.countInstantsWithX %}
+                        {{ stats.randomFacts.countInstantsWithX }} instants
+                    {% endif %}
+                    {% if stats.randomFacts.countInstantsWithX and stats.randomFacts.countSorceriesWithX %}
+                        and
+                    {% endif %}
+                    {% if stats.randomFacts.countSorceriesWithX %}
+                        {{ stats.randomFacts.countSorceriesWithX }} sorceries
+                    {% endif %}
+                    with X in the mana cost.
+                </li>
             {% endif %}
-        </span>
-        <br />
-        <span>
-            Longest card name in the set contains {{ stats.randomFacts.longestNameLength }} symbols.
-            {% if stats.randomFacts.longestNames|length > 1 %}
-                Cards with such long name are: "{{ stats.randomFacts.longestNames|join('", "') }}"
-            {% else %}
-                There's only one card with such long name - {{ stats.randomFacts.longestNames[0] }}
-            {% endif %}
-        </span>
-        {% if stats.randomFacts.countInstantsWithX or stats.randomFacts.countSorceriesWithX %}
-            <br />
-            <span>
-                There are
-                {% if stats.randomFacts.countInstantsWithX %}
-                    {{ stats.randomFacts.countInstantsWithX }} instants
-                {% endif %}
-                {% if stats.randomFacts.countInstantsWithX and stats.randomFacts.countSorceriesWithX %}
-                    and
-                {% endif %}
-                {% if stats.randomFacts.countSorceriesWithX %}
-                    {{ stats.randomFacts.countSorceriesWithX }} sorceries
-                {% endif %}
-                with X in the mana cost.
-            </span>
-        {% endif %}
-{#        <br />#}
-{#        <span>#}
-{#            {{ stats.randomFacts.specialsCount.dfcCount }} double-faced#}
-{#            card{% if stats.randomFacts.specialsCount.dfcCount != 1 %}s{% endif %} in the set.#}
-{#        </span>#}
-        <br />
-        <span>
-            {{ stats.randomFacts.specialsCount.classCount }}
-            Class{% if stats.randomFacts.specialsCount.classCount != 1 %}es{% endif %} in the set.
-        </span>
-        <br />
-        <span>
-            {{ stats.randomFacts.specialsCount.auraCount }}
-            Aura{% if stats.randomFacts.specialsCount.auraCount != 1 %}s{% endif %} in the set.
-        </span>
-        <br />
-        <span>
-            {{ stats.randomFacts.specialsCount.sagaCount }}
-            Saga{% if stats.randomFacts.specialsCount.sagaCount != 1 %}s{% endif %} in the set.
-        </span>
-        <br />
-        <span>
-            {{ stats.randomFacts.specialsCount.equipmentCount }}
-            Equipment{% if stats.randomFacts.specialsCount.equipmentCount != 1 %}s{% endif %} in the set.
-        </span>
+
+            <li>
+                {{ stats.randomFacts.specialsCount.classCount }}
+                Class{% if stats.randomFacts.specialsCount.classCount != 1 %}es{% endif %} in the set.
+            </li>
+
+            <li>
+                {{ stats.randomFacts.specialsCount.auraCount }}
+                Aura{% if stats.randomFacts.specialsCount.auraCount != 1 %}s{% endif %} in the set.
+            </li>
+
+            <li>
+                {{ stats.randomFacts.specialsCount.sagaCount }}
+                Saga{% if stats.randomFacts.specialsCount.sagaCount != 1 %}s{% endif %} in the set.
+            </li>
+
+            <li>
+                {{ stats.randomFacts.specialsCount.equipmentCount }}
+                Equipment{% if stats.randomFacts.specialsCount.equipmentCount != 1 %}s{% endif %} in the set.
+            </li>
+
+            {#        <br />#}
+            {#        <span>#}
+            {#            {{ stats.randomFacts.specialsCount.dfcCount }} double-faced#}
+            {#            card{% if stats.randomFacts.specialsCount.dfcCount != 1 %}s{% endif %} in the set.#}
+            {#        </span>#}
+        </ul>
     </div>
 </div>
