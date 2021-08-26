@@ -30,7 +30,7 @@ div#set-nav {
     span#nav-item-donate {
         position: relative;
 
-        &:hover {
+        &:hover, &:active {
             background-color: $section-background;
             color: $section-color;
 
