@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CardInDeck = ({setAmountCallback, name, amount, ...props}) => {
+const CardInDeck = ({setAmountCallback, name, amount}) => {
     const increaseAmount = () => setAmountCallback(name, amount+1);
     const decreaseAmount = () => setAmountCallback(name, amount-1);
     const removeCard = () => setAmountCallback(name, 0);

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 
-const AcInput2 = (props) => {
+const AcInput2 = ({parentId, ...props}) => {
     const [cardName, setCardName] = useState('');
     const [acItems, setAcItems] = useState([]);
     const [acFocus, setAcFocus] = useState(0);
@@ -60,7 +60,7 @@ const AcInput2 = (props) => {
                    onBlur={() => setTimeout(() => setAcItems([]), 100)}
                    onKeyDown={onKeyDown}
             />
-            <div id={props.parentId + "-ac-container"} className="ac_items">
+            <div id={parentId + "-ac-container"} className="ac_items">
                 {acItems.map((item, i) => {
                     return <div className={"ac_option" + (acFocus === i ? ' ac_active' : '')}
                                key={i}
