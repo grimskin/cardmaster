@@ -36,13 +36,13 @@ class DeckComposer extends Component {
                 Deck Composer
                 <CardPicker callBackAddCard={this.props.handleAddCard} cards={this.props.cards} />
                 <div id="cards-list-container">
-                    {this.props.deck.map((item, i) => {
-                        return <CardInDeck
-                            name={item.name}
-                            amount={item.amount}
-                            setAmountCallback={this.props.handleChangeCardAmount}
-                            key={i}
-                        />;
+                    {this.props.deck.map(({name, amount, ...item}, i) => {
+                        return  <CardInDeck
+                                    name={name}
+                                    amount={amount}
+                                    setAmountCallback={this.props.handleChangeCardAmount}
+                                    key={i}
+                                />;
                     })}
                 </div>
                 <div className="deck_importer">

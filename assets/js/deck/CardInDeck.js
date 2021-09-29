@@ -1,39 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 
+const CardInDeck = ({setAmountCallback, name, amount, ...props}) => {
+    const increaseAmount = () => setAmountCallback(name, amount+1);
+    const decreaseAmount = () => setAmountCallback(name, amount-1);
+    const removeCard = () => setAmountCallback(name, 0);
 
-class CardInDeck extends Component {
-    constructor(props) {
-        super(props);
-
-        this.increaseAmount = this.increaseAmount.bind(this);
-        this.reduceAmount = this.reduceAmount.bind(this);
-        this.removeCard = this.removeCard.bind(this);
-    }
-
-    increaseAmount() {
-        this.props.setAmountCallback(this.props.name, this.props.amount+1)
-    }
-
-    reduceAmount() {
-        this.props.setAmountCallback(this.props.name, this.props.amount-1);
-    }
-
-    removeCard() {
-        this.props.setAmountCallback(this.props.name, 0);
-    }
-
-    render() {
-        return (
-            <div className="card_in_deck">
-                <button onClick={this.reduceAmount}>-</button>
-                {this.props.amount}
-                <button onClick={this.increaseAmount}>+</button>
-                {this.props.name}
-
-                <button onClick={this.removeCard}>X</button>
-            </div>
-        );
-    }
+    return  <div className="card_in_deck">
+        <button onClick={decreaseAmount}>-</button>
+        {amount}
+        <button onClick={increaseAmount}>+</button>
+        {name}
+        <button onClick={removeCard}>X</button>
+    </div>;
 }
 
 CardInDeck.defaultProps = {
