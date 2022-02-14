@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class SetStatsController extends AbstractController
 {
-    const DEFAULT_SET = 'VOW';
+    const DEFAULT_SET = 'NEO';
 
     private StatsCollector $collector;
     private DataLoader $dataLoader;
@@ -46,7 +46,7 @@ class SetStatsController extends AbstractController
     private function isValidSet(string $set): bool
     {
         $validSets = [
-            'VOW', 'MID', 'AFR', 'STX', 'KHM', 'ZNR', 'M21', 'IKO', 'THB', 'ELD',
+            'NEO', 'VOW', 'MID', 'AFR', 'STX', 'KHM', 'ZNR', 'M21', 'IKO', 'THB', 'ELD',
         ];
 
         return in_array(strtoupper($set), $validSets);
