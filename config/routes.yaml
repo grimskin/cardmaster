@@ -36,3 +36,7 @@ set_view:
     path: /mtg-sets/{set}/view
     methods: GET
     controller: App\Controller\SetStatsController::setStats
+
+prototypes:
+    path: /proto
+    controller: App\Controller\PrototypeController::index
