@@ -16,22 +16,23 @@ use App\Service\StatsCollector;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class ApiController extends AbstractController
 {
-    private $dataLoader;
+    private DataLoader $dataLoader;
 
-    private $setUpHelper;
+    private SimulationSetUpHelper $setUpHelper;
 
-    private $conditionFactory;
+    private ConditionFactory $conditionFactory;
 
-    private $scenarioFactory;
+    private ScenarioFactory $scenarioFactory;
 
-    private $cardsFactory;
+    private CardsFactory $cardsFactory;
 
-    private $statsCollector;
+    private StatsCollector $statsCollector;
 
-    private $deckFetcher;
+    private DeckFetcher $deckFetcher;
 
     public function __construct(
         DataLoader $dataLoader,
@@ -51,7 +52,7 @@ class ApiController extends AbstractController
         $this->deckFetcher = $deckFetcher;
     }
 
-    public function cardsList()
+    public function cardsList(): Response
     {
         $sortedData = array_map(function(CardData $item) {
             return $item->getName();
@@ -61,24 +62,24 @@ class ApiController extends AbstractController
         return new JsonResponse(array_values($sortedData));
     }
 
-    public function cardInfo(string $cardName)
+    public function cardInfo(string $cardName): Response
     {
         $card = $this->cardsFactory->getCard($cardName);
 
         return new JsonResponse($card);
     }
 
-    public function conditionsList()
+    public function conditionsList(): Response
     {
         return new JsonResponse($this->conditionFactory->getRegisteredConditions());
     }
 
-    public function scenariosList()
+    public function scenariosList(): Response
     {
         return new JsonResponse($this->scenarioFactory->getRegisteredScenarios());
     }
 
-    public function simulation(Request $request)
+    public function simulation(Request $request): Response
     {
         // TODO: Refactor
         $data = json_decode($request->getContent(), true);
@@ -115,12 +116,11 @@ class ApiController extends AbstractController
         $this->statsCollector->setPassCount(10000);
 
         $experimentResult = $this->statsCollector->runSimulation();
-        $this->statsCollector->getSuccessCount();
 
         return new JsonResponse($experimentResult);
     }
 
-    public function fetchDeck(Request $request)
+    public function fetchDeck(Request $request): Response
     {
         return new JsonResponse($this->deckFetcher->fetchDeck($request->get('deck_url', '')));
     }
