@@ -4,29 +4,33 @@
     "require": {
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "symfony/config": "5.*",
-        "symfony/console": "5.*",
-        "symfony/debug-bundle": "5.*",
-        "symfony/dotenv": "5.*",
-        "symfony/filesystem": "5.*",
+        "symfony/config": "6.0.*",
+        "symfony/console": "6.0.*",
+        "symfony/debug-bundle": "6.0.*",
+        "symfony/dotenv": "6.0.*",
+        "symfony/filesystem": "6.0.*",
         "symfony/flex": "^1.1",
-        "symfony/framework-bundle": "5.*",
-        "symfony/http-client": "5.*",
-        "symfony/intl": "5.*",
+        "symfony/framework-bundle": "6.0.*",
+        "symfony/http-client": "6.0.*",
+        "symfony/intl": "6.0.*",
         "symfony/monolog-bundle": "^3.0",
-        "symfony/runtime": "5.*",
-        "symfony/stopwatch": "^5.3",
-        "symfony/twig-bundle": "5.*",
-        "symfony/var-dumper": "5.*",
-        "symfony/web-profiler-bundle": "^5.3",
+        "symfony/runtime": "6.0.*",
+        "symfony/stopwatch": "^6.0.3",
+        "symfony/twig-bundle": "6.0.*",
+        "symfony/var-dumper": "6.0.*",
+        "symfony/web-profiler-bundle": "^6.0.3",
         "symfony/webpack-encore-bundle": "^1.7",
-        "symfony/yaml": "5.*"
+        "symfony/yaml": "6.0.*"
     },
     "config": {
         "preferred-install": {
             "*": "dist"
         },
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "symfony/flex": true,
+            "symfony/runtime": true
+        }
     },
     "autoload": {
         "psr-4": {
@@ -64,7 +68,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "5.*"
+            "require": "6.0.*"
         }
     },
     "require-dev": {
