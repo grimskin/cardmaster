@@ -4,14 +4,18 @@
 namespace App\Command;
 
 
+use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Filesystem\Filesystem;
 
+#[AsCommand(
+    name: 'cm:make:css',
+    description: 'Generates CSS files used for dynamic elements size configuration'
+)]
 class MakeCss extends Command
 {
-    protected static $defaultName = 'cm:make:css';
     private string $projectDir;
     private string $cssPath = '/assets/css/';
 
@@ -21,11 +25,6 @@ class MakeCss extends Command
         $this->projectDir = $projectDir;
 
         parent::__construct();
-    }
-
-    protected function configure(): void
-    {
-        $this->setDescription('Generates CSS files used for dynamic elements size configuration');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int

@@ -2,45 +2,31 @@
 
 namespace App\Command;
 
-use App\Factory\CardsFactory;
-use App\Factory\ConditionFactory;
-use App\Factory\ScenarioFactory;
-use App\Model\DeckDefinition;
 use App\Service\ScriptFileReader;
 use App\Service\ScriptRunner;
-use App\Service\StatsCollector;
+use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
+#[AsCommand(
+    name: 'cm:script'
+)]
 class ScriptCommand extends Command
 {
-    protected static $defaultName = 'cm:script';
 
-    private $runner;
-    private $cardsFactory;
-    private $scenarioFactory;
-    private $conditionFactory;
-    private $collector;
-    private $fileReader;
+    private ScriptRunner $runner;
+    private ScriptFileReader $fileReader;
 
     public function __construct(
         ScriptRunner $runner,
-        CardsFactory $cardsFactory,
-        ScenarioFactory $scenarioFactory,
-        ConditionFactory $conditionFactory,
-        StatsCollector $collector,
         ScriptFileReader $fileReader
     ) {
         $this->runner = $runner;
-        $this->cardsFactory = $cardsFactory;
-        $this->scenarioFactory = $scenarioFactory;
-        $this->conditionFactory = $conditionFactory;
-        $this->collector = $collector;
         $this->fileReader = $fileReader;
 
-        parent::__construct(self::$defaultName);
+        parent::__construct();
     }
 
     protected function configure()
@@ -50,7 +36,7 @@ class ScriptCommand extends Command
         $this->addArgument('filename', InputArgument::REQUIRED, 'file name with experiment description');
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $output->writeln('welcome');
 
@@ -65,5 +51,7 @@ class ScriptCommand extends Command
         $result = $this->runner->runScript($script);
 
         $output->writeln($result);
+
+        return 0;
     }
 }

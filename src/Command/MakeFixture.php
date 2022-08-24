@@ -6,15 +6,19 @@ namespace App\Command;
 
 use App\Model\CardData;
 use App\Service\DataLoader;
+use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Filesystem\Filesystem;
 
+#[AsCommand(
+    name: 'cm:make:fixture',
+    description: 'Creates test fixture'
+)]
 class MakeFixture extends Command
 {
-    protected static $defaultName = 'cm:make:fixture';
     private string $projectDir;
     private DataLoader $dataLoader;
 
@@ -30,7 +34,6 @@ class MakeFixture extends Command
 
     protected function configure(): void
     {
-        $this->setDescription('Creates test fixture');
         $this->addArgument('set_name', InputArgument::REQUIRED, '3-letter set name');
         $this->addArgument('card_name', InputArgument::REQUIRED, 'Card name in double quotes');
     }

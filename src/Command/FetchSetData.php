@@ -6,14 +6,17 @@ namespace App\Command;
 
 use App\Service\FS\SaveSet;
 use App\Service\Http\SetDownloader;
+use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
+#[AsCommand(
+    name: 'cm:fetch-set-data'
+)]
 class FetchSetData extends Command
 {
-    protected static $defaultName = 'cm:fetch-set-data';
     private SetDownloader $downloader;
     private SaveSet $saver;
 
