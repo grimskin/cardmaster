@@ -16,7 +16,7 @@ jobs:
           php-version: 8.1
           extensions: none, ctype, curl, date, dom, json, libxml, mbstring, phar, simplexml, soap, tokenizer, xml, xmlwriter, zlib
           coverage: none
-          tools: none
+          tools: composer:v2, phpunit:9.5
       - name: Update dependencies with composer
         run: ./tools/composer update --no-interaction --no-ansi --no-progress
       - uses: php-actions/phpunit@v3
