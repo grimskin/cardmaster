@@ -52,6 +52,6 @@ class ScriptCommand extends Command
 
         $output->writeln($result);
 
-        return 0;
+        return Command::SUCCESS;
     }
 }

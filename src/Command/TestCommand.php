@@ -56,6 +56,6 @@ class TestCommand extends Command
 
         $output->writeln($this->collector->getSuccessCount() . ' / ' . $passCount);
 
-        return 0;
+        return Command::SUCCESS;
     }
 }
