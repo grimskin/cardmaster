@@ -14,7 +14,7 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: 8.1
-          extensions: none, ctype, curl, date, dom, json, libxml, mbstring, phar, simplexml, soap, tokenizer, xml, xmlwriter, zlib
+          extensions: none, ctype, curl, date, dom, json, iconv, libxml, mbstring, phar, simplexml, soap, tokenizer, xml, xmlwriter, zlib
           coverage: none
           tools: composer:v2, phpunit:9.5
       - name: Update dependencies with composer
