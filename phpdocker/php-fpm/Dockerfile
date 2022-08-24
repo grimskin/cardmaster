@@ -1,4 +1,4 @@
-FROM phpdockerio/php80-fpm:latest
+FROM phpdockerio/php:8.1-fpm
 WORKDIR "/application"
 
 # Fix debconf warnings upon build
