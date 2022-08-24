@@ -12,16 +12,16 @@ class ConditionFactory
     /**
      * @var ConditionInterface[]
      */
-    private $conditions = [];
+    private array $conditions = [];
 
-    private $cardsFactory;
+    private CardsFactory $cardsFactory;
 
     public function __construct(CardsFactory $cardsFactory)
     {
         $this->cardsFactory = $cardsFactory;
     }
 
-    public function registerCondition(string $conditionClassName)
+    public function registerCondition(string $conditionClassName): void
     {
         $condition = new $conditionClassName;
 

@@ -15,10 +15,10 @@ class TestCommand extends Command
 {
     protected static $defaultName = 'cm:test';
 
-    private $cardsFactory;
-    private $scenarioFactory;
-    private $conditionFactory;
-    private $collector;
+    private CardsFactory $cardsFactory;
+    private ScenarioFactory $scenarioFactory;
+    private ConditionFactory $conditionFactory;
+    private StatsCollector $collector;
 
     public function __construct(
         CardsFactory $cardsFactory,
@@ -34,7 +34,7 @@ class TestCommand extends Command
         parent::__construct(self::$defaultName);
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $output->writeln('welcome');
 
@@ -46,12 +46,14 @@ class TestCommand extends Command
 
         $passCount = 10000;
 
-        $this->collector->addCondition($this->conditionFactory->getCondition('has-three-lands'));
+        $this->collector->addCondition($this->conditionFactory->getCondition('has-x-lands', [3]));
         $this->collector->setDeck($deck);
         $this->collector->setPassCount($passCount);
         $this->collector->setScenario($this->scenarioFactory->getScenario('starting-hand'));
         $this->collector->runSimulation();
 
         $output->writeln($this->collector->getSuccessCount() . ' / ' . $passCount);
+
+        return 0;
     }
 }
