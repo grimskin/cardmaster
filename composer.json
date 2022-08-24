@@ -4,23 +4,23 @@
     "require": {
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "symfony/config": "6.0.*",
-        "symfony/console": "6.0.*",
-        "symfony/debug-bundle": "6.0.*",
-        "symfony/dotenv": "6.0.*",
-        "symfony/filesystem": "6.0.*",
+        "symfony/config": "6.*",
+        "symfony/console": "6.*",
+        "symfony/debug-bundle": "6.*",
+        "symfony/dotenv": "6.*",
+        "symfony/filesystem": "6.*",
         "symfony/flex": "^1.1",
-        "symfony/framework-bundle": "6.0.*",
-        "symfony/http-client": "6.0.*",
-        "symfony/intl": "6.0.*",
+        "symfony/framework-bundle": "6.*",
+        "symfony/http-client": "6.*",
+        "symfony/intl": "6.*",
         "symfony/monolog-bundle": "^3.0",
-        "symfony/runtime": "6.0.*",
-        "symfony/stopwatch": "^6.0.3",
-        "symfony/twig-bundle": "6.0.*",
-        "symfony/var-dumper": "6.0.*",
-        "symfony/web-profiler-bundle": "^6.0.3",
+        "symfony/runtime": "6.*",
+        "symfony/stopwatch": "6.*",
+        "symfony/twig-bundle": "6.*",
+        "symfony/var-dumper": "6.*",
+        "symfony/web-profiler-bundle": "6.*",
         "symfony/webpack-encore-bundle": "^1.7",
-        "symfony/yaml": "6.0.*"
+        "symfony/yaml": "6.*"
     },
     "config": {
         "preferred-install": {
@@ -68,7 +68,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "6.0.*"
+            "require": "6.1.*"
         }
     },
     "require-dev": {
