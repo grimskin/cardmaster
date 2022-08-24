@@ -19,5 +19,5 @@ jobs:
           tools: composer:v2, phpunit:9.5
       - name: Update dependencies with composer
         run: composer update --no-interaction --no-ansi --no-progress
-      - uses: Running PhpUnit
+      - name: Running PhpUnit
         run: ./bin/phpunit
