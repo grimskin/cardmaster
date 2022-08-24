@@ -5,6 +5,7 @@ namespace App\Domain;
 
 
 use JsonSerializable;
+use ReturnTypeWillChange;
 
 class ManaCost implements JsonSerializable
 {
@@ -77,7 +78,7 @@ class ManaCost implements JsonSerializable
         return $this->manaCostString;
     }
 
-    public function jsonSerialize()
+    public function jsonSerialize(): array
     {
         return $this->manaItems;
     }
