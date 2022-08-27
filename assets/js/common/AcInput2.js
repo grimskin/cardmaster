@@ -1,15 +1,18 @@
 import React, {useState, useEffect} from "react";
 
-const AcInput2 = ({parentId, ...props}) => {
+const AcInput2 = ({parentId, updateCardCallback, addCardCallback, ...props}, ref) => {
     const [cardName, setCardName] = useState('');
     const [acItems, setAcItems] = useState([]);
     const [acFocus, setAcFocus] = useState(0);
+
+    if (updateCardCallback === undefined) updateCardCallback = () => {};
+    if (addCardCallback === undefined) addCardCallback = () => {};
 
     useEffect(() => {
         if (cardName.length > 2) {
             let itemCandidates = props.cards.filter(item => {
                 return item.toUpperCase().includes(cardName.toUpperCase()) ? item : null;
-            }).slice(0, 5);
+            }).slice(0, 8);
 
             if (itemCandidates.length === 1 && itemCandidates[0].toUpperCase() === cardName.toUpperCase()) {
                 itemCandidates = [];
@@ -26,7 +29,7 @@ const AcInput2 = ({parentId, ...props}) => {
     }, [cardName]);
 
     useEffect(() => {
-        props.updateCardCallback(cardName);
+        updateCardCallback(cardName);
     }, [cardName]);
 
     const onKeyDown = (e) => {
@@ -35,18 +38,18 @@ const AcInput2 = ({parentId, ...props}) => {
         if (keyCode === 40) {
             const newAcFocus = (acFocus + 1) % acItems.length;
             setAcFocus(newAcFocus);
-            props.updateCardCallback(acItems[newAcFocus]);
+            updateCardCallback(acItems[newAcFocus]);
         } else if (keyCode === 38) {
             const newAcFocus = (acFocus - 1 + acItems.length) % acItems.length;
             setAcFocus(newAcFocus);
-            props.updateCardCallback(acItems[newAcFocus]);
+            updateCardCallback(acItems[newAcFocus]);
         } else if (keyCode === 13) {
             e.preventDefault();
             if (acItems.length > 0) {
                 setCardName(acItems[acFocus]);
-                props.updateCardCallback(acItems[acFocus]);
+                updateCardCallback(acItems[acFocus]);
             }
-            props.addCardCallback();
+            addCardCallback(acItems[acFocus]);
         }
     };
 
@@ -55,6 +58,7 @@ const AcInput2 = ({parentId, ...props}) => {
             <input type="text"
                    name="cardName"
                    className="input_auto_complete"
+                   ref={ref}
                    value={cardName}
                    onChange={e => setCardName(e.target.value)}
                    onBlur={() => setTimeout(() => setAcItems([]), 100)}
@@ -72,9 +76,4 @@ const AcInput2 = ({parentId, ...props}) => {
     </>;
 }
 
-AcInput2.defaultProps = {
-    updateCardCallback: () => {},
-    addCardCallback: () => {console.log('aaa')}
-};
-
-export default AcInput2;
+export default React.forwardRef(AcInput2);
