@@ -5,6 +5,7 @@ import ScenarioSelector from "./scenario/ScenarioSelector";
 import Header from "./Header";
 import axios from "axios";
 import {connect} from "react-redux";
+import ConditionPicker2 from "./condition/ConditionPicker2";
 
 class App extends Component {
     constructor(props) {
@@ -72,7 +73,7 @@ class App extends Component {
                     <DeckComposer
                         cards={this.state.cards}
                     />
-                    <ConditionPicker
+                    <ConditionPicker2
                         cards={this.state.cards}
                         conditions={this.state.conditions}
                     />
