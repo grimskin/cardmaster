@@ -8,6 +8,7 @@ const AcInput2 = ({parentId, updateCardCallback, addCardCallback, ...props}, ref
     if (updateCardCallback === undefined) updateCardCallback = () => {};
     if (addCardCallback === undefined) addCardCallback = () => {};
 
+
     useEffect(() => {
         if (cardName.length > 2) {
             let itemCandidates = props.cards.filter(item => {
@@ -32,6 +33,11 @@ const AcInput2 = ({parentId, updateCardCallback, addCardCallback, ...props}, ref
         updateCardCallback(cardName);
     }, [cardName]);
 
+    const updateCardName = (newName) => {
+        setCardName(newName);
+        ref.current.value = newName;
+    };
+
     const onKeyDown = (e) => {
         const keyCode = e.keyCode;
 
@@ -48,8 +54,10 @@ const AcInput2 = ({parentId, updateCardCallback, addCardCallback, ...props}, ref
             if (acItems.length > 0) {
                 setCardName(acItems[acFocus]);
                 updateCardCallback(acItems[acFocus]);
+                ref.current.value = acItems[acFocus];
+                setCardName(ref.current.value);
             }
-            addCardCallback(acItems[acFocus]);
+            addCardCallback(ref.current.value);
         }
     };
 
@@ -59,8 +67,8 @@ const AcInput2 = ({parentId, updateCardCallback, addCardCallback, ...props}, ref
                    name="cardName"
                    className="input_auto_complete"
                    ref={ref}
-                   value={cardName}
-                   onChange={e => setCardName(e.target.value)}
+                   // value={cardName}
+                   onChange={e => updateCardName(e.target.value)}
                    onBlur={() => setTimeout(() => setAcItems([]), 100)}
                    onKeyDown={onKeyDown}
             />
@@ -68,7 +76,7 @@ const AcInput2 = ({parentId, updateCardCallback, addCardCallback, ...props}, ref
                 {acItems.map((item, i) => {
                     return <div className={"ac_option" + (acFocus === i ? ' ac_active' : '')}
                                key={i}
-                               onClick={() => setCardName(item)}
+                               onClick={() => updateCardName(item)}
                            >{item}</div>;
                 })}
             </div>
