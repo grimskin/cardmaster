@@ -22,6 +22,8 @@ interface ScenarioInterface
 
     public function getSuccessCount(): int;
 
+    public function setConfig(ScenarioConfig $config);
+
     public function runSimulation(ExperimentResult $result);
 
     public function setLibrary(Library $library);

@@ -4,51 +4,61 @@
 namespace App\Service;
 
 
+use App\Conditions\ConditionInterface;
 use App\Model\DeckDefinition;
 use App\Model\ExperimentResult;
+use App\Scenarios\ScenarioConfig;
 use App\Scenarios\ScenarioInterface;
 
 class StatsCollector
 {
-    private $conditions = [];
     /**
-     * @var DeckDefinition
+     * @var ConditionInterface[]
      */
-    private $deck;
-    private $passCount = 0;
-    /**
-     * @var ScenarioInterface
-     */
-    private $scenario;
+    private array $conditions = [];
 
-    private $successCount = 0;
+    private DeckDefinition $deck;
+    private int $passCount = 0;
+
+    private ScenarioInterface $scenario;
+
+    private int $successCount = 0;
+
+    private ?ScenarioConfig $scenarioConfig = null;
+
+    public function setScenarioConfig(ScenarioConfig $scenarioConfig): void
+    {
+        $this->scenarioConfig = $scenarioConfig;
+    }
 
     public function getSuccessCount(): int
     {
         return $this->successCount;
     }
 
-    public function setPassCount(int $passCount)
+    public function setPassCount(int $passCount): void
     {
         $this->passCount = $passCount;
     }
 
-    public function setDeck(DeckDefinition $deck)
+    public function setDeck(DeckDefinition $deck): void
     {
         $this->deck = $deck;
     }
 
-    public function setScenario(ScenarioInterface $scenario) {
+    public function setScenario(ScenarioInterface $scenario): void
+    {
         $this->scenario = $scenario;
     }
 
-    public function addCondition($condition)
+    public function addCondition($condition): void
     {
         $this->conditions[] = $condition;
     }
 
     public function runSimulation(): ExperimentResult
     {
+        $this->scenario->setConfig($this->scenarioConfig ?: new ScenarioConfig());
         $this->scenario->setPassCount($this->passCount);
         foreach ($this->conditions as $condition) {
             $this->scenario->addCondition($condition);

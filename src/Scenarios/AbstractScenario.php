@@ -13,13 +13,12 @@ abstract class AbstractScenario implements ScenarioInterface
     /**
      * @var ConditionInterface[]
      */
-    protected $conditions = [];
-    protected $passCount = 0;
-    protected $successCount = 0;
-    /**
-     * @var Library
-     */
-    protected $library;
+    protected array $conditions = [];
+    protected int $passCount = 0;
+    protected int $successCount = 0;
+    protected ScenarioConfig $config;
+
+    protected Library $library;
 
     public function getReadableName(): string
     {
@@ -31,9 +30,17 @@ abstract class AbstractScenario implements ScenarioInterface
         $this->conditions[$condition->getName()] = $condition;
     }
 
+    /**
+     * @deprecated use ScenarioConfig
+     */
     public function setPassCount(int $passCount)
     {
         $this->passCount = $passCount;
+    }
+
+    public function setConfig(ScenarioConfig $config)
+    {
+        $this->config = $config;
     }
 
     public function setLibrary(Library $library)
@@ -48,7 +55,7 @@ abstract class AbstractScenario implements ScenarioInterface
 
     public function runSimulation(ExperimentResult $result)
     {
-        $passes = $this->passCount;
+        $passes = $this->config->getPassCount();
 
         while ($passes) {
             $success = true;

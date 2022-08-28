@@ -6,6 +6,7 @@ use App\Factory\CardsFactory;
 use App\Factory\ConditionFactory;
 use App\Factory\ScenarioFactory;
 use App\Model\DeckDefinition;
+use App\Scenarios\ScenarioConfig;
 use App\Service\StatsCollector;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
@@ -48,10 +49,13 @@ class TestCommand extends Command
 
         $passCount = 10000;
 
+        $config = new ScenarioConfig();
+        $config->setPassCount($passCount);
+
         $this->collector->addCondition($this->conditionFactory->getCondition('has-x-lands', [3]));
         $this->collector->setDeck($deck);
-        $this->collector->setPassCount($passCount);
         $this->collector->setScenario($this->scenarioFactory->getScenario('starting-hand'));
+        $this->collector->setScenarioConfig($config);
         $this->collector->runSimulation();
 
         $output->writeln($this->collector->getSuccessCount() . ' / ' . $passCount);
