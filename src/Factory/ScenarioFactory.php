@@ -15,7 +15,7 @@ class ScenarioFactory
         $scenario = new $scenarioClassName;
 
         if ($scenario instanceof ScenarioInterface) {
-            $this->scenarios[$scenario->getScenarioName()] = $scenario;
+            $this->scenarios[$scenario->getScenarioName()] = $scenarioClassName;
         }
     }
 
@@ -32,6 +32,6 @@ class ScenarioFactory
 
     public function getScenario(string $scenarioName): ?ScenarioInterface
     {
-        return $this->scenarios[$scenarioName] ?? null;
+        return $this->scenarios[$scenarioName] ? new $this->scenarios[$scenarioName] : null;
     }
 }

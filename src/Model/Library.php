@@ -8,11 +8,8 @@ class Library
 {
     private const POSITION_TOP = 0;
 
-    /**
-     * @var DeckDefinition
-     */
-    private $definition;
-    private $cards = [];
+    private DeckDefinition $definition;
+    private array $cards = [];
 
     public static function make(DeckDefinition $deck): self
     {
@@ -31,6 +28,16 @@ class Library
         }
 
         return $this->drawFromPosition(self::POSITION_TOP);
+    }
+
+    public function putOnTop(CardDefinition $card): void
+    {
+        array_unshift($this->cards, $card);
+    }
+
+    public function putOnBottom(CardDefinition $card): void
+    {
+        $this->cards[] = $card;
     }
 
     public function drawByName(string $cardName): ?CardDefinition
@@ -76,12 +83,12 @@ class Library
         return $result;
     }
 
-    public function reset()
+    public function reset(): void
     {
         $this->cards = $this->definition->getCards();
     }
 
-    public function shuffle()
+    public function shuffle(): void
     {
         shuffle($this->cards);
     }

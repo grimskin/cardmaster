@@ -35,6 +35,11 @@ abstract class AbstractCondition implements ConditionInterface
         $this->params = $params;
     }
 
+    public function getParam(int $paramNumber = 0): mixed
+    {
+        return $this->params[$paramNumber];
+    }
+
     public function setTurn(int $turn)
     {
         $this->turn = $turn;
