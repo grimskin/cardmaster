@@ -43,8 +43,9 @@ class TestCommand extends Command
 
 
         $deck = new DeckDefinition();
-        $deck->addCards($this->cardsFactory->getCard('Forest'), 12);
-        $deck->addCards($this->cardsFactory->getCard('Mountain'), 12);
+        $deck->addCards($this->cardsFactory->getCard('Forest'), 10);
+        $deck->addCards($this->cardsFactory->getCard('Mountain'), 10);
+        $deck->addCards($this->cardsFactory->getCard('Rockfall Vale'), 4);
         $deck->addCards($this->cardsFactory->getCard('stub'), 36);
 
         $passCount = 10000;

@@ -122,19 +122,11 @@ abstract class AbstractScenario implements ScenarioInterface
 
         switch ($handSize) {
             case 7:
-                $minCondition->addParams([2]);
-                $maxCondition->addParams([5]);
-                if (!$minCondition->testHand(...$hand) || !$maxCondition->testHand(...$hand)) {
-                    if ($this->isDebugMode) {
-                        echo('Discarding    ' . count($hand) . ' - [' . $this->handToString($hand) . ']' . "\r\n");
-                    }
-                    return $this->getStartingHand($library, $handSize - 1);
-                }
-                break;
             case 6:
             case 5:
+                // we are fine with hand that have at least 2 lands and at least 2 spells
                 $minCondition->addParams([2]);
-                $maxCondition->addParams([4]);
+                $maxCondition->addParams([5]);
                 if (!$minCondition->testHand(...$hand) || !$maxCondition->testHand(...$hand)) {
                     if ($this->isDebugMode) {
                         echo('Discarding    ' . count($hand) . ' - [' . $this->handToString($hand) . ']' . "\r\n");
