@@ -6,13 +6,14 @@ namespace App\Model;
 
 use App\Conditions\ConditionInterface;
 use JsonSerializable;
+use ReturnTypeWillChange;
 
 class ExperimentResult implements JsonSerializable
 {
-    private $passCount = 0;
-    private $successCount = 0;
+    private int $passCount = 0;
+    private int $successCount = 0;
 
-    private $conditionStats = [];
+    private array $conditionStats = [];
 
     public function tickPassCount()
     {
@@ -24,12 +25,12 @@ class ExperimentResult implements JsonSerializable
         ++$this->successCount;
     }
 
-    public function getSuccessCount()
+    public function getSuccessCount(): int
     {
         return $this->successCount;
     }
 
-    public function getPassCount()
+    public function getPassCount(): int
     {
         return $this->passCount;
     }
@@ -44,7 +45,8 @@ class ExperimentResult implements JsonSerializable
         $this->conditionStats[] = $condition;
     }
 
-    public function jsonSerialize()
+    #[ReturnTypeWillChange]
+    public function jsonSerialize(): array
     {
         return [
             'success' => $this->successCount,

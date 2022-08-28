@@ -6,6 +6,7 @@ namespace App\Conditions;
 
 use App\Factory\CardsFactory;
 use App\Model\CardDefinition;
+use Exception;
 use ReturnTypeWillChange;
 
 abstract class AbstractCondition implements ConditionInterface
@@ -71,5 +72,21 @@ abstract class AbstractCondition implements ConditionInterface
 
     public function setCardsFactory(CardsFactory $cardsFactory) {
         $this->cardsFactory = $cardsFactory;
+    }
+
+    protected function hasIntParamOrThrow($paramNumber = 0)
+    {
+        if (!isset($this->params[$paramNumber])) {
+            throw new Exception('Not enough params provided to '.$this->getName().' condition');
+        }
+
+        if ($this->params[$paramNumber] != (int) $this->params[$paramNumber]) {
+            throw new Exception('Param '.$paramNumber.' provided to '.$this->getName().' must be integer-ish');
+        }
+    }
+
+    protected function getIntParam($paramNumber = 0): int
+    {
+        return (int) $this->params[$paramNumber];
     }
 }

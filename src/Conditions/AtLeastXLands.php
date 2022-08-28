@@ -1,22 +1,21 @@
 <?php
 
-
 namespace App\Conditions;
 
 
 use App\Model\CardDefinition;
 use Exception;
 
-class HasXLands extends AbstractCondition
+class AtLeastXLands extends AbstractCondition
 {
     public function getName(): string
     {
-        return 'has-x-lands';
+        return 'at-least-x-lands';
     }
 
     public function getReadableName(): string
     {
-        return 'Has X lands';
+        return 'At least X lands';
     }
 
     public function testHand(CardDefinition ... $cardDefinitions): bool
@@ -24,7 +23,7 @@ class HasXLands extends AbstractCondition
         $requireLands = (int) $this->params[0] ?? '';
 
         if (!$requireLands) {
-            throw new Exception('Not enough params provided to has-x-lands condition');
+            throw new Exception('Not enough params provided to '.$this->getName().' condition');
         }
 
         $landsCount = 0;

@@ -43,7 +43,13 @@ services:
         calls:
             - method: registerCondition
               arguments:
-                  - App\Conditions\HasXLands
+                  - App\Conditions\ExactlyXLands
+            - method: registerCondition
+              arguments:
+                  - App\Conditions\AtLeastXLands
+            - method: registerCondition
+              arguments:
+                  - App\Conditions\AtMostXLands
             - method: registerCondition
               arguments:
                   - App\Conditions\HasCard
