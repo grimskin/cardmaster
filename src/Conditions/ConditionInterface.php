@@ -18,6 +18,8 @@ interface ConditionInterface extends JsonSerializable
 
     public function addParams(array $params);
 
+    public function setTurn(int $turn);
+
     public function getSuccessCount(): int;
 
     public function getPassCount(): int;

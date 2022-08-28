@@ -40,7 +40,7 @@ class ConditionFactory
         }, $this->conditions);
     }
 
-    public function getCondition(string $conditionName, array $params): ?ConditionInterface
+    public function getCondition(string $conditionName, array $params = [], $turn = 0): ?ConditionInterface
     {
         $result = $this->conditions[$conditionName] ?? null;
 
@@ -49,6 +49,7 @@ class ConditionFactory
         }
 
         $result->addParams($params);
+        $result->setTurn($turn);
         $result->setCardsFactory($this->cardsFactory);
 
         return $result;

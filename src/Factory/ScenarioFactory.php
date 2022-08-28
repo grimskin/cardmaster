@@ -8,9 +8,9 @@ use App\Scenarios\ScenarioInterface;
 
 class ScenarioFactory
 {
-    private $scenarios = [];
+    private array $scenarios = [];
 
-    public function registerScenario(string $scenarioClassName)
+    public function registerScenario(string $scenarioClassName): void
     {
         $scenario = new $scenarioClassName;
 

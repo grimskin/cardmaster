@@ -6,19 +6,19 @@ namespace App\Conditions;
 
 use App\Factory\CardsFactory;
 use App\Model\CardDefinition;
+use ReturnTypeWillChange;
 
 abstract class AbstractCondition implements ConditionInterface
 {
-    protected $params;
+    protected array $params = [];
 
-    protected $passCount = 0;
+    protected int $passCount = 0;
 
-    protected $successCount = 0;
+    protected int $successCount = 0;
 
-    /**
-     * @var CardsFactory
-     */
-    protected $cardsFactory;
+    protected int $turn = 0;
+
+    protected CardsFactory $cardsFactory;
 
     abstract public function getName(): string;
 
@@ -32,6 +32,11 @@ abstract class AbstractCondition implements ConditionInterface
     public function addParams(array $params)
     {
         $this->params = $params;
+    }
+
+    public function setTurn(int $turn)
+    {
+        $this->turn = $turn;
     }
 
     public function getSuccessCount(): int
@@ -53,7 +58,8 @@ abstract class AbstractCondition implements ConditionInterface
         }
     }
 
-    public function jsonSerialize()
+    #[ReturnTypeWillChange]
+    public function jsonSerialize(): array
     {
         return [
             'name' => $this->getName(),
