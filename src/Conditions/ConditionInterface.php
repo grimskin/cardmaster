@@ -20,13 +20,7 @@ interface ConditionInterface extends JsonSerializable
 
     public function setTurn(int $turn);
 
-    public function getSuccessCount(): int;
-
-    public function getPassCount(): int;
-
-    public function recordCheck(bool $success);
-
     public function getParam(int $paramNumber): mixed;
 
     public function setCardsFactory(CardsFactory $cardsFactory);
-}
+    }

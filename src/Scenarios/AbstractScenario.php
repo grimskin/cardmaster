@@ -4,22 +4,19 @@
 namespace App\Scenarios;
 
 
-use App\Conditions\AtLeastXLands;
-use App\Conditions\AtMostXLands;
 use App\Conditions\CanCast;
 use App\Conditions\ConditionInterface;
 use App\Conditions\HasCard;
+use App\Conditions\WrappedCondition;
 use App\Domain\Dealer;
-use App\Model\CardDefinition;
 use App\Model\ExperimentResult;
 use App\Model\Library;
-use Exception;
 
 abstract class AbstractScenario implements ScenarioInterface
 {
     protected bool $isDebugMode = false;
     /**
-     * @var ConditionInterface[]
+     * @var WrappedCondition[]
      */
     protected array $conditions = [];
     protected int $passCount = 0;
@@ -37,7 +34,7 @@ abstract class AbstractScenario implements ScenarioInterface
 
     public function addCondition(ConditionInterface $condition)
     {
-        $this->conditions[$condition->getName()] = $condition;
+        $this->conditions[$condition->getName()] = new WrappedCondition($condition);
     }
 
     /**
@@ -104,11 +101,9 @@ abstract class AbstractScenario implements ScenarioInterface
 
         foreach ($this->conditions as $condition) {
             if ($condition->testHand(...$hand)) {
-                $condition->recordCheck(true);
                 continue;
             }
 
-            $condition->recordCheck(false);
             $success = false;
         }
 

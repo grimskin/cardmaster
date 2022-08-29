@@ -13,10 +13,6 @@ abstract class AbstractCondition implements ConditionInterface
 {
     protected array $params = [];
 
-    protected int $passCount = 0;
-
-    protected int $successCount = 0;
-
     protected int $turn = 0;
 
     protected CardsFactory $cardsFactory;
@@ -45,33 +41,13 @@ abstract class AbstractCondition implements ConditionInterface
         $this->turn = $turn;
     }
 
-    public function getSuccessCount(): int
-    {
-        return $this->successCount;
-    }
-
-    public function getPassCount(): int
-    {
-        return $this->passCount;
-    }
-
-    public function recordCheck(bool $success)
-    {
-        ++$this->passCount;
-
-        if ($success) {
-            ++$this->successCount;
-        }
-    }
-
     #[ReturnTypeWillChange]
     public function jsonSerialize(): array
     {
         return [
             'name' => $this->getName(),
             'params' => $this->params,
-            'success' => $this->successCount,
-            'total' => $this->passCount,
+            'turn' => $this->turn,
         ];
     }
 
