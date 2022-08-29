@@ -65,7 +65,7 @@ class WrappedCondition implements ConditionInterface
         $this->condition->setTurn($turn);
     }
 
-    public function getParam(int $paramNumber): mixed
+    public function getParam(int $paramNumber = 0): mixed
     {
         return $this->condition->getParam($paramNumber);
     }

@@ -20,7 +20,7 @@ interface ConditionInterface extends JsonSerializable
 
     public function setTurn(int $turn);
 
-    public function getParam(int $paramNumber): mixed;
+    public function getParam(int $paramNumber = 0): mixed;
 
     public function setCardsFactory(CardsFactory $cardsFactory);
     }
