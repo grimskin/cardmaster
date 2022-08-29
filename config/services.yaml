@@ -110,3 +110,6 @@ services:
             - method: loadDataFromFile
               arguments:
                   - 'data/SNC.json'
+            - method: loadDataFromFile
+              arguments:
+                  - 'data/DMU.json'

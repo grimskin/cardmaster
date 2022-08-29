@@ -46,9 +46,10 @@ class SetStatsController extends AbstractController
     private function isValidSet(string $set): bool
     {
         $validSets = [
-            'SNC', 'NEO', 'VOW', 'MID', 'AFR', 'STX', 'KHM', 'ZNR', 'M21', 'IKO', 'THB', 'ELD',
+            'DMU', 'SNC', 'NEO', 'VOW', 'MID', 'AFR', 'STX', 'KHM', 'ZNR',
         ];
 
         return in_array(strtoupper($set), $validSets);
     }
+    // ELIZABETH
 }
