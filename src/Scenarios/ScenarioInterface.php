@@ -27,4 +27,6 @@ interface ScenarioInterface
     public function runSimulation(ExperimentResult $result);
 
     public function setLibrary(Library $library);
+
+    public function setDebugMode(bool $debugMode);
 }

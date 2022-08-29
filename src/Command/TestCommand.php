@@ -53,9 +53,12 @@ class TestCommand extends Command
         $config = new ScenarioConfig();
         $config->setPassCount($passCount);
 
+        $scenario = $this->scenarioFactory->getScenario('general-scenario');
+        $scenario->setDebugMode();
+
         $this->collector->addCondition($this->conditionFactory->getCondition('at-least-x-lands', [3]));
         $this->collector->setDeck($deck);
-        $this->collector->setScenario($this->scenarioFactory->getScenario('starting-hand'));
+        $this->collector->setScenario($scenario);
         $this->collector->setScenarioConfig($config);
         $this->collector->runSimulation();
 

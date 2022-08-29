@@ -62,11 +62,15 @@ abstract class AbstractScenario implements ScenarioInterface
         return $this->successCount;
     }
 
+    public function setDebugMode(bool $debugMode = true)
+    {
+        $this->isDebugMode = $debugMode;
+    }
+
     public function runSimulation(ExperimentResult $result)
     {
         $passes = $this->config->getPassCount();
         $this->cardsOfInterest = [];
-//        $this->isDebugMode = true;
 
         foreach ($this->conditions as $condition) {
             if (in_array($condition::class, [CanCast::class, HasCard::class])) {
