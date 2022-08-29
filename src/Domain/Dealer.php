@@ -53,9 +53,7 @@ class Dealer
                 $minCondition->addParams([2]);
                 $maxCondition->addParams([5]);
                 if (!$minCondition->testHand(...$hand) || !$maxCondition->testHand(...$hand)) {
-                    if ($this->isDebugMode) {
-                        echo('Discarding    ' . count($hand) . ' - [' . $this->handToString($hand) . ']' . "\r\n");
-                    }
+                    $this->isDebugMode && $this->log('Discarding    ' . count($hand) . ' - [' . $this->handToString($hand) . ']');
                     return $this->getStartingHand($library, $handSize - 1);
                 }
                 break;
@@ -67,13 +65,9 @@ class Dealer
 
         if ($handSize === $this->getRequiredHandSize()) return $hand;
 
-        if ($this->isDebugMode) {
-            echo('Pre-mulligan  ' . count($hand) . ' - [' . $this->handToString($hand) . ']' . "\r\n");
-        }
+        $this->isDebugMode && $this->log('Pre-mulligan  ' . count($hand) . ' - [' . $this->handToString($hand) . ']');
         $postMulliganHand = $this->mulligan($hand, $library, $handSize);
-        if ($this->isDebugMode) {
-            echo('Post-mulligan ' . count($postMulliganHand) . ' - [' . $this->handToString($postMulliganHand) . ']' . "\r\n");
-        }
+        $this->isDebugMode && $this->log('Post-mulligan ' . count($postMulliganHand) . ' - [' . $this->handToString($postMulliganHand) . ']');
         return $postMulliganHand;
     }
 
@@ -119,9 +113,7 @@ class Dealer
      */
     protected function mulliganLand(array $hand, Library $library): array
     {
-        if ($this->isDebugMode) {
-            echo('Mulligan [L] of   [' . $this->handToString($hand) . ']' . "\r\n");
-        }
+        $this->isDebugMode && $this->log('Mulligan [L] of   [' . $this->handToString($hand) . ']');
 
         $minColorProduced = 6;
         $positionToMulligan = -1;
@@ -148,9 +140,7 @@ class Dealer
      */
     protected function mulliganSpell(array $hand, Library $library): array
     {
-        if ($this->isDebugMode) {
-            echo('Mulligan [S] of   [' . $this->handToString($hand) . ']' . "\r\n");
-        }
+        $this->isDebugMode && $this->log('Mulligan [S] of   [' . $this->handToString($hand) . ']');
         // try to remove stubs
         foreach ($hand as $position=>$card) {
             if (!$card->isStub()) continue;
@@ -201,6 +191,11 @@ class Dealer
 
         // wtf has happened?
         return $hand;
+    }
+
+    private function log(string $message): void
+    {
+        echo $message . "\r\n";
     }
 
     /**
