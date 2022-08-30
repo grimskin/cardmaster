@@ -23,4 +23,4 @@ interface ConditionInterface extends JsonSerializable
     public function getParam(int $paramNumber = 0): mixed;
 
     public function setCardsFactory(CardsFactory $cardsFactory);
-    }
+}
