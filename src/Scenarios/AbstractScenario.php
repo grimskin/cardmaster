@@ -11,6 +11,7 @@ use App\Conditions\WrappedCondition;
 use App\Domain\Dealer;
 use App\Model\ExperimentResult;
 use App\Model\Library;
+use Psr\Log\LoggerInterface;
 
 abstract class AbstractScenario implements ScenarioInterface
 {
@@ -26,6 +27,8 @@ abstract class AbstractScenario implements ScenarioInterface
     protected Library $library;
 
     protected array $cardsOfInterest = [];
+
+    protected ?LoggerInterface $logger = null;
 
     public function getReadableName(): string
     {
@@ -93,6 +96,8 @@ abstract class AbstractScenario implements ScenarioInterface
         $success = true;
 
         $dealer = new Dealer();
+        if ($this->logger) $dealer->setLogger($this->logger);
+
         foreach ($this->cardsOfInterest as $card) $dealer->addCardOfInterest($card);
 
         $dealer->debugMode();
@@ -113,5 +118,10 @@ abstract class AbstractScenario implements ScenarioInterface
         }
 
         $result->tickPassCount();
+    }
+
+    public function setLogger(LoggerInterface $logger): void
+    {
+        $this->logger = $logger;
     }
 }

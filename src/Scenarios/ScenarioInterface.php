@@ -7,6 +7,7 @@ namespace App\Scenarios;
 use App\Conditions\ConditionInterface;
 use App\Model\ExperimentResult;
 use App\Model\Library;
+use Psr\Log\LoggerInterface;
 
 interface ScenarioInterface
 {
@@ -29,4 +30,6 @@ interface ScenarioInterface
     public function setLibrary(Library $library);
 
     public function setDebugMode(bool $debugMode);
+
+    public function setLogger(LoggerInterface $logger): void;
 }

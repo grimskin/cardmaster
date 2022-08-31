@@ -9,6 +9,8 @@ use App\Model\DeckDefinition;
 use App\Model\ExperimentResult;
 use App\Scenarios\ScenarioConfig;
 use App\Scenarios\ScenarioInterface;
+use Psr\Log\LoggerInterface;
+use Symfony\Contracts\Service\Attribute\Required;
 
 class StatsCollector
 {
@@ -25,6 +27,8 @@ class StatsCollector
     private int $successCount = 0;
 
     private ?ScenarioConfig $scenarioConfig = null;
+
+    private ?LoggerInterface $logger = null;
 
     public function setScenarioConfig(ScenarioConfig $scenarioConfig): void
     {
@@ -56,8 +60,16 @@ class StatsCollector
         $this->conditions[] = $condition;
     }
 
+    #[Required]
+    public function setLogger(LoggerInterface $montyLogger): void
+    {
+        $this->logger = $montyLogger;
+    }
+
     public function runSimulation(): ExperimentResult
     {
+        if ($this->logger) $this->scenario->setLogger($this->logger);
+
         $this->scenario->setConfig($this->scenarioConfig ?: new ScenarioConfig());
         $this->scenario->setPassCount($this->passCount);
         foreach ($this->conditions as $condition) {

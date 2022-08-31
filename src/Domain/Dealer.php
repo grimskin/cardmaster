@@ -9,6 +9,7 @@ use App\Conditions\AtMostXLands;
 use App\Model\CardDefinition;
 use App\Model\Library;
 use Exception;
+use Psr\Log\LoggerInterface;
 
 class Dealer
 {
@@ -18,6 +19,8 @@ class Dealer
     private array $cardsOfInterest = [];
     private bool $isDebugMode = false;
     private int $requiredHandSize = 7;
+
+    private ?LoggerInterface $logger = null;
 
     public function debugMode(bool $isDebugMode = true): void
     {
@@ -53,7 +56,7 @@ class Dealer
                 $minCondition->addParams([2]);
                 $maxCondition->addParams([5]);
                 if (!$minCondition->testHand(...$hand) || !$maxCondition->testHand(...$hand)) {
-                    $this->isDebugMode && $this->log('Discarding    ' . count($hand) . ' - [' . $this->handToString($hand) . ']');
+                    $this->logHand('Discarding    ' . count($hand) . ' - [%s]', ...$hand);
                     return $this->getStartingHand($library, $handSize - 1);
                 }
                 break;
@@ -65,9 +68,9 @@ class Dealer
 
         if ($handSize === $this->getRequiredHandSize()) return $hand;
 
-        $this->isDebugMode && $this->log('Pre-mulligan  ' . count($hand) . ' - [' . $this->handToString($hand) . ']');
+        $this->logHand('Pre-mulligan  ' . count($hand) . ' - [%s]', ...$hand);
         $postMulliganHand = $this->mulligan($hand, $library, $handSize);
-        $this->isDebugMode && $this->log('Post-mulligan ' . count($postMulliganHand) . ' - [' . $this->handToString($postMulliganHand) . ']');
+        $this->logHand('Post-mulligan ' . count($postMulliganHand) . ' - [%s]', ...$hand);
         return $postMulliganHand;
     }
 
@@ -113,7 +116,7 @@ class Dealer
      */
     protected function mulliganLand(array $hand, Library $library): array
     {
-        $this->isDebugMode && $this->log('Mulligan [L] of   [' . $this->handToString($hand) . ']');
+        $this->logHand('Mulligan [L] of   [%s]', ...$hand);
 
         $minColorProduced = 6;
         $positionToMulligan = -1;
@@ -140,7 +143,7 @@ class Dealer
      */
     protected function mulliganSpell(array $hand, Library $library): array
     {
-        $this->isDebugMode && $this->log('Mulligan [S] of   [' . $this->handToString($hand) . ']');
+        $this->logHand('Mulligan [S] of   [%s]', ...$hand);
         // try to remove stubs
         foreach ($hand as $position=>$card) {
             if (!$card->isStub()) continue;
@@ -195,7 +198,19 @@ class Dealer
 
     private function log(string $message): void
     {
-        echo $message . "\r\n";
+        if (!$this->logger) return;
+
+        $this->logger->info($message);
+    }
+
+    private function logHand(string $message, CardDefinition ... $hand): void
+    {
+        if (!$this->isDebugMode) return;
+        if (!$this->logger) return;
+
+        $handString = $this->handToString($hand);
+
+        $this->log(sprintf($message, $handString));
     }
 
     /**
@@ -207,5 +222,10 @@ class Dealer
         return implode(', ', array_map(function(CardDefinition $card) {
             return $card->getName();
         }, $cardDefinitions));
+    }
+
+    public function setLogger(LoggerInterface $logger): void
+    {
+        $this->logger = $logger;
     }
 }
