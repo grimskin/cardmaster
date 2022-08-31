@@ -70,7 +70,7 @@ class Dealer
 
         $this->logHand('Pre-mulligan  ' . count($hand) . ' - [%s]', ...$hand);
         $postMulliganHand = $this->mulligan($hand, $library, $handSize);
-        $this->logHand('Post-mulligan ' . count($postMulliganHand) . ' - [%s]', ...$hand);
+        $this->logHand('Post-mulligan ' . count($postMulliganHand) . ' - [%s]', ...$postMulliganHand);
         return $postMulliganHand;
     }
 

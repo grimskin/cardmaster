@@ -46,7 +46,8 @@ class TestCommand extends Command
         $deck->addCards($this->cardsFactory->getCard('Forest'), 10);
         $deck->addCards($this->cardsFactory->getCard('Mountain'), 10);
         $deck->addCards($this->cardsFactory->getCard('Rockfall Vale'), 4);
-        $deck->addCards($this->cardsFactory->getCard('stub'), 36);
+        $deck->addCards($this->cardsFactory->getCard('Meria, Scholar of Antiquity'), 1);
+        $deck->addCards($this->cardsFactory->getCard('stub'), 35);
 
         $passCount = 10000;
 
@@ -56,7 +57,13 @@ class TestCommand extends Command
         $scenario = $this->scenarioFactory->getScenario('general-scenario');
         $scenario->setDebugMode();
 
-        $this->collector->addCondition($this->conditionFactory->getCondition('at-least-x-lands', [3]));
+        $this->collector->addCondition($this->conditionFactory->getCondition(
+            'at-least-x-lands', [3], 3
+        ));
+        $this->collector->addCondition($this->conditionFactory->getCondition(
+            'can-cast', ['Meria, Scholar of Antiquity'], 3
+        ));
+
         $this->collector->setDeck($deck);
         $this->collector->setScenario($scenario);
         $this->collector->setScenarioConfig($config);

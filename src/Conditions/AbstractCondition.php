@@ -13,7 +13,7 @@ abstract class AbstractCondition implements ConditionInterface
 {
     protected array $params = [];
 
-    protected int $turn = 0;
+    protected int $turn = 1;
 
     protected CardsFactory $cardsFactory;
 
@@ -39,6 +39,11 @@ abstract class AbstractCondition implements ConditionInterface
     public function setTurn(int $turn)
     {
         $this->turn = $turn;
+    }
+
+    public function getTurn(): int
+    {
+        return $this->turn;
     }
 
     #[ReturnTypeWillChange]

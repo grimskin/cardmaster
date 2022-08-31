@@ -16,19 +16,17 @@ use Psr\Log\LoggerInterface;
 abstract class AbstractScenario implements ScenarioInterface
 {
     protected bool $isDebugMode = false;
-    /**
-     * @var WrappedCondition[]
-     */
+    /** @var WrappedCondition[]  */
     protected array $conditions = [];
     protected int $passCount = 0;
     protected int $successCount = 0;
     protected ScenarioConfig $config;
-
     protected Library $library;
-
-    protected array $cardsOfInterest = [];
-
     protected ?LoggerInterface $logger = null;
+    protected array $cardsOfInterest = [];
+    protected int $maxConditionTurn = 0;
+    /** @var ConditionInterface[]  */
+    protected array $conditionsByTurns = [];
 
     public function getReadableName(): string
     {
@@ -80,6 +78,8 @@ abstract class AbstractScenario implements ScenarioInterface
             }
         }
 
+        $this->prepareConditions();
+
         while ($passes) {
             $this->runIteration($this->library, $result);
 
@@ -91,25 +91,50 @@ abstract class AbstractScenario implements ScenarioInterface
         }
     }
 
+    protected function prepareConditions(): void
+    {
+        $maxTurn = 0;
+
+        foreach ($this->conditions as $condition) {
+            if ($condition->getTurn() > $maxTurn) $maxTurn = $condition->getTurn();
+
+            if (!isset($this->conditionsByTurns[$condition->getTurn()]))
+                $this->conditionsByTurns[$condition->getTurn()] = [];
+
+            $this->conditionsByTurns[$condition->getTurn()][] = $condition;
+        }
+
+        for ($i=1; $i<=$maxTurn; $i++) {
+            if (!isset($this->conditionsByTurns[$i])) $this->conditionsByTurns[$i] = [];
+        }
+
+        $this->maxConditionTurn = $maxTurn;
+    }
+
     protected function runIteration(Library $library, ExperimentResult $result)
     {
-        $success = true;
-
         $dealer = new Dealer();
         if ($this->logger) $dealer->setLogger($this->logger);
 
         foreach ($this->cardsOfInterest as $card) $dealer->addCardOfInterest($card);
 
         $dealer->debugMode();
-
         $hand = $dealer->getStartingHand($library, $this->getRequiredHandSize());
 
-        foreach ($this->conditions as $condition) {
-            if ($condition->testHand(...$hand)) {
-                continue;
+        for ($i=1; $i<=$this->maxConditionTurn; $i++) {
+            foreach ($this->conditionsByTurns[$i] as $condition) {
+                $condition->testHand(...$hand);
             }
 
+            $hand[] = $library->draw();
+        }
+
+        $success = true;
+        foreach ($this->conditions as $condition) {
+            if ($condition->getLastResult()) continue;
+
             $success = false;
+            break;
         }
 
         if ($success) {
