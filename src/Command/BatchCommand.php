@@ -14,56 +14,54 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 #[AsCommand(
-    name: 'cm:test'
+    name: 'cm:batch'
 )]
-class TestCommand extends Command
+class BatchCommand extends Command
 {
     private CardsFactory $cardsFactory;
     private ConditionFactory $conditionFactory;
-    private TestChamber $chamber;
+    private TestAssistant $assistant;
 
     public function __construct(
         CardsFactory $cardsFactory,
         ConditionFactory $conditionFactory,
-        TestChamber $chamber
+        TestAssistant $assistant
     ) {
         $this->cardsFactory = $cardsFactory;
         $this->conditionFactory = $conditionFactory;
-        $this->chamber = $chamber;
+        $this->assistant = $assistant;
 
         parent::__construct();
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        // TODO - "Kazandu Mammoth // Kazandu Valley" is not counted as land
-
-        $output->writeln('welcome');
+        $output->writeln('running batch');
 
         $deck = new DeckDefinition();
         $deck->addCards($this->cardsFactory->getCard('Forest'), 10);
         $deck->addCards($this->cardsFactory->getCard('Mountain'), 10);
         $deck->addCards($this->cardsFactory->getCard('Rockfall Vale'), 4);
-        $deck->addCards($this->cardsFactory->getCard('Meria, Scholar of Antiquity'), 1);
-        $deck->addCards($this->cardsFactory->getCard('stub'), 35);
+        $deck->addCards($this->cardsFactory->getCard('stub'), 36);
 
         $passCount = 10000;
 
         $config = new ScenarioConfig();
         $config->setPassCount($passCount);
 
-        $this->chamber->addCondition($this->conditionFactory->getCondition(
-            'at-least-x-lands', [3], 3
-        ));
-        $this->chamber->addCondition($this->conditionFactory->getCondition(
-            'can-cast', ['Meria, Scholar of Antiquity'], 3
-        ));
+        $this->assistant->setConfig($config);
 
-        $this->chamber->setDeck($deck);
-        $this->chamber->setScenarioConfig($config);
-        $result = $this->chamber->runSimulation();
+        $this->assistant->addConditionsPack('Can cast Meria', [
+            $this->conditionFactory->getCondition('at-least-x-lands', [3], 3),
+            $this->conditionFactory->getCondition('can-cast', ['Meria, Scholar of Antiquity'], 3),
+        ]);
 
-        $output->writeln($result->getSuccessCount() . ' / ' . $passCount);
+        $this->assistant->addDeck('24 Lands Meria', $deck);
+        $result = $this->assistant->runSimulations();
+
+            $output->writeln(
+            $result['Can cast Meria']['24 Lands Meria']->getSuccessCount() . ' / ' . $passCount
+        );
 
         return Command::SUCCESS;
     }
