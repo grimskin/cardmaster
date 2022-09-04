@@ -4,9 +4,9 @@ namespace App\Model;
 
 class DeckDefinition
 {
-    private $cards = [];
+    private array $cards = [];
 
-    public function addCards(CardDefinition $card, int $amount)
+    public function addCards(CardDefinition $card, int $amount): void
     {
         for ($i=0; $i<$amount; $i++) {
             $this->addCard($card);
@@ -18,7 +18,7 @@ class DeckDefinition
         return $this->cards;
     }
 
-    public function addCard(CardDefinition $card)
+    public function addCard(CardDefinition $card): void
     {
         $this->cards[] = $card;
     }

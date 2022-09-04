@@ -9,6 +9,9 @@ use App\Model\ExperimentResult;
 use App\Model\Library;
 use Psr\Log\LoggerInterface;
 
+/**
+ * @deprecated
+ */
 interface ScenarioInterface
 {
     public function getScenarioName(): string;

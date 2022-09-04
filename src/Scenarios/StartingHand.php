@@ -3,7 +3,9 @@
 
 namespace App\Scenarios;
 
-
+/**
+ * @deprecated
+ */
 class StartingHand extends AbstractScenario
 {
     public function getScenarioName(): string

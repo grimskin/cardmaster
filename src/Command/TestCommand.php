@@ -5,10 +5,8 @@ namespace App\Command;
 use App\Domain\TestChamber;
 use App\Factory\CardsFactory;
 use App\Factory\ConditionFactory;
-use App\Factory\ScenarioFactory;
 use App\Model\DeckDefinition;
 use App\Scenarios\ScenarioConfig;
-use App\Service\StatsCollector;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -25,9 +23,7 @@ class TestCommand extends Command
 
     public function __construct(
         CardsFactory $cardsFactory,
-        ScenarioFactory $scenarioFactory,
         ConditionFactory $conditionFactory,
-        StatsCollector $collector,
         TestChamber $chamber
     ) {
         $this->cardsFactory = $cardsFactory;
@@ -40,7 +36,6 @@ class TestCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $output->writeln('welcome');
-
 
         $deck = new DeckDefinition();
         $deck->addCards($this->cardsFactory->getCard('Forest'), 10);

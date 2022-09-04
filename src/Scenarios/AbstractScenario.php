@@ -13,6 +13,9 @@ use App\Model\ExperimentResult;
 use App\Model\Library;
 use Psr\Log\LoggerInterface;
 
+/**
+ * @deprecated
+ */
 abstract class AbstractScenario implements ScenarioInterface
 {
     protected bool $isDebugMode = false;

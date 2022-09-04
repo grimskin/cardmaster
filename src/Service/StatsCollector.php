@@ -12,6 +12,9 @@ use App\Scenarios\ScenarioInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Contracts\Service\Attribute\Required;
 
+/**
+ * @deprecated
+ */
 class StatsCollector
 {
     /**

@@ -8,6 +8,9 @@ use App\Factory\CardsFactory;
 use App\Factory\ConditionFactory;
 use App\Factory\ScenarioFactory;
 
+/**
+ * @deprecated
+ */
 class SimulationSetUpHelper
 {
     private $scenarioFactory;

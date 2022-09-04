@@ -4,6 +4,9 @@
 namespace App\Scenarios;
 
 
+/**
+ * @deprecated
+ */
 class GeneralScenario extends AbstractScenario
 {
     public function getScenarioName(): string
