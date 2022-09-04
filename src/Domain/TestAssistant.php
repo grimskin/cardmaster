@@ -55,6 +55,8 @@ class TestAssistant
     {
         $results = [];
 
+        $this->logger->info('###################### Starting batch testing');
+
         foreach ($this->decks as $deckName => $deck) {
             foreach ($this->conditionPacks as $packName => $conditions) {
                 $this->chamber->setScenarioConfig($this->config);

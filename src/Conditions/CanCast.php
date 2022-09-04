@@ -12,6 +12,9 @@ use Exception;
 
 class CanCast extends AbstractCondition
 {
+    private ?CardDefinition $cardCache = null;
+    private ?ManaCost $manaCostCache = null;
+
     public function getName(): string
     {
         return 'can-cast';
@@ -30,16 +33,17 @@ class CanCast extends AbstractCondition
             throw new Exception('Not enough params provided to has-card condition');
         }
 
-        $card = $this->cardsFactory->getCard($cardName);
-
-        $manaCost = new ManaCost($card->getManaCost());
+        if (!$this->cardCache) {
+            $this->cardCache = $this->cardsFactory->getCard($cardName);
+            $this->manaCostCache = new ManaCost($this->cardCache->getManaCost());
+        }
 
         $manaOptions = ManaVariator::getManaOptions(...$cardDefinitions);
 
         foreach ($manaOptions as $manaOption) {
             $manaPool = ManaPool::fromArray($manaOption);
 
-            if ($manaPool->canPayFor($manaCost)) {
+            if ($manaPool->canPayFor($this->manaCostCache)) {
                 return true;
             }
         }
