@@ -35,7 +35,7 @@ class ManaVariator
 
         foreach ($cardManaOptions as $manaOption) {
             foreach (self::manaOptionsGenerator(...$cardDefinitions) as $option) {
-                $result[] = array_merge([$manaOption], $option);
+                $result[] = [$manaOption, ...$option];
             }
         }
 
