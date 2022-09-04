@@ -57,7 +57,7 @@ class ManaCost implements JsonSerializable
 
         foreach ($item->getItemVariants() as $variant) {
             foreach ($leftoverVariants as $leftoverVariant) {
-                $result[] = array_merge($variant, $leftoverVariant);
+                $result[] = [...$variant, ...$leftoverVariant];
             }
         }
 

@@ -56,7 +56,7 @@ class ManaPool
         });
     }
 
-    public function canPayFor(ManaCost $manaCost)
+    public function canPayFor(ManaCost $manaCost): bool
     {
         foreach ($manaCost->getCostVariants() as $costVariant) {
             if ($this->canPayForVariant($costVariant)) {
@@ -67,7 +67,7 @@ class ManaPool
         return false;
     }
 
-    private function canPayForVariant(array $costVariant)
+    private function canPayForVariant(array $costVariant): bool
     {
         $testPool = clone $this;
 
