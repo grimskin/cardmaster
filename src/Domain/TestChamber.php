@@ -5,6 +5,7 @@ namespace App\Domain;
 
 
 use App\Conditions\CanCast;
+use App\Conditions\ConditionInterface;
 use App\Conditions\HasCard;
 use App\Conditions\WrappedCondition;
 use App\Model\DeckDefinition;
@@ -49,9 +50,17 @@ class TestChamber
         $this->scenarioConfig = $scenarioConfig;
     }
 
-    public function addCondition($condition): void
+    public function addCondition(ConditionInterface $condition): void
     {
         $this->conditions[$condition->getName()] = new WrappedCondition($condition);
+    }
+
+    public function addConditions(array $conditionsPack): void
+    {
+        /** @var ConditionInterface $condition */
+        foreach ($conditionsPack as $condition) {
+            $this->conditions[$condition->getName()] = new WrappedCondition($condition);
+        }
     }
 
     public function setDeck(DeckDefinition $deck): void

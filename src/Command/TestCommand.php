@@ -2,6 +2,7 @@
 
 namespace App\Command;
 
+use App\Domain\TestAssistant;
 use App\Domain\TestChamber;
 use App\Factory\CardsFactory;
 use App\Factory\ConditionFactory;
@@ -20,15 +21,18 @@ class TestCommand extends Command
     private CardsFactory $cardsFactory;
     private ConditionFactory $conditionFactory;
     private TestChamber $chamber;
+    private TestAssistant $assistant;
 
     public function __construct(
         CardsFactory $cardsFactory,
         ConditionFactory $conditionFactory,
-        TestChamber $chamber
+        TestChamber $chamber,
+        TestAssistant $assistant
     ) {
         $this->cardsFactory = $cardsFactory;
         $this->conditionFactory = $conditionFactory;
         $this->chamber = $chamber;
+        $this->assistant = $assistant;
 
         parent::__construct();
     }
@@ -58,11 +62,23 @@ class TestCommand extends Command
             'can-cast', ['Meria, Scholar of Antiquity'], 3
         ));
 
-        $this->chamber->setDeck($deck);
-        $this->chamber->setScenarioConfig($config);
-        $result = $this->chamber->runSimulation();
+//        $this->chamber->setDeck($deck);
+//        $this->chamber->setScenarioConfig($config);
+//        $result = $this->chamber->runSimulation();
 
-        $output->writeln($result->getSuccessCount() . ' / ' . $passCount);
+        $this->assistant->setConfig($config);
+
+        $this->assistant->addConditionsPack('Can cast Meria', [
+            $this->conditionFactory->getCondition('at-least-x-lands', [3], 3),
+            $this->conditionFactory->getCondition('can-cast', ['Meria, Scholar of Antiquity'], 3),
+        ]);
+
+        $this->assistant->addDeck('24 Lands Meria', $deck);
+        $result = $this->assistant->runSimulations();
+
+            $output->writeln(
+            $result['Can cast Meria']['24 Lands Meria']->getSuccessCount() . ' / ' . $passCount
+        );
 
         return Command::SUCCESS;
     }

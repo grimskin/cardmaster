@@ -11,6 +11,12 @@ monolog:
             level: info
             channels: ["monty"]
             formatter: App\Helper\MontyLogFormatter
+        assistant:
+            type: stream
+            path: "%kernel.logs_dir%/assistant.log"
+            level: info
+            channels: ["assistant"]
+            formatter: App\Helper\MontyLogFormatter
         # uncomment to get logging in your browser
         # you may have to allow bigger header sizes in your Web server configuration
         #firephp:
