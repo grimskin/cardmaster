@@ -3,7 +3,6 @@
 namespace App\Command;
 
 use App\Domain\TestAssistant;
-use App\Domain\TestChamber;
 use App\Factory\CardsFactory;
 use App\Factory\ConditionFactory;
 use App\Model\DeckDefinition;
@@ -39,10 +38,38 @@ class BatchCommand extends Command
         $output->writeln('running batch');
 
         $deck = new DeckDefinition();
-        $deck->addCards($this->cardsFactory->getCard('Forest'), 10);
-        $deck->addCards($this->cardsFactory->getCard('Mountain'), 10);
-        $deck->addCards($this->cardsFactory->getCard('Rockfall Vale'), 4);
-        $deck->addCards($this->cardsFactory->getCard('stub'), 36);
+        $deck->addCards($this->cardsFactory->getCard('Forest'), 7);
+        $deck->addCards($this->cardsFactory->getCard('Swamp'), 7);
+        $deck->addCards($this->cardsFactory->getCard('stub'), 26);
+        $this->assistant->addDeck('14-lands', $deck);
+        $deck = new DeckDefinition();
+        $deck->addCards($this->cardsFactory->getCard('Forest'), 7);
+        $deck->addCards($this->cardsFactory->getCard('Swamp'), 7);
+        $deck->addCards($this->cardsFactory->getCard('Haunted Mire'), 1);
+        $deck->addCards($this->cardsFactory->getCard('stub'), 25);
+        $this->assistant->addDeck('15-lands', $deck);
+        $deck = new DeckDefinition();
+        $deck->addCards($this->cardsFactory->getCard('Forest'), 8);
+        $deck->addCards($this->cardsFactory->getCard('Swamp'), 8);
+        $deck->addCards($this->cardsFactory->getCard('stub'), 24);
+        $this->assistant->addDeck('16-lands', $deck);
+        $deck = new DeckDefinition();
+        $deck->addCards($this->cardsFactory->getCard('Forest'), 8);
+        $deck->addCards($this->cardsFactory->getCard('Swamp'), 9);
+//        $deck->addCards($this->cardsFactory->getCard('Haunted Mire'), 1);
+        $deck->addCards($this->cardsFactory->getCard('stub'), 23);
+        $this->assistant->addDeck('17-lands', $deck);
+        $deck = new DeckDefinition();
+        $deck->addCards($this->cardsFactory->getCard('Forest'), 9);
+        $deck->addCards($this->cardsFactory->getCard('Swamp'), 9);
+        $deck->addCards($this->cardsFactory->getCard('stub'), 22);
+        $this->assistant->addDeck('18-lands', $deck);
+        $deck = new DeckDefinition();
+        $deck->addCards($this->cardsFactory->getCard('Forest'), 9);
+        $deck->addCards($this->cardsFactory->getCard('Swamp'), 10);
+//        $deck->addCards($this->cardsFactory->getCard('Haunted Mire'), 1);
+        $deck->addCards($this->cardsFactory->getCard('stub'), 21);
+        $this->assistant->addDeck('19-lands', $deck);
 
         $passCount = 10000;
 
@@ -51,17 +78,14 @@ class BatchCommand extends Command
 
         $this->assistant->setConfig($config);
 
-        $this->assistant->addConditionsPack('Can cast Meria', [
-            $this->conditionFactory->getCondition('at-least-x-lands', [3], 3),
-            $this->conditionFactory->getCondition('can-cast', ['Meria, Scholar of Antiquity'], 3),
+        $this->assistant->addConditionsPack('Can cast Uurg', [
+//            $this->conditionFactory->getCondition('at-least-x-lands', [3], 3),
+            $this->conditionFactory->getCondition('can-cast', ['Nemata, Primeval Warden'], 4),
         ]);
 
-        $this->assistant->addDeck('24 Lands Meria', $deck);
         $result = $this->assistant->runSimulations();
 
-            $output->writeln(
-            $result['Can cast Meria']['24 Lands Meria']->getSuccessCount() . ' / ' . $passCount
-        );
+        $output->writeln('done');
 
         return Command::SUCCESS;
     }
