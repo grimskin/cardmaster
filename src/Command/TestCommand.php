@@ -35,6 +35,8 @@ class TestCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
+        // TODO - "Kazandu Mammoth // Kazandu Valley" is not counted as land
+
         $output->writeln('welcome');
 
         $deck = new DeckDefinition();

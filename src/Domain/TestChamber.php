@@ -30,6 +30,14 @@ class TestChamber
     private ScenarioConfig $scenarioConfig;
     private DeckDefinition $deck;
 
+    public function init(): void
+    {
+        $this->cardsOfInterest = [];
+        $this->conditions = [];
+        $this->conditionsByTurns = [];
+        $this->maxConditionTurn = 0;
+    }
+
     #[Required]
     public function setLogger(LoggerInterface $montyLogger): void
     {
@@ -131,6 +139,8 @@ class TestChamber
         foreach ($this->conditions as $condition) {
             $experimentResult->addCondition($condition);
         }
+
+        $this->init();
 
         return $experimentResult;
     }
