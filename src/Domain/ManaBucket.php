@@ -18,33 +18,47 @@ class ManaBucket
     {
 
     }
-    public function putWhite(int $amount = 1): void
+    public function putWhite(int $amount = 1): self
     {
         $this->white += $amount;
+
+        return $this;
     }
-    public function putBlue(int $amount = 1): void
+    public function putBlue(int $amount = 1): self
     {
         $this->blue += $amount;
+
+        return $this;
     }
-    public function putBlack(int $amount = 1): void
+    public function putBlack(int $amount = 1): self
     {
         $this->black += $amount;
+
+        return $this;
     }
-    public function putRed(int $amount = 1): void
+    public function putRed(int $amount = 1): self
     {
         $this->red += $amount;
+
+        return $this;
     }
-    public function putGreen(int $amount = 1): void
+    public function putGreen(int $amount = 1): self
     {
         $this->green += $amount;
+
+        return $this;
     }
-    public function putColorless(int $amount = 1): void
+    public function putColorless(int $amount = 1): self
     {
         $this->colorless += $amount;
+
+        return $this;
     }
-    public function putGeneric(int $amount = 1): void
+    public function putGeneric(int $amount = 1): self
     {
         $this->generic += $amount;
+
+        return $this;
     }
 
     public function contains(ManaBucket $bucket): bool

@@ -6,6 +6,9 @@ namespace App\Helper;
 
 use App\Model\CardDefinition;
 
+/**
+ * @deprecated
+ */
 class ManaVariator
 {
     public static function getManaOptions(CardDefinition ...$cardDefinitions): array

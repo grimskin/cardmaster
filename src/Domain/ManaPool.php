@@ -3,7 +3,9 @@
 
 namespace App\Domain;
 
-
+/**
+ * @deprecated
+ */
 class ManaPool
 {
     const WHITE = 'W';
@@ -88,8 +90,8 @@ class ManaPool
         return false;
     }
 
-    private function isGeneric(string $manaSymbol)
+    private function isGeneric(string $manaSymbol): bool
     {
-        return preg_match("'^[WUBRG]$'", $manaSymbol) ? false : true;
+        return !preg_match("'^[WUBRG]$'", $manaSymbol);
     }
 }

@@ -4,7 +4,7 @@ monolog:
             type: stream
             path: "%kernel.logs_dir%/%kernel.environment%.log"
             level: debug
-            channels: ["!event", "!monty"]
+            channels: ["!event", "!monty", "!assistant"]
         monty:
             type: stream
             path: "%kernel.logs_dir%/monty.log"

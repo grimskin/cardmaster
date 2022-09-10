@@ -91,7 +91,7 @@ class TestChamber
     protected function runIteration(Library $library, ExperimentResult $result): void
     {
         $dealer = new Dealer();
-        $dealer->setLogger($this->logger);
+//        $dealer->setLogger($this->logger);
 
         foreach ($this->cardsOfInterest as $card) $dealer->addCardOfInterest($card);
 

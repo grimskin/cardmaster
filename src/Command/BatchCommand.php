@@ -44,8 +44,7 @@ class BatchCommand extends Command
         $this->assistant->addDeck('14-lands', $deck);
         $deck = new DeckDefinition();
         $deck->addCards($this->cardsFactory->getCard('Forest'), 7);
-        $deck->addCards($this->cardsFactory->getCard('Swamp'), 7);
-        $deck->addCards($this->cardsFactory->getCard('Haunted Mire'), 1);
+        $deck->addCards($this->cardsFactory->getCard('Swamp'), 8);
         $deck->addCards($this->cardsFactory->getCard('stub'), 25);
         $this->assistant->addDeck('15-lands', $deck);
         $deck = new DeckDefinition();
@@ -56,7 +55,6 @@ class BatchCommand extends Command
         $deck = new DeckDefinition();
         $deck->addCards($this->cardsFactory->getCard('Forest'), 8);
         $deck->addCards($this->cardsFactory->getCard('Swamp'), 9);
-//        $deck->addCards($this->cardsFactory->getCard('Haunted Mire'), 1);
         $deck->addCards($this->cardsFactory->getCard('stub'), 23);
         $this->assistant->addDeck('17-lands', $deck);
         $deck = new DeckDefinition();
@@ -67,7 +65,6 @@ class BatchCommand extends Command
         $deck = new DeckDefinition();
         $deck->addCards($this->cardsFactory->getCard('Forest'), 9);
         $deck->addCards($this->cardsFactory->getCard('Swamp'), 10);
-//        $deck->addCards($this->cardsFactory->getCard('Haunted Mire'), 1);
         $deck->addCards($this->cardsFactory->getCard('stub'), 21);
         $this->assistant->addDeck('19-lands', $deck);
 
@@ -79,7 +76,6 @@ class BatchCommand extends Command
         $this->assistant->setConfig($config);
 
         $this->assistant->addConditionsPack('Can cast Uurg', [
-//            $this->conditionFactory->getCondition('at-least-x-lands', [3], 3),
             $this->conditionFactory->getCondition('can-cast', ['Nemata, Primeval Warden'], 4),
         ]);
 
