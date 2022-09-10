@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class SetStatsController extends AbstractController
 {
-    const DEFAULT_SET = 'SNC';
+    const DEFAULT_SET = 'DMU';
 
     private StatsCollector $collector;
     private DataLoader $dataLoader;
