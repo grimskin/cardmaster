@@ -81,7 +81,9 @@ class BatchCommand extends Command
 
         $result = $this->assistant->runSimulations();
 
-        $output->writeln('done');
+        $output->writeln(
+            json_encode($result, JSON_PRETTY_PRINT)
+        );
 
         return Command::SUCCESS;
     }

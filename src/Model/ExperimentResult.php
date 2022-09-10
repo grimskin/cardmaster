@@ -4,7 +4,7 @@
 namespace App\Model;
 
 
-use App\Conditions\ConditionInterface;
+use App\Conditions\WrappedCondition;
 use JsonSerializable;
 use ReturnTypeWillChange;
 
@@ -40,7 +40,7 @@ class ExperimentResult implements JsonSerializable
         return $this->successCount . '/' . $this->passCount;
     }
 
-    public function addCondition(ConditionInterface $condition)
+    public function addCondition(WrappedCondition $condition)
     {
         $this->conditionStats[] = $condition;
     }
