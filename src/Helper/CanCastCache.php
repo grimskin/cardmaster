@@ -40,13 +40,12 @@ class CanCastCache
      */
     private function getLandsString(array $cardDefinitions): string
     {
-        $lands = array_filter($cardDefinitions, function (CardDefinition $item) {
-            return $item->isLand();
-        });
-
         $manaArr = [];
-        foreach ($lands as $land) {
-            $manaArr[] = implode('', $land->getColorIdentity());
+
+        foreach ($cardDefinitions as $item) {
+            if (!$item->isLand()) continue;
+
+            $manaArr[] = implode('', $item->getColorIdentity());
         }
 
         return implode('.', $manaArr);
