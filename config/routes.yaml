@@ -40,3 +40,7 @@ set_view:
 prototypes:
     path: /proto
     controller: App\Controller\PrototypeController::index
+
+articles:
+    path: /articles/{url}
+    controller: App\Controller\ArticlesController::article

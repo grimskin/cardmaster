@@ -1,0 +1,91 @@
+{% extends 'articles/_base.html.twig' %}
+
+{% block body %}
+    <h1>Can I cast?</h1>
+    <h5>Dominaria United</h5>
+
+    <h3>Intro</h3>
+    <div class="p">
+        This article is heavily inspired by
+        <a target="_blank"
+           href="https://strategy.channelfireball.com/all-strategy/home/how-many-sources-do-you-need-to-consistently-cast-your-spells-a-2022-update/">
+            Frank Karsten's "How many sources do you need"
+        </a>
+        . He did a great job, but it
+        made me curious to look at numbers a bit deeper. For example, not only how often you'll have proper colors if
+        you drew enough lands, but also - what are the chances of both events together, basically - how often you'll be
+        able to cast multicolored 3-drop on turn 3. There are numerous options in Magic when it comes to mana -
+        phyrexian, colorless, hybrid, lands that produce more than 1 mana at a time, e.t.c. Thus I decided to narrow
+        down the area covered by the article to the Limited format, specifically - "Dominaria United" Limited. This
+        article probably won't provide you with any additional guidelines on building your mana base, but I hope it will
+        entertain you a bit.
+    </div>
+
+    <h3>Methodology and assumptions</h3>
+    <div class="p">
+        To get estimations I’ve used the Monte Carlo method. This means that I’ve created a small piece of code that
+        simulates deck shuffle, draw, and mulligan processes and ran the simulation enough times (at least 1’000’000 per
+        check) to get an approximation. As a mana source, I’ve considered only basic lands – no mana-giving creatures or
+        color filters were included in the simulation – mostly because that would create a whole new layer of different
+        combinations and options. And no dual lands – because you won’t be able to pick some in your colors every time.
+        As for mulligan – I’ve included a short description of the process in the appendix.
+    </div>
+
+    <h3>Mono-colored spells in mono-colored decks</h3>
+
+    <div class="p">
+        In a mono-colored deck possibility to cast X-drop on turn X means just having X lands on turn X.
+    </div>
+
+    <div class="p">
+        <table class="experiment-results">
+            <tr>
+                <td>&nbsp;</td>
+                <th>Turn 1</th>
+                <th>Turn 2</th>
+                <th>Turn 3</th>
+                <th>Turn 4</th>
+                <th>Turn 5</th>
+                <th>Turn 6</th>
+                <th>Turn 7</th>
+            </tr>
+            {% for lands, row in monoInMono %}
+                <tr>
+                    <th>{{ lands }}</th>
+                    {% for result in row %}
+                        <td>{{ (100 * result['success'] / result['total'])|number_format(3) }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <div class="p">
+        Being able to play X-drop on turn X is great, but sometimes we’re fine with playing them a turn later,
+        especially if we are talking about spells that cost 4 mana or more.
+    </div>
+
+    <div class="p">
+        <table class="experiment-results">
+            <tr>
+                <td>&nbsp;</td>
+                <th>Turn 2</th>
+                <th>Turn 3</th>
+                <th>Turn 4</th>
+                <th>Turn 5</th>
+                <th>Turn 6</th>
+                <th>Turn 7</th>
+                <th>Turn 8</th>
+            </tr>
+            {% for lands, row in monoInMonoPlus %}
+                <tr>
+                    <th>{{ lands }}</th>
+                    {% for result in row %}
+                        <td>{{ (100 * result['success'] / result['total'])|number_format(3) }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+{% endblock %}

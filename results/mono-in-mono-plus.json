@@ -1,0 +1,541 @@
+{
+    "1": {
+        "14": {
+            "success": 999805,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        1
+                    ],
+                    "turn": 2,
+                    "success": 999805,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15": {
+            "success": 999915,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        1
+                    ],
+                    "turn": 2,
+                    "success": 999915,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 999983,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        1
+                    ],
+                    "turn": 2,
+                    "success": 999983,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17": {
+            "success": 999992,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        1
+                    ],
+                    "turn": 2,
+                    "success": 999992,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 999993,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        1
+                    ],
+                    "turn": 2,
+                    "success": 999993,
+                    "total": 1000000
+                }
+            ]
+        }
+    },
+    "2": {
+        "14": {
+            "success": 999092,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        2
+                    ],
+                    "turn": 3,
+                    "success": 999092,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15": {
+            "success": 999656,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        2
+                    ],
+                    "turn": 3,
+                    "success": 999656,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 999835,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        2
+                    ],
+                    "turn": 3,
+                    "success": 999835,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17": {
+            "success": 999955,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        2
+                    ],
+                    "turn": 3,
+                    "success": 999955,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 999985,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        2
+                    ],
+                    "turn": 3,
+                    "success": 999985,
+                    "total": 1000000
+                }
+            ]
+        }
+    },
+    "3": {
+        "14": {
+            "success": 899408,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        3
+                    ],
+                    "turn": 4,
+                    "success": 899408,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15": {
+            "success": 924289,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        3
+                    ],
+                    "turn": 4,
+                    "success": 924289,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 942738,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        3
+                    ],
+                    "turn": 4,
+                    "success": 942738,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17": {
+            "success": 958084,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        3
+                    ],
+                    "turn": 4,
+                    "success": 958084,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 969985,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        3
+                    ],
+                    "turn": 4,
+                    "success": 969985,
+                    "total": 1000000
+                }
+            ]
+        }
+    },
+    "4": {
+        "14": {
+            "success": 705529,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        4
+                    ],
+                    "turn": 5,
+                    "success": 705529,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15": {
+            "success": 763852,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        4
+                    ],
+                    "turn": 5,
+                    "success": 763852,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 814477,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        4
+                    ],
+                    "turn": 5,
+                    "success": 814477,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17": {
+            "success": 856577,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        4
+                    ],
+                    "turn": 5,
+                    "success": 856577,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 892041,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        4
+                    ],
+                    "turn": 5,
+                    "success": 892041,
+                    "total": 1000000
+                }
+            ]
+        }
+    },
+    "5": {
+        "14": {
+            "success": 480709,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        5
+                    ],
+                    "turn": 6,
+                    "success": 480709,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15": {
+            "success": 561949,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        5
+                    ],
+                    "turn": 6,
+                    "success": 561949,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 636463,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        5
+                    ],
+                    "turn": 6,
+                    "success": 636463,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17": {
+            "success": 705881,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        5
+                    ],
+                    "turn": 6,
+                    "success": 705881,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 767885,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        5
+                    ],
+                    "turn": 6,
+                    "success": 767885,
+                    "total": 1000000
+                }
+            ]
+        }
+    },
+    "6": {
+        "14": {
+            "success": 286611,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        6
+                    ],
+                    "turn": 7,
+                    "success": 286611,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15": {
+            "success": 366731,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        6
+                    ],
+                    "turn": 7,
+                    "success": 366731,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 450240,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        6
+                    ],
+                    "turn": 7,
+                    "success": 450240,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17": {
+            "success": 533527,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        6
+                    ],
+                    "turn": 7,
+                    "success": 533527,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 614476,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        6
+                    ],
+                    "turn": 7,
+                    "success": 614476,
+                    "total": 1000000
+                }
+            ]
+        }
+    },
+    "7": {
+        "14": {
+            "success": 149341,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        7
+                    ],
+                    "turn": 8,
+                    "success": 149341,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15": {
+            "success": 212483,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        7
+                    ],
+                    "turn": 8,
+                    "success": 212483,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 285417,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        7
+                    ],
+                    "turn": 8,
+                    "success": 285417,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17": {
+            "success": 367671,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        7
+                    ],
+                    "turn": 8,
+                    "success": 367671,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 454552,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "at-least-x-lands",
+                    "params": [
+                        7
+                    ],
+                    "turn": 8,
+                    "success": 454552,
+                    "total": 1000000
+                }
+            ]
+        }
+    }
+}

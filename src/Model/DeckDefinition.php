@@ -32,4 +32,12 @@ class DeckDefinition
     {
         return Library::make($this);
     }
+
+    public function fillUpTo(int $upTo, CardDefinition $cardDefinition): void
+    {
+        $amountRequired = $upTo - count($this->cards);
+        if ($amountRequired < 1) return;
+
+        $this->addCards($cardDefinition, $amountRequired);
+    }
 }
