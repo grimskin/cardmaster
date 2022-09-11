@@ -59,6 +59,8 @@ class ConditionFactory
             throw new Exception('No condition named ' . $conditionName . ' found');
         }
 
+        $result = clone $result;
+
         $result->addParams($params);
         $result->setTurn($turn);
         $result->setCardsFactory($this->cardsFactory);
