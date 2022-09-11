@@ -38,23 +38,38 @@ class BatchCommand extends Command
         $output->writeln('running batch');
 
         $deck = new DeckDefinition();
-        $deck->addCards($this->cardsFactory->getCard('Forest'), 14);
+        $deck->addCards($this->cardsFactory->getCard('Forest'), 7);
+        $deck->addCards($this->cardsFactory->getCard('Swamp'), 7);
         $deck->fillUpTo(40, $this->cardsFactory->getCard('stub'));
         $this->assistant->addDeck('14', $deck);
         $deck = new DeckDefinition();
-        $deck->addCards($this->cardsFactory->getCard('Forest'), 15);
+        $deck->addCards($this->cardsFactory->getCard('Forest'), 8);
+        $deck->addCards($this->cardsFactory->getCard('Swamp'), 7);
         $deck->fillUpTo(40, $this->cardsFactory->getCard('stub'));
-        $this->assistant->addDeck('15', $deck);
+        $this->assistant->addDeck('15g', $deck);
         $deck = new DeckDefinition();
-        $deck->addCards($this->cardsFactory->getCard('Forest'), 16);
+        $deck->addCards($this->cardsFactory->getCard('Forest'), 7);
+        $deck->addCards($this->cardsFactory->getCard('Swamp'), 8);
+        $deck->fillUpTo(40, $this->cardsFactory->getCard('stub'));
+        $this->assistant->addDeck('15b', $deck);
+        $deck = new DeckDefinition();
+        $deck->addCards($this->cardsFactory->getCard('Forest'), 8);
+        $deck->addCards($this->cardsFactory->getCard('Swamp'), 8);
         $deck->fillUpTo(40, $this->cardsFactory->getCard('stub'));
         $this->assistant->addDeck('16', $deck);
         $deck = new DeckDefinition();
-        $deck->addCards($this->cardsFactory->getCard('Forest'), 17);
+        $deck->addCards($this->cardsFactory->getCard('Forest'), 8);
+        $deck->addCards($this->cardsFactory->getCard('Swamp'), 7);
         $deck->fillUpTo(40, $this->cardsFactory->getCard('stub'));
-        $this->assistant->addDeck('17', $deck);
+        $this->assistant->addDeck('17g', $deck);
         $deck = new DeckDefinition();
-        $deck->addCards($this->cardsFactory->getCard('Forest'), 18);
+        $deck->addCards($this->cardsFactory->getCard('Forest'), 7);
+        $deck->addCards($this->cardsFactory->getCard('Swamp'), 8);
+        $deck->fillUpTo(40, $this->cardsFactory->getCard('stub'));
+        $this->assistant->addDeck('17b', $deck);
+        $deck = new DeckDefinition();
+        $deck->addCards($this->cardsFactory->getCard('Forest'), 9);
+        $deck->addCards($this->cardsFactory->getCard('Swamp'), 9);
         $deck->fillUpTo(40, $this->cardsFactory->getCard('stub'));
         $this->assistant->addDeck('18', $deck);
 
@@ -66,47 +81,38 @@ class BatchCommand extends Command
 
         $this->assistant->setConfig($config);
 
-        $this->assistant->addConditionsPack('1', [
-            $this->conditionFactory->getCondition('at-least-x-lands', [1], 2),
-        ]);
-        $this->assistant->addConditionsPack('2', [
-            $this->conditionFactory->getCondition('at-least-x-lands', [2], 3),
-        ]);
-        $this->assistant->addConditionsPack('3', [
-            $this->conditionFactory->getCondition('at-least-x-lands', [3], 4),
-        ]);
-        $this->assistant->addConditionsPack('4', [
-            $this->conditionFactory->getCondition('at-least-x-lands', [4], 5),
-        ]);
-        $this->assistant->addConditionsPack('5', [
-            $this->conditionFactory->getCondition('at-least-x-lands', [5], 6),
-        ]);
-        $this->assistant->addConditionsPack('6', [
-            $this->conditionFactory->getCondition('at-least-x-lands', [6], 7),
-        ]);
-        $this->assistant->addConditionsPack('7', [
-            $this->conditionFactory->getCondition('at-least-x-lands', [7], 8),
-        ]);
-//        $this->assistant->addConditionsPack('Has 1 land', [
-//            $this->conditionFactory->getCondition('at-least-x-lands', [1], 1),
+//        $this->assistant->addConditionsPack('1G', [
+//            $this->conditionFactory->getCondition('can-cast', ['Llanowar Loamspeaker'], 2),
 //        ]);
-//        $this->assistant->addConditionsPack('Has 2 lands', [
-//            $this->conditionFactory->getCondition('at-least-x-lands', [2], 2),
+//        $this->assistant->addConditionsPack('GG', [
+//            $this->conditionFactory->getCondition('can-cast', ['Leaf-Crowned Visionary'], 2),
 //        ]);
-//        $this->assistant->addConditionsPack('Has 3 lands', [
-//            $this->conditionFactory->getCondition('at-least-x-lands', [3], 3),
+//        $this->assistant->addConditionsPack('2G', [
+//            $this->conditionFactory->getCondition('can-cast', ['Deathbloom Gardener'], 3),
 //        ]);
-//        $this->assistant->addConditionsPack('Has 4 lands', [
-//            $this->conditionFactory->getCondition('at-least-x-lands', [4], 4),
+//        $this->assistant->addConditionsPack('1BB', [
+//            $this->conditionFactory->getCondition('can-cast', ['Liliana of the Veil'], 3),
 //        ]);
-//        $this->assistant->addConditionsPack('Has 5 lands', [
-//            $this->conditionFactory->getCondition('at-least-x-lands', [5], 5),
+        $this->assistant->addConditionsPack('3G', [
+            $this->conditionFactory->getCondition('can-cast', ['Magnigoth Sentry'], 4),
+        ]);
+        $this->assistant->addConditionsPack('2BB', [
+            $this->conditionFactory->getCondition('can-cast', ['Sheoldred, the Apocalypse'], 4),
+        ]);
+//        $this->assistant->addConditionsPack('4G', [
+//            $this->conditionFactory->getCondition('can-cast', ['Elfhame Wurm'], 5),
 //        ]);
-//        $this->assistant->addConditionsPack('Has 6 lands', [
-//            $this->conditionFactory->getCondition('at-least-x-lands', [6], 6),
+//        $this->assistant->addConditionsPack('3GG', [
+//            $this->conditionFactory->getCondition('can-cast', ['Defiler of Vigor'], 5),
 //        ]);
-//        $this->assistant->addConditionsPack('Has 7 lands', [
-//            $this->conditionFactory->getCondition('at-least-x-lands', [7], 7),
+//        $this->assistant->addConditionsPack('2GGG', [
+//            $this->conditionFactory->getCondition('can-cast', ['Silverback Elder'], 5),
+//        ]);
+//        $this->assistant->addConditionsPack('5G', [
+//            $this->conditionFactory->getCondition('can-cast', ['Briar Hydra'], 6),
+//        ]);
+//        $this->assistant->addConditionsPack('4BB', [
+//            $this->conditionFactory->getCondition('can-cast', ['Tyrannical Pitlord'], 6),
 //        ]);
 
         $result = $this->assistant->runSimulations();

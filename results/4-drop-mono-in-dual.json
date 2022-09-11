@@ -1,0 +1,216 @@
+{
+    "3G": {
+        "14": {
+            "success": 580491,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Magnigoth Sentry"
+                    ],
+                    "turn": 4,
+                    "success": 580491,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15g": {
+            "success": 647212,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Magnigoth Sentry"
+                    ],
+                    "turn": 4,
+                    "success": 647212,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15b": {
+            "success": 635992,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Magnigoth Sentry"
+                    ],
+                    "turn": 4,
+                    "success": 635992,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 698857,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Magnigoth Sentry"
+                    ],
+                    "turn": 4,
+                    "success": 698857,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17g": {
+            "success": 647597,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Magnigoth Sentry"
+                    ],
+                    "turn": 4,
+                    "success": 647597,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17b": {
+            "success": 635516,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Magnigoth Sentry"
+                    ],
+                    "turn": 4,
+                    "success": 635516,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 796589,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Magnigoth Sentry"
+                    ],
+                    "turn": 4,
+                    "success": 796589,
+                    "total": 1000000
+                }
+            ]
+        }
+    },
+    "2BB": {
+        "14": {
+            "success": 469715,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Sheoldred, the Apocalypse"
+                    ],
+                    "turn": 4,
+                    "success": 469715,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15g": {
+            "success": 493523,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Sheoldred, the Apocalypse"
+                    ],
+                    "turn": 4,
+                    "success": 493523,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15b": {
+            "success": 552908,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Sheoldred, the Apocalypse"
+                    ],
+                    "turn": 4,
+                    "success": 552908,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 577051,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Sheoldred, the Apocalypse"
+                    ],
+                    "turn": 4,
+                    "success": 577051,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17g": {
+            "success": 492991,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Sheoldred, the Apocalypse"
+                    ],
+                    "turn": 4,
+                    "success": 492991,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17b": {
+            "success": 553348,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Sheoldred, the Apocalypse"
+                    ],
+                    "turn": 4,
+                    "success": 553348,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 672692,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Sheoldred, the Apocalypse"
+                    ],
+                    "turn": 4,
+                    "success": 672692,
+                    "total": 1000000
+                }
+            ]
+        }
+    }
+}

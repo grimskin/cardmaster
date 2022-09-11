@@ -1,0 +1,323 @@
+{
+    "4G": {
+        "14": {
+            "success": 362520,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Elfhame Wurm"
+                    ],
+                    "turn": 5,
+                    "success": 362520,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15g": {
+            "success": 437001,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Elfhame Wurm"
+                    ],
+                    "turn": 5,
+                    "success": 437001,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15b": {
+            "success": 432630,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Elfhame Wurm"
+                    ],
+                    "turn": 5,
+                    "success": 432630,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 507549,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Elfhame Wurm"
+                    ],
+                    "turn": 5,
+                    "success": 507549,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17g": {
+            "success": 436898,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Elfhame Wurm"
+                    ],
+                    "turn": 5,
+                    "success": 436898,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17b": {
+            "success": 433182,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Elfhame Wurm"
+                    ],
+                    "turn": 5,
+                    "success": 433182,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 647852,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Elfhame Wurm"
+                    ],
+                    "turn": 5,
+                    "success": 647852,
+                    "total": 1000000
+                }
+            ]
+        }
+    },
+    "3GG": {
+        "14": {
+            "success": 326622,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Defiler of Vigor"
+                    ],
+                    "turn": 5,
+                    "success": 326622,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15g": {
+            "success": 406627,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Defiler of Vigor"
+                    ],
+                    "turn": 5,
+                    "success": 406627,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15b": {
+            "success": 377138,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Defiler of Vigor"
+                    ],
+                    "turn": 5,
+                    "success": 377138,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 460485,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Defiler of Vigor"
+                    ],
+                    "turn": 5,
+                    "success": 460485,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17g": {
+            "success": 406356,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Defiler of Vigor"
+                    ],
+                    "turn": 5,
+                    "success": 406356,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17b": {
+            "success": 377497,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Defiler of Vigor"
+                    ],
+                    "turn": 5,
+                    "success": 377497,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 590552,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Defiler of Vigor"
+                    ],
+                    "turn": 5,
+                    "success": 590552,
+                    "total": 1000000
+                }
+            ]
+        }
+    },
+    "2GGG": {
+        "14": {
+            "success": 211261,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Silverback Elder"
+                    ],
+                    "turn": 5,
+                    "success": 211261,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15g": {
+            "success": 289719,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Silverback Elder"
+                    ],
+                    "turn": 5,
+                    "success": 289719,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15b": {
+            "success": 226929,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Silverback Elder"
+                    ],
+                    "turn": 5,
+                    "success": 226929,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 309303,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Silverback Elder"
+                    ],
+                    "turn": 5,
+                    "success": 309303,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17g": {
+            "success": 290018,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Silverback Elder"
+                    ],
+                    "turn": 5,
+                    "success": 290018,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17b": {
+            "success": 227192,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Silverback Elder"
+                    ],
+                    "turn": 5,
+                    "success": 227192,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 411018,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Silverback Elder"
+                    ],
+                    "turn": 5,
+                    "success": 411018,
+                    "total": 1000000
+                }
+            ]
+        }
+    }
+}

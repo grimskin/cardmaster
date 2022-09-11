@@ -1,0 +1,216 @@
+{
+    "2G": {
+        "14": {
+            "success": 788736,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Deathbloom Gardener"
+                    ],
+                    "turn": 3,
+                    "success": 788736,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15g": {
+            "success": 833186,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Deathbloom Gardener"
+                    ],
+                    "turn": 3,
+                    "success": 833186,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15b": {
+            "success": 806096,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Deathbloom Gardener"
+                    ],
+                    "turn": 3,
+                    "success": 806096,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 849529,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Deathbloom Gardener"
+                    ],
+                    "turn": 3,
+                    "success": 849529,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17g": {
+            "success": 833047,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Deathbloom Gardener"
+                    ],
+                    "turn": 3,
+                    "success": 833047,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17b": {
+            "success": 806716,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Deathbloom Gardener"
+                    ],
+                    "turn": 3,
+                    "success": 806716,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 895484,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Deathbloom Gardener"
+                    ],
+                    "turn": 3,
+                    "success": 895484,
+                    "total": 1000000
+                }
+            ]
+        }
+    },
+    "1BB": {
+        "14": {
+            "success": 545121,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Liliana of the Veil"
+                    ],
+                    "turn": 3,
+                    "success": 545121,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15g": {
+            "success": 536092,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Liliana of the Veil"
+                    ],
+                    "turn": 3,
+                    "success": 536092,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15b": {
+            "success": 623387,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Liliana of the Veil"
+                    ],
+                    "turn": 3,
+                    "success": 623387,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 615860,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Liliana of the Veil"
+                    ],
+                    "turn": 3,
+                    "success": 615860,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17g": {
+            "success": 536332,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Liliana of the Veil"
+                    ],
+                    "turn": 3,
+                    "success": 536332,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17b": {
+            "success": 623742,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Liliana of the Veil"
+                    ],
+                    "turn": 3,
+                    "success": 623742,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 677952,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Liliana of the Veil"
+                    ],
+                    "turn": 3,
+                    "success": 677952,
+                    "total": 1000000
+                }
+            ]
+        }
+    }
+}
