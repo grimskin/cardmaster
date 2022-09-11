@@ -2,8 +2,8 @@
 
 namespace App\Command;
 
-use App\Service\ScriptFileReader;
-use App\Service\ScriptRunner;
+use App\Domain\TestAssistant;
+use App\Helper\YamlScriptReader;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -15,16 +15,15 @@ use Symfony\Component\Console\Output\OutputInterface;
 )]
 class ScriptCommand extends Command
 {
-
-    private ScriptRunner $runner;
-    private ScriptFileReader $fileReader;
+    private YamlScriptReader $scriptReader;
+    private TestAssistant $assistant;
 
     public function __construct(
-        ScriptRunner $runner,
-        ScriptFileReader $fileReader
+        YamlScriptReader $scriptReader,
+        TestAssistant $assistant
     ) {
-        $this->runner = $runner;
-        $this->fileReader = $fileReader;
+        $this->scriptReader = $scriptReader;
+        $this->assistant = $assistant;
 
         parent::__construct();
     }
@@ -33,24 +32,21 @@ class ScriptCommand extends Command
     {
         parent::configure();
 
-        $this->addArgument('filename', InputArgument::REQUIRED, 'file name with experiment description');
+        $this->addArgument('script_name', InputArgument::REQUIRED, 'script name');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $output->writeln('welcome');
+        $filename = $input->getArgument('script_name');
 
-        $filename = $input->getArgument('filename');
+        if (!$this->scriptReader->hasFile($filename)) {
+            $output->writeln('No script named '.$filename.' found');
+            return Command::FAILURE;
+        }
 
+        $this->scriptReader->configureFromFile($this->assistant, $filename);
 
-        $gotFile = $this->fileReader->hasFile($filename);
-        $output->writeln($filename . ' ' . ($gotFile ? 'exists' : 'absent'));
-
-        $script = $this->fileReader->readFile($filename);
-
-        $result = $this->runner->runScript($script);
-
-        $output->writeln($result);
+        $this->assistant->runSimulations();
 
         return Command::SUCCESS;
     }

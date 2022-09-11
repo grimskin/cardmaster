@@ -10,6 +10,9 @@ use App\Factory\ScenarioFactory;
 use App\Model\DeckDefinition;
 use Exception;
 
+/**
+ * @deprecated
+ */
 class ScriptRunner
 {
     private const CMD_ADD_CARD = 'card';

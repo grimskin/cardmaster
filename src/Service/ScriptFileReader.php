@@ -3,7 +3,9 @@
 
 namespace App\Service;
 
-
+/**
+ * @deprecated
+ */
 class ScriptFileReader
 {
     private string $experimentsDir;
