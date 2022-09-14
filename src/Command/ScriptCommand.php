@@ -3,6 +3,7 @@
 namespace App\Command;
 
 use App\Domain\TestAssistant;
+use App\Helper\ResultsFileWriter;
 use App\Helper\YamlScriptReader;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
@@ -17,13 +18,16 @@ class ScriptCommand extends Command
 {
     private YamlScriptReader $scriptReader;
     private TestAssistant $assistant;
+    private ResultsFileWriter $fileWriter;
 
     public function __construct(
         YamlScriptReader $scriptReader,
-        TestAssistant $assistant
+        TestAssistant $assistant,
+        ResultsFileWriter $fileWriter
     ) {
         $this->scriptReader = $scriptReader;
         $this->assistant = $assistant;
+        $this->fileWriter = $fileWriter;
 
         parent::__construct();
     }
@@ -46,7 +50,9 @@ class ScriptCommand extends Command
 
         $this->scriptReader->configureFromFile($this->assistant, $filename);
 
-        $this->assistant->runSimulations();
+        $result = $this->assistant->runSimulations();
+
+        $this->fileWriter->save($filename, json_encode($result, JSON_PRETTY_PRINT));
 
         return Command::SUCCESS;
     }

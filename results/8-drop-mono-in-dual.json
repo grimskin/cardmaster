@@ -1,0 +1,216 @@
+{
+    "6B": {
+        "14": {
+            "success": 92160,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Writhing Necromass"
+                    ],
+                    "turn": 7,
+                    "success": 92160,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15g": {
+            "success": 135884,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Writhing Necromass"
+                    ],
+                    "turn": 7,
+                    "success": 135884,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15b": {
+            "success": 136088,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Writhing Necromass"
+                    ],
+                    "turn": 7,
+                    "success": 136088,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 190795,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Writhing Necromass"
+                    ],
+                    "turn": 7,
+                    "success": 190795,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17g": {
+            "success": 254953,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Writhing Necromass"
+                    ],
+                    "turn": 7,
+                    "success": 254953,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17b": {
+            "success": 255008,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Writhing Necromass"
+                    ],
+                    "turn": 7,
+                    "success": 255008,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 326784,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Writhing Necromass"
+                    ],
+                    "turn": 7,
+                    "success": 326784,
+                    "total": 1000000
+                }
+            ]
+        }
+    },
+    "5GG": {
+        "14": {
+            "success": 90764,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Mossbeard Ancient"
+                    ],
+                    "turn": 7,
+                    "success": 90764,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15g": {
+            "success": 135322,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Mossbeard Ancient"
+                    ],
+                    "turn": 7,
+                    "success": 135322,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15b": {
+            "success": 132912,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Mossbeard Ancient"
+                    ],
+                    "turn": 7,
+                    "success": 132912,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 187356,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Mossbeard Ancient"
+                    ],
+                    "turn": 7,
+                    "success": 187356,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17g": {
+            "success": 252148,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Mossbeard Ancient"
+                    ],
+                    "turn": 7,
+                    "success": 252148,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17b": {
+            "success": 247199,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Mossbeard Ancient"
+                    ],
+                    "turn": 7,
+                    "success": 247199,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 320763,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Mossbeard Ancient"
+                    ],
+                    "turn": 7,
+                    "success": 320763,
+                    "total": 1000000
+                }
+            ]
+        }
+    }
+}
