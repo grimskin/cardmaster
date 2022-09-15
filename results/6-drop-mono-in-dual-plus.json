@@ -1,213 +1,213 @@
 {
-    "3G": {
+    "5G": {
         "14": {
-            "success": 579366,
+            "success": 287093,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Magnigoth Sentry"
+                        "Briar Hydra"
                     ],
-                    "turn": 4,
-                    "success": 579366,
+                    "turn": 7,
+                    "success": 287093,
                     "total": 1000000
                 }
             ]
         },
         "15g": {
-            "success": 646641,
+            "success": 366128,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Magnigoth Sentry"
+                        "Briar Hydra"
                     ],
-                    "turn": 4,
-                    "success": 646641,
+                    "turn": 7,
+                    "success": 366128,
                     "total": 1000000
                 }
             ]
         },
         "15b": {
-            "success": 635349,
+            "success": 365510,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Magnigoth Sentry"
+                        "Briar Hydra"
                     ],
-                    "turn": 4,
-                    "success": 635349,
+                    "turn": 7,
+                    "success": 365510,
                     "total": 1000000
                 }
             ]
         },
         "16": {
-            "success": 699695,
+            "success": 449403,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Magnigoth Sentry"
+                        "Briar Hydra"
                     ],
-                    "turn": 4,
-                    "success": 699695,
+                    "turn": 7,
+                    "success": 449403,
                     "total": 1000000
                 }
             ]
         },
         "17g": {
-            "success": 755703,
+            "success": 533460,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Magnigoth Sentry"
+                        "Briar Hydra"
                     ],
-                    "turn": 4,
-                    "success": 755703,
+                    "turn": 7,
+                    "success": 533460,
                     "total": 1000000
                 }
             ]
         },
         "17b": {
-            "success": 744271,
+            "success": 530888,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Magnigoth Sentry"
+                        "Briar Hydra"
                     ],
-                    "turn": 4,
-                    "success": 744271,
+                    "turn": 7,
+                    "success": 530888,
                     "total": 1000000
                 }
             ]
         },
         "18": {
-            "success": 797365,
+            "success": 613177,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Magnigoth Sentry"
+                        "Briar Hydra"
                     ],
-                    "turn": 4,
-                    "success": 797365,
+                    "turn": 7,
+                    "success": 613177,
                     "total": 1000000
                 }
             ]
         }
     },
-    "2BB": {
+    "4BB": {
         "14": {
-            "success": 471037,
+            "success": 276590,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Sheoldred, the Apocalypse"
+                        "Tyrannical Pitlord"
                     ],
-                    "turn": 4,
-                    "success": 471037,
+                    "turn": 7,
+                    "success": 276590,
                     "total": 1000000
                 }
             ]
         },
         "15g": {
-            "success": 493139,
+            "success": 344318,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Sheoldred, the Apocalypse"
+                        "Tyrannical Pitlord"
                     ],
-                    "turn": 4,
-                    "success": 493139,
+                    "turn": 7,
+                    "success": 344318,
                     "total": 1000000
                 }
             ]
         },
         "15b": {
-            "success": 553763,
+            "success": 357738,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Sheoldred, the Apocalypse"
+                        "Tyrannical Pitlord"
                     ],
-                    "turn": 4,
-                    "success": 553763,
+                    "turn": 7,
+                    "success": 357738,
                     "total": 1000000
                 }
             ]
         },
         "16": {
-            "success": 577848,
+            "success": 431528,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Sheoldred, the Apocalypse"
+                        "Tyrannical Pitlord"
                     ],
-                    "turn": 4,
-                    "success": 577848,
+                    "turn": 7,
+                    "success": 431528,
                     "total": 1000000
                 }
             ]
         },
         "17g": {
-            "success": 596716,
+            "success": 502025,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Sheoldred, the Apocalypse"
+                        "Tyrannical Pitlord"
                     ],
-                    "turn": 4,
-                    "success": 596716,
+                    "turn": 7,
+                    "success": 502025,
                     "total": 1000000
                 }
             ]
         },
         "17b": {
-            "success": 654570,
+            "success": 519950,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Sheoldred, the Apocalypse"
+                        "Tyrannical Pitlord"
                     ],
-                    "turn": 4,
-                    "success": 654570,
+                    "turn": 7,
+                    "success": 519950,
                     "total": 1000000
                 }
             ]
         },
         "18": {
-            "success": 672743,
+            "success": 590589,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Sheoldred, the Apocalypse"
+                        "Tyrannical Pitlord"
                     ],
-                    "turn": 4,
-                    "success": 672743,
+                    "turn": 7,
+                    "success": 590589,
                     "total": 1000000
                 }
             ]

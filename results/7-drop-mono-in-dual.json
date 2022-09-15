@@ -1,213 +1,213 @@
 {
-    "3G": {
+    "6B": {
         "14": {
-            "success": 579366,
+            "success": 91392,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Magnigoth Sentry"
+                        "Writhing Necromass"
                     ],
-                    "turn": 4,
-                    "success": 579366,
+                    "turn": 7,
+                    "success": 91392,
                     "total": 1000000
                 }
             ]
         },
         "15g": {
-            "success": 646641,
+            "success": 135601,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Magnigoth Sentry"
+                        "Writhing Necromass"
                     ],
-                    "turn": 4,
-                    "success": 646641,
+                    "turn": 7,
+                    "success": 135601,
                     "total": 1000000
                 }
             ]
         },
         "15b": {
-            "success": 635349,
+            "success": 136450,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Magnigoth Sentry"
+                        "Writhing Necromass"
                     ],
-                    "turn": 4,
-                    "success": 635349,
+                    "turn": 7,
+                    "success": 136450,
                     "total": 1000000
                 }
             ]
         },
         "16": {
-            "success": 699695,
+            "success": 191503,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Magnigoth Sentry"
+                        "Writhing Necromass"
                     ],
-                    "turn": 4,
-                    "success": 699695,
+                    "turn": 7,
+                    "success": 191503,
                     "total": 1000000
                 }
             ]
         },
         "17g": {
-            "success": 755703,
+            "success": 254946,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Magnigoth Sentry"
+                        "Writhing Necromass"
                     ],
-                    "turn": 4,
-                    "success": 755703,
+                    "turn": 7,
+                    "success": 254946,
                     "total": 1000000
                 }
             ]
         },
         "17b": {
-            "success": 744271,
+            "success": 255337,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Magnigoth Sentry"
+                        "Writhing Necromass"
                     ],
-                    "turn": 4,
-                    "success": 744271,
+                    "turn": 7,
+                    "success": 255337,
                     "total": 1000000
                 }
             ]
         },
         "18": {
-            "success": 797365,
+            "success": 327132,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Magnigoth Sentry"
+                        "Writhing Necromass"
                     ],
-                    "turn": 4,
-                    "success": 797365,
+                    "turn": 7,
+                    "success": 327132,
                     "total": 1000000
                 }
             ]
         }
     },
-    "2BB": {
+    "5GG": {
         "14": {
-            "success": 471037,
+            "success": 91038,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Sheoldred, the Apocalypse"
+                        "Mossbeard Ancient"
                     ],
-                    "turn": 4,
-                    "success": 471037,
+                    "turn": 7,
+                    "success": 91038,
                     "total": 1000000
                 }
             ]
         },
         "15g": {
-            "success": 493139,
+            "success": 134814,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Sheoldred, the Apocalypse"
+                        "Mossbeard Ancient"
                     ],
-                    "turn": 4,
-                    "success": 493139,
+                    "turn": 7,
+                    "success": 134814,
                     "total": 1000000
                 }
             ]
         },
         "15b": {
-            "success": 553763,
+            "success": 132255,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Sheoldred, the Apocalypse"
+                        "Mossbeard Ancient"
                     ],
-                    "turn": 4,
-                    "success": 553763,
+                    "turn": 7,
+                    "success": 132255,
                     "total": 1000000
                 }
             ]
         },
         "16": {
-            "success": 577848,
+            "success": 187715,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Sheoldred, the Apocalypse"
+                        "Mossbeard Ancient"
                     ],
-                    "turn": 4,
-                    "success": 577848,
+                    "turn": 7,
+                    "success": 187715,
                     "total": 1000000
                 }
             ]
         },
         "17g": {
-            "success": 596716,
+            "success": 252855,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Sheoldred, the Apocalypse"
+                        "Mossbeard Ancient"
                     ],
-                    "turn": 4,
-                    "success": 596716,
+                    "turn": 7,
+                    "success": 252855,
                     "total": 1000000
                 }
             ]
         },
         "17b": {
-            "success": 654570,
+            "success": 247571,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Sheoldred, the Apocalypse"
+                        "Mossbeard Ancient"
                     ],
-                    "turn": 4,
-                    "success": 654570,
+                    "turn": 7,
+                    "success": 247571,
                     "total": 1000000
                 }
             ]
         },
         "18": {
-            "success": 672743,
+            "success": 320958,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Sheoldred, the Apocalypse"
+                        "Mossbeard Ancient"
                     ],
-                    "turn": 4,
-                    "success": 672743,
+                    "turn": 7,
+                    "success": 320958,
                     "total": 1000000
                 }
             ]

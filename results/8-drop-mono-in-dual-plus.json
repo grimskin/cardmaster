@@ -1,7 +1,7 @@
 {
     "7G": {
         "14": {
-            "success": 37570,
+            "success": 67287,
             "total": 1000000,
             "conditions": [
                 {
@@ -9,14 +9,14 @@
                     "params": [
                         "Yavimaya Sojourner"
                     ],
-                    "turn": 8,
-                    "success": 37570,
+                    "turn": 9,
+                    "success": 67287,
                     "total": 1000000
                 }
             ]
         },
         "15g": {
-            "success": 62755,
+            "success": 109209,
             "total": 1000000,
             "conditions": [
                 {
@@ -24,14 +24,14 @@
                     "params": [
                         "Yavimaya Sojourner"
                     ],
-                    "turn": 8,
-                    "success": 62755,
+                    "turn": 9,
+                    "success": 109209,
                     "total": 1000000
                 }
             ]
         },
         "15b": {
-            "success": 63185,
+            "success": 109399,
             "total": 1000000,
             "conditions": [
                 {
@@ -39,14 +39,14 @@
                     "params": [
                         "Yavimaya Sojourner"
                     ],
-                    "turn": 8,
-                    "success": 63185,
+                    "turn": 9,
+                    "success": 109399,
                     "total": 1000000
                 }
             ]
         },
         "16": {
-            "success": 98800,
+            "success": 163528,
             "total": 1000000,
             "conditions": [
                 {
@@ -54,14 +54,14 @@
                     "params": [
                         "Yavimaya Sojourner"
                     ],
-                    "turn": 8,
-                    "success": 98800,
+                    "turn": 9,
+                    "success": 163528,
                     "total": 1000000
                 }
             ]
         },
         "17g": {
-            "success": 145432,
+            "success": 229585,
             "total": 1000000,
             "conditions": [
                 {
@@ -69,14 +69,14 @@
                     "params": [
                         "Yavimaya Sojourner"
                     ],
-                    "turn": 8,
-                    "success": 145432,
+                    "turn": 9,
+                    "success": 229585,
                     "total": 1000000
                 }
             ]
         },
         "17b": {
-            "success": 145833,
+            "success": 230871,
             "total": 1000000,
             "conditions": [
                 {
@@ -84,14 +84,14 @@
                     "params": [
                         "Yavimaya Sojourner"
                     ],
-                    "turn": 8,
-                    "success": 145833,
+                    "turn": 9,
+                    "success": 230871,
                     "total": 1000000
                 }
             ]
         },
         "18": {
-            "success": 203239,
+            "success": 309806,
             "total": 1000000,
             "conditions": [
                 {
@@ -99,8 +99,8 @@
                     "params": [
                         "Yavimaya Sojourner"
                     ],
-                    "turn": 8,
-                    "success": 203239,
+                    "turn": 9,
+                    "success": 309806,
                     "total": 1000000
                 }
             ]

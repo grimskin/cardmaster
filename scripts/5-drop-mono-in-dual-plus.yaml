@@ -1,0 +1,73 @@
+decks:
+  - name: "14"
+    cards:
+      - name: Forest
+        amount: 7
+      - name: Swamp
+        amount: 7
+    fill-to: 40
+
+  - name: "15g"
+    cards:
+      - name: Forest
+        amount: 8
+      - name: Swamp
+        amount: 7
+    fill-to: 40
+  - name: "15b"
+    cards:
+      - name: Forest
+        amount: 7
+      - name: Swamp
+        amount: 8
+    fill-to: 40
+
+  - name: "16"
+    cards:
+      - name: Swamp
+        amount: 8
+      - name: Forest
+        amount: 8
+    fill-to: 40
+
+  - name: "17g"
+    cards:
+      - name: Forest
+        amount: 9
+      - name: Swamp
+        amount: 8
+    fill-to: 40
+  - name: "17b"
+    cards:
+      - name: Forest
+        amount: 8
+      - name: Swamp
+        amount: 9
+    fill-to: 40
+
+  - name: "18"
+    cards:
+      - name: Forest
+        amount: 9
+      - name: Swamp
+        amount: 9
+    fill-to: 40
+
+conditions:
+  - name: '4G'
+    conditions:
+      - type: 'can-cast'
+        param: 'Elfhame Wurm'
+        turn: 6
+  - name: '3GG'
+    conditions:
+      - type: 'can-cast'
+        param: 'Defiler of Vigor'
+        turn: 6
+  - name: '2GGG'
+    conditions:
+      - type: 'can-cast'
+        param: 'Silverback Elder'
+        turn: 6
+
+passes: 1000000

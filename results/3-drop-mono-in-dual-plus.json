@@ -1,213 +1,213 @@
 {
-    "3G": {
+    "2G": {
         "14": {
-            "success": 579366,
+            "success": 855460,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Magnigoth Sentry"
+                        "Deathbloom Gardener"
                     ],
                     "turn": 4,
-                    "success": 579366,
+                    "success": 855460,
                     "total": 1000000
                 }
             ]
         },
         "15g": {
-            "success": 646641,
+            "success": 892497,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Magnigoth Sentry"
+                        "Deathbloom Gardener"
                     ],
                     "turn": 4,
-                    "success": 646641,
+                    "success": 892497,
                     "total": 1000000
                 }
             ]
         },
         "15b": {
-            "success": 635349,
+            "success": 868636,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Magnigoth Sentry"
+                        "Deathbloom Gardener"
                     ],
                     "turn": 4,
-                    "success": 635349,
+                    "success": 868636,
                     "total": 1000000
                 }
             ]
         },
         "16": {
-            "success": 699695,
+            "success": 903251,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Magnigoth Sentry"
+                        "Deathbloom Gardener"
                     ],
                     "turn": 4,
-                    "success": 699695,
+                    "success": 903251,
                     "total": 1000000
                 }
             ]
         },
         "17g": {
-            "success": 755703,
+            "success": 930054,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Magnigoth Sentry"
+                        "Deathbloom Gardener"
                     ],
                     "turn": 4,
-                    "success": 755703,
+                    "success": 930054,
                     "total": 1000000
                 }
             ]
         },
         "17b": {
-            "success": 744271,
+            "success": 910922,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Magnigoth Sentry"
+                        "Deathbloom Gardener"
                     ],
                     "turn": 4,
-                    "success": 744271,
+                    "success": 910922,
                     "total": 1000000
                 }
             ]
         },
         "18": {
-            "success": 797365,
+            "success": 936531,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Magnigoth Sentry"
+                        "Deathbloom Gardener"
                     ],
                     "turn": 4,
-                    "success": 797365,
+                    "success": 936531,
                     "total": 1000000
                 }
             ]
         }
     },
-    "2BB": {
+    "1BB": {
         "14": {
-            "success": 471037,
+            "success": 623369,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Sheoldred, the Apocalypse"
+                        "Liliana of the Veil"
                     ],
                     "turn": 4,
-                    "success": 471037,
+                    "success": 623369,
                     "total": 1000000
                 }
             ]
         },
         "15g": {
-            "success": 493139,
+            "success": 613180,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Sheoldred, the Apocalypse"
+                        "Liliana of the Veil"
                     ],
                     "turn": 4,
-                    "success": 493139,
+                    "success": 613180,
                     "total": 1000000
                 }
             ]
         },
         "15b": {
-            "success": 553763,
+            "success": 700976,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Sheoldred, the Apocalypse"
+                        "Liliana of the Veil"
                     ],
                     "turn": 4,
-                    "success": 553763,
+                    "success": 700976,
                     "total": 1000000
                 }
             ]
         },
         "16": {
-            "success": 577848,
+            "success": 690846,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Sheoldred, the Apocalypse"
+                        "Liliana of the Veil"
                     ],
                     "turn": 4,
-                    "success": 577848,
+                    "success": 690846,
                     "total": 1000000
                 }
             ]
         },
         "17g": {
-            "success": 596716,
+            "success": 682894,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Sheoldred, the Apocalypse"
+                        "Liliana of the Veil"
                     ],
                     "turn": 4,
-                    "success": 596716,
+                    "success": 682894,
                     "total": 1000000
                 }
             ]
         },
         "17b": {
-            "success": 654570,
+            "success": 758200,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Sheoldred, the Apocalypse"
+                        "Liliana of the Veil"
                     ],
                     "turn": 4,
-                    "success": 654570,
+                    "success": 758200,
                     "total": 1000000
                 }
             ]
         },
         "18": {
-            "success": 672743,
+            "success": 749783,
             "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
-                        "Sheoldred, the Apocalypse"
+                        "Liliana of the Veil"
                     ],
                     "turn": 4,
-                    "success": 672743,
+                    "success": 749783,
                     "total": 1000000
                 }
             ]

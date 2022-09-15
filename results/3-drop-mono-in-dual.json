@@ -1,7 +1,7 @@
 {
     "2G": {
         "14": {
-            "success": 788736,
+            "success": 788306,
             "total": 1000000,
             "conditions": [
                 {
@@ -10,13 +10,13 @@
                         "Deathbloom Gardener"
                     ],
                     "turn": 3,
-                    "success": 788736,
+                    "success": 788306,
                     "total": 1000000
                 }
             ]
         },
         "15g": {
-            "success": 833186,
+            "success": 832607,
             "total": 1000000,
             "conditions": [
                 {
@@ -25,13 +25,13 @@
                         "Deathbloom Gardener"
                     ],
                     "turn": 3,
-                    "success": 833186,
+                    "success": 832607,
                     "total": 1000000
                 }
             ]
         },
         "15b": {
-            "success": 806096,
+            "success": 807236,
             "total": 1000000,
             "conditions": [
                 {
@@ -40,13 +40,13 @@
                         "Deathbloom Gardener"
                     ],
                     "turn": 3,
-                    "success": 806096,
+                    "success": 807236,
                     "total": 1000000
                 }
             ]
         },
         "16": {
-            "success": 849529,
+            "success": 849719,
             "total": 1000000,
             "conditions": [
                 {
@@ -55,13 +55,13 @@
                         "Deathbloom Gardener"
                     ],
                     "turn": 3,
-                    "success": 849529,
+                    "success": 849719,
                     "total": 1000000
                 }
             ]
         },
         "17g": {
-            "success": 833047,
+            "success": 883506,
             "total": 1000000,
             "conditions": [
                 {
@@ -70,13 +70,13 @@
                         "Deathbloom Gardener"
                     ],
                     "turn": 3,
-                    "success": 833047,
+                    "success": 883506,
                     "total": 1000000
                 }
             ]
         },
         "17b": {
-            "success": 806716,
+            "success": 862111,
             "total": 1000000,
             "conditions": [
                 {
@@ -85,13 +85,13 @@
                         "Deathbloom Gardener"
                     ],
                     "turn": 3,
-                    "success": 806716,
+                    "success": 862111,
                     "total": 1000000
                 }
             ]
         },
         "18": {
-            "success": 895484,
+            "success": 895020,
             "total": 1000000,
             "conditions": [
                 {
@@ -100,7 +100,7 @@
                         "Deathbloom Gardener"
                     ],
                     "turn": 3,
-                    "success": 895484,
+                    "success": 895020,
                     "total": 1000000
                 }
             ]
@@ -108,7 +108,7 @@
     },
     "1BB": {
         "14": {
-            "success": 545121,
+            "success": 544378,
             "total": 1000000,
             "conditions": [
                 {
@@ -117,13 +117,13 @@
                         "Liliana of the Veil"
                     ],
                     "turn": 3,
-                    "success": 545121,
+                    "success": 544378,
                     "total": 1000000
                 }
             ]
         },
         "15g": {
-            "success": 536092,
+            "success": 535042,
             "total": 1000000,
             "conditions": [
                 {
@@ -132,13 +132,13 @@
                         "Liliana of the Veil"
                     ],
                     "turn": 3,
-                    "success": 536092,
+                    "success": 535042,
                     "total": 1000000
                 }
             ]
         },
         "15b": {
-            "success": 623387,
+            "success": 621712,
             "total": 1000000,
             "conditions": [
                 {
@@ -147,13 +147,13 @@
                         "Liliana of the Veil"
                     ],
                     "turn": 3,
-                    "success": 623387,
+                    "success": 621712,
                     "total": 1000000
                 }
             ]
         },
         "16": {
-            "success": 615860,
+            "success": 615746,
             "total": 1000000,
             "conditions": [
                 {
@@ -162,13 +162,13 @@
                         "Liliana of the Veil"
                     ],
                     "turn": 3,
-                    "success": 615860,
+                    "success": 615746,
                     "total": 1000000
                 }
             ]
         },
         "17g": {
-            "success": 536332,
+            "success": 607111,
             "total": 1000000,
             "conditions": [
                 {
@@ -177,13 +177,13 @@
                         "Liliana of the Veil"
                     ],
                     "turn": 3,
-                    "success": 536332,
+                    "success": 607111,
                     "total": 1000000
                 }
             ]
         },
         "17b": {
-            "success": 623742,
+            "success": 684485,
             "total": 1000000,
             "conditions": [
                 {
@@ -192,13 +192,13 @@
                         "Liliana of the Veil"
                     ],
                     "turn": 3,
-                    "success": 623742,
+                    "success": 684485,
                     "total": 1000000
                 }
             ]
         },
         "18": {
-            "success": 677952,
+            "success": 678045,
             "total": 1000000,
             "conditions": [
                 {
@@ -207,7 +207,7 @@
                         "Liliana of the Veil"
                     ],
                     "turn": 3,
-                    "success": 677952,
+                    "success": 678045,
                     "total": 1000000
                 }
             ]

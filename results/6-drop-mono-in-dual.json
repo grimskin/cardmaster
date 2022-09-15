@@ -1,7 +1,7 @@
 {
     "5G": {
         "14": {
-            "success": 195860,
+            "success": 195395,
             "total": 1000000,
             "conditions": [
                 {
@@ -10,13 +10,13 @@
                         "Briar Hydra"
                     ],
                     "turn": 6,
-                    "success": 195860,
+                    "success": 195395,
                     "total": 1000000
                 }
             ]
         },
         "15g": {
-            "success": 259218,
+            "success": 258576,
             "total": 1000000,
             "conditions": [
                 {
@@ -25,13 +25,13 @@
                         "Briar Hydra"
                     ],
                     "turn": 6,
-                    "success": 259218,
+                    "success": 258576,
                     "total": 1000000
                 }
             ]
         },
         "15b": {
-            "success": 259240,
+            "success": 258087,
             "total": 1000000,
             "conditions": [
                 {
@@ -40,13 +40,13 @@
                         "Briar Hydra"
                     ],
                     "turn": 6,
-                    "success": 259240,
+                    "success": 258087,
                     "total": 1000000
                 }
             ]
         },
         "16": {
-            "success": 329920,
+            "success": 329547,
             "total": 1000000,
             "conditions": [
                 {
@@ -55,13 +55,13 @@
                         "Briar Hydra"
                     ],
                     "turn": 6,
-                    "success": 329920,
+                    "success": 329547,
                     "total": 1000000
                 }
             ]
         },
         "17g": {
-            "success": 259099,
+            "success": 405662,
             "total": 1000000,
             "conditions": [
                 {
@@ -70,13 +70,13 @@
                         "Briar Hydra"
                     ],
                     "turn": 6,
-                    "success": 259099,
+                    "success": 405662,
                     "total": 1000000
                 }
             ]
         },
         "17b": {
-            "success": 258703,
+            "success": 403812,
             "total": 1000000,
             "conditions": [
                 {
@@ -85,13 +85,13 @@
                         "Briar Hydra"
                     ],
                     "turn": 6,
-                    "success": 258703,
+                    "success": 403812,
                     "total": 1000000
                 }
             ]
         },
         "18": {
-            "success": 481386,
+            "success": 481133,
             "total": 1000000,
             "conditions": [
                 {
@@ -100,7 +100,7 @@
                         "Briar Hydra"
                     ],
                     "turn": 6,
-                    "success": 481386,
+                    "success": 481133,
                     "total": 1000000
                 }
             ]
@@ -108,7 +108,7 @@
     },
     "4BB": {
         "14": {
-            "success": 187533,
+            "success": 187448,
             "total": 1000000,
             "conditions": [
                 {
@@ -117,13 +117,13 @@
                         "Tyrannical Pitlord"
                     ],
                     "turn": 6,
-                    "success": 187533,
+                    "success": 187448,
                     "total": 1000000
                 }
             ]
         },
         "15g": {
-            "success": 242140,
+            "success": 242541,
             "total": 1000000,
             "conditions": [
                 {
@@ -132,13 +132,13 @@
                         "Tyrannical Pitlord"
                     ],
                     "turn": 6,
-                    "success": 242140,
+                    "success": 242541,
                     "total": 1000000
                 }
             ]
         },
         "15b": {
-            "success": 252719,
+            "success": 252534,
             "total": 1000000,
             "conditions": [
                 {
@@ -147,13 +147,13 @@
                         "Tyrannical Pitlord"
                     ],
                     "turn": 6,
-                    "success": 252719,
+                    "success": 252534,
                     "total": 1000000
                 }
             ]
         },
         "16": {
-            "success": 314900,
+            "success": 316279,
             "total": 1000000,
             "conditions": [
                 {
@@ -162,13 +162,13 @@
                         "Tyrannical Pitlord"
                     ],
                     "turn": 6,
-                    "success": 314900,
+                    "success": 316279,
                     "total": 1000000
                 }
             ]
         },
         "17g": {
-            "success": 241921,
+            "success": 379098,
             "total": 1000000,
             "conditions": [
                 {
@@ -177,13 +177,13 @@
                         "Tyrannical Pitlord"
                     ],
                     "turn": 6,
-                    "success": 241921,
+                    "success": 379098,
                     "total": 1000000
                 }
             ]
         },
         "17b": {
-            "success": 252654,
+            "success": 392995,
             "total": 1000000,
             "conditions": [
                 {
@@ -192,13 +192,13 @@
                         "Tyrannical Pitlord"
                     ],
                     "turn": 6,
-                    "success": 252654,
+                    "success": 392995,
                     "total": 1000000
                 }
             ]
         },
         "18": {
-            "success": 459631,
+            "success": 460067,
             "total": 1000000,
             "conditions": [
                 {
@@ -207,7 +207,7 @@
                         "Tyrannical Pitlord"
                     ],
                     "turn": 6,
-                    "success": 459631,
+                    "success": 460067,
                     "total": 1000000
                 }
             ]

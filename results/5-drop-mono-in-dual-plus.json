@@ -1,7 +1,7 @@
 {
     "4G": {
         "14": {
-            "success": 361655,
+            "success": 478127,
             "total": 1000000,
             "conditions": [
                 {
@@ -9,14 +9,14 @@
                     "params": [
                         "Elfhame Wurm"
                     ],
-                    "turn": 5,
-                    "success": 361655,
+                    "turn": 6,
+                    "success": 478127,
                     "total": 1000000
                 }
             ]
         },
         "15g": {
-            "success": 436839,
+            "success": 558782,
             "total": 1000000,
             "conditions": [
                 {
@@ -24,14 +24,14 @@
                     "params": [
                         "Elfhame Wurm"
                     ],
-                    "turn": 5,
-                    "success": 436839,
+                    "turn": 6,
+                    "success": 558782,
                     "total": 1000000
                 }
             ]
         },
         "15b": {
-            "success": 431904,
+            "success": 553655,
             "total": 1000000,
             "conditions": [
                 {
@@ -39,14 +39,14 @@
                     "params": [
                         "Elfhame Wurm"
                     ],
-                    "turn": 5,
-                    "success": 431904,
+                    "turn": 6,
+                    "success": 553655,
                     "total": 1000000
                 }
             ]
         },
         "16": {
-            "success": 508183,
+            "success": 632258,
             "total": 1000000,
             "conditions": [
                 {
@@ -54,14 +54,14 @@
                     "params": [
                         "Elfhame Wurm"
                     ],
-                    "turn": 5,
-                    "success": 508183,
+                    "turn": 6,
+                    "success": 632258,
                     "total": 1000000
                 }
             ]
         },
         "17g": {
-            "success": 581336,
+            "success": 702993,
             "total": 1000000,
             "conditions": [
                 {
@@ -69,14 +69,14 @@
                     "params": [
                         "Elfhame Wurm"
                     ],
-                    "turn": 5,
-                    "success": 581336,
+                    "turn": 6,
+                    "success": 702993,
                     "total": 1000000
                 }
             ]
         },
         "17b": {
-            "success": 577301,
+            "success": 698847,
             "total": 1000000,
             "conditions": [
                 {
@@ -84,14 +84,14 @@
                     "params": [
                         "Elfhame Wurm"
                     ],
-                    "turn": 5,
-                    "success": 577301,
+                    "turn": 6,
+                    "success": 698847,
                     "total": 1000000
                 }
             ]
         },
         "18": {
-            "success": 647679,
+            "success": 762543,
             "total": 1000000,
             "conditions": [
                 {
@@ -99,8 +99,8 @@
                     "params": [
                         "Elfhame Wurm"
                     ],
-                    "turn": 5,
-                    "success": 647679,
+                    "turn": 6,
+                    "success": 762543,
                     "total": 1000000
                 }
             ]
@@ -108,7 +108,7 @@
     },
     "3GG": {
         "14": {
-            "success": 326881,
+            "success": 436585,
             "total": 1000000,
             "conditions": [
                 {
@@ -116,14 +116,14 @@
                     "params": [
                         "Defiler of Vigor"
                     ],
-                    "turn": 5,
-                    "success": 326881,
+                    "turn": 6,
+                    "success": 436585,
                     "total": 1000000
                 }
             ]
         },
         "15g": {
-            "success": 406373,
+            "success": 525010,
             "total": 1000000,
             "conditions": [
                 {
@@ -131,14 +131,14 @@
                     "params": [
                         "Defiler of Vigor"
                     ],
-                    "turn": 5,
-                    "success": 406373,
+                    "turn": 6,
+                    "success": 525010,
                     "total": 1000000
                 }
             ]
         },
         "15b": {
-            "success": 377911,
+            "success": 489460,
             "total": 1000000,
             "conditions": [
                 {
@@ -146,14 +146,14 @@
                     "params": [
                         "Defiler of Vigor"
                     ],
-                    "turn": 5,
-                    "success": 377911,
+                    "turn": 6,
+                    "success": 489460,
                     "total": 1000000
                 }
             ]
         },
         "16": {
-            "success": 461828,
+            "success": 579001,
             "total": 1000000,
             "conditions": [
                 {
@@ -161,14 +161,14 @@
                     "params": [
                         "Defiler of Vigor"
                     ],
-                    "turn": 5,
-                    "success": 461828,
+                    "turn": 6,
+                    "success": 579001,
                     "total": 1000000
                 }
             ]
         },
         "17g": {
-            "success": 541478,
+            "success": 661206,
             "total": 1000000,
             "conditions": [
                 {
@@ -176,14 +176,14 @@
                     "params": [
                         "Defiler of Vigor"
                     ],
-                    "turn": 5,
-                    "success": 541478,
+                    "turn": 6,
+                    "success": 661206,
                     "total": 1000000
                 }
             ]
         },
         "17b": {
-            "success": 509438,
+            "success": 623910,
             "total": 1000000,
             "conditions": [
                 {
@@ -191,14 +191,14 @@
                     "params": [
                         "Defiler of Vigor"
                     ],
-                    "turn": 5,
-                    "success": 509438,
+                    "turn": 6,
+                    "success": 623910,
                     "total": 1000000
                 }
             ]
         },
         "18": {
-            "success": 589764,
+            "success": 704994,
             "total": 1000000,
             "conditions": [
                 {
@@ -206,8 +206,8 @@
                     "params": [
                         "Defiler of Vigor"
                     ],
-                    "turn": 5,
-                    "success": 589764,
+                    "turn": 6,
+                    "success": 704994,
                     "total": 1000000
                 }
             ]
@@ -215,7 +215,7 @@
     },
     "2GGG": {
         "14": {
-            "success": 211206,
+            "success": 288823,
             "total": 1000000,
             "conditions": [
                 {
@@ -223,14 +223,14 @@
                     "params": [
                         "Silverback Elder"
                     ],
-                    "turn": 5,
-                    "success": 211206,
+                    "turn": 6,
+                    "success": 288823,
                     "total": 1000000
                 }
             ]
         },
         "15g": {
-            "success": 289627,
+            "success": 383257,
             "total": 1000000,
             "conditions": [
                 {
@@ -238,14 +238,14 @@
                     "params": [
                         "Silverback Elder"
                     ],
-                    "turn": 5,
-                    "success": 289627,
+                    "turn": 6,
+                    "success": 383257,
                     "total": 1000000
                 }
             ]
         },
         "15b": {
-            "success": 226746,
+            "success": 303700,
             "total": 1000000,
             "conditions": [
                 {
@@ -253,14 +253,14 @@
                     "params": [
                         "Silverback Elder"
                     ],
-                    "turn": 5,
-                    "success": 226746,
+                    "turn": 6,
+                    "success": 303700,
                     "total": 1000000
                 }
             ]
         },
         "16": {
-            "success": 309097,
+            "success": 402467,
             "total": 1000000,
             "conditions": [
                 {
@@ -268,14 +268,14 @@
                     "params": [
                         "Silverback Elder"
                     ],
-                    "turn": 5,
-                    "success": 309097,
+                    "turn": 6,
+                    "success": 402467,
                     "total": 1000000
                 }
             ]
         },
         "17g": {
-            "success": 394880,
+            "success": 498590,
             "total": 1000000,
             "conditions": [
                 {
@@ -283,14 +283,14 @@
                     "params": [
                         "Silverback Elder"
                     ],
-                    "turn": 5,
-                    "success": 394880,
+                    "turn": 6,
+                    "success": 498590,
                     "total": 1000000
                 }
             ]
         },
         "17b": {
-            "success": 323533,
+            "success": 415008,
             "total": 1000000,
             "conditions": [
                 {
@@ -298,14 +298,14 @@
                     "params": [
                         "Silverback Elder"
                     ],
-                    "turn": 5,
-                    "success": 323533,
+                    "turn": 6,
+                    "success": 415008,
                     "total": 1000000
                 }
             ]
         },
         "18": {
-            "success": 410329,
+            "success": 511442,
             "total": 1000000,
             "conditions": [
                 {
@@ -313,8 +313,8 @@
                     "params": [
                         "Silverback Elder"
                     ],
-                    "turn": 5,
-                    "success": 410329,
+                    "turn": 6,
+                    "success": 511442,
                     "total": 1000000
                 }
             ]

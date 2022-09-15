@@ -1,214 +1,214 @@
 {
     "1G": {
         "14": {
-            "success": 8893,
-            "total": 10000,
+            "success": 913255,
+            "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
                         "Llanowar Loamspeaker"
                     ],
-                    "turn": 2,
-                    "success": 8893,
-                    "total": 10000
+                    "turn": 3,
+                    "success": 913255,
+                    "total": 1000000
                 }
             ]
         },
         "15g": {
-            "success": 9155,
-            "total": 10000,
+            "success": 937797,
+            "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
                         "Llanowar Loamspeaker"
                     ],
-                    "turn": 2,
-                    "success": 9155,
-                    "total": 10000
+                    "turn": 3,
+                    "success": 937797,
+                    "total": 1000000
                 }
             ]
         },
         "15b": {
-            "success": 8718,
-            "total": 10000,
+            "success": 902518,
+            "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
                         "Llanowar Loamspeaker"
                     ],
-                    "turn": 2,
-                    "success": 8718,
-                    "total": 10000
+                    "turn": 3,
+                    "success": 902518,
+                    "total": 1000000
                 }
             ]
         },
         "16": {
-            "success": 9013,
-            "total": 10000,
+            "success": 928703,
+            "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
                         "Llanowar Loamspeaker"
                     ],
-                    "turn": 2,
-                    "success": 9013,
-                    "total": 10000
+                    "turn": 3,
+                    "success": 928703,
+                    "total": 1000000
                 }
             ]
         },
         "17g": {
-            "success": 9307,
-            "total": 10000,
+            "success": 947943,
+            "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
                         "Llanowar Loamspeaker"
                     ],
-                    "turn": 2,
-                    "success": 9307,
-                    "total": 10000
+                    "turn": 3,
+                    "success": 947943,
+                    "total": 1000000
                 }
             ]
         },
         "17b": {
-            "success": 8958,
-            "total": 10000,
+            "success": 921437,
+            "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
                         "Llanowar Loamspeaker"
                     ],
-                    "turn": 2,
-                    "success": 8958,
-                    "total": 10000
+                    "turn": 3,
+                    "success": 921437,
+                    "total": 1000000
                 }
             ]
         },
         "18": {
-            "success": 9177,
-            "total": 10000,
+            "success": 942371,
+            "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
                         "Llanowar Loamspeaker"
                     ],
-                    "turn": 2,
-                    "success": 9177,
-                    "total": 10000
+                    "turn": 3,
+                    "success": 942371,
+                    "total": 1000000
                 }
             ]
         }
     },
     "GG": {
         "14": {
-            "success": 5082,
-            "total": 10000,
+            "success": 581870,
+            "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
                         "Leaf-Crowned Visionary"
                     ],
-                    "turn": 2,
-                    "success": 5082,
-                    "total": 10000
+                    "turn": 3,
+                    "success": 581870,
+                    "total": 1000000
                 }
             ]
         },
         "15g": {
-            "success": 5864,
-            "total": 10000,
+            "success": 658894,
+            "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
                         "Leaf-Crowned Visionary"
                     ],
-                    "turn": 2,
-                    "success": 5864,
-                    "total": 10000
+                    "turn": 3,
+                    "success": 658894,
+                    "total": 1000000
                 }
             ]
         },
         "15b": {
-            "success": 4844,
-            "total": 10000,
+            "success": 563052,
+            "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
                         "Leaf-Crowned Visionary"
                     ],
-                    "turn": 2,
-                    "success": 4844,
-                    "total": 10000
+                    "turn": 3,
+                    "success": 563052,
+                    "total": 1000000
                 }
             ]
         },
         "16": {
-            "success": 5688,
-            "total": 10000,
+            "success": 640042,
+            "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
                         "Leaf-Crowned Visionary"
                     ],
-                    "turn": 2,
-                    "success": 5688,
-                    "total": 10000
+                    "turn": 3,
+                    "success": 640042,
+                    "total": 1000000
                 }
             ]
         },
         "17g": {
-            "success": 6349,
-            "total": 10000,
+            "success": 706152,
+            "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
                         "Leaf-Crowned Visionary"
                     ],
-                    "turn": 2,
-                    "success": 6349,
-                    "total": 10000
+                    "turn": 3,
+                    "success": 706152,
+                    "total": 1000000
                 }
             ]
         },
         "17b": {
-            "success": 5446,
-            "total": 10000,
+            "success": 624790,
+            "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
                         "Leaf-Crowned Visionary"
                     ],
-                    "turn": 2,
-                    "success": 5446,
-                    "total": 10000
+                    "turn": 3,
+                    "success": 624790,
+                    "total": 1000000
                 }
             ]
         },
         "18": {
-            "success": 6109,
-            "total": 10000,
+            "success": 692002,
+            "total": 1000000,
             "conditions": [
                 {
                     "name": "can-cast",
                     "params": [
                         "Leaf-Crowned Visionary"
                     ],
-                    "turn": 2,
-                    "success": 6109,
-                    "total": 10000
+                    "turn": 3,
+                    "success": 692002,
+                    "total": 1000000
                 }
             ]
         }
