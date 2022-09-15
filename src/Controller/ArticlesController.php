@@ -42,6 +42,8 @@ class ArticlesController extends AbstractController
         return [
             'monoInMono' => $this->resultsReader->getResults('mono-in-mono', [], true),
             'monoInMonoPlus' => $this->resultsReader->getResults('mono-in-mono-plus', [], true),
+            'monoInDual' => $this->resultsReader->getDualResults('-drop-mono-in-dual'),
+            'monoInDualPlus' => $this->resultsReader->getDualResults('-drop-mono-in-dual-plus'),
         ];
     }
 }

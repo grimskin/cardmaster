@@ -88,4 +88,66 @@
         </table>
     </div>
 
+    <h3>Mono-colored spells in two-colored decks</h3>
+
+    <div class="p">
+        -- some text --
+    </div>
+
+    <div class="p">
+        <table class="experiment-results full">
+            <tr>
+                <td>&nbsp;</td>
+                {% for key, data in monoInDual[14] %}
+                <th>{{ key }}</th>
+                {% endfor %}
+            </tr>
+            {% for rowKey, row in monoInDual %}
+                <tr>
+                    <th>{{ rowKey }}</th>
+                    {% for result in row %}
+                        <td>
+                            {% if result['only'] is defined %}
+                                {{ (100 * result['only']['success'] / result['only']['total'])|number_format(2) }}%
+                            {% else %}
+                                {{ (100 * result['favored']['success'] / result['favored']['total'])|number_format(2) }}%
+                                {{ (100 * result['handicap']['success'] / result['handicap']['total'])|number_format(2) }}%
+                            {% endif %}
+                        </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <div class="p">
+        ... and the same one turn later
+    </div>
+
+    <div class="p">
+        <table class="experiment-results full">
+            <tr>
+                <td>&nbsp;</td>
+                {% for key, data in monoInDualPlus[14] %}
+                <th>{{ key }}</th>
+                {% endfor %}
+            </tr>
+            {% for rowKey, row in monoInDualPlus %}
+                <tr>
+                    <th>{{ rowKey }}</th>
+                    {% for result in row %}
+                        <td>
+                            {% if result['only'] is defined %}
+                                {{ (100 * result['only']['success'] / result['only']['total'])|number_format(2) }}%
+                            {% else %}
+                                {{ (100 * result['favored']['success'] / result['favored']['total'])|number_format(2) }}%
+                                {{ (100 * result['handicap']['success'] / result['handicap']['total'])|number_format(2) }}%
+                            {% endif %}
+                        </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+
 {% endblock %}

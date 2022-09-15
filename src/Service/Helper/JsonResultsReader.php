@@ -40,6 +40,53 @@ class JsonResultsReader
         return $result;
     }
 
+    public function getDualResults(string $filePattern): array
+    {
+        $results = [];
+
+        for ($i=2; $i<=8; $i++) {
+            $json = $this->readFile($i . $filePattern . '.json');
+            $parsed = json_decode($json, true);
+
+            foreach ($parsed as $rowKey=>$row) {
+                $inversed = str_contains($rowKey, 'B');
+
+                foreach (['14', '16', '18'] as $deckKey) {
+                    $results[$rowKey][$deckKey]['only'] = [
+                        'success' => $row[$deckKey]['success'],
+                        'total' => $row[$deckKey]['total'],
+                    ];
+                }
+                foreach (['15g', '17g'] as $deckKey) {
+                    $resDeckKey = $inversed ? str_replace('g', 'b', $deckKey) : $deckKey;
+                    $deckKey = (string)intval($deckKey);
+                    $results[$rowKey][$deckKey]['favored'] = [
+                        'success' => $row[$resDeckKey]['success'],
+                        'total' => $row[$resDeckKey]['total'],
+                    ];
+                }
+                foreach (['15b', '17b'] as $deckKey) {
+                    $resDeckKey = $inversed ? str_replace('b', 'g', $deckKey) : $deckKey;
+                    $deckKey = (string)intval($deckKey);
+                    $results[$rowKey][$deckKey]['handicap'] = [
+                        'success' => $row[$resDeckKey]['success'],
+                        'total' => $row[$resDeckKey]['total'],
+                    ];
+                }
+                ksort($results[$rowKey]);
+            }
+        }
+
+        $pivotedResult = [];
+        foreach ($results as $rowKey=>$row) {
+            foreach ($row as $colKey=>$value) {
+                $pivotedResult[$colKey][$rowKey] = $value;
+            }
+        }
+
+        return $pivotedResult;
+    }
+
     public function readFile(string $fileName): string
     {
         $result = '';

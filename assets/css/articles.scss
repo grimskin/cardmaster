@@ -61,6 +61,9 @@ div#article-body {
     }
 
     table.experiment-results {
+        &.full {
+            font-size: 0.85rem;
+        }
         width: 100%;
         border: 1px solid $articles-base-color;
         border-radius: $table-border-radius;
@@ -74,6 +77,9 @@ div#article-body {
         th, td {
             text-align: center;
             box-shadow: -1px -1px $articles-base-color;
+        }
+        th {
+            min-width: 3rem;
         }
     }
 }
