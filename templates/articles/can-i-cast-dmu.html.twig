@@ -91,15 +91,92 @@
     <h3>Mono-colored spells in two-colored decks</h3>
 
     <div class="p">
-        -- some text --
+        This situation is a bit trickier – because the outcome not only depends on the number of lands in the deck but
+        also depends on the proportion between the colors. For even amounts of lands, I’ve assumed that we have an equal
+        amount of lands of each color. For odd amounts, I’ve assumed that one color has one more land in the deck, and
+        thus I had to run the simulation twice – for the situation when the spell is of the “dominant” color and once –
+        for the opposite. Because of that rows that represent odd-numbered mana base have two values – one for the
+        situation when card's color is the same as the “dominant” color of the mana base, and the second one – for the
+        opposite situation.
+    </div>
+
+    <div class="p">
+        Example cards:
+        <table class="cards-list">
+            <tr>
+                <td>1C</td>
+                <td>Llanowar Loamspeaker</td>
+            </tr>
+            <tr>
+                <td>CC</td>
+                <td>Leaf-Crowned Visionary</td>
+            </tr>
+            <tr>
+                <td>2C</td>
+                <td>Deathbloom Gardener</td>
+            </tr>
+            <tr>
+                <td>1CC</td>
+                <td>Liliana of the Veil</td>
+            </tr>
+            <tr>
+                <td>3C</td>
+                <td>Magnigoth Sentry</td>
+            </tr>
+            <tr>
+                <td>2CC</td>
+                <td>Sheoldred, the Apocalypse</td>
+            </tr>
+            <tr>
+                <td>4C</td>
+                <td>Elfhame Wurm</td>
+            </tr>
+            <tr>
+                <td>3CC</td>
+                <td>Defiler of Vigor</td>
+            </tr>
+            <tr>
+                <td>2CCC</td>
+                <td>Silverback Elder</td>
+            </tr>
+            <tr>
+                <td>5C</td>
+                <td>Briar Hydra</td>
+            </tr>
+            <tr>
+                <td>4CC</td>
+                <td>Tyrannical Pitlord</td>
+            </tr>
+            <tr>
+                <td>6C</td>
+                <td>Writhing Necromass</td>
+            </tr>
+            <tr>
+                <td>5CC</td>
+                <td>Mossbeard Ancient</td>
+            </tr>
+            <tr>
+                <td>7C</td>
+                <td>Yavimaya Sojourner</td>
+            </tr>
+        </table>
     </div>
 
     <div class="p">
         <table class="experiment-results full">
             <tr>
-                <td>&nbsp;</td>
+                <td rowspan="2"> </td>
+                <th colspan="2">Turn 2 </th>
+                <th colspan="2">Turn 3 </th>
+                <th colspan="2">Turn 4 </th>
+                <th colspan="3">Turn 5 </th>
+                <th colspan="2">Turn 6 </th>
+                <th colspan="2">Turn 7 </th>
+                <th colspan="2">Turn 8 </th>
+            </tr>
+            <tr>
                 {% for key, data in monoInDual[14] %}
-                <th>{{ key }}</th>
+                <th>{{ key|replace({'G':'C', 'B':'C'}) }}</th>
                 {% endfor %}
             </tr>
             {% for rowKey, row in monoInDual %}
@@ -127,9 +204,18 @@
     <div class="p">
         <table class="experiment-results full">
             <tr>
-                <td>&nbsp;</td>
+                <td rowspan="2"> </td>
+                <th colspan="2">Turn 3 </th>
+                <th colspan="2">Turn 4 </th>
+                <th colspan="2">Turn 5 </th>
+                <th colspan="3">Turn 6 </th>
+                <th colspan="2">Turn 7 </th>
+                <th colspan="2">Turn 8 </th>
+                <th colspan="2">Turn 9 </th>
+            </tr>
+            <tr>
                 {% for key, data in monoInDualPlus[14] %}
-                <th>{{ key }}</th>
+                <th>{{ key|replace({'G':'C', 'B':'C'}) }}</th>
                 {% endfor %}
             </tr>
             {% for rowKey, row in monoInDualPlus %}

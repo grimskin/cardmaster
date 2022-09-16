@@ -3,7 +3,7 @@
 $view-width: 1000px;
 
 $articles-base-color: #2e6da4;
-$table-border-radius: 1rem;
+$table-border-radius: 0.8rem;
 
 body#article-page {
     font-family: 'Lato', sans-serif;
@@ -60,11 +60,10 @@ div#article-body {
         margin-bottom: 1.5rem;
     }
 
-    table.experiment-results {
+    table {
         &.full {
             font-size: 0.85rem;
         }
-        width: 100%;
         border: 1px solid $articles-base-color;
         border-radius: $table-border-radius;
         border-spacing: 0;
@@ -80,6 +79,24 @@ div#article-body {
         }
         th {
             min-width: 3rem;
+        }
+    }
+    table.experiment-results {
+        width: 100%;
+    }
+
+    table.cards-list {
+        td {
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            &:nth-of-type(1) {
+                text-align: right;
+            }
+            &:nth-last-of-type(1) {
+                text-align: left;
+                padding-right: 2.5rem;
+            }
         }
     }
 }
