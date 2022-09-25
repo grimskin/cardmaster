@@ -31,7 +31,6 @@ class CardInfoExtension extends AbstractExtension
             $canonizedName
         );
 
-//        return new Markup('<a href="/images/cards/'.$canonizedName.'.png" target="_blank">'.$cardName.'</a>', 'UTF-8');
         return new Markup(
             '<a class="card-info" href="/images/cards/'.$canonizedName.'.png" target="_blank">'.$cardName.'<img src="/images/cards/'.$canonizedName.'.png" /></a>'
             , 'UTF-8');
