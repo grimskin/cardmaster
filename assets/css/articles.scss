@@ -103,4 +103,25 @@ div#article-body {
             }
         }
     }
+
+    a.card-info {
+        position: relative;
+        text-decoration: none;
+        img {
+            display: none;
+        }
+
+        &:hover {
+            text-decoration: underline;
+            img {
+                display: block;
+                position: absolute;
+                width: 250px;
+                height: 350px;
+                top: -125px;
+                left: 150px;
+                z-index: 100;
+            }
+        }
+    }
 }
