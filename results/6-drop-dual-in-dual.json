@@ -1,0 +1,79 @@
+{
+    "4AB": {
+        "14": {
+            "success": 195170,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Bortuk Bonerattle"
+                    ],
+                    "turn": 6,
+                    "success": 195170,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15": {
+            "success": 258685,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Bortuk Bonerattle"
+                    ],
+                    "turn": 6,
+                    "success": 258685,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 328983,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Bortuk Bonerattle"
+                    ],
+                    "turn": 6,
+                    "success": 328983,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17": {
+            "success": 402199,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Bortuk Bonerattle"
+                    ],
+                    "turn": 6,
+                    "success": 402199,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 479294,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Bortuk Bonerattle"
+                    ],
+                    "turn": 6,
+                    "success": 479294,
+                    "total": 1000000
+                }
+            ]
+        }
+    }
+}

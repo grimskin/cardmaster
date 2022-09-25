@@ -1,0 +1,79 @@
+{
+    "AB": {
+        "14": {
+            "success": 779016,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Ivy, Gleeful Spellthief"
+                    ],
+                    "turn": 2,
+                    "success": 779016,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15": {
+            "success": 792181,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Ivy, Gleeful Spellthief"
+                    ],
+                    "turn": 2,
+                    "success": 792181,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 811014,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Ivy, Gleeful Spellthief"
+                    ],
+                    "turn": 2,
+                    "success": 811014,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17": {
+            "success": 823104,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Ivy, Gleeful Spellthief"
+                    ],
+                    "turn": 2,
+                    "success": 823104,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 841578,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Ivy, Gleeful Spellthief"
+                    ],
+                    "turn": 2,
+                    "success": 841578,
+                    "total": 1000000
+                }
+            ]
+        }
+    }
+}

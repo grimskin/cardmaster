@@ -1,0 +1,49 @@
+decks:
+  - name: "14"
+    cards:
+      - name: Forest
+        amount: 7
+      - name: Mountain
+        amount: 7
+    fill-to: 40
+
+  - name: "15"
+    cards:
+      - name: Forest
+        amount: 8
+      - name: Mountain
+        amount: 7
+    fill-to: 40
+
+  - name: "16"
+    cards:
+      - name: Mountain
+        amount: 8
+      - name: Forest
+        amount: 8
+    fill-to: 40
+
+  - name: "17"
+    cards:
+      - name: Forest
+        amount: 9
+      - name: Mountain
+        amount: 8
+    fill-to: 40
+
+  - name: "18"
+    cards:
+      - name: Forest
+        amount: 9
+      - name: Mountain
+        amount: 9
+    fill-to: 40
+
+conditions:
+  - name: '2AB'
+    conditions:
+      - type: 'can-cast'
+        param: 'Radha, Coalition Warlord'
+        turn: 5
+
+passes: 1000000

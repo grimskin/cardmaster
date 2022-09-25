@@ -1,0 +1,79 @@
+{
+    "1AB": {
+        "14": {
+            "success": 739746,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "King Darien XLVIII"
+                    ],
+                    "turn": 3,
+                    "success": 739746,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15": {
+            "success": 770690,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "King Darien XLVIII"
+                    ],
+                    "turn": 3,
+                    "success": 770690,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 803823,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "King Darien XLVIII"
+                    ],
+                    "turn": 3,
+                    "success": 803823,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17": {
+            "success": 826227,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "King Darien XLVIII"
+                    ],
+                    "turn": 3,
+                    "success": 826227,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 852215,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "King Darien XLVIII"
+                    ],
+                    "turn": 3,
+                    "success": 852215,
+                    "total": 1000000
+                }
+            ]
+        }
+    }
+}

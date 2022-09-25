@@ -1,0 +1,63 @@
+decks:
+  - name: "14"
+    cards:
+      - name: Forest
+        amount: 7
+      - name: Mountain
+        amount: 7
+    fill-to: 40
+
+  - name: "15a"
+    cards:
+      - name: Forest
+        amount: 8
+      - name: Mountain
+        amount: 7
+    fill-to: 40
+  - name: "15b"
+    cards:
+      - name: Forest
+        amount: 7
+      - name: Mountain
+        amount: 8
+    fill-to: 40
+
+  - name: "16"
+    cards:
+      - name: Mountain
+        amount: 8
+      - name: Forest
+        amount: 8
+    fill-to: 40
+
+  - name: "17a"
+    cards:
+      - name: Forest
+        amount: 9
+      - name: Mountain
+        amount: 8
+    fill-to: 40
+  - name: "17b"
+    cards:
+      - name: Forest
+        amount: 8
+      - name: Mountain
+        amount: 9
+    fill-to: 40
+
+  - name: "18"
+    cards:
+      - name: Forest
+        amount: 9
+      - name: Mountain
+        amount: 9
+    fill-to: 40
+
+conditions:
+  - name: '1ABB'
+    conditions:
+      - type: 'can-cast'
+        param: 'Rulik Mons, Warren Chief'
+        turn: 5
+
+passes: 1000000

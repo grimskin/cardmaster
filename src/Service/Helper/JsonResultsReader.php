@@ -40,12 +40,18 @@ class JsonResultsReader
         return $result;
     }
 
+    /**
+     * @deprecated - switch to getDualResultsV2
+     */
     public function getDualResults(string $filePattern): array
     {
         $results = [];
 
         for ($i=2; $i<=8; $i++) {
-            $json = $this->readFile($i . $filePattern . '.json');
+            $fileName = $i . $filePattern . '.json';
+            if (!$this->fileExists($fileName)) continue;
+
+            $json = $this->readFile($fileName);
             $parsed = json_decode($json, true);
 
             foreach ($parsed as $rowKey=>$row) {
@@ -85,6 +91,67 @@ class JsonResultsReader
         }
 
         return $pivotedResult;
+    }
+
+    public function getDualResultsV2(string $filePattern): array
+    {
+        $results = [];
+
+        foreach (['2', '3', '3a', '3b', '4', '4a', '4b', '5', '5a', '5b', '6', '7', '8'] as $i) {
+            $fileName = $i . $filePattern . '.json';
+            if (!$this->fileExists($fileName)) continue;
+
+            $json = $this->readFile($fileName);
+            $parsed = json_decode($json, true);
+
+            foreach ($parsed as $rowKey=>$row) {
+                foreach (['14', '15', '16', '17', '18'] as $deckKey) {
+                    if (!isset($row[$deckKey])) continue;
+
+                    $results[$rowKey][$deckKey]['only'] = [
+                        'success' => $row[$deckKey]['success'],
+                        'total' => $row[$deckKey]['total'],
+                    ];
+                }
+                foreach (['15a', '17a'] as $deckKey) {
+                    if (!isset($row[$deckKey])) continue;
+                    $resDeckKey = (string)intval(str_replace('a', '', $deckKey));
+                    $results[$rowKey][$resDeckKey]['favored'] = [
+                        'success' => $row[$deckKey]['success'],
+                        'total' => $row[$deckKey]['total'],
+                    ];
+                }
+                foreach (['15b', '17b'] as $deckKey) {
+                    if (!isset($row[$deckKey])) continue;
+                    $resDeckKey = (string)intval(str_replace('b', '', $deckKey));
+                    $results[$rowKey][$resDeckKey]['handicap'] = [
+                        'success' => $row[$deckKey]['success'],
+                        'total' => $row[$deckKey]['total'],
+                    ];
+
+                    if ($results[$rowKey][$resDeckKey]['handicap']['success'] <= $results[$rowKey][$resDeckKey]['favored']['success']) continue;
+
+                    $a = $results[$rowKey][$resDeckKey]['handicap'];
+                    $results[$rowKey][$resDeckKey]['handicap'] = $results[$rowKey][$resDeckKey]['favored'];
+                    $results[$rowKey][$resDeckKey]['favored'] = $a;
+                }
+                ksort($results[$rowKey]);
+            }
+        }
+
+        $pivotedResult = [];
+        foreach ($results as $rowKey=>$row) {
+            foreach ($row as $colKey=>$value) {
+                $pivotedResult[$colKey][$rowKey] = $value;
+            }
+        }
+
+        return $pivotedResult;
+    }
+
+    public function fileExists(string $fileName): string
+    {
+        return file_exists($this->resultsDir . $fileName);
     }
 
     public function readFile(string $fileName): string

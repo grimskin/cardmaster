@@ -1,0 +1,109 @@
+{
+    "ABB": {
+        "14": {
+            "success": 496327,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Queen Allenal of Ruadach"
+                    ],
+                    "turn": 3,
+                    "success": 496327,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15a": {
+            "success": 500280,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Queen Allenal of Ruadach"
+                    ],
+                    "turn": 3,
+                    "success": 500280,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15b": {
+            "success": 560689,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Queen Allenal of Ruadach"
+                    ],
+                    "turn": 3,
+                    "success": 560689,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 569666,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Queen Allenal of Ruadach"
+                    ],
+                    "turn": 3,
+                    "success": 569666,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17a": {
+            "success": 572895,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Queen Allenal of Ruadach"
+                    ],
+                    "turn": 3,
+                    "success": 572895,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17b": {
+            "success": 627505,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Queen Allenal of Ruadach"
+                    ],
+                    "turn": 3,
+                    "success": 627505,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 635189,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Queen Allenal of Ruadach"
+                    ],
+                    "turn": 3,
+                    "success": 635189,
+                    "total": 1000000
+                }
+            ]
+        }
+    }
+}

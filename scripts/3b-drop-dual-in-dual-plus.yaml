@@ -1,0 +1,63 @@
+decks:
+  - name: "14"
+    cards:
+      - name: Forest
+        amount: 7
+      - name: Plains
+        amount: 7
+    fill-to: 40
+
+  - name: "15a"
+    cards:
+      - name: Forest
+        amount: 8
+      - name: Plains
+        amount: 7
+    fill-to: 40
+  - name: "15b"
+    cards:
+      - name: Forest
+        amount: 7
+      - name: Plains
+        amount: 8
+    fill-to: 40
+
+  - name: "16"
+    cards:
+      - name: Plains
+        amount: 8
+      - name: Forest
+        amount: 8
+    fill-to: 40
+
+  - name: "17a"
+    cards:
+      - name: Forest
+        amount: 9
+      - name: Plains
+        amount: 8
+    fill-to: 40
+  - name: "17b"
+    cards:
+      - name: Forest
+        amount: 8
+      - name: Plains
+        amount: 9
+    fill-to: 40
+
+  - name: "18"
+    cards:
+      - name: Forest
+        amount: 9
+      - name: Plains
+        amount: 9
+    fill-to: 40
+
+conditions:
+  - name: 'ABB'
+    conditions:
+      - type: 'can-cast'
+        param: 'Queen Allenal of Ruadach'
+        turn: 4
+
+passes: 1000000

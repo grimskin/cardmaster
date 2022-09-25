@@ -1,0 +1,109 @@
+{
+    "1ABB": {
+        "14": {
+            "success": 456332,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Rulik Mons, Warren Chief"
+                    ],
+                    "turn": 4,
+                    "success": 456332,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15a": {
+            "success": 531505,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Rulik Mons, Warren Chief"
+                    ],
+                    "turn": 4,
+                    "success": 531505,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15b": {
+            "success": 483945,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Rulik Mons, Warren Chief"
+                    ],
+                    "turn": 4,
+                    "success": 483945,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 561522,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Rulik Mons, Warren Chief"
+                    ],
+                    "turn": 4,
+                    "success": 561522,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17a": {
+            "success": 631149,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Rulik Mons, Warren Chief"
+                    ],
+                    "turn": 4,
+                    "success": 631149,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17b": {
+            "success": 584177,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Rulik Mons, Warren Chief"
+                    ],
+                    "turn": 4,
+                    "success": 584177,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 654638,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Rulik Mons, Warren Chief"
+                    ],
+                    "turn": 4,
+                    "success": 654638,
+                    "total": 1000000
+                }
+            ]
+        }
+    }
+}

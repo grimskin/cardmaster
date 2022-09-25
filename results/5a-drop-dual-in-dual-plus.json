@@ -1,0 +1,79 @@
+{
+    "3AB": {
+        "14": {
+            "success": 475901,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Zar Ojanen, Scion of Efrava"
+                    ],
+                    "turn": 6,
+                    "success": 475901,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15": {
+            "success": 551950,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Zar Ojanen, Scion of Efrava"
+                    ],
+                    "turn": 6,
+                    "success": 551950,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 627578,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Zar Ojanen, Scion of Efrava"
+                    ],
+                    "turn": 6,
+                    "success": 627578,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17": {
+            "success": 694858,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Zar Ojanen, Scion of Efrava"
+                    ],
+                    "turn": 6,
+                    "success": 694858,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 756182,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Zar Ojanen, Scion of Efrava"
+                    ],
+                    "turn": 6,
+                    "success": 756182,
+                    "total": 1000000
+                }
+            ]
+        }
+    }
+}

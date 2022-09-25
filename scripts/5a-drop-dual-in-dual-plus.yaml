@@ -1,0 +1,49 @@
+decks:
+  - name: "14"
+    cards:
+      - name: Forest
+        amount: 7
+      - name: Plains
+        amount: 7
+    fill-to: 40
+
+  - name: "15"
+    cards:
+      - name: Forest
+        amount: 8
+      - name: Plains
+        amount: 7
+    fill-to: 40
+
+  - name: "16"
+    cards:
+      - name: Plains
+        amount: 8
+      - name: Forest
+        amount: 8
+    fill-to: 40
+
+  - name: "17"
+    cards:
+      - name: Forest
+        amount: 9
+      - name: Plains
+        amount: 8
+    fill-to: 40
+
+  - name: "18"
+    cards:
+      - name: Forest
+        amount: 9
+      - name: Plains
+        amount: 9
+    fill-to: 40
+
+conditions:
+  - name: '3AB'
+    conditions:
+      - type: 'can-cast'
+        param: 'Zar Ojanen, Scion of Efrava'
+        turn: 6
+
+passes: 1000000

@@ -1,0 +1,79 @@
+{
+    "2AB": {
+        "14": {
+            "success": 565603,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Radha, Coalition Warlord"
+                    ],
+                    "turn": 4,
+                    "success": 565603,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15": {
+            "success": 624492,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Radha, Coalition Warlord"
+                    ],
+                    "turn": 4,
+                    "success": 624492,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 682762,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Radha, Coalition Warlord"
+                    ],
+                    "turn": 4,
+                    "success": 682762,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17": {
+            "success": 732119,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Radha, Coalition Warlord"
+                    ],
+                    "turn": 4,
+                    "success": 732119,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 780419,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Radha, Coalition Warlord"
+                    ],
+                    "turn": 4,
+                    "success": 780419,
+                    "total": 1000000
+                }
+            ]
+        }
+    }
+}

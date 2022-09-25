@@ -1,0 +1,65 @@
+decks:
+  - name: "14"
+    cards:
+      - name: Island
+        amount: 7
+      - name: Plains
+        amount: 7
+    fill-to: 40
+
+  - name: "15a"
+    cards:
+      - name: Island
+        amount: 8
+      - name: Plains
+        amount: 7
+    fill-to: 40
+
+  - name: "15b"
+    cards:
+      - name: Island
+        amount: 7
+      - name: Plains
+        amount: 8
+    fill-to: 40
+
+  - name: "16"
+    cards:
+      - name: Plains
+        amount: 8
+      - name: Island
+        amount: 8
+    fill-to: 40
+
+  - name: "17a"
+    cards:
+      - name: Island
+        amount: 9
+      - name: Plains
+        amount: 8
+    fill-to: 40
+
+  - name: "17b"
+    cards:
+      - name: Island
+        amount: 8
+      - name: Plains
+        amount: 9
+    fill-to: 40
+
+  - name: "18"
+    cards:
+      - name: Island
+        amount: 9
+      - name: Plains
+        amount: 9
+    fill-to: 40
+
+conditions:
+  - name: '2ABB'
+    conditions:
+      - type: 'can-cast'
+        param: 'Tura Kennerüd, Skyknight'
+        turn: 6
+
+passes: 1000000

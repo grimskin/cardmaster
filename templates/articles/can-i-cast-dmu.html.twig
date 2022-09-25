@@ -88,6 +88,9 @@
         </table>
     </div>
 
+    <h3>Splashing mono-colored decks into second color</h3>
+    <h3>Splashing mono-colored decks into second and third colors</h3>
+
     <h3>Mono-colored spells in two-colored decks</h3>
 
     <div class="p">
@@ -238,4 +241,81 @@
         </table>
     </div>
 
+    <h3>Dual-colored spells in two-colored decks</h3>
+
+    <div class="p">
+        <table class="experiment-results full">
+            <tr>
+                <td rowspan="2"> </td>
+                <th colspan="1">Turn 2 </th>
+                <th colspan="2">Turn 3 </th>
+                <th colspan="2">Turn 4 </th>
+                <th colspan="2">Turn 5 </th>
+                <th colspan="1">Turn 6 </th>
+            </tr>
+            <tr>
+                {% for key, data in dualInDual[14] %}
+                    <th>{{ key|replace({'G':'C', 'B':'C'}) }}</th>
+                {% endfor %}
+            </tr>
+            {% for rowKey, row in dualInDual %}
+                <tr>
+                    <th>{{ rowKey }}</th>
+                    {% for result in row %}
+                        <td>
+                            {% if result['only'] is defined %}
+                                {{ experiment_percentage(result['only']['success'], result['only']['total']) }}
+                            {% else %}
+                                {{ experiment_percentage(result['favored']['success'], result['favored']['total']) }}
+                                <br>
+                                {{ experiment_percentage(result['handicap']['success'], result['handicap']['total']) }}
+                            {% endif %}
+                        </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <div class="p">
+        <table class="experiment-results full">
+            <tr>
+                <td rowspan="2"> </td>
+                <th colspan="1">Turn 3 </th>
+                <th colspan="2">Turn 4 </th>
+                <th colspan="2">Turn 5 </th>
+                <th colspan="2">Turn 6 </th>
+                <th colspan="1">Turn 7 </th>
+            </tr>
+            <tr>
+                {% for key, data in dualInDualPlus[14] %}
+                    <th>{{ key|replace({'G':'C', 'B':'C'}) }}</th>
+                {% endfor %}
+            </tr>
+            {% for rowKey, row in dualInDualPlus %}
+                <tr>
+                    <th>{{ rowKey }}</th>
+                    {% for result in row %}
+                        <td>
+                            {% if result['only'] is defined %}
+                                {{ experiment_percentage(result['only']['success'], result['only']['total']) }}
+                            {% else %}
+                                {{ experiment_percentage(result['favored']['success'], result['favored']['total']) }}
+                                <br>
+                                {{ experiment_percentage(result['handicap']['success'], result['handicap']['total']) }}
+                            {% endif %}
+                        </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <h3>Dual-colored spells in two-colored decks with uneven land proportions</h3>
+    <h3>Splashing two-colored decks into third color</h3>
+    <h3>Phyrexian spells in two-colored decks</h3>
+
+    <h3>Mono-colored spells in three-colored decks</h3>
+    <h3>Dual-colored spells in three-colored decks</h3>
+    <h3>Three-colored spells in three-colored decks</h3>
 {% endblock %}

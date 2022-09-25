@@ -1,0 +1,49 @@
+decks:
+  - name: "14"
+    cards:
+      - name: Forest
+        amount: 7
+      - name: Swamp
+        amount: 7
+    fill-to: 40
+
+  - name: "15"
+    cards:
+      - name: Forest
+        amount: 8
+      - name: Swamp
+        amount: 7
+    fill-to: 40
+
+  - name: "16"
+    cards:
+      - name: Swamp
+        amount: 8
+      - name: Forest
+        amount: 8
+    fill-to: 40
+
+  - name: "17"
+    cards:
+      - name: Forest
+        amount: 9
+      - name: Swamp
+        amount: 8
+    fill-to: 40
+
+  - name: "18"
+    cards:
+      - name: Forest
+        amount: 9
+      - name: Swamp
+        amount: 9
+    fill-to: 40
+
+conditions:
+  - name: '4AB'
+    conditions:
+      - type: 'can-cast'
+        param: 'Bortuk Bonerattle'
+        turn: 7
+
+passes: 1000000

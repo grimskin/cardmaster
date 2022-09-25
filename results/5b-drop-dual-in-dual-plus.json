@@ -1,0 +1,109 @@
+{
+    "2ABB": {
+        "14": {
+            "success": 431955,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Tura Kenner\u00fcd, Skyknight"
+                    ],
+                    "turn": 6,
+                    "success": 431955,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15a": {
+            "success": 517272,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Tura Kenner\u00fcd, Skyknight"
+                    ],
+                    "turn": 6,
+                    "success": 517272,
+                    "total": 1000000
+                }
+            ]
+        },
+        "15b": {
+            "success": 486945,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Tura Kenner\u00fcd, Skyknight"
+                    ],
+                    "turn": 6,
+                    "success": 486945,
+                    "total": 1000000
+                }
+            ]
+        },
+        "16": {
+            "success": 574453,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Tura Kenner\u00fcd, Skyknight"
+                    ],
+                    "turn": 6,
+                    "success": 574453,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17a": {
+            "success": 652266,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Tura Kenner\u00fcd, Skyknight"
+                    ],
+                    "turn": 6,
+                    "success": 652266,
+                    "total": 1000000
+                }
+            ]
+        },
+        "17b": {
+            "success": 621666,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Tura Kenner\u00fcd, Skyknight"
+                    ],
+                    "turn": 6,
+                    "success": 621666,
+                    "total": 1000000
+                }
+            ]
+        },
+        "18": {
+            "success": 698460,
+            "total": 1000000,
+            "conditions": [
+                {
+                    "name": "can-cast",
+                    "params": [
+                        "Tura Kenner\u00fcd, Skyknight"
+                    ],
+                    "turn": 6,
+                    "success": 698460,
+                    "total": 1000000
+                }
+            ]
+        }
+    }
+}

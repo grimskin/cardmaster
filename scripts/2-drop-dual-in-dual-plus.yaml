@@ -1,0 +1,49 @@
+decks:
+  - name: "14"
+    cards:
+      - name: Island
+        amount: 7
+      - name: Forest
+        amount: 7
+    fill-to: 40
+
+  - name: "15"
+    cards:
+      - name: Island
+        amount: 8
+      - name: Forest
+        amount: 7
+    fill-to: 40
+
+  - name: "16"
+    cards:
+      - name: Forest
+        amount: 8
+      - name: Island
+        amount: 8
+    fill-to: 40
+
+  - name: "17"
+    cards:
+      - name: Island
+        amount: 9
+      - name: Forest
+        amount: 8
+    fill-to: 40
+
+  - name: "18"
+    cards:
+      - name: Island
+        amount: 9
+      - name: Forest
+        amount: 9
+    fill-to: 40
+
+conditions:
+  - name: 'AB'
+    conditions:
+      - type: 'can-cast'
+        param: 'Ivy, Gleeful Spellthief'
+        turn: 3
+
+passes: 1000000
