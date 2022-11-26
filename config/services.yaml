@@ -113,3 +113,6 @@ services:
             - method: loadDataFromFile
               arguments:
                   - 'data/DMU.json'
+            - method: loadDataFromFile
+              arguments:
+                  - 'data/BRO.json'
