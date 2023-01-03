@@ -29,13 +29,6 @@ services:
     App\Factory\ScenarioFactory:
         class: App\Factory\ScenarioFactory
         autowire: true
-        calls:
-            - method: registerScenario
-              arguments:
-                  - App\Scenarios\StartingHand
-            - method: registerScenario
-              arguments:
-                  - App\Scenarios\GeneralScenario
 
     App\Factory\ConditionFactory:
         class: App\Factory\ConditionFactory
